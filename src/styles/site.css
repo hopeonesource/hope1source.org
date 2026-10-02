@@ -1377,6 +1377,113 @@ address {
   border-radius: 2px;
 }
 
+/* Phone: one short lead, then disclosures. Wider screens show the full article. */
+.about-lead {
+  display: none;
+}
+
+.about-fold {
+  border-top: 1px solid var(--line);
+}
+
+.about-fold summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 48px;
+  padding: 0.85rem 0;
+  cursor: pointer;
+  font-family: var(--serif);
+  font-size: 1.45rem;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  list-style: none;
+}
+
+.about-fold summary::-webkit-details-marker {
+  display: none;
+}
+
+.about-fold-title {
+  min-width: 0;
+}
+
+.about-fold-shut,
+.about-fold-open {
+  flex: 0 0 auto;
+  min-height: 44px;
+  padding: 0.45rem 0.9rem;
+  border: 1px solid rgba(246, 241, 231, 0.38);
+  border-radius: 999px;
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.2;
+  display: inline-flex;
+  align-items: center;
+}
+
+.about-fold-open,
+.about-fold[open] .about-fold-shut {
+  display: none;
+}
+
+.about-fold[open] .about-fold-open {
+  display: inline-flex;
+}
+
+.about-fold-body {
+  padding-bottom: 0.35rem;
+}
+
+@media (max-width: 720px) {
+  .about-page {
+    overflow-x: clip;
+  }
+
+  .about-page .page-hero {
+    padding: 1.35rem 0 0.2rem;
+  }
+
+  .about-page .page-hero h1 {
+    font-size: 2.15rem;
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+  }
+
+  .about-page .lede,
+  .about-lead {
+    font-size: 1.125rem;
+    line-height: 1.45;
+  }
+
+  .about-page .prose {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-lead {
+    display: block;
+    order: -1;
+    margin-bottom: 0.85rem;
+    max-width: 36rem;
+  }
+
+  .about-page .about-photo {
+    max-height: 11rem;
+    object-fit: cover;
+    object-position: center 35%;
+    margin-bottom: 0.35rem;
+  }
+
+  .about-page .section {
+    padding-bottom: 2.5rem;
+  }
+}
+
 .team-collage {
   margin: 0 0 1.6rem;
   max-height: 28rem;
