@@ -1,7 +1,7 @@
 import PageHero from '../components/PageHero.jsx'
 import Seo from '../components/Seo.jsx'
-import { advisors, staff } from '../content/team.js'
-import { initials, publicUrl } from '../lib/links.js'
+import { team } from '../content/team.js'
+import { publicUrl } from '../lib/links.js'
 
 function People({ people }) {
   return (
@@ -9,13 +9,12 @@ function People({ people }) {
       {people.map((person) => (
         <li key={person.name}>
           <article>
-            {person.photo ? (
-              <img className="avatar avatar-photo" src={publicUrl(person.photo)} alt="" />
-            ) : (
-              <p className="avatar" aria-hidden="true">
-                {initials(person.name)}
-              </p>
-            )}
+            <img
+              className="avatar avatar-photo"
+              src={publicUrl(person.photo)}
+              alt=""
+              style={person.imagePosition ? { objectPosition: person.imagePosition } : undefined}
+            />
             <div>
               <h3>{person.name}</h3>
               <p className="person-role">{person.role}</p>
@@ -33,20 +32,17 @@ export default function Team() {
     <>
       <Seo
         title="Team"
-        description="Staff and advisors of Hope1Source Check-ins, summarized from the public team page. Hope with Love is the 501(c)(3)."
+        description="The H1S Check-ins team: names, roles, and photos from the public team page. Hope with Love is the 501(c)(3)."
       />
       <PageHero
         kicker="Team"
-        title="The people behind the network."
-        lede="Names, roles, and portraits below are taken from the public Hope1Source team page. Duplicate listings on that page appear once here. People without a named portrait on that page stay as initials."
+        title="The people behind the work."
+        lede="Names, roles, and photos from the public team page."
       />
       <section className="section">
         <div className="wrap">
-          <img className="team-collage" src={publicUrl('photos/team-collage.jpg')} alt="HopeOneSource team collage from the live site." />
-          <h2 className="group-title">Staff</h2>
-          <People people={staff} />
-          <h2 className="group-title">Advisors</h2>
-          <People people={advisors} />
+          <h2 className="group-title">Our team</h2>
+          <People people={team} />
         </div>
       </section>
     </>

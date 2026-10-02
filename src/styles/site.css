@@ -1390,8 +1390,7 @@ address {
 }
 
 .study-figure img,
-.about-photo,
-.team-collage {
+.about-photo {
   display: block;
   width: 100%;
   border-radius: 2px;
@@ -1508,12 +1507,6 @@ address {
   .about-page .section {
     padding-bottom: 2.5rem;
   }
-}
-
-.team-collage {
-  margin: 0 0 1.6rem;
-  max-height: 28rem;
-  object-fit: cover;
 }
 
 .avatar-photo {
