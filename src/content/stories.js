@@ -17,6 +17,7 @@ export const stories = [
     quote:
       'Access to food, counseling, PTSD treatment, and hypertension/prediabetes care services increased significantly from 68–77% in year 2 to 83–97% in year 3 (each P < 0.05 adjusted for script present). A significant disparity in access for African American actors resolved following more uniform adherence to pre-existing policies.',
     quoteAttribution: 'Finding quoted on the public case-study page',
+    home: 'Veterans and seniors across 30 communities. In a three-year study, access to food, counseling, PTSD treatment, and care for hypertension and prediabetes rose from 68–77% to 83–97%. A disparity in access by race was resolved.',
     body: [
       'This page does not restate the journal article. The number above is the finding the organization published on its case-study page and tied to an Oxford University Press abstract.',
       'Read the study before citing the percentages in a grant, ad, or press pitch. The case study describes Hope1Source’s role as staffing the working group that spearheaded the project.',
@@ -34,6 +35,7 @@ export const stories = [
     kicker: 'Provider outcome',
     summary:
       'During the coldest and warmest months, DC Department of Human Services has used Hope1Source — the outreach tool created by Hope With Love — to send emergency alerts to hundreds of highly vulnerable residents, with information on transportation and shelter.',
+    home: 'In extreme cold and heat, DC Department of Human Services has sent emergency alerts to hundreds of residents, with transportation and shelter information. One resident said that when the alert arrives, they know they have somewhere safe and warm to go.',
     quote: 'When I see that alert come to my phone, I know I have somewhere safe and warm to go.',
     quoteAttribution: 'Crystal, described on the public case-study page as a D.C. resident experiencing homelessness',
     body: [
@@ -52,6 +54,7 @@ export const stories = [
     kicker: 'Provider outcome',
     summary:
       'Dorothy Adams runs Dreamers & Achievers, a nonprofit providing direct services to hundreds of highly vulnerable D.C. residents. The public case study describes the organization using Hope1Source to stay in touch with clients, funders, and volunteers before and during COVID-19.',
+    home: 'Dorothy Adams and Dreamers & Achievers serve hundreds of residents in Washington, D.C. Before and during COVID-19, she used Hope1Source to stay in touch with clients, funders, and volunteers.',
     quote: 'HopeOneSource tells me what I need to know, including health and unmet needs. It is a very valuable tool.',
     quoteAttribution: 'Dorothy Adams, Executive Director, as published on the case-study page',
     body: [

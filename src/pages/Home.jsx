@@ -46,8 +46,8 @@ export default function Home() {
   return (
     <>
       <Seo
-        title="Private friction. Public praise."
-        description="Hope With Love is the mission and trust home for Hope1Source. Partner doors for providers, venues, and backers — not a pricing page."
+        title="People tell partners what they won’t say out loud"
+        description="We help those partners follow through — and show the good that follows. Check-ins stay private. Hope With Love is a 501(c)(3)."
         jsonLd={jsonLd}
       />
 
@@ -56,27 +56,28 @@ export default function Home() {
           <div className="hero-copy">
             <p className="kicker">Hope With Love · a 501(c)(3)</p>
             <h1>
-              Private friction. <em>Public praise.</em>
+              People tell partners what they won’t say out loud.
+              <span>We help those partners follow through — and show the good that follows.</span>
             </h1>
             <p className="lede">
-              Partners hear what a guest or a client will not say out loud. The friction stays private. The praise,
-              the follow-up, and the proof can be public.
+              Check-ins stay private. Partners follow up with the person in front of them. Praise, and other proof, can
+              be public when that is the right thing to share.
             </p>
             <div className="hero-actions">
               <a className="btn btn-primary" href="#doors">
-                Choose a partner door
+                See how to take part
               </a>
               <Link className="btn btn-secondary" to="/contact">
                 Contact partnerships
               </Link>
             </div>
             <p className="hero-note">
-              Already running check-ins? <a href={org.portalUrl}>Log in</a>. Gifts sit further down this page.
+              Already working with us? <a href={org.portalUrl}>Log in</a>. Gifts are further down this page.
             </p>
           </div>
 
-          <aside className="hero-panel" aria-label="Three partner roles">
-            <p className="panel-label">Three doors</p>
+          <aside className="hero-panel" aria-label="Three ways to take part">
+            <p className="panel-label">Three ways in</p>
             <ol>
               {roles.map((role, index) => (
                 <li key={role.id}>
@@ -84,7 +85,7 @@ export default function Home() {
                     <span className="panel-index">0{index + 1}</span>
                     <span>
                       <strong>{role.nav}</strong>
-                      <span>{role.lede}</span>
+                      <span>{role.panel}</span>
                     </span>
                   </Link>
                 </li>
@@ -94,15 +95,41 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section" id="doors">
+      <section className="section" aria-labelledby="stories-title">
         <div className="wrap">
           <div className="section-head">
-            <p className="kicker">Who the homepage is for</p>
-            <h2>Providers, venues, and backers.</h2>
+            <p className="kicker">What has already happened</p>
+            <h2 id="stories-title">Three stories we can stand behind.</h2>
             <p>
-              People looking for a meal, a bed, or a clinic are not the front door of this site. They have quiet
-              resource guides in the footer, written so an ad can land somewhere honest. The work of operating a
-              service starts here.
+              Each one is already public. The numbers and quotes below are the ones on those pages. We did not add new
+              results.
+            </p>
+          </div>
+          <div className="story-cards">
+            {stories.map((story) => (
+              <article key={story.slug}>
+                <p className="kicker">{story.org}</p>
+                <h3>
+                  <Link to={`/case-studies/${story.slug}`}>{story.title}</Link>
+                </h3>
+                <p>{story.home}</p>
+                <Link className="text-link" to={`/case-studies/${story.slug}`}>
+                  Read the story
+                </Link>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section section-tight" id="doors">
+        <div className="wrap">
+          <div className="section-head">
+            <p className="kicker">How to take part</p>
+            <h2>Start with the work you do.</h2>
+            <p>
+              If you need a meal, a bed, or care, use the resource guides at the bottom of this page. If you run a
+              program, host people, or fund the work, start here.
             </p>
           </div>
           <div className="role-row">
@@ -111,11 +138,42 @@ export default function Home() {
                 <h3>{role.nav}</h3>
                 <p>{role.lede}</p>
                 <Link className="text-link" to={role.path}>
-                  {role.title}
+                  Read more
                 </Link>
               </article>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="quote-band" id="proof" aria-labelledby="proof-title">
+        <div className="wrap">
+          <div className="section-head light">
+            <p className="kicker">In their words</p>
+            <h2 id="proof-title">Partners, on the work itself.</h2>
+            <p>These lines were on the previous Hope1Source homepage. They are not new interviews.</p>
+          </div>
+          <div className="quote-grid">
+            {quotes.map((quote) => (
+              <figure key={quote.name}>
+                <blockquote>
+                  <p>{quote.text}</p>
+                </blockquote>
+                <figcaption>
+                  <strong>{quote.name}</strong>
+                  <span>{quote.detail}</span>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+          <p className="named-row">
+            <span>Also named on that homepage</span>
+            {namedOnPriorSite.map((name) => (
+              <span key={name} className="name-pill">
+                {name}
+              </span>
+            ))}
+          </p>
         </div>
       </section>
 
@@ -134,68 +192,8 @@ export default function Home() {
           <article>
             <p className="fact-year">Now</p>
             <h3>One network</h3>
-            <p>Providers, venues, and backers share the same check-in idea. The mission stays on this site.</p>
+            <p>Programs, hosts, and funders share the same check-in. This site tells the mission.</p>
           </article>
-        </div>
-      </section>
-
-      <section className="quote-band" id="proof" aria-labelledby="proof-title">
-        <div className="wrap">
-          <div className="section-head light">
-            <p className="kicker">In their words</p>
-            <h2 id="proof-title">Operator outcomes, as previously published.</h2>
-            <p>
-              These lines appeared on the prior Hope1Source homepage. They are partner accounts of operations, not new
-              interviews collected for this redesign.
-            </p>
-          </div>
-          <div className="quote-grid">
-            {quotes.map((quote) => (
-              <figure key={quote.name}>
-                <blockquote>
-                  <p>{quote.text}</p>
-                </blockquote>
-                <figcaption>
-                  <strong>{quote.name}</strong>
-                  <span>{quote.detail}</span>
-                </figcaption>
-              </figure>
-            ))}
-          </div>
-          <p className="named-row">
-            <span>Also named on that homepage:</span>
-            {namedOnPriorSite.map((name) => (
-              <span key={name} className="name-pill">
-                {name}
-              </span>
-            ))}
-          </p>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="wrap">
-          <div className="section-head">
-            <p className="kicker">Case studies</p>
-            <h2>Three public stories.</h2>
-            <p>Each one stops where the old case-study page stopped. No extra metrics were added.</p>
-          </div>
-          <ol className="story-index">
-            {stories.map((story, index) => (
-              <li key={story.slug}>
-                <Link to={`/case-studies/${story.slug}`}>
-                  <span className="story-index-num">0{index + 1}</span>
-                  <span>
-                    <strong>{story.title}</strong>
-                    <span>{story.org}</span>
-                  </span>
-                  <span className="story-go" aria-hidden="true">
-                    Read
-                  </span>
-                </Link>
-              </li>
-            ))}
-          </ol>
         </div>
       </section>
 
@@ -205,8 +203,8 @@ export default function Home() {
             <p className="kicker">The cause</p>
             <h2 id="cause-title">Hope With Love can take a gift.</h2>
             <p>
-              Donations are not the headline of this site. When you are ready, Every.org handles the transaction for
-              Hope With Love. Checks use the Arlington address after it is confirmed.
+              When you are ready, Every.org receives the gift for Hope With Love. A check can go to the Arlington
+              address after that address is confirmed.
             </p>
           </div>
           <Link className="btn btn-primary" to="/donate">

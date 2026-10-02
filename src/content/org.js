@@ -8,7 +8,8 @@ export const org = {
   program: 'Hope1Source',
   programLegacy: 'HopeOneSource',
   product: 'H1S Check-ins',
-  tagline: 'Private friction. Public praise.',
+  tagline:
+    'People tell partners what they won’t say out loud. We help those partners follow through — and show the good that follows.',
   missionLine: 'Connecting people with dignity, security, and ease.',
   email: 'partnerships@hope1source.me',
   legacyEmail: 'hopeonesource@hopewithlove.org',
@@ -48,9 +49,9 @@ export const footerNav = {
     { to: '/faqs', label: 'FAQs' },
   ],
   partners: [
-    { to: '/for-providers', label: 'For providers' },
-    { to: '/for-venues', label: 'For venues' },
-    { to: '/for-backers', label: 'For backers' },
+    { to: '/for-providers', label: 'If you run a program' },
+    { to: '/for-venues', label: 'If you host people' },
+    { to: '/for-backers', label: 'If you fund the work' },
     { to: '/get-involved', label: 'Get involved' },
     { to: '/contact', label: 'Contact' },
   ],

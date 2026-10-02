@@ -17,9 +17,9 @@ Think of three doors that should not be the same door.
 
 Analogy: this site is the front window of the organization. The hub is the workshop price list. The portal is the staff entrance. Mixing them on one hero makes both the gift and the product harder to trust.
 
-The homepage speaks to **providers, venues, and backers**. People seeking a meal or a bed are not the front door. They have resource guides in the footer (`/food-meals`, `/housing`, and the rest). Those guides do not list live openings and do not show a price.
+The homepage speaks to people who run a program, host guests, or fund the work. People seeking a meal or a bed have resource guides in the footer (`/food-meals`, `/housing`, and the rest). Those guides do not list live openings and do not show a price.
 
-Hero line: **Private friction. Public praise.**
+Hero: **People tell partners what they won’t say out loud. We help those partners follow through — and show the good that follows.**
 
 ## Pages
 

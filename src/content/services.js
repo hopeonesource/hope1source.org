@@ -46,7 +46,7 @@ export const services = [
     forSomeone:
       'Shelter rules and hypothermia alerts change by the hour. In Washington, D.C., use DC Department of Human Services and the city’s own alert channels for the current status. Elsewhere, call 211 or your local continuum of care.',
     forPartner:
-      'Agencies that already message clients about shelter, prevention, or housing navigation can use the same private check-in pattern: the friction stays with the team, and only the public service information goes out.',
+      'Agencies that already message clients about shelter, prevention, or housing navigation can hear a private need, follow up, and send only the public service information outward.',
   },
   {
     slug: 'education-career',
@@ -79,7 +79,7 @@ export const services = [
     forSomeone:
       'A congregation’s meal, shelter night, or benevolence fund is run by that congregation. Confirm time and place with them directly. This page does not endorse a denomination.',
     forPartner:
-      'Faith communities that already host services can check people in with the same privacy rule as any other provider: private friction, public praise, and no extra personal data collected for its own sake.',
+      'Faith communities that already host services can check people in with the same rule as any other partner: the private note stays with the team, and no extra personal data is collected for its own sake.',
   },
   {
     slug: 'other-services',

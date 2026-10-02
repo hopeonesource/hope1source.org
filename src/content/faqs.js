@@ -17,7 +17,7 @@ export const faqs = [
   },
   {
     q: 'How do venues use it?',
-    a: 'A venue is anywhere a check-in can happen in the room: a restaurant, a show, a table, an open house. The partner idea is private feedback and a public trail of praise and follow-through. Commercial plans are not sold on this mission site. There is one link to the Check-ins hub in the footer.',
+    a: 'If you host people — a restaurant, a show, a table, an open house — a guest can tell you what went wrong in private. You follow up. Praise can be shared when the visit went well. Plans for the Check-ins product are on the partner hub, linked once in the footer.',
   },
   {
     q: 'How do people seeking help take part?',

@@ -310,10 +310,15 @@ a:hover {
   align-items: end;
 }
 
-.hero h1 em {
-  font-style: italic;
-  font-weight: 600;
-  color: var(--forest);
+.hero h1 {
+  font-size: clamp(2.05rem, 3.5vw, 3.15rem);
+  line-height: 1.18;
+  max-width: 16em;
+}
+
+.hero h1 span {
+  display: block;
+  margin-top: 0.7rem;
 }
 
 .hero-actions,

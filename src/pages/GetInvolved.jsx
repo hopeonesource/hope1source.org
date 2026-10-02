@@ -6,15 +6,15 @@ import { mailto } from '../lib/links.js'
 
 const paths = [
   {
-    title: 'Providers',
-    text: 'Bring a program you already operate. Check-ins and outreach should strengthen that work, not replace your judgment.',
+    title: 'If you run a program',
+    text: 'Bring a program you already operate. Check-ins and outreach should strengthen that work. They do not replace your judgment.',
     to: '/for-providers',
     href: mailto({ subject: 'Provider partnership' }),
     action: 'Email as a provider',
   },
   {
-    title: 'Venues',
-    text: 'A dining room, a merch table, a lobby, an open house. Private friction, public praise, then a cause if it belongs.',
+    title: 'If you host people',
+    text: 'A dining room, a table, a lobby, an open house. Guests can speak in private. You follow up. Praise can be public when it is earned.',
     to: '/for-venues',
     href: mailto({ subject: 'Venue partnership' }),
     action: 'Email as a venue',
@@ -27,7 +27,7 @@ const paths = [
     action: 'Email as a volunteer',
   },
   {
-    title: 'Backers',
+    title: 'If you fund the work',
     text: 'Sponsor the network or make a gift. Online gifts go to Every.org. Larger partnerships start in the inbox.',
     to: '/for-backers',
     href: mailto({ subject: 'Backer or sponsorship conversation' }),

@@ -14,19 +14,51 @@ GOLD = "#e2b87a"
 GOLD_SOFT = "#e7d3b1"
 
 
+def wrapped(draw, text, font, fill, origin, max_width, line_gap):
+    words = text.split()
+    lines = []
+    current = ""
+    for word in words:
+        trial = word if not current else f"{current} {word}"
+        if draw.textlength(trial, font=font) <= max_width:
+            current = trial
+        else:
+            lines.append(current)
+            current = word
+    if current:
+        lines.append(current)
+    x, y = origin
+    for line in lines:
+        draw.text((x, y), line, font=font, fill=fill)
+        y += line_gap
+    return y
+
+
 def og():
     image = Image.new("RGB", (1200, 630), FOREST)
     draw = ImageDraw.Draw(image)
-    draw.rectangle((80, 168, 196, 178), fill=GOLD)
-    draw.text((80, 210), "Private friction.", font=ImageFont.truetype(SERIF, 78), fill=CREAM)
-    draw.text((80, 310), "Public praise.", font=ImageFont.truetype(SERIF, 78), fill=GOLD_SOFT)
-    draw.text((80, 470), "Hope With Love", font=ImageFont.truetype(SERIF_ROMAN, 40), fill=CREAM)
-    draw.text(
-        (80, 525),
-        "Hope1Source  ·  mission and trust",
-        font=ImageFont.truetype(SANS, 28),
-        fill=GOLD_SOFT,
+    draw.rectangle((80, 78, 196, 88), fill=GOLD)
+    lead = ImageFont.truetype(SERIF_ROMAN, 52)
+    follow = ImageFont.truetype(SERIF, 40)
+    y = wrapped(
+        draw,
+        "People tell partners what they won’t say out loud.",
+        lead,
+        CREAM,
+        (80, 120),
+        1000,
+        64,
     )
+    wrapped(
+        draw,
+        "We help those partners follow through — and show the good that follows.",
+        follow,
+        GOLD_SOFT,
+        (80, y + 18),
+        1000,
+        52,
+    )
+    draw.text((80, 530), "Hope With Love  ·  Hope1Source", font=ImageFont.truetype(SANS, 28), fill=CREAM)
     image.save("public/og.png", optimize=True)
 
 

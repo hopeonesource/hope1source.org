@@ -96,8 +96,8 @@ export default function Layout() {
           <div className="footer-brand">
             <Brand />
             <p>
-              {org.legalName} is a 501(c)(3) nonprofit. This is the mission and trust home for {org.program}.
-              Partner work happens with providers, venues, and backers.
+              {org.legalName} is a 501(c)(3) nonprofit.               This is the mission and trust home for {org.program}.
+              We work with people who run programs, host guests, and fund the work.
             </p>
             <p>
               <a href={mailto({})}>{org.email}</a>
