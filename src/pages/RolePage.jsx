@@ -13,7 +13,7 @@ export default function RolePage({ id }) {
   return (
     <>
       <Seo title={role.title} description={role.lede} />
-      <PageHero kicker={role.kicker} title={role.title} lede={role.lede}>
+      <PageHero stage tone={role.id} kicker={role.kicker} title={role.title} lede={role.lede}>
         <div className="hero-actions">
           {role.donate ? (
             <a className="btn btn-primary" href={org.donateUrl} target="_blank" rel="noopener noreferrer">

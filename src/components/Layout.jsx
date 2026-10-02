@@ -11,7 +11,7 @@ function Brand({ onClick }) {
         <svg viewBox="0 0 32 32" width="32" height="32">
           <rect width="32" height="32" rx="8" fill="currentColor" />
           <path d="M9 8h3.1v6.1H19.8V8H23v16h-3.2v-6.7H12.1V24H9V8z" fill="#f6f1e7" />
-          <rect x="9" y="14.15" width="14" height="2.35" fill="#e2b87a" />
+          <rect x="9" y="14.15" width="14" height="2.35" fill="#ff6b45" />
         </svg>
       </span>
       <span className="brand-text">

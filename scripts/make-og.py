@@ -8,10 +8,11 @@ from PIL import Image, ImageDraw, ImageFont
 SERIF = "/usr/share/fonts/truetype/liberation/LiberationSerif-BoldItalic.ttf"
 SERIF_ROMAN = "/usr/share/fonts/truetype/liberation/LiberationSerif-Bold.ttf"
 SANS = "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf"
-FOREST = "#17382c"
+CANVAS = "#101816"
 CREAM = "#f6f1e7"
-GOLD = "#e2b87a"
-GOLD_SOFT = "#e7d3b1"
+CORAL = "#ff6b45"
+SAGE = "#9dceb4"
+GOLD_SOFT = "#f0ddc0"
 
 
 def wrapped(draw, text, font, fill, origin, max_width, line_gap):
@@ -35,10 +36,15 @@ def wrapped(draw, text, font, fill, origin, max_width, line_gap):
 
 
 def og():
-    image = Image.new("RGB", (1200, 630), FOREST)
+    image = Image.new("RGB", (1200, 630), CANVAS)
+    wash = Image.new("RGB", (1200, 630), CANVAS)
+    glow = ImageDraw.Draw(wash)
+    glow.ellipse((680, -80, 1280, 520), fill=CORAL)
+    glow.ellipse((420, 220, 980, 780), fill=SAGE)
+    image = Image.blend(image, wash, 0.28)
     draw = ImageDraw.Draw(image)
-    draw.rectangle((80, 150, 196, 160), fill=GOLD)
-    draw.text((80, 190), "Earn trust.", font=ImageFont.truetype(SERIF_ROMAN, 108), fill=CREAM)
+    draw.rectangle((80, 168, 210, 178), fill=CORAL)
+    draw.text((80, 200), "Earn trust.", font=ImageFont.truetype(SERIF_ROMAN, 108), fill=CREAM)
     wrapped(
         draw,
         "We help partners serve people with care, and show the impact that follows.",
@@ -53,12 +59,12 @@ def og():
 
 
 def icon():
-    image = Image.new("RGB", (180, 180), FOREST)
+    image = Image.new("RGB", (180, 180), "#17382c")
     draw = ImageDraw.Draw(image)
-    draw.rounded_rectangle((18, 18, 162, 162), radius=36, fill=FOREST)
+    draw.rounded_rectangle((18, 18, 162, 162), radius=36, fill="#17382c")
     draw.rectangle((48, 40, 70, 140), fill=CREAM)
     draw.rectangle((110, 40, 132, 140), fill=CREAM)
-    draw.rectangle((48, 82, 132, 102), fill=GOLD)
+    draw.rectangle((48, 82, 132, 102), fill=CORAL)
     image.save("public/apple-touch-icon.png", optimize=True)
 
 

@@ -1,5 +1,6 @@
 import { useMemo } from 'react'
 import { Link } from 'react-router-dom'
+import MissionWash from '../components/MissionWash.jsx'
 import Seo, { absoluteUrl } from '../components/Seo.jsx'
 import { org } from '../content/org.js'
 import { roles } from '../content/roles.js'
@@ -37,6 +38,7 @@ export default function Home() {
       />
 
       <section className="hero">
+        <MissionWash tone="home" />
         <div className="wrap hero-copy">
           <p className="kicker">Hope With Love · a 501(c)(3)</p>
           <h1>Earn trust.</h1>
@@ -55,12 +57,17 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section" aria-labelledby="stories-title">
+      <div className="horizon" aria-hidden="true" />
+
+      <section className="section stories-section" aria-labelledby="stories-title">
         <div className="wrap">
           <h2 id="stories-title">Stories</h2>
           <div className="story-cards">
-            {stories.map((story) => (
-              <article key={story.slug}>
+            {stories.map((story, index) => (
+              <article key={story.slug} className="story-card">
+                <p className="story-num" aria-hidden="true">
+                  0{index + 1}
+                </p>
                 <h3>
                   <Link to={`/case-studies/${story.slug}`}>{story.cardTitle}</Link>
                 </h3>
@@ -74,17 +81,19 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section section-tight" id="doors">
+      <section className="doors-section" id="doors">
         <div className="wrap">
           <h2>Take part</h2>
-          <div className="role-row">
-            {roles.map((role) => (
-              <article key={role.id} className="role-card">
-                <h3>
-                  <Link to={role.path}>{role.nav}</Link>
-                </h3>
+          <div className="door-row">
+            {roles.map((role, index) => (
+              <Link key={role.id} className={`door door-${role.id}`} to={role.path}>
+                <span className="door-index" aria-hidden="true">
+                  0{index + 1}
+                </span>
+                <h3>{role.nav}</h3>
                 <p>{role.lede}</p>
-              </article>
+                <span className="door-go">Open</span>
+              </Link>
             ))}
           </div>
         </div>
