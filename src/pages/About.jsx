@@ -9,7 +9,7 @@ export default function About() {
     <>
       <Seo
         title="Our mission"
-        description="Hope1Source is a social-impact program of Hope With Love, a 501(c)(3). The work connects people and verified services with dignity, security, and ease."
+        description="Hope1Source Check-ins connects people and verified services with dignity, security, and ease. Hope with Love is the 501(c)(3)."
       />
       <PageHero
         kicker="Our mission"
@@ -25,9 +25,9 @@ export default function About() {
           />
           <h2>Mission</h2>
           <p>
-            {org.programLegacy} is a social-impact program powered by {org.legalName}, a 501(c)(3) nonprofit that uses
-            outreach technology for good. The aim, as the organization has stated it, is to connect people to verified
-            services they need with dignity, security, and ease.
+            {org.brand} is the program. {org.legalName} is the 501(c)(3) that operates it, also written{' '}
+            {org.programLegacy}. The aim, as the organization has stated it, is to connect people to verified services
+            they need with dignity, security, and ease.
           </p>
           <h2>How the work happens</h2>
           <p>
@@ -37,7 +37,7 @@ export default function About() {
           </p>
           <h2>Beginnings</h2>
           <p>
-            Hope1Source started in Haiti in 2010. The goal was to use widely available cell phones to connect local
+            {org.program} started in Haiti in 2010. The goal was to use widely available cell phones to connect local
             services and unmet needs with medical providers after the earthquake.
           </p>
           <p>

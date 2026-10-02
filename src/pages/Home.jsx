@@ -12,20 +12,12 @@ export default function Home() {
     () => ({
       '@context': 'https://schema.org',
       '@type': 'NGO',
-      name: org.legalName,
-      alternateName: [org.program, org.programLegacy, org.product],
+      name: org.brand,
+      legalName: org.legalName,
+      alternateName: [org.program, org.product, org.programLegacy],
       url: absoluteUrl('/'),
       email: org.email,
-      telephone: org.phoneTel,
       nonprofitStatus: 'Nonprofit501c3',
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: org.street,
-        addressLocality: org.city,
-        addressRegion: org.region,
-        postalCode: org.postal,
-        addressCountry: 'US',
-      },
     }),
     [],
   )
@@ -44,7 +36,7 @@ export default function Home() {
         </div>
         <MissionWash tone="home" />
         <div className="wrap hero-copy">
-          <p className="kicker">Hope With Love · a 501(c)(3)</p>
+          <p className="kicker">{org.brand}</p>
           <h1>Earn trust.</h1>
           <p className="lede">We help partners serve people with care, and show the impact that follows.</p>
           <div className="hero-actions">
@@ -109,11 +101,11 @@ export default function Home() {
         <div className="wrap cause-inner">
           <div>
             <h2 id="cause-title">Give</h2>
-            <p>Gifts to Hope With Love go through Every.org.</p>
+            <p>Gifts go through Every.org to {org.legalName}, the 501(c)(3).</p>
           </div>
-          <Link className="btn btn-primary" to="/donate">
-            Ways to give
-          </Link>
+          <a className="btn btn-primary" href={org.donateUrl}>
+            Donate
+          </a>
         </div>
       </section>
     </>

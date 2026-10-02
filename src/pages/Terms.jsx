@@ -121,11 +121,8 @@ export default function Terms() {
             designated contacts with the internal outreach tool. Clients may opt out by replying STOP.
           </p>
           <Confirm>
-            The old terms named an SMS long code, 855-947-3417, “or another long phone number.” Confirm the live
-            number. Industry pages said to text HOPE to 51523. The same old terms mentioned short code 51513. Publish
-            one code only after it is confirmed. Also confirm the exact welcome text and the HELP link. A sample in the
-            old terms read along the lines of: “Welcome to HopeOneSource: Alerts from local providers. Go to
-            hopeonesource.me for HELP. Reply STOP to cancel. Msg&Data rates may apply.”
+            The old terms named an SMS long code and more than one short code. This site does not publish a phone
+            number or short code. Confirm the live code, the welcome text, and the HELP link before either is printed.
           </Confirm>
           <p>
             These terms govern access to the Site and use of the services. Access is conditioned on compliance. By
@@ -337,17 +334,10 @@ export default function Terms() {
 
           <h2>Contact</h2>
           <ul>
-            <li>
-              {org.email} and, historically, {org.legacyEmail}
-            </li>
-            <li>Phone candidate: {org.phoneDisplay}</li>
-            <li>
-              Mail: {org.legalName} ({org.product}), {org.street}, {org.city}, {org.region} {org.postal} — confirm the
-              address
-            </li>
+            <li>{org.email}</li>
             <li>
               Donate, for convenience only and not as part of these terms:{' '}
-              <a href={org.donateUrl}>Every.org · Hope With Love</a>
+              <a href={org.donateUrl}>Every.org</a>
             </li>
           </ul>
         </div>

@@ -40,7 +40,7 @@ export default function GetInvolved() {
     <>
       <Seo
         title="Get involved"
-        description="Partner, volunteer, or fund Hope With Love. Providers, venues, volunteers, and backers each have a next step."
+        description="Partner, volunteer, or fund Hope1Source Check-ins. Providers, venues, volunteers, and backers each have a next step."
       />
       <PageHero
         kicker="Get involved"

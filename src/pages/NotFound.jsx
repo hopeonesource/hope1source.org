@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import Seo from '../components/Seo.jsx'
+import { org } from '../content/org.js'
 
 export default function NotFound() {
   return (
@@ -13,8 +14,7 @@ export default function NotFound() {
           <p className="kicker">404</p>
           <h1>That page is not on this site.</h1>
           <p className="lede">
-            The address may be from the old website. The new pages are linked below. If you were looking for a service,
-            start with the resource guides in the footer rather than a pricing page.
+            The link may be from the old website. The pages below are the ones on this site.
           </p>
           <ul className="lost-links">
             <li>
@@ -27,7 +27,7 @@ export default function NotFound() {
               <Link to="/contact">Contact</Link>
             </li>
             <li>
-              <Link to="/donate">Donate</Link>
+              <a href={org.donateUrl}>Donate</a>
             </li>
             <li>
               <Link to="/case-studies">Case studies</Link>

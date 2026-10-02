@@ -1,10 +1,12 @@
 /**
- * Single source for public facts.
- * Items marked confirm are published candidates, not newly verified by this repo.
- * See README "Confirm before cutover".
+ * Public facts used across the site.
+ * Hope1Source (H1S) Check-ins is the name people should see.
+ * Hope with Love is the legal 501(c)(3) / DBA behind it.
+ * No street address or phone number is published.
  */
 export const org = {
-  legalName: 'Hope With Love',
+  legalName: 'Hope with Love',
+  brand: 'Hope1Source Check-ins',
   program: 'Hope1Source',
   programLegacy: 'HopeOneSource',
   product: 'H1S Check-ins',
@@ -12,25 +14,13 @@ export const org = {
   missionLine: 'Connecting people with dignity, security, and ease.',
   email: 'partnerships@hope1source.me',
   legacyEmail: 'hopeonesource@hopewithlove.org',
-  phoneDisplay: '(202) 743-5342',
-  phoneTel: '+12027435342',
-  street: '809 South Oak Street',
-  city: 'Arlington',
-  region: 'VA',
-  postal: '22204',
   donateUrl: 'https://www.every.org/hope-with-love',
   portalUrl: 'https://portal.hopeonesource.me',
   hubUrl: 'https://hopeonesource.me',
   siteHost: 'hope1source.org',
 }
 
-export const addressLines = [
-  `${org.legalName} (${org.product})`,
-  org.street,
-  `${org.city}, ${org.region} ${org.postal}`,
-]
-
-/** Primary navigation. Donate stays in the footer, not beside a product pitch. */
+/** Header links. Donate is an external gift link, not a second product pitch. */
 export const primaryNav = [
   { to: '/about', label: 'About' },
   { to: '/team', label: 'Team' },
@@ -39,24 +29,11 @@ export const primaryNav = [
   { to: '/contact', label: 'Contact' },
 ]
 
-export const footerNav = {
-  mission: [
-    { to: '/about', label: 'Our mission' },
-    { to: '/team', label: 'Team' },
-    { to: '/case-studies', label: 'Case studies' },
-    { to: '/press', label: 'Press' },
-    { to: '/faqs', label: 'FAQs' },
-  ],
-  partners: [
-    { to: '/for-providers', label: 'If you run a program' },
-    { to: '/for-venues', label: 'If you host people' },
-    { to: '/for-backers', label: 'If you fund the work' },
-    { to: '/get-involved', label: 'Get involved' },
-    { to: '/contact', label: 'Contact' },
-  ],
-  trust: [
-    { to: '/donate', label: 'Donate' },
-    { to: '/privacy', label: 'Privacy' },
-    { to: '/terms', label: 'Terms' },
-  ],
-}
+/** Short footer. Resource guides stay at their own URLs for ads. */
+export const footerLinks = [
+  { to: '/about', label: 'About' },
+  { to: '/contact', label: 'Contact' },
+  { href: org.donateUrl, label: 'Donate', external: true },
+  { to: '/privacy', label: 'Privacy' },
+  { to: '/terms', label: 'Terms' },
+]

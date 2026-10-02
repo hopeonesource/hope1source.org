@@ -19,7 +19,7 @@ GitHub Pages cannot apply this table. On Pages, the app still catches the same p
 |------|----|-----|
 | `/privacy-policy` | `/privacy` | Old Webflow legal URL |
 | `/terms-of-service` | `/terms` | Old Webflow legal URL |
-| `/donate-now` | `/donate` | Every.org lives on the new donate page |
+| `/donate-now` | `https://www.every.org/hope-with-love` | Same Every.org campaign as `/donate` |
 | `/contact` | `/contact` | Same path |
 | `/get-involved` | `/get-involved` | Same path |
 | `/` | `/` | New homepage |
@@ -75,8 +75,8 @@ Full article bodies were not copied. Titles are on `/press`. Outside coverage th
 
 | From | To |
 |------|----|
-| `/donate` | keep the new `/donate` (the old Webflow path 404ed; it is real now) |
-| `/donations`, `/support`, `/give` | `/donate` |
+| `/donate` | `https://www.every.org/hope-with-love` | Gifts leave this site. The SPA route also sends the browser there. |
+| `/donations`, `/support`, `/give` | `https://www.every.org/hope-with-love` | Same campaign |
 | `/old-home` | `/` |
 | `/404` | `/` |
 | Unknown paths | `/` at the edge if you want, or leave the branded 404 |
