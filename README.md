@@ -19,7 +19,7 @@ Analogy: this site is the front window of the organization. The hub is the works
 
 The homepage speaks to people who run a program, host guests, or fund the work. People seeking a meal or a bed have resource guides in the footer (`/food-meals`, `/housing`, and the rest). Those guides do not list live openings and do not show a price.
 
-Hero: **People tell partners what they won’t say out loud. We help those partners follow through — and show the good that follows.**
+Hero: **Earn trust.** We help partners serve people with care, and show the impact that follows.
 
 ## Pages
 

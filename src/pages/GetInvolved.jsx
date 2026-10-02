@@ -7,14 +7,14 @@ import { mailto } from '../lib/links.js'
 const paths = [
   {
     title: 'If you run a program',
-    text: 'Bring a program you already operate. Check-ins and outreach should strengthen that work. They do not replace your judgment.',
+    text: 'Serve people well, follow up, and show what changed.',
     to: '/for-providers',
     href: mailto({ subject: 'Provider partnership' }),
     action: 'Email as a provider',
   },
   {
     title: 'If you host people',
-    text: 'A dining room, a table, a lobby, an open house. Guests can speak in private. You follow up. Praise can be public when it is earned.',
+    text: 'Take care of the people you host, and share the good that follows.',
     to: '/for-venues',
     href: mailto({ subject: 'Venue partnership' }),
     action: 'Email as a venue',
@@ -28,7 +28,7 @@ const paths = [
   },
   {
     title: 'If you fund the work',
-    text: 'Sponsor the network or make a gift. Online gifts go to Every.org. Larger partnerships start in the inbox.',
+    text: 'Fund the network and read the impact stories.',
     to: '/for-backers',
     href: mailto({ subject: 'Backer or sponsorship conversation' }),
     action: 'Email as a backer',

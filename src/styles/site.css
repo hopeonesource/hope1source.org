@@ -311,14 +311,10 @@ a:hover {
 }
 
 .hero h1 {
-  font-size: clamp(2.05rem, 3.5vw, 3.15rem);
-  line-height: 1.18;
-  max-width: 16em;
-}
-
-.hero h1 span {
-  display: block;
-  margin-top: 0.7rem;
+  font-size: clamp(4.2rem, 11vw, 7.75rem);
+  line-height: 0.92;
+  letter-spacing: -0.045em;
+  max-width: 8em;
 }
 
 .hero-actions,

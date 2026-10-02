@@ -8,8 +8,7 @@ export const org = {
   program: 'Hope1Source',
   programLegacy: 'HopeOneSource',
   product: 'H1S Check-ins',
-  tagline:
-    'People tell partners what they won’t say out loud. We help those partners follow through — and show the good that follows.',
+  tagline: 'Earn trust.',
   missionLine: 'Connecting people with dignity, security, and ease.',
   email: 'partnerships@hope1source.me',
   legacyEmail: 'hopeonesource@hopewithlove.org',

@@ -6,6 +6,8 @@ export const stories = [
   {
     slug: 'veterans-affairs-national-homeless-programs',
     title: 'Veterans Affairs national homeless programs',
+    cardTitle: 'Veterans Affairs',
+    card: 'Access to care rose from 68–77% to 83–97%.',
     org: 'Veterans Affairs / National Homeless Programs',
     industry: 'Federal government and nonprofit',
     location: '30 communities nationally',
@@ -27,6 +29,8 @@ export const stories = [
     slug: 'emergency-shelter-alerts',
     legacySlug: 'hopeonesource-saves-lives-with-emergency-shelter-alerts',
     title: 'Emergency shelter alerts',
+    cardTitle: 'Shelter alerts',
+    card: 'Emergency alerts reached hundreds of D.C. residents.',
     org: 'DC Department of Human Services',
     industry: 'Local government',
     location: 'Washington, D.C.',
@@ -46,6 +50,8 @@ export const stories = [
   {
     slug: 'dreamers-and-achievers',
     title: 'Dreamers & Achievers',
+    cardTitle: 'Dreamers & Achievers',
+    card: 'A D.C. nonprofit stayed close to the people it serves.',
     org: 'Dreamers & Achievers',
     industry: 'Local nonprofit',
     location: 'Washington, D.C.',

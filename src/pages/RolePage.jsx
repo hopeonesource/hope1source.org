@@ -29,30 +29,29 @@ export default function RolePage({ id }) {
           </Link>
         </div>
       </PageHero>
-      <section className="section">
-        <div className="wrap role-detail">
-          {role.points.map((point, index) => (
-            <article key={point.title}>
-              <p className="panel-index">0{index + 1}</p>
-              <h2>{point.title}</h2>
-              <p>{point.text}</p>
-            </article>
-          ))}
-        </div>
-        {role.note ? (
-          <div className="wrap narrow prose path-note">
-            <p>{role.note}</p>
+      {role.points.length > 0 ? (
+        <section className="section">
+          <div className="wrap role-detail">
+            {role.points.map((point, index) => (
+              <article key={point.title}>
+                <p className="panel-index">0{index + 1}</p>
+                <h2>{point.title}</h2>
+                <p>{point.text}</p>
+              </article>
+            ))}
           </div>
-        ) : null}
-        {role.donate ? (
+        </section>
+      ) : null}
+      {role.donate ? (
+        <section className="section section-tight">
           <div className="wrap narrow prose path-note">
             <p>
               Prefer a conversation before a gift?{' '}
               <a href={mailto({ subject: role.subject })}>Email {org.email}</a>.
             </p>
           </div>
-        ) : null}
-      </section>
+        </section>
+      ) : null}
     </>
   )
 }

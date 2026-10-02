@@ -37,26 +37,16 @@ def wrapped(draw, text, font, fill, origin, max_width, line_gap):
 def og():
     image = Image.new("RGB", (1200, 630), FOREST)
     draw = ImageDraw.Draw(image)
-    draw.rectangle((80, 78, 196, 88), fill=GOLD)
-    lead = ImageFont.truetype(SERIF_ROMAN, 52)
-    follow = ImageFont.truetype(SERIF, 40)
-    y = wrapped(
-        draw,
-        "People tell partners what they won’t say out loud.",
-        lead,
-        CREAM,
-        (80, 120),
-        1000,
-        64,
-    )
+    draw.rectangle((80, 150, 196, 160), fill=GOLD)
+    draw.text((80, 190), "Earn trust.", font=ImageFont.truetype(SERIF_ROMAN, 108), fill=CREAM)
     wrapped(
         draw,
-        "We help those partners follow through — and show the good that follows.",
-        follow,
+        "We help partners serve people with care, and show the impact that follows.",
+        ImageFont.truetype(SANS, 32),
         GOLD_SOFT,
-        (80, y + 18),
-        1000,
-        52,
+        (80, 360),
+        980,
+        44,
     )
     draw.text((80, 530), "Hope With Love  ·  Hope1Source", font=ImageFont.truetype(SANS, 28), fill=CREAM)
     image.save("public/og.png", optimize=True)
