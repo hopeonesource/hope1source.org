@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero.jsx'
 import Seo from '../components/Seo.jsx'
 import { org } from '../content/org.js'
+import { publicUrl } from '../lib/links.js'
 
 export default function About() {
   return (
@@ -17,6 +18,11 @@ export default function About() {
       />
       <article className="section prose-section">
         <div className="wrap narrow prose">
+          <img
+            className="about-photo"
+            src={publicUrl('photos/hos-team.jpg')}
+            alt="Hope1Source team gathered around a table, from the live about page."
+          />
           <h2>Mission</h2>
           <p>
             {org.programLegacy} is a social-impact program powered by {org.legalName}, a 501(c)(3) nonprofit that uses

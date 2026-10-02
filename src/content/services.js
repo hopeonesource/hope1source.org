@@ -47,6 +47,11 @@ export const services = [
       'Shelter rules and hypothermia alerts change by the hour. In Washington, D.C., use DC Department of Human Services and the city’s own alert channels for the current status. Elsewhere, call 211 or your local continuum of care.',
     forPartner:
       'Agencies that already message clients about shelter, prevention, or housing navigation can hear a private need, follow up, and send only the public service information outward.',
+    quote:
+      'Hypothermia deaths in DC have consistently decreased over the past 5 years, down from 9 in 2015 to 2 in 2019.',
+    quoteBy:
+      'DC Interagency Council on Homelessness, as published on the Hope1Source housing page.',
+    storyPath: '/case-studies/emergency-shelter-alerts',
   },
   {
     slug: 'education-career',

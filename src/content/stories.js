@@ -4,6 +4,34 @@
  */
 export const stories = [
   {
+    slug: 'emergency-shelter-alerts',
+    legacySlug: 'hopeonesource-saves-lives-with-emergency-shelter-alerts',
+    title: 'Emergency shelter alerts',
+    cardTitle: 'Nearly 80% fewer hypothermia deaths in DC',
+    card: '9 in 2015 to 2 in 2019.',
+    image: 'photos/shelter-alerts.jpg',
+    imageAlt: 'HopeOneSource emergency shelter alerts graphic from the published case study.',
+    org: 'DC Department of Human Services',
+    industry: 'Local government',
+    location: 'Washington, D.C.',
+    website: 'https://dhs.dc.gov/',
+    websiteLabel: 'DC Department of Human Services',
+    kicker: 'Washington, D.C.',
+    summary:
+      'Nearly 80% fewer hypothermia deaths in DC — 9 in 2015 to 2 in 2019. Those two counts are what the DC Interagency Council on Homelessness stated, as published on the Hope1Source housing page. The percent is the change from 9 to 2, not a newer fiscal-year figure and not a percent printed in that quote.',
+    quote:
+      'Hypothermia deaths in DC have consistently decreased over the past 5 years, down from 9 in 2015 to 2 in 2019.',
+    quoteAttribution:
+      'DC Interagency Council on Homelessness, as published on hope1source.org/housing',
+    home: 'Nearly 80% fewer hypothermia deaths in DC — 9 in 2015 to 2 in 2019.',
+    note: 'As published on hope1source.org/housing. Nearly 80% is derived from the published counts 9 and 2. It is not a separate percentage in the ICH quote, and it is not a count from a later winter.',
+    body: [
+      'During the coldest and warmest months, DC Department of Human Services has used Hope1Source to send emergency alerts to hundreds of highly vulnerable residents, with information on transportation and shelter.',
+      'Crystal, described on the public case-study page as a D.C. resident experiencing homelessness, said: “When I see that alert come to my phone, I know I have somewhere safe and warm to go.” That is one person’s account of a government alert. It is not a current shelter-bed list. For a live alert, use DC DHS and the city’s own channels.',
+      'Partners who run similar alerts can talk with partnerships about check-ins and outreach. This story is here so the operating model is visible, not so this page becomes a beneficiary intake form.',
+    ],
+  },
+  {
     slug: 'veterans-affairs-national-homeless-programs',
     title: 'Veterans Affairs national homeless programs',
     cardTitle: 'Veterans Affairs',
@@ -13,6 +41,8 @@ export const stories = [
     location: '30 communities nationally',
     website: 'https://academic.oup.com/jpubhealth/article-abstract/44/1/207/6218923',
     websiteLabel: 'Published study (Journal of Public Health)',
+    image: 'photos/phone-checkins.png',
+    imageAlt: 'Hope1Source check-in screen on a phone, from the live homepage.',
     kicker: 'Provider outcome',
     summary:
       'A three-year quality-improvement study. Hope1Source staff managed a working group that led the project. The public case study says the work detected, reduced, and then eliminated barriers to services for seniors and veterans experiencing homelessness, by race and age, across 30 communities.',
@@ -26,28 +56,6 @@ export const stories = [
     ],
   },
   {
-    slug: 'emergency-shelter-alerts',
-    legacySlug: 'hopeonesource-saves-lives-with-emergency-shelter-alerts',
-    title: 'Emergency shelter alerts',
-    cardTitle: 'Shelter alerts',
-    card: 'Emergency alerts reached hundreds of D.C. residents.',
-    org: 'DC Department of Human Services',
-    industry: 'Local government',
-    location: 'Washington, D.C.',
-    website: 'https://dhs.dc.gov/',
-    websiteLabel: 'DC Department of Human Services',
-    kicker: 'Provider outcome',
-    summary:
-      'During the coldest and warmest months, DC Department of Human Services has used Hope1Source — the outreach tool created by Hope With Love — to send emergency alerts to hundreds of highly vulnerable residents, with information on transportation and shelter.',
-    home: 'In extreme cold and heat, DC Department of Human Services has sent emergency alerts to hundreds of residents, with transportation and shelter information. One resident said that when the alert arrives, they know they have somewhere safe and warm to go.',
-    quote: 'When I see that alert come to my phone, I know I have somewhere safe and warm to go.',
-    quoteAttribution: 'Crystal, described on the public case-study page as a D.C. resident experiencing homelessness',
-    body: [
-      'The quote is a resident’s experience of a government alert, published on the prior case-study page. It is not a current shelter-bed listing. Hours, sites, and hypothermia status change. For a live alert, use DC DHS and the city’s own channels.',
-      'Partners who run similar alerts can talk with partnerships about check-ins and outreach. This story is here so the operating model is visible, not so this page becomes a beneficiary intake form.',
-    ],
-  },
-  {
     slug: 'dreamers-and-achievers',
     title: 'Dreamers & Achievers',
     cardTitle: 'Dreamers & Achievers',
@@ -57,6 +65,8 @@ export const stories = [
     location: 'Washington, D.C.',
     website: 'http://dreamersandachievers.org/',
     websiteLabel: 'Dreamers & Achievers',
+    image: 'photos/dorothy-adams.jpg',
+    imageAlt: 'Dorothy Adams, Dreamers and Achievers, from the published case study.',
     kicker: 'Provider outcome',
     summary:
       'Dorothy Adams runs Dreamers & Achievers, a nonprofit providing direct services to hundreds of highly vulnerable D.C. residents. The public case study describes the organization using Hope1Source to stay in touch with clients, funders, and volunteers before and during COVID-19.',

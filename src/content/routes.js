@@ -44,7 +44,7 @@ export const aliases = [
   ['/about-us', '/about'],
   ['/our-team', '/team'],
   ['/our-sponsors', '/about'],
-  ['/testimonials', '/#proof'],
+  ['/testimonials', '/case-studies'],
   ['/in-the-news', '/press'],
   ['/learn-more', '/contact'],
   ['/outreach-tools', '/for-providers'],
