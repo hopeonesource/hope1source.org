@@ -1303,6 +1303,10 @@ address {
   background: #0c1411;
 }
 
+.story-art.is-cover img {
+  object-fit: cover;
+}
+
 .study-thumb {
   display: block;
   height: 9.5rem;

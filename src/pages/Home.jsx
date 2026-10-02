@@ -69,7 +69,7 @@ export default function Home() {
           <div className="story-cards">
             {stories.map((story) => (
               <Link key={story.slug} className="story-card" to={`/case-studies/${story.slug}`}>
-                <span className="story-art">
+                <span className={story.imageFit === 'cover' ? 'story-art is-cover' : 'story-art'}>
                   <img src={publicUrl(story.image)} alt="" />
                 </span>
                 <span className="story-body">
