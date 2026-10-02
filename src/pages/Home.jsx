@@ -70,7 +70,11 @@ export default function Home() {
             {stories.map((story) => (
               <Link key={story.slug} className="story-card" to={`/case-studies/${story.slug}`}>
                 <span className={story.imageFit === 'cover' ? 'story-art is-cover' : 'story-art'}>
-                  <img src={publicUrl(story.image)} alt="" />
+                  <img
+                    src={publicUrl(story.image)}
+                    alt=""
+                    style={story.imagePosition ? { objectPosition: story.imagePosition } : undefined}
+                  />
                 </span>
                 <span className="story-body">
                   <h3>{story.cardTitle}</h3>

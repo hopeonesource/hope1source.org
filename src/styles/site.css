@@ -1318,6 +1318,59 @@ address {
   margin: 0 0 1.25rem;
 }
 
+.study-figure.is-portrait {
+  width: min(16rem, 100%);
+}
+
+.metric-set {
+  margin: 0 0 1.6rem;
+}
+
+.metric-set figcaption {
+  margin: 0 0 0.85rem;
+  color: var(--cream-soft);
+}
+
+.metric-set table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.metric-set th,
+.metric-set td {
+  padding: 0.7rem 0.35rem;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: baseline;
+}
+
+.metric-set thead th {
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.metric-set tbody th {
+  font-weight: 700;
+}
+
+.metric-set td {
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.metric-set td:last-child {
+  color: var(--sage);
+  font-weight: 700;
+}
+
+.study-thumb.is-cover {
+  object-fit: cover;
+}
+
 .study-figure img,
 .about-photo,
 .team-collage {

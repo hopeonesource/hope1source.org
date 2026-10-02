@@ -17,8 +17,31 @@ export default function CaseStudy({ slug }) {
         <div className="wrap study-grid">
           <div className="prose">
             {story.image ? (
-              <figure className="study-figure">
+              <figure className={story.portrait ? 'study-figure is-portrait' : 'study-figure'}>
                 <img src={publicUrl(story.image)} alt={story.imageAlt} />
+              </figure>
+            ) : null}
+            {story.metrics?.length ? (
+              <figure className="metric-set">
+                <figcaption>{story.metricsCaption}</figcaption>
+                <table>
+                  <thead>
+                    <tr>
+                      <th scope="col">Measure</th>
+                      <th scope="col">Before</th>
+                      <th scope="col">After</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {story.metrics.map((row) => (
+                      <tr key={row.label}>
+                        <th scope="row">{row.label}</th>
+                        <td>{row.before}</td>
+                        <td>{row.after}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
               </figure>
             ) : null}
             <blockquote className="pull">
