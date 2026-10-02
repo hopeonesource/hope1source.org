@@ -7,7 +7,7 @@ export default function Faqs() {
     <>
       <Seo
         title="FAQs"
-        description="Answers for providers, venues, backers, and volunteers about Hope With Love, privacy, cost, and where to log in."
+        description="Answers for providers, venues, backers, and volunteers about Hope1Source Check-ins, privacy, and where to log in."
       />
       <PageHero
         kicker="FAQs"

@@ -7,7 +7,7 @@ export const staff = [
     name: 'Tim Underwood',
     role: 'Chief Executive Officer',
     photo: 'photos/tim-underwood.jpg',
-    bio: 'Tim co-founded Hope With Love to help business, nonprofit, and government leaders make their work more effective. The work is built on trust, from his experience in federal service to supporting people without a house. He and his wife Allie spent four days and three nights in 2015 experiencing homelessness in Washington, D.C., which shaped how the District pilot began. During the COVID-19 pandemic he left his federal job to lead this full time.',
+    bio: 'Tim co-founded Hope with Love to help business, nonprofit, and government leaders make their work more effective. The work is built on trust, from his experience in federal service to supporting people without a house. He and his wife Allie spent four days and three nights in 2015 experiencing homelessness in Washington, D.C., which shaped how the District pilot began. During the COVID-19 pandemic he left his federal job to lead this full time.',
   },
   {
     name: 'Frank Adames',

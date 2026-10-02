@@ -7,7 +7,7 @@ export default function Privacy() {
     <>
       <Seo
         title="Privacy policy (draft)"
-        description="Draft privacy policy for Hope With Love, Hope1Source, and related Check-ins services. Needs legal review before it is treated as final."
+        description="Draft privacy policy for Hope1Source Check-ins. Hope with Love is the 501(c)(3). Needs legal review before it is treated as final."
       />
       <PageHero
         kicker="Privacy · draft"
@@ -134,9 +134,8 @@ export default function Privacy() {
             appointment. Report a suspected infraction to the contacts below.
           </p>
           <Confirm>
-            The old privacy page listed hopeonesource@hopewithlove.org for infractions, while the contact page uses{' '}
-            {org.email}. It also listed +1 (567) 393-3489, while the contact page lists {org.phoneDisplay}, and a
-            children’s section listed +1 (202) 630-5144. Pick one public privacy contact before this section is final.
+            Privacy questions on this site go to {org.email}. An older page also listed {org.legacyEmail}. Use the
+            partnerships address unless counsel names a different one.
           </Confirm>
 
           <h2>Links to other sites</h2>
@@ -155,10 +154,7 @@ export default function Privacy() {
             may retain and use information as needed to meet legal obligations, resolve disputes, and enforce
             agreements.
           </p>
-          <Confirm>
-            Confirm whether privacy requests should go to {org.email}, {org.legacyEmail}, or both, and which phone
-            receives them: {org.phoneDisplay} or +1 (567) 393-3489.
-          </Confirm>
+          <Confirm>Privacy requests on this site go to {org.email}.</Confirm>
 
           <h2>Children’s privacy</h2>
           <p>
@@ -167,10 +163,6 @@ export default function Privacy() {
             personal information from a child under 13 without verified parental consent, we will take steps to remove
             it. If you believe we may have information from or about a child under 13, contact us.
           </p>
-          <Confirm>
-            The old children’s section listed +1 (202) 630-5144. Confirm that number is still valid or remove it.
-          </Confirm>
-
           <h2>Changes</h2>
           <p>
             We may update this policy to reflect changes in practice. Changes will be posted on this page and are
@@ -181,14 +173,9 @@ export default function Privacy() {
 
           <h2>Contact for this draft</h2>
           <ul>
-            <li>Organization: {org.legalName}, described as a 501(c)(3), operating {org.programLegacy} / {org.product}</li>
+            <li>Organization: {org.legalName}, the 501(c)(3) operating {org.brand}</li>
             <li>Mission site: https://{org.siteHost}</li>
-            <li>Partnerships email: {org.email}</li>
-            <li>Legacy program email: {org.legacyEmail}</li>
-            <li>
-              Mailing address to confirm: {org.street}, {org.city}, {org.region} {org.postal}
-            </li>
-            <li>Public phone candidate: {org.phoneDisplay}</li>
+            <li>Email: {org.email}</li>
             <li>Governing law is stated in the terms draft as Virginia and Arlington County. Confirm if it should be repeated here.</li>
           </ul>
         </div>

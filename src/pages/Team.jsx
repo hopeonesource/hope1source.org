@@ -33,7 +33,7 @@ export default function Team() {
     <>
       <Seo
         title="Team"
-        description="Staff and advisors of Hope With Love and Hope1Source, summarized from the public team page."
+        description="Staff and advisors of Hope1Source Check-ins, summarized from the public team page. Hope with Love is the 501(c)(3)."
       />
       <PageHero
         kicker="Team"

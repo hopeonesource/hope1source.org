@@ -1085,21 +1085,19 @@ address {
 }
 
 .footer-inner {
-  display: grid;
-  grid-template-columns: 1.3fr repeat(3, 0.7fr);
-  gap: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
 }
 
-.footer-services {
-  grid-column: 1 / -1;
-  border-top: 1px solid rgba(251, 247, 241, 0.12);
-  padding-top: 1rem;
-}
-
-.footer-services ul {
+.footer-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.35rem 1rem;
+  gap: 0.35rem 1.25rem;
+}
+
+.footer-links li + li {
+  margin-top: 0;
 }
 
 .site-footer h2 {
@@ -1475,10 +1473,6 @@ body.nav-open .site-header {
   .hero,
   .page-hero.stage {
     min-height: 100svh;
-  }
-
-  .footer-services {
-    grid-column: auto;
   }
 
   .cause-inner,

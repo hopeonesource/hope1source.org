@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link, NavLink, Outlet, useLocation } from 'react-router-dom'
-import { footerNav, org, primaryNav } from '../content/org.js'
-import { services } from '../content/services.js'
+import { footerLinks, org, primaryNav } from '../content/org.js'
 import { mailto } from '../lib/links.js'
 
 function Brand({ onClick }) {
@@ -15,8 +14,8 @@ function Brand({ onClick }) {
         </svg>
       </span>
       <span className="brand-text">
-        <span className="brand-name">Hope With Love</span>
-        <span className="brand-sub">Hope1Source</span>
+        <span className="brand-name">Hope1Source</span>
+        <span className="brand-sub">Check-ins</span>
       </span>
     </Link>
   )
@@ -96,73 +95,34 @@ export default function Layout() {
           <div className="footer-brand">
             <Brand />
             <p>
-              {org.legalName} is a 501(c)(3) nonprofit.               This is the mission and trust home for {org.program}.
-              We work with people who run programs, host guests, and fund the work.
+              {org.program} ({org.product}). {org.legalName} is the 501(c)(3).
             </p>
             <p>
               <a href={mailto({})}>{org.email}</a>
-              <br />
-              <a href={`tel:${org.phoneTel}`}>{org.phoneDisplay}</a>
-            </p>
-            <p className="footer-crisis">
-              Crisis support in the U.S.: call or text <a href="tel:988">988</a>.
             </p>
           </div>
-
-          <nav aria-label="Mission">
-            <h2>Mission</h2>
-            <ul>
-              {footerNav.mission.map((item) => (
-                <li key={item.to}>
-                  <Link to={item.to}>{item.label}</Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
-
-          <nav aria-label="Partners">
-            <h2>Partners</h2>
-            <ul>
-              {footerNav.partners.map((item) => (
-                <li key={item.to}>
-                  <Link to={item.to}>{item.label}</Link>
-                </li>
-              ))}
-              <li>
-                <a href={org.portalUrl}>Log in</a>
-              </li>
-            </ul>
-          </nav>
-
-          <nav aria-label="Trust">
-            <h2>Trust</h2>
-            <ul>
-              {footerNav.trust.map((item) => (
-                <li key={item.to}>
-                  <Link to={item.to}>{item.label}</Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
-
-          <nav className="footer-services" aria-label="Community resource guides">
-            <h2>Resource guides</h2>
-            <ul>
-              {services.map((service) => (
-                <li key={service.slug}>
-                  <Link to={`/${service.slug}`}>{service.title}</Link>
+          <nav aria-label="Footer">
+            <ul className="footer-links">
+              {footerLinks.map((item) => (
+                <li key={item.label}>
+                  {item.external ? (
+                    <a href={item.href}>{item.label}</a>
+                  ) : (
+                    <Link to={item.to}>{item.label}</Link>
+                  )}
                 </li>
               ))}
             </ul>
           </nav>
         </div>
-
         <div className="footer-base">
           <p>
-            Partners: H1S Check-ins{' '}
             <a href={org.hubUrl}>hopeonesource.me</a>
           </p>
-          <p>© {new Date().getFullYear()} {org.legalName}. Privacy and terms are drafts pending legal review.</p>
+          <p className="footer-crisis">
+            Crisis support in the U.S.: call or text <a href="tel:988">988</a>.
+          </p>
+          <p>© {new Date().getFullYear()} {org.legalName}</p>
         </div>
       </footer>
     </div>

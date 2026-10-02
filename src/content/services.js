@@ -80,7 +80,7 @@ export const services = [
     title: 'Faith-based support',
     description:
       'A mission page for congregations and faith-based partners in the Hope1Source network.',
-    lede: 'Congregations and faith-based charities are one kind of partner. Hope With Love does not require a religious affiliation to give, volunteer, or be served by a partner.',
+    lede: 'Congregations and faith-based charities are one kind of partner. Hope with Love does not require a religious affiliation to give, volunteer, or be served by a partner.',
     forSomeone:
       'A congregation’s meal, shelter night, or benevolence fund is run by that congregation. Confirm time and place with them directly. This page does not endorse a denomination.',
     forPartner:

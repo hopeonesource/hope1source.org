@@ -1,6 +1,6 @@
-# Hope With Love · hope1source.org
+# Hope1Source Check-ins · hope1source.org
 
-Mission and trust website for [Hope With Love](https://hope1source.org), the 501(c)(3) behind Hope1Source (also written HopeOneSource) and H1S Check-ins.
+Mission and trust website for Hope1Source (H1S) Check-ins. [Hope with Love](https://hope1source.org) is the 501(c)(3) / DBA behind the program (also written HopeOneSource).
 
 This replaces the Webflow site. It is a static React app. It does not run a donation checkout, a login, or a database.
 
@@ -13,11 +13,11 @@ Think of three doors that should not be the same door.
 | Mission and trust | `hope1source.org` (this repo) | Story, team, legal drafts, gifts, Ad Grants landers |
 | Check-ins hub | [hopeonesource.me](https://hopeonesource.me) | Commercial partner product. Linked **once**, in the footer |
 | Partner portal | [portal.hopeonesource.me](https://portal.hopeonesource.me) | Log in for teams who already have access |
-| Gifts | [Every.org · Hope With Love](https://www.every.org/hope-with-love) | Donations. This site only links and embeds |
+| Gifts | [Every.org · Hope with Love](https://www.every.org/hope-with-love) | Donations. Donate buttons and `/donate` go here |
 
 Analogy: this site is the front window of the organization. The hub is the workshop price list. The portal is the staff entrance. Mixing them on one hero makes both the gift and the product harder to trust.
 
-The homepage speaks to people who run a program, host guests, or fund the work. People seeking a meal or a bed have resource guides in the footer (`/food-meals`, `/housing`, and the rest). Those guides do not list live openings and do not show a price.
+The homepage speaks to people who run a program, host guests, or fund the work. Resource guides stay at their own URLs (`/food-meals`, `/housing`, and the rest). Those guides do not list live openings and do not show a price.
 
 Hero: **Earn trust.** We help partners serve people with care, and show the impact that follows.
 
@@ -28,8 +28,8 @@ Hero: **Earn trust.** We help partners serve people with care, and show the impa
 | `/` | Partner homepage |
 | `/about` | Mission and origin |
 | `/team` | Staff and advisors |
-| `/contact` | Email, phone, mailto form |
-| `/donate` | Every.org link and embed, check address |
+| `/contact` | Email and a short mailto form. No phone or street address |
+| `/donate` | Sends the browser to Every.org |
 | `/get-involved` | Provider, venue, volunteer, backer |
 | `/faqs` | Mission FAQ, including the privacy and SMS flags |
 | `/press` | Release titles and checked coverage links |
@@ -160,16 +160,15 @@ Attach `hope1source.org` and `www` in the Cloudflare Pages project. Redirect `ww
 
 ## Confirm before cutover
 
-These showed up as conflicts in the old site or the legal stubs. The public contact number on this site is **(202) 743-5342**. Everything else stays off the marketing pages until you pick a winner.
+Older drafts disagreed about a public phone, a mailing street, and SMS codes. None of those are printed on this site. Contact is email only.
 
-| Item | Candidates | Where it shows |
-|------|------------|----------------|
-| Public phone | **(202) 743-5342** (used here) · +1 (567) 393-3489 on the old privacy page · +1 (202) 630-5144 in the old children’s section | Contact, footer, privacy draft |
-| SMS short code | Industry pages said **51523** · old terms said **51513** | Not printed. FAQ and terms flag it |
-| SMS long code | Old terms: **855-947-3417** “or another long number” | Terms draft only |
+| Item | Status | Where it shows |
+|------|--------|----------------|
+| Public phone | Not published | — |
+| SMS short code and long code | Not published | Terms draft says to confirm before printing a code |
 | Welcome text | Old terms had sample copy pointing at hopeonesource.me | Terms draft only |
-| Email | **partnerships@hope1source.me** (used here) · hopeonesource@hopewithlove.org on old legal pages | Contact, privacy, terms |
-| Check address | **809 South Oak Street, Arlington, VA 22204** | Donate and contact, marked confirm |
+| Email | **partnerships@hope1source.me** | Contact, footer, privacy, terms |
+| Street address | Not published | — |
 | Governing law | Virginia, Arlington County, from the old terms | Terms draft |
 | Effective dates | Privacy: unset · Terms previously December 6, 2016 | Legal banners |
 | Account URL | Draft proposes `portal.hopeonesource.me` | Privacy draft |

@@ -4,10 +4,12 @@
 
 /privacy-policy                /privacy                       301
 /terms-of-service              /terms                         301
-/donate-now                    /donate                        301
-/donations                     /donate                        301
-/support                       /donate                        301
-/give                          /donate                        301
+# Gift paths leave this site for the Every.org campaign in src/content/org.js.
+/donate                        https://www.every.org/hope-with-love  302
+/donate-now                    https://www.every.org/hope-with-love  302
+/donations                     https://www.every.org/hope-with-love  302
+/support                       https://www.every.org/hope-with-love  302
+/give                          https://www.every.org/hope-with-love  302
 /our-mission                   /about                         301
 /about-us                      /about                         301
 /our-team                      /team                          301

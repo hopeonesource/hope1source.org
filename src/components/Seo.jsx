@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
+import { org } from '../content/org.js'
 
 const origin = (import.meta.env.VITE_SITE_ORIGIN || 'https://hope1source.org').replace(/\/$/, '')
 
@@ -30,7 +31,7 @@ export default function Seo({ title, description, jsonLd }) {
   const { pathname } = useLocation()
 
   useEffect(() => {
-    const fullTitle = title ? `${title} · Hope With Love` : 'Hope With Love · Hope1Source'
+    const fullTitle = title ? `${title} · ${org.program}` : org.brand
     document.title = fullTitle
     const url = absoluteUrl(pathname)
     const image = absoluteUrl('/og.png')
@@ -41,7 +42,7 @@ export default function Seo({ title, description, jsonLd }) {
     upsertMeta('property', 'og:type', 'website')
     upsertMeta('property', 'og:url', url)
     upsertMeta('property', 'og:image', image)
-    upsertMeta('property', 'og:site_name', 'Hope With Love')
+    upsertMeta('property', 'og:site_name', org.brand)
     upsertMeta('name', 'twitter:card', 'summary_large_image')
     upsertMeta('name', 'twitter:title', fullTitle)
     upsertMeta('name', 'twitter:description', description)
