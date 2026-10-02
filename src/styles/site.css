@@ -214,6 +214,21 @@ a:hover {
   color: var(--cream);
 }
 
+.brand-logo {
+  display: block;
+  height: auto;
+  width: auto;
+  max-height: 2.85rem;
+  max-width: min(18rem, 62vw);
+}
+
+.about-logo {
+  display: block;
+  width: min(100%, 32rem);
+  height: auto;
+  margin: 0 0 1.4rem;
+}
+
 .mark {
   display: flex;
   color: var(--cream);
@@ -1123,6 +1138,11 @@ address {
   margin-bottom: 0.8rem;
 }
 
+.footer-brand .brand-logo {
+  max-height: 4.75rem;
+  max-width: min(100%, 22rem);
+}
+
 .footer-brand .brand-sub,
 .footer-crisis {
   color: rgba(251, 247, 241, 0.72);
@@ -1470,6 +1490,12 @@ address {
     order: -1;
     margin-bottom: 0.85rem;
     max-width: 36rem;
+  }
+
+  .about-page .about-logo {
+    order: -2;
+    width: min(100%, 16rem);
+    margin-bottom: 0.85rem;
   }
 
   .about-page .about-photo {
