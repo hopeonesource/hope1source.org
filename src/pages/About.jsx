@@ -57,12 +57,12 @@ export default function About() {
     <div className="about-page">
       <Seo
         title="Our mission"
-        description="Hope1Source Check-ins connects people and verified services with dignity, security, and ease. Hope with Love is the 501(c)(3)."
+        description="H1S Check-ins routes praise to reviews, keeps friction private, and gives managers one clear fix. Hope with Love is the 501(c)(3)."
       />
       <PageHero
-        kicker="Our mission"
-        title="Connecting people and services with a great experience."
-        lede={org.missionLine}
+        kicker={org.product}
+        title="Turn guest feedback into repeat visits."
+        lede="Identify need. Meet need. Build trust."
       />
       <article className="section prose-section">
         <div className="wrap narrow prose">
@@ -74,46 +74,54 @@ export default function About() {
           <img
             className="about-photo"
             src={publicUrl('photos/hos-team.jpg')}
-            alt="Hope1Source team gathered around a table, from the live about page."
+            alt="Hope1Source team gathered around a table."
           />
           <p className="about-lead">
-            {org.brand} is the program. {org.legalName} is the 501(c)(3).
+            {org.product}. {org.legalName} is the 501(c)(3).
           </p>
           <AboutFold title="Mission" phone={phone}>
             <p>
-              {org.brand} is the program. {org.legalName} is the 501(c)(3) that operates it, also written{' '}
-              {org.programLegacy}. The aim, as the organization has stated it, is to connect people to verified services
-              they need with dignity, security, and ease.
+              Route praise to reviews, keep friction private, and give managers one clear fix. Every check-in can
+              support a cause.
+            </p>
+            <p>
+              {org.product} turns QR and NFC scans into feedback, review routing, follow-up outreach, and impact
+              reporting. It helps restaurants, nonprofits, creators, artists, real estate teams, and other operators
+              turn scans into feedback, reviews, follow-up, and measurable impact.
             </p>
           </AboutFold>
-          <AboutFold title="How the work happens" phone={phone}>
+          <AboutFold title="Who it’s for" phone={phone}>
             <p>
-              Service providers get outreach tools so they can talk with people they already serve, or with the public
-              they hope to reach, and see the data they need for reporting and funding. Venues use the same check-in
-              idea in a room. Backers fund the network. Those are the three doors.
+              The platform is designed for restaurants first. The same scan-to-action loop can support creators,
+              artists, nonprofits, charities, real estate agents, and other teams. Each path keeps its own guest
+              moment, proof, and follow-up.
+            </p>
+            <p>
+              For nonprofits and charities: connect people to services and get insights to improve them. One check-in
+              tracks needs, follows up, and shares live impact.
+            </p>
+            <p>
+              Wherever people gather, watch, listen, or shop, {org.product} turns that moment into a chance to make a
+              change for good.
             </p>
           </AboutFold>
-          <AboutFold title="Beginnings" phone={phone}>
+          <AboutFold title="How a check-in works" phone={phone}>
+            <p>Place check-ins wherever the experience happens: tables, counters, bathrooms, receipts, pickup bags, and exits.</p>
+            <p>Reach: make the next step obvious. Learn: capture need and sentiment. Prove: show what changed.</p>
             <p>
-              {org.program} started in Haiti in 2010. The goal was to use widely available cell phones to connect local
-              services and unmet needs with medical providers after the earthquake.
-            </p>
-            <p>
-              In 2015, founder Tim Underwood and his wife Allie spent four days and three nights experiencing
-              homelessness in Washington, D.C. They found a familiar gap: a simple way to connect people with verified
-              nearby services. At the request of the D.C. government, the team began adapting the tool. It expanded from
-              there. During the COVID-19 pandemic, Tim left his federal job to lead the work full time.
-            </p>
-            <p>
-              A December 2024 public FAQ said the network was supporting a growing number of partners in 24 communities,
-              from a base in the Washington, D.C. metro.
+              Great experiences route to Google, or the review platform the guest chooses, so they can publish the win.
+              Friction stays private and opens a calm way to be heard by management. A guest can share a phone number
+              for return offers, reminders, and cause updates.
             </p>
           </AboutFold>
-          <AboutFold title="What this website is" phone={phone}>
+          <AboutFold title="The organization" phone={phone}>
             <p>
-              hope1source.org is the mission and trust home: story, team, legal drafts, gifts, and resource guides that
-              can hold an ad without turning into a sales page. The Check-ins product hub is linked once, in the footer.
-              Teams who already have access use the portal to log in.
+              {org.legalName} is the 501(c)(3) behind the program. The public name of the work is {org.product}, also
+              written {org.program} and {org.programLegacy}.
+            </p>
+            <p>
+              Tim Underwood co-founded this 501(c)(3) charitable organization to help leaders maximize their
+              effectiveness by optimizing outreach and experiences.
             </p>
           </AboutFold>
           <p>
