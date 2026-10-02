@@ -1,88 +1,98 @@
 /**
- * Bios are summarized from the public Hope1Source team page.
- * Duplicates on that page were listed once. Titles follow the bios.
+ * Roster, titles, bios, and portraits from the Our Team grid on
+ * hopeonesource.me, fetched 2026-10-02. Elizabeth Jia is not on that grid.
+ * team.json is a shorter subset; this page follows the grid visitors see.
  */
-export const staff = [
+export const team = [
   {
     name: 'Tim Underwood',
     role: 'Chief Executive Officer',
     photo: 'photos/tim-underwood.jpg',
-    bio: 'Tim co-founded Hope with Love to help business, nonprofit, and government leaders make their work more effective. The work is built on trust, from his experience in federal service to supporting people without a house. He and his wife Allie spent four days and three nights in 2015 experiencing homelessness in Washington, D.C., which shaped how the District pilot began. During the COVID-19 pandemic he left his federal job to lead this full time.',
+    imagePosition: '40% center',
+    bio: 'Tim co-founded this 501(c)(3) charitable organization to help leaders maximize their effectiveness by optimizing outreach and experiences. An Air Force Reserve Officer, former Presidential Management Fellow, and three-time IEEE Humanitarian Activities Committee top global grantee winner, he dedicates himself to helping others build trust across diverse sectors—with a proven track record of service spanning from the White House to supporting those without a house.',
   },
   {
     name: 'Frank Adames',
     role: 'Chief Technology Officer',
     photo: 'photos/frank-adames.jpg',
-    bio: 'Frank leads technology and ongoing project management for H1S Check-ins. He is a 2025 40 Under 40 nominee and a 2022 National Volunteer In Service to America (VISTA) alumni winner. He also performs in salsa dance competitions.',
+    bio: 'Frank is a 2025 40 Under 40 award nominee, a 2022 National Volunteer In Service to America alumni winner, and the H1S technology lead. He assists with project management for the Check-ins technology and enjoys solving complex problems with technology.',
   },
   {
-    name: 'Damien Bérubé',
-    role: 'AI Innovation Lead',
-    bio: 'Damien is a doctoral researcher in chemical physics at Harvard, working on robust quantum computers with uses in chemistry, cybersecurity, materials, and biotechnology. He also works in science and innovation policy, has authored case studies, and has contributed to state legislation. He is helping Hope1Source put AI tools to work in service of the communities partners serve.',
+    name: 'Justin Robinson',
+    role: 'Custom Tech Lead',
+    photo: 'photos/justin-robinson.jpg',
+    bio: 'Justin is the Tech Lead for H1S. He is a public-sector web developer specializing in custom technology solutions that improve user experiences, from sports applications to executive KPI data collection.',
+  },
+  {
+    name: 'Nick Hanson',
+    role: 'Data Imagineering Lead',
+    photo: 'photos/nick-hanson.jpg',
+    bio: 'Nick is the Communications Lead for H1S and works as a filmmaker specializing in short-form video for web and broadcast. He uses his communications skillset to strengthen and grow the verified network of organizations serving vulnerable community members.',
   },
   {
     name: 'Tamecia McKenzie',
     role: 'Community Partnership Lead',
     photo: 'photos/tamecia-mckenzie.jpg',
-    bio: 'Tamecia leads outreach and partnership development so the network keeps finding organizations that strengthen local communities. She has a background in partnerships and customer-service quality. She enjoys picnics with her family, including three children, with twins.',
+    bio: 'Tamecia leads community outreach growth for H1S by managing outreach efforts and identifying key partners to strengthen the communities served. She brings deep experience in partnerships and customer service quality assurance.',
   },
   {
-    name: 'Nick Hanson',
-    role: 'Creative Communications Lead',
-    photo: 'photos/nick-hanson.jpg',
-    bio: 'Nick is a filmmaker focused on short-form video for the web and broadcast. He uses that craft to explain the verified network and the organizations in it.',
+    name: 'Damien Bérubé',
+    role: 'AI Innovation Analyst',
+    photo: 'photos/damien-berube.jpg',
+    bio: 'Damien is a doctoral researcher in chemical physics at Harvard and helps H1S implement AI tools that strengthen the communities served. His work spans quantum computing, science policy, case studies, and state legislation.',
   },
   {
-    name: 'Justin Robinson',
-    role: 'Tech Lead',
-    bio: 'Justin is a web developer in the public sector. His work has ranged from sports applications to performance-indicator data collection for senior executives. He leads Hope1Source product development aimed at simpler access for partner organizations.',
+    name: 'Veronica Thornton',
+    role: 'Custom Developer Analyst',
+    photo: 'photos/veronica-thornton.jpg',
+    bio: 'Veronica serves as the Technical Development Lead at H1S, dedicating herself to helping others build trust across diverse sectors. Recognized as the Developer of the Year for H1S, she has a proven track record of optimizing outreach and user experiences—from leading full multilingual translation initiatives to providing deep integration support. Veronica leverages her background in Computer Science and software development to bridge complex technical strategy with grassroots execution, ensuring all leaders can effectively scale their impact.',
   },
-]
-
-export const advisors = [
+  {
+    name: 'Hugo Diaz',
+    role: 'Economic Research Analyst',
+    photo: 'photos/hugo-diaz.jpg',
+    bio: 'Hugo is an Economic Research Analyst at H1S, where he applies advanced econometric methodologies to analyze the effectiveness of non-profit interventions. With a recent Ph.D. in Economics, Hugo specializes in using causal identification strategies and predictive modeling to inform evidence-based policy recommendations and strategic planning. His work leverages his doctoral research on institutional economics and resource allocation to address real-world challenges in the non-profit sector. In his free time, he enjoys playing soccer. At H1S, Hugo is dedicated to bridging the gap between theoretical economic analysis and practical, data-driven solutions to build more equitable and effective communities.',
+  },
+  {
+    name: 'Greg Marmo',
+    role: 'Partner Success Analyst',
+    photo: 'photos/greg-marmo.jpg',
+    bio: 'Greg was a Division 1 student-athlete and team captain at George Washington University, where he completed his Bachelor of Science in Business Administration with a concentration in Entrepreneurship. He serves as the Partner Success Lead for H1S Check-ins, spearheading territory management, prospecting, and strategic outreach to independent restaurants. Blending data-driven market research with a consultative selling approach, Greg focuses on helping restaurant operators maximize customer retention, capture real-time guest feedback, and drive long-term revenue growth.',
+  },
+  {
+    name: 'Jeff',
+    role: 'Volunteer Spotlight',
+    photo: 'photos/jeff.jpg',
+    bio: 'Jeff is featured in the Hope1Source.org volunteer spotlight gallery as part of the broader volunteer community behind the work.',
+  },
   {
     name: 'Tom Allin',
-    role: 'Senior advisor · Duke University',
+    role: 'Senior Advisor',
     photo: 'photos/tom-allin.jpg',
-    bio: 'Tom is a senior fellow and professor of the practice at Duke University’s Sanford School of Public Policy, focused on human-centered design. As an Obama Administration appointee he stood up the Veterans Experience Office at the Department of Veterans Affairs. Earlier he spent more than 20 years in Asia and Europe and launched McDonald’s in France. He advises Hope1Source on strategy.',
+    bio: "Tom is a retired senior fellow and professor at Duke University's highly selective leadership school, with a focus in human-centered design. He previously served as a Secretary appointed appointee, where he spearheaded the Veterans Experience Officer at the Department of Veterans Affairs to understand, design and measure Veteran experience. It continues to result in unprecedented quality improvements for the second largest U.S. government agency. Prior, he served in Asia and Europe for over 20 years, where he launched McDonald's in France and led it to be the highest grossing market outside of the USA. You can find him enjoying his newly built dream home with his wife in Durham, NC, along with his visiting children and grandkids. Tom is a senior advisor to the H1S team as it relates to strategic direction.",
   },
   {
     name: 'Chris Teitzel',
-    role: 'Advisor · Cellar Door Media Group',
+    role: 'Advisory Board',
     photo: 'photos/chris-teitzel.jpg',
-    bio: 'Chris founded the Seattle technology and security firm Cellar Door Media Group in 2009. He has served by appointment of the Secretary of Homeland Security on the Federal Advisory Committee for Data Privacy. He advises the security side of the technology.',
+    bio: 'Chris is the founder and CEO of Cellar Door Media Group. He brings technology, security, and data privacy experience to help guide secure technology components.',
   },
   {
     name: 'Sarah Lindsay',
-    role: 'Advisor · information security',
+    role: 'Advisory Board',
     photo: 'photos/sarah-lindsay.jpg',
-    bio: 'Sarah has led large teleservice rollouts while holding HIPAA-oriented standards, and she serves as an Air Force Reserve officer working with defense health records. She consults with Hope1Source on leadership and information security. Her background is not, by itself, a legal determination that every Hope1Source workflow is HIPAA compliant.',
+    bio: 'Sarah has executive healthcare administration experience and led one of the largest teleservice rollouts in the nation while maintaining HIPAA-compliant standards.',
   },
   {
     name: 'Harry Kim',
-    role: 'Advisor · U.S. Navy Civil Engineer Corps',
+    role: 'Advisory Board',
     photo: 'photos/harry-kim.jpg',
-    bio: 'Harry is a commander in the Navy Civil Engineer Corps working at the Pentagon. He holds a Master of Architecture from the University of Pennsylvania and a bachelor’s degree from Binghamton University. He advises design and implementation of the organization’s vision.',
+    bio: 'Harry is a commander in the United States Navy Civil Engineer Corps and helps provide strategic design and implementation guidance for the organizational vision.',
   },
   {
     name: 'Chris Burnett',
-    role: 'Advisor · growth and strategy',
-    bio: 'Chris leads the defense market for Q2 Impact, a D.C. consulting firm. He has served as a senior advisor to the Chief Digital and Artificial Intelligence Office at the Department of Defense and as chief of staff for a deputy assistant secretary of defense. He supports Hope1Source on growth and strategy.',
-  },
-  {
-    name: 'Odie Donald',
-    role: 'Advisor · local government',
-    bio: 'The public team page describes Odie as Augusta, Georgia’s city administrator, overseeing daily city administration, and also uses the heading “Chief of Staff, Atlanta.” He previously led the D.C. Department of Employment Services by mayoral appointment. He advises from a local-government perspective. A short video of his support is on YouTube: https://www.youtube.com/watch?v=G7Lh1ropads',
-  },
-  {
-    name: 'Briane Knight',
-    role: 'Advisor · access to services',
-    bio: 'Briane holds a J.D. from Stanford and advocates for access to services, with a focus on legal help. She experienced youth and family homelessness in the New York and California shelter systems. She helped stand up Hope1Source’s advisory working-group charter and contributes user-experience input.',
-  },
-  {
-    name: 'Elizabeth Jia',
-    role: 'Advisor · communications',
-    photo: 'photos/elizabeth-jia.jpg',
-    bio: 'Elizabeth is a digital marketing and content strategist at Freddie Mac, with a master’s in journalism from Georgetown. She advises Hope1Source on strategic communication across articles, social, podcast, and video.',
+    role: 'Advisory Board',
+    photo: 'photos/chris-burnett.jpg',
+    bio: 'Chris leads the defense market for a DC-based consulting firm and provides growth and strategy support to H1S and staff.',
   },
 ]
