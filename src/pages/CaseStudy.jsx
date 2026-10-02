@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero.jsx'
 import Seo from '../components/Seo.jsx'
 import { storyBySlug } from '../content/stories.js'
+import { publicUrl } from '../lib/links.js'
 import NotFound from './NotFound.jsx'
 
 export default function CaseStudy({ slug }) {
@@ -15,6 +16,11 @@ export default function CaseStudy({ slug }) {
       <article className="section">
         <div className="wrap study-grid">
           <div className="prose">
+            {story.image ? (
+              <figure className="study-figure">
+                <img src={publicUrl(story.image)} alt={story.imageAlt} />
+              </figure>
+            ) : null}
             <blockquote className="pull">
               <p>{story.quote}</p>
               <footer>{story.quoteAttribution}</footer>
@@ -22,6 +28,7 @@ export default function CaseStudy({ slug }) {
             {story.body.map((paragraph) => (
               <p key={paragraph}>{paragraph}</p>
             ))}
+            {story.note ? <p className="form-note">{story.note}</p> : null}
             <p>
               <Link className="text-link" to="/case-studies">
                 All case studies

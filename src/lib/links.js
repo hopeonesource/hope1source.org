@@ -9,6 +9,12 @@ export function mailto({ email = org.email, subject, body }) {
   return query ? `mailto:${email}?${query}` : `mailto:${email}`
 }
 
+/** Public file URL that respects the GitHub Pages base path. */
+export function publicUrl(file) {
+  const base = import.meta.env.BASE_URL || '/'
+  return `${base}${String(file).replace(/^\//, '')}`
+}
+
 export function initials(name) {
   return name
     .split(/\s+/)

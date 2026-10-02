@@ -29,6 +29,17 @@ export default function ServicePage({ slug }) {
                 <a href="tel:211">211</a>.
               </p>
             )}
+            {service.quote ? (
+              <blockquote className="pull">
+                <p>{service.quote}</p>
+                <footer>{service.quoteBy}</footer>
+              </blockquote>
+            ) : null}
+            {service.storyPath ? (
+              <p>
+                <Link to={service.storyPath}>Read the shelter alerts story</Link>
+              </p>
+            ) : null}
             <h2>If you run this service</h2>
             <p>{service.forPartner}</p>
             <p>

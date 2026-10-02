@@ -34,7 +34,7 @@ Log in never had a Webflow path. Keep sending people to `https://portal.hopeones
 | `/about-us` | `/about` |
 | `/our-team` | `/team` |
 | `/our-sponsors` | `/about` |
-| `/testimonials` | `/` |
+| `/testimonials` | `/case-studies` |
 | `/faqs` | `/faqs` |
 | `/press` | `/press` |
 | `/in-the-news` | `/press` |

@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero.jsx'
 import Seo from '../components/Seo.jsx'
 import { stories } from '../content/stories.js'
+import { publicUrl } from '../lib/links.js'
 
 export default function CaseStudies() {
   return (
@@ -19,6 +20,9 @@ export default function CaseStudies() {
         <div className="wrap story-cards">
           {stories.map((story) => (
             <article key={story.slug}>
+              {story.image ? (
+                <img className="study-thumb" src={publicUrl(story.image)} alt="" />
+              ) : null}
               <p className="kicker">{story.industry}</p>
               <h2>
                 <Link to={`/case-studies/${story.slug}`}>{story.title}</Link>

@@ -1,11 +1,11 @@
 import { useMemo } from 'react'
 import { Link } from 'react-router-dom'
 import MissionWash from '../components/MissionWash.jsx'
-import StoryArt from '../components/StoryArt.jsx'
 import Seo, { absoluteUrl } from '../components/Seo.jsx'
 import { org } from '../content/org.js'
 import { roles } from '../content/roles.js'
 import { stories } from '../content/stories.js'
+import { publicUrl } from '../lib/links.js'
 
 export default function Home() {
   const jsonLd = useMemo(
@@ -39,6 +39,9 @@ export default function Home() {
       />
 
       <section className="hero">
+        <div className="hero-photo">
+          <img src={publicUrl('photos/homepage-hero.jpg')} alt="" />
+        </div>
         <MissionWash tone="home" />
         <div className="wrap hero-copy">
           <p className="kicker">Hope With Love · a 501(c)(3)</p>
@@ -67,7 +70,7 @@ export default function Home() {
             {stories.map((story) => (
               <Link key={story.slug} className="story-card" to={`/case-studies/${story.slug}`}>
                 <span className="story-art">
-                  <StoryArt slug={story.slug} />
+                  <img src={publicUrl(story.image)} alt="" />
                 </span>
                 <span className="story-body">
                   <h3>{story.cardTitle}</h3>
