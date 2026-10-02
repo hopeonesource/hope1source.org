@@ -1,0 +1,28 @@
+# Cloudflare Pages (and Netlify-style hosts). Real files win, then these rules.
+# Do not send the apex to hopeonesource.me. This host stays the mission site.
+# The commercial hub is a single footer link, not a redirect target.
+
+/privacy-policy                /privacy                       301
+/terms-of-service              /terms                         301
+/donate-now                    /donate                        301
+/donations                     /donate                        301
+/support                       /donate                        301
+/give                          /donate                        301
+/our-mission                   /about                         301
+/about-us                      /about                         301
+/our-team                      /team                          301
+/our-sponsors                  /about                         301
+/testimonials                  /                              301
+/in-the-news                   /press                         301
+/learn-more                    /contact                       301
+/outreach-tools                /for-providers                 301
+/data-insights-tools           /for-providers                 301
+/case-studies/hopeonesource-saves-lives-with-emergency-shelter-alerts   /case-studies/emergency-shelter-alerts  301
+/article/*                     /press                         301
+/post/*                        /press                         301
+/blog-categories/*             /press                         301
+/old-home                      /                              301
+/404                           /                              301
+
+# SPA fallback for client routes. Keep this last.
+/*                                 /index.html                    200
