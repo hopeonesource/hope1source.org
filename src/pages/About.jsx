@@ -67,6 +67,11 @@ export default function About() {
       <article className="section prose-section">
         <div className="wrap narrow prose">
           <img
+            className="about-logo"
+            src={publicUrl('logo-hope-one-source.png')}
+            alt="Hope One Source"
+          />
+          <img
             className="about-photo"
             src={publicUrl('photos/hos-team.jpg')}
             alt="Hope1Source team gathered around a table, from the live about page."
