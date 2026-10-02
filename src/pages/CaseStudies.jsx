@@ -14,14 +14,19 @@ export default function CaseStudies() {
       <PageHero
         kicker="Case studies"
         title="Stories we can actually source."
-        lede="The prior site had three case studies. They are here in full enough to be useful, and no further than the public page went."
+        lede="Three partner stories from the public site. Dreamers & Achievers includes the before-and-after figures the partner reported after joining the H1S network."
       />
       <section className="section">
         <div className="wrap story-cards">
           {stories.map((story) => (
             <article key={story.slug}>
               {story.image ? (
-                <img className="study-thumb" src={publicUrl(story.image)} alt="" />
+                <img
+                  className={story.imageFit === 'cover' ? 'study-thumb is-cover' : 'study-thumb'}
+                  src={publicUrl(story.image)}
+                  alt=""
+                  style={story.imagePosition ? { objectPosition: story.imagePosition } : undefined}
+                />
               ) : null}
               <p className="kicker">{story.industry}</p>
               <h2>
