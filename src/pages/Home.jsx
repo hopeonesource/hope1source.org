@@ -1,6 +1,7 @@
 import { useMemo } from 'react'
 import { Link } from 'react-router-dom'
 import MissionWash from '../components/MissionWash.jsx'
+import StoryArt from '../components/StoryArt.jsx'
 import Seo, { absoluteUrl } from '../components/Seo.jsx'
 import { org } from '../content/org.js'
 import { roles } from '../content/roles.js'
@@ -63,19 +64,17 @@ export default function Home() {
         <div className="wrap">
           <h2 id="stories-title">Stories</h2>
           <div className="story-cards">
-            {stories.map((story, index) => (
-              <article key={story.slug} className="story-card">
-                <p className="story-num" aria-hidden="true">
-                  0{index + 1}
-                </p>
-                <h3>
-                  <Link to={`/case-studies/${story.slug}`}>{story.cardTitle}</Link>
-                </h3>
-                <p>{story.card}</p>
-                <Link className="text-link" to={`/case-studies/${story.slug}`}>
-                  Read
-                </Link>
-              </article>
+            {stories.map((story) => (
+              <Link key={story.slug} className="story-card" to={`/case-studies/${story.slug}`}>
+                <span className="story-art">
+                  <StoryArt slug={story.slug} />
+                </span>
+                <span className="story-body">
+                  <h3>{story.cardTitle}</h3>
+                  <p>{story.card}</p>
+                  <span className="story-cta">Read the story</span>
+                </span>
+              </Link>
             ))}
           </div>
         </div>
