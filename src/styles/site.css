@@ -529,6 +529,12 @@ a:hover {
   color: var(--coral);
 }
 
+.path-card .text-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+
 .hero-panel {
   background: var(--forest-deep);
   color: var(--white);
