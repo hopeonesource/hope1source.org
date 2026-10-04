@@ -43,9 +43,9 @@ export const team = [
   },
   {
     name: 'Veronica Thornton',
-    role: 'Custom Developer Analyst',
+    role: 'Digital Experience Engineer',
     photo: 'photos/veronica-thornton.jpg',
-    bio: 'Veronica serves as the Technical Development Lead at H1S, dedicating herself to helping others build trust across diverse sectors. Recognized as the Developer of the Year for H1S, she has a proven track record of optimizing outreach and user experiences—from leading full multilingual translation initiatives to providing deep integration support. Veronica leverages her background in Computer Science and software development to bridge complex technical strategy with grassroots execution, ensuring all leaders can effectively scale their impact.',
+    bio: 'Veronica is H1S’s Digital Experience Engineer and a digital peer navigator. She creates accessible games and digital experiences that help people take meaningful next steps, complete check-ins, and connect with community resources. Drawing on her software development background and lived experience, she helps others navigate challenges she has faced, building trust and making support easier to access.',
   },
   {
     name: 'Hugo Diaz',
