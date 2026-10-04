@@ -13,6 +13,8 @@ export const pages = [
   { path: '/contact', priority: '0.8', changefreq: 'monthly' },
   { path: '/donate', priority: '0.8', changefreq: 'monthly' },
   { path: '/get-involved', priority: '0.7', changefreq: 'monthly' },
+  { path: '/outreach-tools', priority: '0.8', changefreq: 'monthly' },
+  { path: '/learn-more', priority: '0.8', changefreq: 'monthly' },
   { path: '/faqs', priority: '0.6', changefreq: 'monthly' },
   { path: '/press', priority: '0.5', changefreq: 'monthly' },
   { path: '/case-studies', priority: '0.7', changefreq: 'monthly' },
@@ -46,8 +48,6 @@ export const aliases = [
   ['/our-sponsors', '/about'],
   ['/testimonials', '/case-studies'],
   ['/in-the-news', '/press'],
-  ['/learn-more', '/contact'],
-  ['/outreach-tools', '/for-providers'],
   ['/data-insights-tools', '/for-providers'],
   ['/case-studies/hopeonesource-saves-lives-with-emergency-shelter-alerts', '/case-studies/emergency-shelter-alerts'],
 ]

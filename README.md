@@ -34,7 +34,9 @@ Hero: **Earn trust.** We help partners serve people with care, and show the impa
 | `/faqs` | Mission FAQ, including the privacy and SMS flags |
 | `/press` | Release titles and checked coverage links |
 | `/case-studies` | Three sourced stories |
-| `/for-providers`, `/for-venues`, `/for-backers` | Role doors |
+| `/outreach-tools` | How text outreach works. Program and venue doors open here |
+| `/learn-more` | How we support partners |
+| `/for-providers`, `/for-venues`, `/for-backers` | Role pages. Funders stay on `/for-backers` |
 | `/food-meals`, `/medical`, `/mental-health`, `/housing`, `/education-career`, `/justice-legal`, `/faith-based`, `/other-services` | Ad Grants–safe landers |
 | `/privacy`, `/terms` | **Drafts. Not legal advice.** |
 | Anything else | Branded 404 |

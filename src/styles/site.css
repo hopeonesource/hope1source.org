@@ -1272,6 +1272,23 @@ address {
   color: var(--coral);
 }
 
+.doors-support {
+  margin: 1.25rem 0 0;
+}
+
+.doors-support a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-weight: 700;
+  color: var(--gold-soft);
+  text-underline-offset: 0.18em;
+}
+
+.doors-support a:hover {
+  color: var(--coral);
+}
+
 .stories-section .story-card {
   padding: 0;
   text-decoration: none;

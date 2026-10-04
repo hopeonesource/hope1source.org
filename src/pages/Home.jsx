@@ -84,7 +84,7 @@ export default function Home() {
           <h2>Take part</h2>
           <div className="door-row">
             {roles.map((role, index) => (
-              <Link key={role.id} className={`door door-${role.id}`} to={role.path}>
+              <Link key={role.id} className={`door door-${role.id}`} to={role.doorTo || role.path}>
                 <span className="door-index" aria-hidden="true">
                   0{index + 1}
                 </span>
@@ -94,6 +94,9 @@ export default function Home() {
               </Link>
             ))}
           </div>
+          <p className="doors-support">
+            <Link to="/learn-more">How we support partners</Link>
+          </p>
         </div>
       </section>
 

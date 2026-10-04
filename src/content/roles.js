@@ -2,6 +2,7 @@ export const roles = [
   {
     id: 'providers',
     path: '/for-providers',
+    doorTo: '/outreach-tools',
     nav: 'If you run a program',
     kicker: 'Nonprofits, agencies, program leads',
     title: 'If you run a program',
@@ -10,10 +11,12 @@ export const roles = [
     points: [],
     cta: 'Talk with partnerships',
     subject: 'Provider partnership',
+    guide: { to: '/outreach-tools', label: 'How outreach works' },
   },
   {
     id: 'venues',
     path: '/for-venues',
+    doorTo: '/outreach-tools',
     nav: 'If you host people',
     kicker: 'Restaurants, rooms, shows, open houses',
     title: 'If you host people',
@@ -22,6 +25,7 @@ export const roles = [
     points: [],
     cta: 'Talk with partnerships',
     subject: 'Venue partnership',
+    guide: { to: '/outreach-tools', label: 'How outreach works' },
   },
   {
     id: 'backers',

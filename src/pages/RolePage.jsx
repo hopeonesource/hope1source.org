@@ -28,6 +28,11 @@ export default function RolePage({ id }) {
             Contact
           </Link>
         </div>
+        {role.guide ? (
+          <p className="hero-note">
+            <Link to={role.guide.to}>{role.guide.label}</Link>
+          </p>
+        ) : null}
       </PageHero>
       {role.points.length > 0 ? (
         <section className="section">

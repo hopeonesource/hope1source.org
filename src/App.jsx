@@ -12,6 +12,8 @@ import Donate from './pages/Donate.jsx'
 import Faqs from './pages/Faqs.jsx'
 import GetInvolved from './pages/GetInvolved.jsx'
 import Home from './pages/Home.jsx'
+import LearnMore from './pages/LearnMore.jsx'
+import OutreachTools from './pages/OutreachTools.jsx'
 import NotFound from './pages/NotFound.jsx'
 import Press from './pages/Press.jsx'
 import Privacy from './pages/Privacy.jsx'
@@ -40,6 +42,8 @@ export default function App() {
           <Route path="contact" element={<Contact />} />
           <Route path="donate" element={<Donate />} />
           <Route path="get-involved" element={<GetInvolved />} />
+          <Route path="outreach-tools" element={<OutreachTools />} />
+          <Route path="learn-more" element={<LearnMore />} />
           <Route path="faqs" element={<Faqs />} />
           <Route path="press" element={<Press />} />
           <Route path="privacy" element={<Privacy />} />
