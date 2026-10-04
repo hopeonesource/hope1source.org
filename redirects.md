@@ -42,9 +42,9 @@ Log in never had a Webflow path. Keep sending people to `https://portal.hopeones
 | `/case-studies/dreamers-and-achievers` | `/case-studies/dreamers-and-achievers` |
 | `/case-studies/veterans-affairs-national-homeless-programs` | `/case-studies/veterans-affairs-national-homeless-programs` |
 | `/case-studies/hopeonesource-saves-lives-with-emergency-shelter-alerts` | `/case-studies/emergency-shelter-alerts` |
-| `/outreach-tools` | `/for-providers` |
 | `/data-insights-tools` | `/for-providers` |
-| `/learn-more` | `/contact` |
+
+`/outreach-tools` and `/learn-more` are pages on this site. Do not redirect them.
 
 ## OPTIONAL industry paths (kept)
 
