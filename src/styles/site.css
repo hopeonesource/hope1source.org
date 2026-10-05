@@ -1319,6 +1319,10 @@ address {
   object-position: 72% center;
 }
 
+.hero-photo.is-team img {
+  object-position: center 35%;
+}
+
 .hero .wash-svg {
   opacity: 0.2;
 }
@@ -1574,6 +1578,81 @@ address {
 .stories-section .story-card:hover .story-cta {
   background: #ff8666;
   color: var(--ink-on-light);
+}
+
+.stories-section .proof-tile {
+  padding: 1.45rem 1.35rem 1.4rem;
+  min-height: 16.5rem;
+  justify-content: flex-end;
+}
+
+.proof-figure {
+  font-family: var(--serif);
+  font-size: clamp(3.4rem, 7vw, 5.6rem);
+  line-height: 0.88;
+  letter-spacing: -0.05em;
+  margin: 0 0 0.45rem;
+}
+
+.proof-tile p,
+.proof-source {
+  color: var(--cream-soft);
+}
+
+.proof-source {
+  max-width: 42rem;
+  margin: 1.5rem 0 0;
+}
+
+.proof-source a {
+  color: var(--gold-soft);
+  font-weight: 700;
+}
+
+.evidence-quote {
+  margin: 2.2rem 0 0;
+  max-width: 46rem;
+}
+
+.evidence-quote p {
+  font-family: var(--serif);
+  font-size: clamp(1.55rem, 3vw, 2.35rem);
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  margin: 0;
+}
+
+.evidence-quote footer {
+  margin-top: 0.85rem;
+  color: var(--gold-soft);
+}
+
+.partner-metrics {
+  margin-top: 2.2rem;
+  max-width: 44rem;
+  background: var(--raised);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.2rem 1.2rem 0.4rem;
+}
+
+.product-shot {
+  margin: 1.6rem 0 0;
+  max-width: 28rem;
+}
+
+.product-shot img {
+  display: block;
+  width: 100%;
+  border-radius: var(--radius);
+}
+
+.door a.door-go {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  margin-top: auto;
+  text-decoration: none;
 }
 
 .hero-note a {

@@ -2,6 +2,7 @@ import { useMemo } from 'react'
 import { Link } from 'react-router-dom'
 import MissionWash from '../components/MissionWash.jsx'
 import Seo, { absoluteUrl } from '../components/Seo.jsx'
+import StoryCards from '../components/StoryCards.jsx'
 import { org } from '../content/org.js'
 import { roles } from '../content/roles.js'
 import { stories } from '../content/stories.js'
@@ -58,24 +59,7 @@ export default function Home() {
       <section className="section stories-section" aria-labelledby="stories-title">
         <div className="wrap">
           <h2 id="stories-title">Stories</h2>
-          <div className="story-cards">
-            {stories.map((story) => (
-              <Link key={story.slug} className="story-card" to={`/case-studies/${story.slug}`}>
-                <span className={story.imageFit === 'cover' ? 'story-art is-cover' : 'story-art'}>
-                  <img
-                    src={publicUrl(story.image)}
-                    alt=""
-                    style={story.imagePosition ? { objectPosition: story.imagePosition } : undefined}
-                  />
-                </span>
-                <span className="story-body">
-                  <h3>{story.cardTitle}</h3>
-                  <p>{story.card}</p>
-                  <span className="story-cta">Read the story</span>
-                </span>
-              </Link>
-            ))}
-          </div>
+          <StoryCards stories={stories} />
         </div>
       </section>
 
