@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "prebuild": "node scripts/write-seo.mjs",
-    "build": "node scripts/check-routes.mjs && vite build && node scripts/spa-fallback.mjs",
+    "build": "node scripts/check-routes.mjs && vite build && node scripts/spa-fallback.mjs && node scripts/build-v3.mjs",
+    "dev:v3": "vite --config preview-v3/vite.config.js",
     "preview": "vite preview --host",
     "check:routes": "node scripts/check-routes.mjs"
   },
