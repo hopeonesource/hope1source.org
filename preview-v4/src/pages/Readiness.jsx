@@ -53,7 +53,7 @@ export default function Readiness() {
                 02
               </span>
               <h3>During</h3>
-              <p>Alert, then check in.</p>
+              <p>Check-ins should be easy and fun.</p>
             </article>
             <article className="door">
               <span className="door-index" aria-hidden="true">
