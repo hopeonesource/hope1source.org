@@ -52,7 +52,7 @@ export const services = [
     quoteBy:
       'DC Interagency Council on Homelessness, as published on the Hope1Source housing page.',
     storyPath: '/case-studies/emergency-shelter-alerts',
-    links: [{ to: '/readiness', label: 'Plan your winter alerts' }],
+    links: [{ to: '/readiness', label: 'Plan your outreach' }],
   },
   {
     slug: 'education-career',

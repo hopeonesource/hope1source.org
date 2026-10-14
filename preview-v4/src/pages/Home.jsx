@@ -76,7 +76,7 @@ export default function Home() {
             <p>Can you reach those you aim to serve?</p>
           </div>
           <Link className="btn btn-primary" to="/readiness">
-            Plan your winter alerts
+            Plan your outreach
           </Link>
         </div>
       </section>

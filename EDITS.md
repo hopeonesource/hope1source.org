@@ -17,7 +17,7 @@ The separate third preview uses v3 as its structural base. Its layout, styles, i
 
 ## Third version — applied locally
 
-The user asked to combine the best of the current and preview versions, with a common thread across all case studies. T01, T02, T03, T14, T21, T22, T23, T24, T24A, T27, T28, T29, T30, T46, and T47 contain user-supplied or user-requested wording. The remaining entries originated as assistant proposals. All listed entries have now been applied to the separate local third preview following the request to apply in realtime.
+The user asked to combine the best of the current and preview versions, with a common thread across all case studies. T01, T02, T03, T14, T21, T22, T23, T24, T24A, T27, T28, T29, T30, T46, T47, and T48 contain user-supplied or user-requested wording. The remaining entries originated as assistant proposals. All listed entries have now been applied to the separate local third preview following the request to apply in realtime.
 
 **Common thread:** Help people get support. Help partners serve them better.
 
@@ -819,6 +819,21 @@ Can you reach everyone tonight?
 **New text**
 
 Can you reach those you aim to serve?
+
+### T48 — /, /readiness, /public-agencies, and service links
+
+- Status: **Applied locally — user-supplied wording; awaiting PR review**
+- Existing source: `preview-v4/src/`
+- Target: corresponding fields in `preview-v4/src/`
+- Field: Readiness call-to-action labels
+
+**Old text**
+
+Plan your winter alerts
+
+**New text**
+
+Plan your outreach
 
 ## Resolved placement
 

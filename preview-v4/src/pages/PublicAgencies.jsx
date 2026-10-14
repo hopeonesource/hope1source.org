@@ -30,7 +30,7 @@ export default function PublicAgencies() {
             Request an agency briefing
           </a>
           <Link className="btn btn-secondary" to="/readiness">
-            Plan your winter alerts
+            Plan your outreach
           </Link>
         </div>
       </PageHero>
