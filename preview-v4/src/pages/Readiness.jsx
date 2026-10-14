@@ -26,7 +26,7 @@ export default function Readiness() {
       <PageHero
         kicker="Winter and emergency readiness"
         title="Cold nights are coming. Can you reach those you aim to serve?"
-        lede="Send opt-in alerts with shelter, ride, and service updates to people other channels miss. Used for cold, heat, storms, and closures."
+        lede="Send opt-in alerts to check-in with people other channels miss. Used for cold, heat, storms, closures, and collecting any real-time need."
       >
         <div className="hero-actions">
           <a className="btn btn-primary" href={mailto({ subject: 'Outreach planning' })}>
