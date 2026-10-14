@@ -8,7 +8,7 @@ import { mailto } from '../lib/links.js'
 const winterGift = `${org.donateUrl}?utm_campaign=winter`
 
 const checklist = [
-  'Build the opt-in list at the front desk, with people who choose to take part.',
+  'Build the opt-in list with a simple tap or scan.',
   'Before the weather turns, agree who sends the alert and which official channel carries the live update.',
   'During cold, heat, a storm, or a closure, send shelter, ride, or service information to people who opted in.',
   'Check in privately. Hear what did not work.',
@@ -46,7 +46,7 @@ export default function Readiness() {
                 01
               </span>
               <h3>Before</h3>
-              <p>Build the opt-in list at your front desk.</p>
+              <p>Build the opt-in list with a simple tap or scan.</p>
             </article>
             <article className="door">
               <span className="door-index" aria-hidden="true">
