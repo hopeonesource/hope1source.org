@@ -50,7 +50,7 @@ export default function PublicAgencies() {
           <ul>
             <li>People opt-in interested in free and discounted services or games.</li>
             <li>No app is needed; only a cell phone for text messages to earn rewards.</li>
-            <li>Partners own and control their experience.</li>
+            <li>Partners own and control their digital experience and service delivery.</li>
           </ul>
           <h2>Proof you can forward</h2>
           <p>
