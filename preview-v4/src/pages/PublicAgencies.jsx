@@ -54,7 +54,7 @@ export default function PublicAgencies() {
           </ul>
           <h2>Proof you can forward</h2>
           <p>
-            We provided the technical assistance to help measure what matters. Across 30 cities, access to food,
+            We provided the technical assistance to help measure what matters. Across 30 communities, access to food,
             counseling, and care rose from about 7 in 10 to as high as 9 in 10. Published in the Journal of Public
             Health.
           </p>
