@@ -38,7 +38,7 @@ export default function Home() {
         </div>
         <MissionWash tone="home" />
         <div className="wrap hero-copy">
-          <p className="kicker">{org.brand}</p>
+          <p className="kicker">HOPE1SOURCE (H1S) CHECK-INS</p>
           <h1>Earn Trust.</h1>
           <p className="lede">
             We train and equip those who serve others for lasting change.

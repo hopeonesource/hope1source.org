@@ -17,7 +17,7 @@ The separate third preview uses v3 as its structural base. Its layout, styles, i
 
 ## Third version — applied locally
 
-The user asked to combine the best of the current and preview versions, with a common thread across all case studies. T01, T02, and T03 contain user-supplied wording. The remaining entries originated as assistant proposals. All 45 entries have now been applied to the separate local third preview following the request to apply in realtime.
+The user asked to combine the best of the current and preview versions, with a common thread across all case studies. T01, T02, T03, and T46 contain user-supplied wording. The remaining entries originated as assistant proposals. All 46 entries have now been applied to the separate local third preview following the request to apply in realtime.
 
 **Common thread:** Help people get support. Help partners serve them better.
 
@@ -736,6 +736,21 @@ Preview of recommended version.
 **New text**
 
 Third preview: a shared story across our work.
+
+### T46 — /
+
+- Status: **Applied locally — user-supplied wording; awaiting PR review**
+- Existing source: `preview-v3/src/pages/Home.jsx`
+- Target: homepage hero label in `preview-v4/src/pages/Home.jsx`
+- Field: Hero kicker
+
+**Old text**
+
+Hope1Source Check-ins
+
+**New text**
+
+HOPE1SOURCE (H1S) CHECK-INS
 
 ## Resolved placement
 
