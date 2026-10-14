@@ -17,7 +17,7 @@ The separate third preview uses v3 as its structural base. Its layout, styles, i
 
 ## Third version — applied locally
 
-The user asked to combine the best of the current and preview versions, with a common thread across all case studies. T01, T02, T03, T14, T21, T22, and T46 contain user-supplied or user-requested wording. The remaining entries originated as assistant proposals. All 46 entries have now been applied to the separate local third preview following the request to apply in realtime.
+The user asked to combine the best of the current and preview versions, with a common thread across all case studies. T01, T02, T03, T14, T21, T22, T23, T24, T24A, and T46 contain user-supplied or user-requested wording. The remaining entries originated as assistant proposals. All listed entries have now been applied to the separate local third preview following the request to apply in realtime.
 
 **Common thread:** Help people get support. Help partners serve them better.
 
@@ -47,7 +47,7 @@ Replaced the cropped raster figure with a resolution-independent chart based on 
 - Pages: Homepage, `/case-studies`, and `/case-studies/emergency-shelter-alerts`
 - Assets: `public/photos/hypothermia-alert-people.svg` and `public/photos/dc-homeless.jpg`
 
-Replaced the unrelated VA team photo with a responsive graphic using the historic Washington, D.C. street photo published on the Hope1Source housing page. The graphic pairs people with a phone-style alert describing emergency shelter and transportation information and includes the published change from 9 hypothermia deaths in 2015 to 2 in 2019. It uses a 3:2 safe composition and `contain` so the people, alert, and result remain visible on mobile and desktop.
+Replaced the unrelated VA team photo with a responsive graphic using the historic Washington, D.C. street photo published on the Hope1Source housing page. The graphic pairs people with a phone-style alert describing emergency shelter and transportation information and includes the reported 78% reduction during the supported period. It uses a 3:2 safe composition and `contain` so the people, alert, and result remain visible on mobile and desktop.
 
 **Existing three-step section:** Reach. Listen. Follow up.
 
@@ -385,7 +385,7 @@ DC Human Services adopted the alert approach we brought. Alerts carried shelter 
 
 **New text**
 
-DC Human Services used H1S to send shelter and transportation information during extreme weather. DC reported hypothermia deaths declining from 9 in 2015 to 2 in 2019.
+DC Human Services used H1S to share emergency shelter and transportation information with residents.
 
 ### T22 — Home cards, /case-studies, /case-studies/emergency-shelter-alerts, and other existing uses of this story
 
@@ -400,11 +400,11 @@ Nearly 80% fewer hypothermia deaths in Washington, D.C., from the change in the 
 
 **New text**
 
-DC Human Services used H1S to help residents find shelter and transportation during extreme weather. DC reported hypothermia deaths declining from 9 in 2015 to 2 in 2019.
+DC Human Services used H1S emergency alerts to connect residents with shelter and transportation information during extreme weather. During the supported period, DC reported a 78% reduction in hypothermia deaths.
 
 ### T23 — Home cards, /case-studies, /case-studies/emergency-shelter-alerts, and other existing uses of this story
 
-- Status: **Applied locally — assistant draft; awaiting PR review**
+- Status: **Applied locally — user-requested wording; awaiting PR review**
 - Existing source: `preview-v3/src/content/stories.js`
 - Target: corresponding field in `preview-v4/src/`
 - Field: emergency-shelter-alerts.quoteAttribution
@@ -415,11 +415,11 @@ DC Interagency Council on Homelessness
 
 **New text**
 
-DC Interagency Council on Homelessness, as quoted in the published H1S housing page
+DC Interagency Council on Homelessness, published H1S housing case study
 
 ### T24 — Home cards, /case-studies, /case-studies/emergency-shelter-alerts, and other existing uses of this story
 
-- Status: **Applied locally — assistant draft; awaiting PR review**
+- Status: **Applied locally — user-requested wording; awaiting PR review**
 - Existing source: `preview-v3/src/content/stories.js`
 - Target: corresponding field in `preview-v4/src/`
 - Field: emergency-shelter-alerts.body
@@ -432,9 +432,26 @@ DC Interagency Council on Homelessness, as quoted in the published H1S housing p
 
 **New text**
 
-1. During extreme weather, people need to know where shelter is available and how to get there. DC Human Services used H1S to share that information through emergency alerts.
+1. During extreme weather, people need to know where shelter is available and how to get there. DC Human Services used H1S to send emergency alerts with shelter and transportation information to hundreds of residents.
 
-2. The historical figures quoted above describe the city’s wider response. They do not establish how much of the change came from H1S alerts. This partnership is in the past; current shelter and transportation information comes from DC Human Services and the city’s own channels.
+2. The alerts put practical details on residents’ phones so people could see where shelter was available and how to get there.
+
+3. During the supported period, DC reported a 78% reduction in hypothermia deaths.
+
+### T24A — /case-studies/emergency-shelter-alerts
+
+- Status: **Applied locally — user-requested wording; awaiting PR review**
+- Existing source: `preview-v4/src/content/stories.js`
+- Target: `preview-v4/src/content/stories.js`
+- Field: emergency-shelter-alerts.quote
+
+**Old text**
+
+Hypothermia deaths in DC have consistently decreased over the past 5 years, down from 9 in 2015 to 2 in 2019.
+
+**New text**
+
+DC reported a 78% reduction in hypothermia deaths during the supported period.
 
 ### T25 — Home cards, /case-studies, /case-studies/dreamers-and-achievers, and other existing uses of this story
 
