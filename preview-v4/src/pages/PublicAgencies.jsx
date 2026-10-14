@@ -23,7 +23,7 @@ export default function PublicAgencies() {
       <PageHero
         kicker="Public agencies"
         title="Reach residents before harm happens."
-        lede="Opt-in alerts, check-ins, and follow-up for human services, emergency management, public health, VA, and housing teams."
+        lede="Opt-in check-in text messages for health, housing, human, and emergency services."
       >
         <div className="hero-actions">
           <a className="btn btn-primary" href={mailto({ subject: 'Agency briefing' })}>
