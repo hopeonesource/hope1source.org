@@ -27,7 +27,7 @@ export default function Home() {
   return (
     <>
       <Seo
-        title="Help people get support."
+        title="Earn Trust."
         description="We train and equip those who serve others for lasting change."
         jsonLd={jsonLd}
       />
@@ -39,7 +39,7 @@ export default function Home() {
         <MissionWash tone="home" />
         <div className="wrap hero-copy">
           <p className="kicker">{org.brand}</p>
-          <h1>Help people get support.</h1>
+          <h1>Earn Trust.</h1>
           <p className="lede">
             We train and equip those who serve others for lasting change.
           </p>

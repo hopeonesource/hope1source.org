@@ -17,7 +17,7 @@ The separate third preview uses v3 as its structural base. Its layout, styles, i
 
 ## Third version — applied locally
 
-The user asked to combine the best of the current and preview versions, with a common thread across all case studies. T02 and T03 contain user-supplied wording. The remaining entries originated as assistant proposals. All 45 entries have now been applied to the separate local third preview following the request to apply in realtime.
+The user asked to combine the best of the current and preview versions, with a common thread across all case studies. T01, T02, and T03 contain user-supplied wording. The remaining entries originated as assistant proposals. All 45 entries have now been applied to the separate local third preview following the request to apply in realtime.
 
 **Common thread:** Help people get support. Help partners serve them better.
 
@@ -25,11 +25,11 @@ Keep the current version's warmth and emphasis on trust, follow-up, and showing 
 
 **Current third-preview homepage:**
 
-> **Help people get support.**
+> **Earn Trust.**
 >
 > We train and equip those who serve others for lasting change.
 
-The homepage supporting line above is user-supplied and supersedes the earlier assistant draft in T02. The headline and supporting page edits are also applied in the third preview. The homepage case-study heading is **Partner Success** (T03).
+The homepage headline and supporting line are user-supplied and supersede the earlier assistant drafts in T01 and T02. The homepage case-study heading is **Partner Success** (T03).
 
 **Existing three-step section:** Reach. Listen. Follow up.
 
@@ -52,7 +52,7 @@ The homepage supporting line above is user-supplied and supersedes the earlier a
 
 ### T01 — /
 
-- Status: **Applied locally — assistant draft; awaiting PR review**
+- Status: **Applied locally — user-supplied wording; awaiting PR review**
 - Existing source: `preview-v3/src/pages/Home.jsx`
 - Target: corresponding field in `preview-v4/src/`
 - Field: Hero h1 and SEO title
@@ -63,7 +63,7 @@ Earn trust.
 
 **New text**
 
-Help people get support.
+Earn Trust.
 
 ### T02 — /
 
