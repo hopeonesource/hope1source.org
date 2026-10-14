@@ -45,7 +45,7 @@ export default function AccessPoints() {
       </section>
       <section className="section section-tight">
         <div className="wrap narrow prose">
-          <h2>Alert. Check in. Connect.</h2>
+          <h2>Reach. Listen. Repeat.</h2>
           <p>No app. Any phone. People choose to take part.</p>
           <ol>
             {howSteps.map((step) => (
