@@ -57,9 +57,9 @@ export const stories = [
     home: 'Alerts that point to a warm place tonight.',
     body: [
       'During extreme weather, people need to know where shelter is available and how to get there.',
-      'It also measured their real-time needs and made it easier to meet them.',
       'DC Human Services used H1S to send emergency alerts with shelter and transportation information to thousands of residents.',
       'The alerts put practical details on residents’ phones so people could see where shelter was available and how to get there.',
+      'It also measured their real-time needs and made it easier to meet them.',
       'DC reported that hypothermia deaths fell 78% during the supported period.',
     ],
   },
