@@ -50,7 +50,7 @@ export default function AccessPoints() {
           <ol>
             {howSteps.map((step) => (
               <li key={step.title}>
-                <strong>{step.title}.</strong> {step.text}
+                <strong>{step.title === 'Follow up' ? 'Repeat' : step.title}.</strong> {step.text}
               </li>
             ))}
           </ol>
