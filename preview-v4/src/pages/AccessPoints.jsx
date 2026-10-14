@@ -5,6 +5,12 @@ import { howSteps } from '../components/HowItWorks.jsx'
 import { org } from '../content/org.js'
 import { mailto } from '../lib/links.js'
 
+const accessSteps = howSteps.map((step) =>
+  step.title === 'Follow up'
+    ? { ...step, title: 'Repeat', text: 'Use what you learn to understand what changed and follow up.' }
+    : step,
+)
+
 export default function AccessPoints() {
   return (
     <>
@@ -48,9 +54,9 @@ export default function AccessPoints() {
           <h2>Reach. Listen. Repeat.</h2>
           <p>No app. Any phone. People choose to take part.</p>
           <ol>
-            {howSteps.map((step) => (
+            {accessSteps.map((step) => (
               <li key={step.title}>
-                <strong>{step.title === 'Follow up' ? 'Repeat' : step.title}.</strong> {step.text}
+                <strong>{step.title}.</strong> {step.text}
               </li>
             ))}
           </ol>
