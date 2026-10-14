@@ -49,6 +49,15 @@ Replaced the cropped raster figure with a resolution-independent chart based on 
 
 Replaced the unrelated VA team photo with a responsive graphic using the historic Washington, D.C. street photo published on the Hope1Source housing page. The graphic pairs people with a phone-style alert describing emergency shelter and transportation information and includes the reported 78% reduction during the supported period. It uses a 3:2 safe composition and `contain` so the people, alert, and result remain visible on mobile and desktop.
 
+### V03 — Dreamers & Achievers growth image
+
+- Status: **Applied locally — user-requested visual correction; awaiting PR review**
+- Pages: Homepage, `/case-studies`, and `/case-studies/dreamers-and-achievers`
+- Approved source images: `IMG_2524.JPG`, `IMG_0500.JPG`, and `IMG_0639.jpg`
+- Assets: `public/photos/dorothy-adams-enhanced.jpg` and `public/photos/dreamers-growth.svg`
+
+Used the clearest approved portrait and full before-and-after graphic from `IMG_0500.JPG`, with `IMG_0639.jpg` as a supporting identity reference. Enhanced Dorothy Adams’s portrait at 900×900 while preserving her identity, then placed it as a small inset in a resolution-independent 3:2 growth graphic. The graphic focuses on the three results used in the story: funding from $110,000 to $560,000, feedback from 25 to 2,268 people, and experience follow-ups from 60 to 1,400 people. Exact labels and values are vector text for clarity on mobile and desktop.
+
 **Existing three-step section:** Reach. Listen. Follow up.
 
 **Case-study writing pattern:** the need → H1S's role → what was reported. Use existing text fields and paragraphs. The studies share a purpose; do not imply they all used the same product or intervention.
