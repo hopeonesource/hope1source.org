@@ -37,7 +37,6 @@ export default function PublicAgencies() {
       <section className="section">
         <div className="wrap narrow prose">
           <h2>Facts for procurement</h2>
-          <p>{org.procurement}</p>
           <dl className="facts">
             {facts.map(([label, value]) => (
               <div key={label}>
