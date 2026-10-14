@@ -55,6 +55,10 @@ export default function AccessPoints() {
             ))}
           </ol>
           <p>
+            All partners must provide free or discounted services. They own their check-in data and can filter, sort,
+            or delete it at any time.
+          </p>
+          <p>
             No religious affiliation is required to give, volunteer, or be served by a partner. The private note stays
             with the team.
           </p>

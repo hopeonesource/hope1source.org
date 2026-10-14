@@ -17,7 +17,7 @@ The separate third preview uses v3 as its structural base. Its layout, styles, i
 
 ## Third version — applied locally
 
-The user asked to combine the best of the current and preview versions, with a common thread across all case studies. T01, T02, T03, T14, T21, T22, T23, T24, T24A, T27, T28, T29, T30, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61, T62, T63, T64, T65, T66, T67, T68, T69, T70, T71, T72, T73, T74, T75, T76, T77, T78, T79, T80, T81, T82, T83, T84, T85, T86, T87, T88, T89, T90, T91, T92, T93, T94, and T95 contain user-supplied or user-requested changes. The remaining entries originated as assistant proposals. All listed entries have now been applied to the separate local third preview following the request to apply in realtime.
+The user asked to combine the best of the current and preview versions, with a common thread across all case studies. T01, T02, T03, T14, T21, T22, T23, T24, T24A, T27, T28, T29, T30, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61, T62, T63, T64, T65, T66, T67, T68, T69, T70, T71, T72, T73, T74, T75, T76, T77, T78, T79, T80, T81, T82, T83, T84, T85, T86, T87, T88, T89, T90, T91, T92, T93, T94, T95, and T96 contain user-supplied or user-requested changes. The remaining entries originated as assistant proposals. All listed entries have now been applied to the separate local third preview following the request to apply in realtime.
 
 **Common thread:** Help people get support. Help partners serve them better.
 
@@ -1515,6 +1515,21 @@ No app.
 **Added on a separate line below**
 
 No app or internet needed.
+
+### T96 — /access-points
+
+- Status: **Applied locally — user-supplied wording with grammar and flow tightened; awaiting PR review**
+- Existing source: `preview-v4/src/pages/AccessPoints.jsx`
+- Target: `preview-v4/src/pages/AccessPoints.jsx`
+- Field: Alert. Check in. Connect. partner requirements
+
+**User wording**
+
+All partners must provide free or discounted services. Their check-in data is owned by them and can be filtered, sorted, or deleted at anytime by them.
+
+**Published wording**
+
+All partners must provide free or discounted services. They own their check-in data and can filter, sort, or delete it at any time.
 
 ## Resolved placement
 
