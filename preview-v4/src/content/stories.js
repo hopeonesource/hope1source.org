@@ -19,7 +19,7 @@ export const stories = [
     studyUrl: 'https://pubmed.ncbi.nlm.nih.gov/33929036/',
     image: 'photos/va-access-improvement.svg',
     imageFit: 'contain',
-    imageAspectRatio: '750 / 605',
+    imageAspectRatio: '3 / 2',
     imageAlt: 'Bar chart showing access to food, counseling, PTSD care, and blood pressure or prediabetes care improving from year two to year three.',
     kicker: 'Journal of Public Health',
     summary:
@@ -43,7 +43,7 @@ export const stories = [
     image: 'photos/hypothermia-alert-people.svg',
     imageFit: 'contain',
     imageAspectRatio: '3 / 2',
-    imageAlt: 'Historic black-and-white photo of people outdoors in Washington, D.C., paired with an illustrated hypothermia alert about emergency shelter and transportation.',
+    imageAlt: 'Full historic Washington, D.C. street photo beside an H1S message screenshot with the hypothermia shelter transportation alert in focus.',
     org: 'DC Human Services',
     industry: 'Local government',
     location: 'Washington, D.C.',

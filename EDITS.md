@@ -39,15 +39,16 @@ The homepage headline and supporting line are user-supplied and supersede the ea
 - Pages: Homepage, `/case-studies`, and `/case-studies/veterans-affairs-national-homeless-programs`
 - Asset: `public/photos/va-access-improvement.svg`
 
-Replaced the cropped raster figure with a resolution-independent chart based on the published study’s Table 2. It compares year two with year three for access to food, counseling, PTSD care, and hypertension/prediabetes care. Percentages are rounded and calculated as 100% minus the published reported-barrier rate. The graph uses `contain` and the source image’s aspect ratio so all labels and bars remain visible on mobile and desktop. Updated the image description to match the graph.
+Replaced the cropped raster figure with a resolution-independent chart based on the published study’s Table 2. It compares year two with year three for access to food, counseling, PTSD care, and hypertension/prediabetes care. Percentages are rounded and calculated as 100% minus the published reported-barrier rate. The graph uses `contain` inside the shared 3:2 card frame so all labels and bars remain visible on mobile and desktop. Updated the image description to match the graph.
 
 ### V02 — DC hypothermia alert image
 
 - Status: **Applied locally — user-requested visual correction; awaiting PR review**
 - Pages: Homepage, `/case-studies`, and `/case-studies/emergency-shelter-alerts`
-- Assets: `public/photos/hypothermia-alert-people.svg` and `public/photos/dc-homeless.jpg`
+- Approved source image: `IMG_8351.JPG`
+- Assets: `public/photos/hypothermia-alert-people.svg`, `public/photos/dc-homeless.jpg`, and `public/photos/dc-hypothermia-messages-focus.jpg`
 
-Replaced the unrelated VA team photo with a responsive graphic using the historic Washington, D.C. street photo published on the Hope1Source housing page. The graphic pairs people with a phone-style alert describing emergency shelter and transportation information and includes the reported 78% reduction during the supported period. It uses a 3:2 safe composition and `contain` so the people, alert, and result remain visible on mobile and desktop.
+Replaced the unrelated VA team photo with a responsive graphic using the historic Washington, D.C. street photo published on the Hope1Source housing page. The revised composition shows the complete street photo instead of using a full-bleed crop. It pairs that photo with the approved historic message screenshot from `IMG_8351.JPG`, changes every visible `HOS` prefix to `H1S`, keeps the hypothermia message sharp, and leaves the surrounding resource messages visible with a soft blur. The graphic includes the reported 78% reduction during the supported period and uses a 3:2 safe composition with `contain` for mobile and desktop.
 
 ### V03 — Dreamers & Achievers growth image
 
@@ -57,6 +58,14 @@ Replaced the unrelated VA team photo with a responsive graphic using the histori
 - Assets: `public/photos/dorothy-adams-enhanced.jpg` and `public/photos/dreamers-growth.svg`
 
 Used the clearest approved portrait and full before-and-after graphic from `IMG_0500.JPG`, with `IMG_0639.jpg` as a supporting identity reference. Enhanced Dorothy Adams’s portrait at 900×900 while preserving her identity, then placed it as a small inset in a resolution-independent 3:2 growth graphic. The graphic focuses on the three results used in the story: funding from $110,000 to $560,000, feedback from 25 to 2,268 people, and experience follow-ups from 60 to 1,400 people. Exact labels and values are vector text for clarity on mobile and desktop.
+
+### V04 — Case-study card alignment
+
+- Status: **Applied locally — user-requested formatting review; awaiting PR review**
+- Page: Homepage
+- Files: `preview-v4/src/content/stories.js` and `preview-v4/src/styles/site.css`
+
+Standardized all three Partner Success image frames at 3:2 while keeping each image set to `contain`, so the cards align without cropping their evidence graphics. Anchored every “Read the story” button to the bottom of its card so different copy lengths no longer create uneven action rows.
 
 **Existing three-step section:** Reach. Listen. Follow up.
 

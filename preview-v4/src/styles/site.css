@@ -1577,7 +1577,7 @@ address {
   justify-content: center;
   align-self: flex-start;
   min-height: 44px;
-  margin-top: 0.85rem;
+  margin-top: auto;
   padding: 0.4rem 0.95rem;
   border-radius: 999px;
   background: var(--coral);
