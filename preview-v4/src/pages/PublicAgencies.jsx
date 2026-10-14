@@ -55,7 +55,7 @@ export default function PublicAgencies() {
           <h2>Proof you can forward</h2>
           <p>
             We provided the technical assistance to help measure what matters. Across 30 communities, access to food,
-            counseling, and care rose from about 7 in 10 to as high as 9 in 10 (Oxford Journal of Public Health, 2019).
+            counseling, and care rose from about 70% to as high as 90% (Oxford Journal of Public Health, 2019).
             Google Review ratings increased during this three year period and 97% have reported steady funding growth
             (OPM &amp; Google Gemini, 2026).
           </p>
