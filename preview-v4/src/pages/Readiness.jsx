@@ -25,7 +25,7 @@ export default function Readiness() {
       />
       <PageHero
         kicker="Winter and emergency readiness"
-        title="Cold nights are coming. Can you reach everyone tonight?"
+        title="Cold nights are coming. Can you reach those you aim to serve?"
         lede="Send opt-in alerts with shelter, ride, and service updates to people other channels miss. Used for cold, heat, storms, and closures."
       >
         <div className="hero-actions">

@@ -17,7 +17,7 @@ The separate third preview uses v3 as its structural base. Its layout, styles, i
 
 ## Third version — applied locally
 
-The user asked to combine the best of the current and preview versions, with a common thread across all case studies. T01, T02, T03, T14, T21, T22, T23, T24, T24A, T27, T28, T29, T30, and T46 contain user-supplied or user-requested wording. The remaining entries originated as assistant proposals. All listed entries have now been applied to the separate local third preview following the request to apply in realtime.
+The user asked to combine the best of the current and preview versions, with a common thread across all case studies. T01, T02, T03, T14, T21, T22, T23, T24, T24A, T27, T28, T29, T30, T46, and T47 contain user-supplied or user-requested wording. The remaining entries originated as assistant proposals. All listed entries have now been applied to the separate local third preview following the request to apply in realtime.
 
 **Common thread:** Help people get support. Help partners serve them better.
 
@@ -804,6 +804,21 @@ Hope1Source Check-ins
 **New text**
 
 HOPE1SOURCE (H1S) CHECK-INS
+
+### T47 — / and /readiness
+
+- Status: **Applied locally — user-supplied wording; awaiting PR review**
+- Existing source: `preview-v4/src/pages/Home.jsx` and `preview-v4/src/pages/Readiness.jsx`
+- Target: corresponding fields in `preview-v4/src/`
+- Field: Homepage readiness question and Readiness page hero title
+
+**Old text**
+
+Can you reach everyone tonight?
+
+**New text**
+
+Can you reach those you aim to serve?
 
 ## Resolved placement
 
