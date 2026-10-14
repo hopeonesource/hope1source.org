@@ -17,7 +17,7 @@ The separate third preview uses v3 as its structural base. Its layout, styles, i
 
 ## Third version — applied locally
 
-The user asked to combine the best of the current and preview versions, with a common thread across all case studies. T01, T02, T03, T14, T21, T22, T23, T24, T24A, T27, T28, T29, T30, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, and T57 contain user-supplied or user-requested wording. The remaining entries originated as assistant proposals. All listed entries have now been applied to the separate local third preview following the request to apply in realtime.
+The user asked to combine the best of the current and preview versions, with a common thread across all case studies. T01, T02, T03, T14, T21, T22, T23, T24, T24A, T27, T28, T29, T30, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, and T58 contain user-supplied or user-requested wording. The remaining entries originated as assistant proposals. All listed entries have now been applied to the separate local third preview following the request to apply in realtime.
 
 **Common thread:** Help people get support. Help partners serve them better.
 
@@ -973,6 +973,23 @@ No app is needed.
 **New text**
 
 No app is needed. Only a free or discounted service you provide.
+
+### T58 — /public-agencies
+
+- Status: **Applied locally — user-requested order; awaiting PR review**
+- Existing source: `preview-v4/src/pages/PublicAgencies.jsx`
+- Target: `preview-v4/src/pages/PublicAgencies.jsx`
+- Field: How trust works
+
+**Old order**
+
+1. No app is needed. Only a free or discounted service you provide.
+2. A sensitive service is never named in a text.
+
+**New order**
+
+1. A sensitive service is never named in a text.
+2. No app is needed. Only a free or discounted service you provide.
 
 ## Resolved placement
 

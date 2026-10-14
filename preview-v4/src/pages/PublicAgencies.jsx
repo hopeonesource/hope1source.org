@@ -50,8 +50,8 @@ export default function PublicAgencies() {
           <ul>
             <li>People opt in.</li>
             <li>Partners own and control their experience.</li>
-            <li>No app is needed. Only a free or discounted service you provide.</li>
             <li>A sensitive service is never named in a text.</li>
+            <li>No app is needed. Only a free or discounted service you provide.</li>
           </ul>
           <h2>Proof you can forward</h2>
           <p>
