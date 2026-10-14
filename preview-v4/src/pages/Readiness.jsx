@@ -70,7 +70,7 @@ export default function Readiness() {
           <h2>What DC Human Services did</h2>
           <p>
             DC Human Services adopted the alert approach we brought. Alerts carried shelter and ride information in
-            extreme weather, including heat. That use is in the past.
+            extreme weather, including heat. DC Human Services now uses its own solution, modeled on the H1S approach.
           </p>
           <p>
             <Link to="/case-studies/emergency-shelter-alerts">Read the shelter alerts story</Link>

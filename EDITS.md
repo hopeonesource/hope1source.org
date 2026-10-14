@@ -17,7 +17,7 @@ The separate third preview uses v3 as its structural base. Its layout, styles, i
 
 ## Third version — applied locally
 
-The user asked to combine the best of the current and preview versions, with a common thread across all case studies. T01, T02, T03, T14, T21, T22, T23, T24, T24A, T27, T28, T29, T30, T46, T47, T48, T49, T50, T51, and T52 contain user-supplied or user-requested wording. The remaining entries originated as assistant proposals. All listed entries have now been applied to the separate local third preview following the request to apply in realtime.
+The user asked to combine the best of the current and preview versions, with a common thread across all case studies. T01, T02, T03, T14, T21, T22, T23, T24, T24A, T27, T28, T29, T30, T46, T47, T48, T49, T50, T51, T52, and T53 contain user-supplied or user-requested wording. The remaining entries originated as assistant proposals. All listed entries have now been applied to the separate local third preview following the request to apply in realtime.
 
 **Common thread:** Help people get support. Help partners serve them better.
 
@@ -898,6 +898,21 @@ Afterward, follow up and report what changed.
 **New text**
 
 Follow-up with valuable support and report what changed.
+
+### T53 — /readiness and /public-agencies
+
+- Status: **Applied locally — user-requested wording; awaiting PR review**
+- Existing source: `preview-v4/src/pages/Readiness.jsx` and `preview-v4/src/pages/PublicAgencies.jsx`
+- Target: corresponding fields in `preview-v4/src/`
+- Field: DC Human Services summary
+
+**Old text**
+
+That use is in the past.
+
+**New text**
+
+DC Human Services now uses its own solution, modeled on the H1S approach.
 
 ## Resolved placement
 
