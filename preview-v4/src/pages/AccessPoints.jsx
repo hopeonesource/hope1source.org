@@ -15,7 +15,7 @@ export default function AccessPoints() {
       <PageHero
         kicker="Trusted access points"
         title="Your front desk can be where people find help."
-        lede="A QR code, NFC tap, or kiosk lets visitors ask for help privately. Your team follows up. Everything is built with the latest AWS security to maintain trust. No app, and no personal data collected for its own sake."
+        lede="A QR code, NFC tap, or kiosk lets visitors ask for help privately. Your team follows up. Everything is built with the latest AWS security to maintain trust. No app."
       >
         <div className="hero-actions">
           <a className="btn btn-primary" href={mailto({ subject: 'Access point' })}>
