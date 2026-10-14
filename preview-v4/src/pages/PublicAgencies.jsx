@@ -56,8 +56,8 @@ export default function PublicAgencies() {
           <p>
             We provided the technical assistance to help measure what matters. Across 30 communities, access to food,
             counseling, and care rose from about 7 in 10 to as high as 9 in 10 (Oxford Journal of Public Health, 2019).
-            Google Review ratings increased during this three year period and 97% have had steady funding growth (OPM
-            &amp; Google Gemini, 2026).
+            Google Review ratings increased during this three year period and 97% have reported steady funding growth
+            (OPM &amp; Google Gemini, 2026).
           </p>
           <p>
             <Link to="/case-studies/veterans-affairs-national-homeless-programs">Read the veterans story</Link>
