@@ -48,7 +48,7 @@ export default function PublicAgencies() {
           </dl>
           <h2>How trust works</h2>
           <ul>
-            <li>People opt-in interested in free and discounted services.</li>
+            <li>People opt-in interested in free and discounted services or games.</li>
             <li>No app is needed; only a cell phone for text messages to earn rewards.</li>
             <li>Partners own and control their experience.</li>
           </ul>
