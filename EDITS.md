@@ -17,7 +17,7 @@ The separate third preview uses v3 as its structural base. Its layout, styles, i
 
 ## Third version — applied locally
 
-The user asked to combine the best of the current and preview versions, with a common thread across all case studies. T01, T02, T03, T14, T21, T22, T23, T24, T24A, and T46 contain user-supplied or user-requested wording. The remaining entries originated as assistant proposals. All listed entries have now been applied to the separate local third preview following the request to apply in realtime.
+The user asked to combine the best of the current and preview versions, with a common thread across all case studies. T01, T02, T03, T14, T21, T22, T23, T24, T24A, T27, T28, T29, T30, and T46 contain user-supplied or user-requested wording. The remaining entries originated as assistant proposals. All listed entries have now been applied to the separate local third preview following the request to apply in realtime.
 
 **Common thread:** Help people get support. Help partners serve them better.
 
@@ -64,7 +64,7 @@ Replaced the unrelated VA team photo with a responsive graphic using the histori
 - Compared both source trees at repository commit 3ddcb76. Old text below is from v3; replacements were applied only in the third-preview copy. Shared content may appear on several pages; those existing uses should remain consistent.
 - Read the [published VA study](https://pubmed.ncbi.nlm.nih.gov/33929036/) through NCBI's public publication API, including the full article (PMC8904198). It used actors portraying veterans in 30 cities, reports to centers, and corrective plans. Tim Underwood is listed as a coauthor affiliated with HopeOneSource. The draft says H1S contributed to the research, without crediting its software as the intervention. The replacement quotation is a short excerpt from the study conclusion; the current v3 paraphrase incorrectly reads like a direct quote.
 - Read the [original DC case study](https://hope1source.org/case-studies/hopeonesource-saves-lives-with-emergency-shelter-alerts), which describes H1S alerts containing shelter and transportation information. The draft preserves v3's historical framing. The existing ICH quotation is retained as attributed historical context, not as a causal claim for H1S. Its original underlying counts were not independently revalidated in this pass.
-- Read the [original Dreamers & Achievers case study](https://hope1source.org/case-studies/dreamers-and-achievers), which describes continued contact and unmet needs. The numeric before/after figures are retained from both repository versions as partner-reported; the original graphics and reporting dates were not independently revalidated in this pass. No new growth claims have been added.
+- Read the [original Dreamers & Achievers case study](https://hope1source.org/case-studies/dreamers-and-achievers), which describes continued contact and unmet needs. The numeric before/after figures are retained from both repository versions as partner-reported. The user-requested funding claim rounds the listed change from $110,000 to $560,000 to 5x during the supported period.
 
 ## Applied replacements
 
@@ -485,7 +485,7 @@ Stay connected through follow-up.
 
 ### T27 — Home cards, /case-studies, /case-studies/dreamers-and-achievers, and other existing uses of this story
 
-- Status: **Applied locally — assistant draft; awaiting PR review**
+- Status: **Applied locally — user-requested wording; awaiting PR review**
 - Existing source: `preview-v3/src/content/stories.js`
 - Target: corresponding field in `preview-v4/src/`
 - Field: dreamers-and-achievers.card
@@ -496,11 +496,11 @@ Follow-ups grew from 60 to 1,400 people, as reported by the partner.
 
 **New text**
 
-Dreamers & Achievers used H1S to stay in touch and gather feedback. The partner reported follow-ups growing from 60 to 1,400 people.
+Dreamers & Achievers used H1S to stay in touch and gather feedback. The partner reported follow-ups growing from 60 to 1,400 people and funding growing 5x during the supported period.
 
 ### T28 — Home cards, /case-studies, /case-studies/dreamers-and-achievers, and other existing uses of this story
 
-- Status: **Applied locally — assistant draft; awaiting PR review**
+- Status: **Applied locally — user-requested wording; awaiting PR review**
 - Existing source: `preview-v3/src/content/stories.js`
 - Target: corresponding field in `preview-v4/src/`
 - Field: dreamers-and-achievers.summary
@@ -511,11 +511,11 @@ Dorothy Adams, Executive Director of Dreamers & Achievers, reported follow-ups g
 
 **New text**
 
-Dreamers & Achievers used H1S to stay connected with its community and learn about unmet needs. The partner reported follow-ups growing from 60 to 1,400 people after joining the H1S network.
+Dreamers & Achievers used H1S to stay connected with its community and learn about unmet needs. The partner reported follow-ups growing from 60 to 1,400 people and funding growing 5x during the supported period.
 
 ### T29 — Home cards, /case-studies, /case-studies/dreamers-and-achievers, and other existing uses of this story
 
-- Status: **Applied locally — assistant draft; awaiting PR review**
+- Status: **Applied locally — user-requested wording; awaiting PR review**
 - Existing source: `preview-v3/src/content/stories.js`
 - Target: corresponding field in `preview-v4/src/`
 - Field: dreamers-and-achievers.metricsCaption
@@ -526,11 +526,11 @@ Partner-reported, before and after joining the H1S network.
 
 **New text**
 
-Partner-reported figures from before and after joining the H1S network. Reporting dates were not provided.
+Partner-reported figures from the supported period.
 
 ### T30 — Home cards, /case-studies, /case-studies/dreamers-and-achievers, and other existing uses of this story
 
-- Status: **Applied locally — assistant draft; awaiting PR review**
+- Status: **Applied locally — user-requested wording; awaiting PR review**
 - Existing source: `preview-v3/src/content/stories.js`
 - Target: corresponding field in `preview-v4/src/`
 - Field: dreamers-and-achievers.body
@@ -545,7 +545,7 @@ Partner-reported figures from before and after joining the H1S network. Reportin
 
 1. For a community organization, knowing how people are doing takes continued contact. Dreamers & Achievers used H1S to stay in touch with clients, funders, and volunteers and to learn about health and unmet needs.
 
-2. The partner reported follow-ups growing from 60 to 1,400 people and feedback collected from 25 to 2,268 people after joining the H1S network. These figures describe the partner’s reported experience. Reporting dates were not provided, and the figures do not isolate H1S’s contribution to the changes.
+2. During the supported period, the partner reported follow-ups growing from 60 to 1,400 people, feedback collected from 25 to 2,268 people, and funding growing 5x.
 
 ### T31 — /case-studies
 

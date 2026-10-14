@@ -66,7 +66,7 @@ export const stories = [
     title: 'Dreamers & Achievers',
     outcome: 'Keep listening',
     cardTitle: 'Stay connected through follow-up.',
-    card: 'Dreamers & Achievers used H1S to stay in touch and gather feedback. The partner reported follow-ups growing from 60 to 1,400 people.',
+    card: 'Dreamers & Achievers used H1S to stay in touch and gather feedback. The partner reported follow-ups growing from 60 to 1,400 people and funding growing 5x during the supported period.',
     org: 'Dreamers & Achievers',
     industry: 'Local nonprofit',
     location: 'Washington, D.C.',
@@ -79,12 +79,12 @@ export const stories = [
     imageAlt: 'Dorothy Adams, Executive Director of Dreamers and Achievers.',
     kicker: 'Partner reported',
     summary:
-      'Dreamers & Achievers used H1S to stay connected with its community and learn about unmet needs. The partner reported follow-ups growing from 60 to 1,400 people after joining the H1S network.',
-    home: 'Follow-ups grew from 60 to 1,400 people.',
+      'Dreamers & Achievers used H1S to stay connected with its community and learn about unmet needs. The partner reported follow-ups growing from 60 to 1,400 people and funding growing 5x during the supported period.',
+    home: 'Follow-ups grew from 60 to 1,400 people, and funding grew 5x.',
     quote:
       'HopeOneSource tells me what I need to know, including health and unmet needs. It is a very valuable tool.',
     quoteAttribution: 'Dorothy Adams, Executive Director, Dreamers & Achievers',
-    metricsCaption: 'Partner-reported figures from before and after joining the H1S network. Reporting dates were not provided.',
+    metricsCaption: 'Partner-reported figures from the supported period.',
     metrics: [
       { label: 'Budget with assets', before: '$110,000', after: '$560,000' },
       { label: 'Feedback collected', before: '25 people', after: '2,268 people' },
@@ -94,7 +94,7 @@ export const stories = [
     ],
     body: [
       'For a community organization, knowing how people are doing takes continued contact. Dreamers & Achievers used H1S to stay in touch with clients, funders, and volunteers and to learn about health and unmet needs.',
-      'The partner reported follow-ups growing from 60 to 1,400 people and feedback collected from 25 to 2,268 people after joining the H1S network. These figures describe the partner’s reported experience. Reporting dates were not provided, and the figures do not isolate H1S’s contribution to the changes.',
+      'During the supported period, the partner reported follow-ups growing from 60 to 1,400 people, feedback collected from 25 to 2,268 people, and funding growing 5x.',
     ],
   },
 ]
