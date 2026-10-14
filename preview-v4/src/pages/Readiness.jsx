@@ -12,7 +12,7 @@ const checklist = [
   'Before the weather turns, agree who sends the alert and which official channel carries the live update.',
   'During cold, heat, a storm, or a closure, send shelter, ride, or service information to people who opted in.',
   'Check in privately. Hear what did not work.',
-  'Afterward, follow up and report what changed.',
+  'Follow-up with valuable support and report what changed.',
   'Point residents to the agency’s own channels for a live alert. This site is not a live alert feed.',
 ]
 
@@ -60,7 +60,7 @@ export default function Readiness() {
                 03
               </span>
               <h3>After</h3>
-              <p>Follow up and report what changed.</p>
+              <p>Follow-up with valuable support and report what changed.</p>
             </article>
           </div>
         </div>

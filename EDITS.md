@@ -17,7 +17,7 @@ The separate third preview uses v3 as its structural base. Its layout, styles, i
 
 ## Third version — applied locally
 
-The user asked to combine the best of the current and preview versions, with a common thread across all case studies. T01, T02, T03, T14, T21, T22, T23, T24, T24A, T27, T28, T29, T30, T46, T47, T48, T49, T50, and T51 contain user-supplied or user-requested wording. The remaining entries originated as assistant proposals. All listed entries have now been applied to the separate local third preview following the request to apply in realtime.
+The user asked to combine the best of the current and preview versions, with a common thread across all case studies. T01, T02, T03, T14, T21, T22, T23, T24, T24A, T27, T28, T29, T30, T46, T47, T48, T49, T50, T51, and T52 contain user-supplied or user-requested wording. The remaining entries originated as assistant proposals. All listed entries have now been applied to the separate local third preview following the request to apply in realtime.
 
 **Common thread:** Help people get support. Help partners serve them better.
 
@@ -881,6 +881,23 @@ Alert, then check in.
 **New text**
 
 Check-ins should be easy and fun.
+
+### T52 — /readiness
+
+- Status: **Applied locally — user-supplied wording; awaiting PR review**
+- Existing source: `preview-v4/src/pages/Readiness.jsx`
+- Target: `preview-v4/src/pages/Readiness.jsx`
+- Field: After step and fifth readiness-checklist item
+
+**Old text**
+
+Follow up and report what changed.
+
+Afterward, follow up and report what changed.
+
+**New text**
+
+Follow-up with valuable support and report what changed.
 
 ## Resolved placement
 
