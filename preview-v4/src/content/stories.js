@@ -38,7 +38,7 @@ export const stories = [
     title: 'Emergency shelter alerts',
     outcome: 'Share useful information',
     cardTitle: 'Put shelter information within reach.',
-    card: 'DC Human Services used H1S to send shelter and transportation information during extreme weather. During the wider city response, DC reported hypothermia deaths falling from 9 to 2—about 80% fewer.',
+    card: 'DC Human Services used H1S to send shelter and transportation information during extreme weather. During the wider city response, DC reported that hypothermia deaths fell 80%.',
     image: 'photos/shelter-alerts.jpg',
     imageAlt: 'HopeOneSource emergency shelter alerts graphic from the published case study.',
     org: 'DC Human Services',
@@ -48,7 +48,7 @@ export const stories = [
     websiteLabel: 'DC Human Services',
     kicker: 'Washington, D.C.',
     summary:
-      'DC Human Services used H1S to help residents find shelter and transportation during extreme weather. During the wider city response, DC reported hypothermia deaths falling from 9 in 2015 to 2 in 2019—about 80% fewer.',
+      'DC Human Services used H1S to help residents find shelter and transportation during extreme weather. During the wider city response, DC reported that hypothermia deaths fell 80%.',
     quote:
       'Hypothermia deaths in DC have consistently decreased over the past 5 years, down from 9 in 2015 to 2 in 2019.',
     quoteAttribution: 'DC Interagency Council on Homelessness, as quoted in the published H1S housing page',
