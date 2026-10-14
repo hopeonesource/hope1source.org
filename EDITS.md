@@ -41,6 +41,14 @@ The homepage headline and supporting line are user-supplied and supersede the ea
 
 Replaced the cropped raster figure with a resolution-independent chart based on the published study’s Table 2. It compares year two with year three for access to food, counseling, PTSD care, and hypertension/prediabetes care. Percentages are rounded and calculated as 100% minus the published reported-barrier rate. The graph uses `contain` and the source image’s aspect ratio so all labels and bars remain visible on mobile and desktop. Updated the image description to match the graph.
 
+### V02 — DC hypothermia alert image
+
+- Status: **Applied locally — user-requested visual correction; awaiting PR review**
+- Pages: Homepage, `/case-studies`, and `/case-studies/emergency-shelter-alerts`
+- Assets: `public/photos/hypothermia-alert-people.svg` and `public/photos/dc-homeless.jpg`
+
+Replaced the unrelated VA team photo with a responsive graphic using the historic Washington, D.C. street photo published on the Hope1Source housing page. The graphic pairs people with a phone-style alert describing emergency shelter and transportation information and includes the reported 80% reduction. It uses a 3:2 safe composition and `contain` so the people, alert, and result remain visible on mobile and desktop.
+
 **Existing three-step section:** Reach. Listen. Follow up.
 
 **Case-study writing pattern:** the need → H1S's role → what was reported. Use existing text fields and paragraphs. The studies share a purpose; do not imply they all used the same product or intervention.

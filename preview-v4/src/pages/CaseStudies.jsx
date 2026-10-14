@@ -25,7 +25,10 @@ export default function CaseStudies() {
                   className={story.imageFit ? `study-thumb is-${story.imageFit}` : 'study-thumb'}
                   src={publicUrl(story.image)}
                   alt=""
-                  style={story.imagePosition ? { objectPosition: story.imagePosition } : undefined}
+                  style={{
+                    ...(story.imagePosition ? { objectPosition: story.imagePosition } : {}),
+                    ...(story.imageAspectRatio ? { aspectRatio: story.imageAspectRatio } : {}),
+                  }}
                 />
               ) : null}
               <p className="kicker">{story.industry}</p>
