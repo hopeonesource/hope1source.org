@@ -54,6 +54,11 @@ npm run dev
 
 `npm run dev` serves http://localhost:5173 with `base: /`, so routes look like `/about`.
 
+The separate third wording preview uses the v3 design and lives in `preview-v4/`.
+Run `npm run dev:v4` and open http://localhost:5175/v4/ for live wording review.
+The production build includes it at `/hope1source.org/v4/`, alongside the current site and v3.
+The running copy-edit log is in [EDITS.md](EDITS.md).
+
 ```bash
 npm run build
 npm run preview

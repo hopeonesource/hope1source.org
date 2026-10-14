@@ -6,10 +6,11 @@
   "scripts": {
     "dev": "vite",
     "prebuild": "node scripts/write-seo.mjs",
-    "build": "node scripts/check-routes.mjs && vite build && node scripts/spa-fallback.mjs && node scripts/build-v3.mjs",
+    "build": "node scripts/check-routes.mjs && vite build && node scripts/spa-fallback.mjs && node scripts/build-v3.mjs && node scripts/build-v4.mjs",
     "dev:v3": "vite --config preview-v3/vite.config.js",
     "preview": "vite preview --host",
-    "check:routes": "node scripts/check-routes.mjs"
+    "check:routes": "node scripts/check-routes.mjs",
+    "dev:v4": "vite --config preview-v4/vite.config.js"
   },
   "dependencies": {
     "@fontsource/fraunces": "^5.2.9",

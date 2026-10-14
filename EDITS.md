@@ -1,0 +1,747 @@
+# Wording edits
+
+## Pages for review
+
+- Current: https://hopeonesource.github.io/hope1source.org/
+- Preview: https://hopeonesource.github.io/hope1source.org/v3/
+- Repository: https://github.com/hopeonesource/hope1source.org
+- Third preview: implemented in `preview-v4/`, running locally at http://127.0.0.1:5175/v4/. The GitHub Pages path `/hope1source.org/v4/` will become available after review and merge; it is not published yet.
+
+## Workflow
+
+Record each wording change with the page, exact old text, exact new text, and status. Preserve wording the user supplies; identify assistant-drafted wording as proposed. Clarify ambiguous targets before applying.
+
+The user said **apply them in realtime**. Apply wording edits immediately to the local third preview and keep this log current. Work on branch `codex/third-preview-copy` and open a pull request for review. Do not change layout or design; do not merge or publish automatically.
+
+The separate third preview uses v3 as its structural base. Its layout, styles, imagery, and section order are preserved. The current site and v3 are unchanged. Separate preview setup consists of `preview-v4/vite.config.js`, `scripts/build-v4.mjs`, the package scripts, and README instructions. Initial HTML title and description metadata match T01/T02. Review this setup separately from the wording diff.
+
+## Third version — applied locally
+
+The user asked to combine the best of the current and preview versions, with a common thread across all case studies. T02 and T03 contain user-supplied wording. The remaining entries originated as assistant proposals. All 45 entries have now been applied to the separate local third preview following the request to apply in realtime.
+
+**Common thread:** Help people get support. Help partners serve them better.
+
+Keep the current version's warmth and emphasis on trust, follow-up, and showing what changed. Keep v3's concrete explanations, voluntary participation, and distinctions between study findings, a past partnership, and partner-reported results.
+
+**Current third-preview homepage:**
+
+> **Help people get support.**
+>
+> We train and equip those who serve others for lasting change.
+
+The homepage supporting line above is user-supplied and supersedes the earlier assistant draft in T02. The headline and supporting page edits are also applied in the third preview. The homepage case-study heading is **Partner Success** (T03).
+
+**Existing three-step section:** Reach. Listen. Follow up.
+
+**Case-study writing pattern:** the need → H1S's role → what was reported. Use existing text fields and paragraphs. The studies share a purpose; do not imply they all used the same product or intervention.
+
+| Case study | Proposed card headline | What readers should understand |
+| --- | --- | --- |
+| Veterans Affairs | Make care easier to reach. | Research and feedback helped service teams identify barriers. |
+| DC Human Services | Put shelter information within reach. | Alerts shared information people could use during extreme weather. |
+| Dreamers & Achievers | Stay connected through follow-up. | Continued contact and feedback helped a partner understand needs. |
+
+## Evidence used for the proposal
+
+- Compared both source trees at repository commit 3ddcb76. Old text below is from v3; replacements were applied only in the third-preview copy. Shared content may appear on several pages; those existing uses should remain consistent.
+- Read the [published VA study](https://pubmed.ncbi.nlm.nih.gov/33929036/) through NCBI's public publication API, including the full article (PMC8904198). It used actors portraying veterans in 30 cities, reports to centers, and corrective plans. Tim Underwood is listed as a coauthor affiliated with HopeOneSource. The draft says H1S contributed to the research, without crediting its software as the intervention. The replacement quotation is a short excerpt from the study conclusion; the current v3 paraphrase incorrectly reads like a direct quote.
+- Read the [original DC case study](https://hope1source.org/case-studies/hopeonesource-saves-lives-with-emergency-shelter-alerts), which describes H1S alerts containing shelter and transportation information. The draft preserves v3's historical framing. The existing ICH quotation is retained as attributed historical context, not as a causal claim for H1S. Its original underlying counts were not independently revalidated in this pass.
+- Read the [original Dreamers & Achievers case study](https://hope1source.org/case-studies/dreamers-and-achievers), which describes continued contact and unmet needs. The numeric before/after figures are retained from both repository versions as partner-reported; the original graphics and reporting dates were not independently revalidated in this pass. No new growth claims have been added.
+
+## Applied replacements
+
+### T01 — /
+
+- Status: **Applied locally — assistant draft; awaiting PR review**
+- Existing source: `preview-v3/src/pages/Home.jsx`
+- Target: corresponding field in `preview-v4/src/`
+- Field: Hero h1 and SEO title
+
+**Old text**
+
+Earn trust.
+
+**New text**
+
+Help people get support.
+
+### T02 — /
+
+- Status: **Applied locally — user-supplied wording; awaiting PR review**
+- Existing source: `preview-v3/src/pages/Home.jsx`
+- Target: corresponding field in `preview-v4/src/`
+- Field: Hero lede and SEO description
+
+**Old text**
+
+H1S Check-ins makes it easier to connect resources to people who need them. Dignity first. People opt in.
+
+**New text**
+
+We train and equip those who serve others for lasting change.
+
+### T03 — /
+
+- Status: **Applied locally — user-supplied wording; awaiting PR review**
+- Existing source: `preview-v3/src/pages/Home.jsx`
+- Target: corresponding field in `preview-v4/src/`
+- Field: Stories section heading
+
+**Old text**
+
+Stories
+
+**New text**
+
+Partner Success
+
+### T04 — /
+
+- Status: **Applied locally — assistant draft; awaiting PR review**
+- Existing source: `preview-v3/src/pages/Home.jsx`
+- Target: corresponding field in `preview-v4/src/`
+- Field: Existing how-it-works heading
+
+**Old text**
+
+Alert. Check in. Connect.
+
+**New text**
+
+Reach. Listen. Follow up.
+
+### T05 — /
+
+- Status: **Applied locally — assistant draft; awaiting PR review**
+- Existing source: `preview-v3/src/pages/Home.jsx`
+- Target: corresponding field in `preview-v4/src/`
+- Field: Existing how-it-works introduction
+
+**Old text**
+
+No app. Any phone. People choose to take part.
+
+**New text**
+
+Earn trust by listening, following up, and showing what changed. People choose to take part.
+
+### T06 — / and /outreach-tools
+
+- Status: **Applied locally — assistant draft; awaiting PR review**
+- Existing source: `preview-v3/src/components/HowItWorks.jsx`
+- Target: corresponding field in `preview-v4/src/`
+- Field: howSteps title: Alert
+
+**Old text**
+
+Alert
+
+**New text**
+
+Reach
+
+### T07 — / and /outreach-tools
+
+- Status: **Applied locally — assistant draft; awaiting PR review**
+- Existing source: `preview-v3/src/components/HowItWorks.jsx`
+- Target: corresponding field in `preview-v4/src/`
+- Field: howSteps text: Alert
+
+**Old text**
+
+Send an opt-in text with the resource and where to go.
+
+**New text**
+
+Share useful information with people who choose to hear from you.
+
+### T08 — / and /outreach-tools
+
+- Status: **Applied locally — assistant draft; awaiting PR review**
+- Existing source: `preview-v3/src/components/HowItWorks.jsx`
+- Target: corresponding field in `preview-v4/src/`
+- Field: howSteps title: Check in
+
+**Old text**
+
+Check in
+
+**New text**
+
+Listen
+
+### T09 — / and /outreach-tools
+
+- Status: **Applied locally — assistant draft; awaiting PR review**
+- Existing source: `preview-v3/src/components/HowItWorks.jsx`
+- Target: corresponding field in `preview-v4/src/`
+- Field: howSteps text: Check in
+
+**Old text**
+
+People reply or scan a QR code, privately.
+
+**New text**
+
+Give people a private way to share their needs and experiences.
+
+### T10 — / and /outreach-tools
+
+- Status: **Applied locally — assistant draft; awaiting PR review**
+- Existing source: `preview-v3/src/components/HowItWorks.jsx`
+- Target: corresponding field in `preview-v4/src/`
+- Field: howSteps title: Connect
+
+**Old text**
+
+Connect
+
+**New text**
+
+Follow up
+
+### T11 — / and /outreach-tools
+
+- Status: **Applied locally — assistant draft; awaiting PR review**
+- Existing source: `preview-v3/src/components/HowItWorks.jsx`
+- Target: corresponding field in `preview-v4/src/`
+- Field: howSteps text: Connect
+
+**Old text**
+
+Your team follows up. The report shows what changed.
+
+**New text**
+
+Use what you learn to follow up and understand what changed.
+
+### T12 — Home cards, /case-studies, /case-studies/veterans-affairs-national-homeless-programs, and other existing uses of this story
+
+- Status: **Applied locally — assistant draft; awaiting PR review**
+- Existing source: `preview-v3/src/content/stories.js`
+- Target: corresponding field in `preview-v4/src/`
+- Field: veterans-affairs-national-homeless-programs.outcome
+
+**Old text**
+
+Remove barriers to care
+
+**New text**
+
+Understand barriers
+
+### T13 — Home cards, /case-studies, /case-studies/veterans-affairs-national-homeless-programs, and other existing uses of this story
+
+- Status: **Applied locally — assistant draft; awaiting PR review**
+- Existing source: `preview-v3/src/content/stories.js`
+- Target: corresponding field in `preview-v4/src/`
+- Field: veterans-affairs-national-homeless-programs.cardTitle
+
+**Old text**
+
+Some veterans weren't getting help. We helped find out why.
+
+**New text**
+
+Make care easier to reach.
+
+### T14 — Home cards, /case-studies, /case-studies/veterans-affairs-national-homeless-programs, and other existing uses of this story
+
+- Status: **Applied locally — assistant draft; awaiting PR review**
+- Existing source: `preview-v3/src/content/stories.js`
+- Target: corresponding field in `preview-v4/src/`
+- Field: veterans-affairs-national-homeless-programs.card
+
+**Old text**
+
+Across 30 cities, access to food, counseling, and care rose from about 7 in 10 to as high as 9 in 10. Published in the Journal of Public Health.
+
+**New text**
+
+H1S contributed to a study in 30 cities that used visits by trained actors and feedback to help service teams improve access to care.
+
+### T15 — Home cards, /case-studies, /case-studies/veterans-affairs-national-homeless-programs, and other existing uses of this story
+
+- Status: **Applied locally — assistant draft; awaiting PR review**
+- Existing source: `preview-v3/src/content/stories.js`
+- Target: corresponding field in `preview-v4/src/`
+- Field: veterans-affairs-national-homeless-programs.summary
+
+**Old text**
+
+We provided the technical assistance to help measure what matters. Across 30 cities, access to food, counseling, and care rose from about 7 in 10 to as high as 9 in 10.
+
+**New text**
+
+H1S contributed to research on barriers faced by veterans experiencing homelessness. In 30 cities, trained actors tested access to services, and teams received feedback to improve how they responded.
+
+### T16 — Home cards, /case-studies, /case-studies/veterans-affairs-national-homeless-programs, and other existing uses of this story
+
+- Status: **Applied locally — assistant draft; awaiting PR review**
+- Existing source: `preview-v3/src/content/stories.js`
+- Target: corresponding field in `preview-v4/src/`
+- Field: veterans-affairs-national-homeless-programs.quote
+
+**Old text**
+
+Access to food, counseling, PTSD treatment, and hypertension and prediabetes care increased from 68 to 77 percent in year 2 to 83 to 97 percent in year 3. A gap in access for Black veterans closed.
+
+**New text**
+
+The ‘unannounced standardized veteran’ (USV) can identify previously unrecognized barriers to needed services and care.
+
+### T17 — Home cards, /case-studies, /case-studies/veterans-affairs-national-homeless-programs, and other existing uses of this story
+
+- Status: **Applied locally — assistant draft; awaiting PR review**
+- Existing source: `preview-v3/src/content/stories.js`
+- Target: corresponding field in `preview-v4/src/`
+- Field: veterans-affairs-national-homeless-programs.quoteAttribution
+
+**Old text**
+
+Journal of Public Health
+
+**New text**
+
+Weiner and colleagues, Journal of Public Health, 2022
+
+### T18 — Home cards, /case-studies, /case-studies/veterans-affairs-national-homeless-programs, and other existing uses of this story
+
+- Status: **Applied locally — assistant draft; awaiting PR review**
+- Existing source: `preview-v3/src/content/stories.js`
+- Target: corresponding field in `preview-v4/src/`
+- Field: veterans-affairs-national-homeless-programs.body
+
+**Old text**
+
+1. We provided the technical assistance to help measure what matters.
+
+2. The study followed access to food, counseling, PTSD treatment, and health screening across 30 cities. Read the paper before citing the percentages in a grant or a briefing.
+
+**New text**
+
+1. Finding a service does not always mean being able to use it. From 2017 to 2019, actors portraying veterans experiencing homelessness visited service centers in 30 cities. Teams received reports and were asked to address barriers. H1S contributed to the research.
+
+2. During these visits, access to the services studied increased from 68–77% in year two to 83–97% in year three. The study shows how systematic feedback can help teams improve access. These results come from the published study of service encounters, not a measure of every veteran’s experience.
+
+### T19 — Home cards, /case-studies, /case-studies/emergency-shelter-alerts, and other existing uses of this story
+
+- Status: **Applied locally — assistant draft; awaiting PR review**
+- Existing source: `preview-v3/src/content/stories.js`
+- Target: corresponding field in `preview-v4/src/`
+- Field: emergency-shelter-alerts.outcome
+
+**Old text**
+
+Prevent cold-weather harm
+
+**New text**
+
+Share useful information
+
+### T20 — Home cards, /case-studies, /case-studies/emergency-shelter-alerts, and other existing uses of this story
+
+- Status: **Applied locally — assistant draft; awaiting PR review**
+- Existing source: `preview-v3/src/content/stories.js`
+- Target: corresponding field in `preview-v4/src/`
+- Field: emergency-shelter-alerts.cardTitle
+
+**Old text**
+
+Alerts that point to a warm place tonight.
+
+**New text**
+
+Put shelter information within reach.
+
+### T21 — Home cards, /case-studies, /case-studies/emergency-shelter-alerts, and other existing uses of this story
+
+- Status: **Applied locally — assistant draft; awaiting PR review**
+- Existing source: `preview-v3/src/content/stories.js`
+- Target: corresponding field in `preview-v4/src/`
+- Field: emergency-shelter-alerts.card
+
+**Old text**
+
+DC Human Services adopted the alert approach we brought. Alerts carried shelter and ride information in extreme weather.
+
+**New text**
+
+DC Human Services used H1S to send shelter and transportation information to residents during extreme weather.
+
+### T22 — Home cards, /case-studies, /case-studies/emergency-shelter-alerts, and other existing uses of this story
+
+- Status: **Applied locally — assistant draft; awaiting PR review**
+- Existing source: `preview-v3/src/content/stories.js`
+- Target: corresponding field in `preview-v4/src/`
+- Field: emergency-shelter-alerts.summary
+
+**Old text**
+
+Nearly 80% fewer hypothermia deaths in Washington, D.C., from the change in the Interagency Council on Homelessness quote on this page.
+
+**New text**
+
+DC Human Services used H1S to help residents find shelter and transportation during extreme weather. The partnership shows how timely information can help people take the next step toward support.
+
+### T23 — Home cards, /case-studies, /case-studies/emergency-shelter-alerts, and other existing uses of this story
+
+- Status: **Applied locally — assistant draft; awaiting PR review**
+- Existing source: `preview-v3/src/content/stories.js`
+- Target: corresponding field in `preview-v4/src/`
+- Field: emergency-shelter-alerts.quoteAttribution
+
+**Old text**
+
+DC Interagency Council on Homelessness
+
+**New text**
+
+DC Interagency Council on Homelessness, as quoted in the published H1S housing page
+
+### T24 — Home cards, /case-studies, /case-studies/emergency-shelter-alerts, and other existing uses of this story
+
+- Status: **Applied locally — assistant draft; awaiting PR review**
+- Existing source: `preview-v3/src/content/stories.js`
+- Target: corresponding field in `preview-v4/src/`
+- Field: emergency-shelter-alerts.body
+
+**Old text**
+
+1. DC Human Services adopted the alert approach we brought. During the coldest and warmest months, alerts carried shelter and ride information for highly vulnerable residents.
+
+2. That partnership is in the past. For a live alert, use DC Human Services and the city’s own channels. This page is not a live alert feed.
+
+**New text**
+
+1. During extreme weather, people need to know where shelter is available and how to get there. DC Human Services used H1S to share that information through emergency alerts.
+
+2. The historical figures quoted above describe the city’s wider response. They do not establish how much of the change came from H1S alerts. This partnership is in the past; current shelter and transportation information comes from DC Human Services and the city’s own channels.
+
+### T25 — Home cards, /case-studies, /case-studies/dreamers-and-achievers, and other existing uses of this story
+
+- Status: **Applied locally — assistant draft; awaiting PR review**
+- Existing source: `preview-v3/src/content/stories.js`
+- Target: corresponding field in `preview-v4/src/`
+- Field: dreamers-and-achievers.outcome
+
+**Old text**
+
+Show what changed
+
+**New text**
+
+Keep listening
+
+### T26 — Home cards, /case-studies, /case-studies/dreamers-and-achievers, and other existing uses of this story
+
+- Status: **Applied locally — assistant draft; awaiting PR review**
+- Existing source: `preview-v3/src/content/stories.js`
+- Target: corresponding field in `preview-v4/src/`
+- Field: dreamers-and-achievers.cardTitle
+
+**Old text**
+
+A small nonprofit that could finally show its reach.
+
+**New text**
+
+Stay connected through follow-up.
+
+### T27 — Home cards, /case-studies, /case-studies/dreamers-and-achievers, and other existing uses of this story
+
+- Status: **Applied locally — assistant draft; awaiting PR review**
+- Existing source: `preview-v3/src/content/stories.js`
+- Target: corresponding field in `preview-v4/src/`
+- Field: dreamers-and-achievers.card
+
+**Old text**
+
+Follow-ups grew from 60 to 1,400 people, as reported by the partner.
+
+**New text**
+
+Dreamers & Achievers used H1S to stay in touch and gather feedback. The partner reported follow-ups growing from 60 to 1,400 people.
+
+### T28 — Home cards, /case-studies, /case-studies/dreamers-and-achievers, and other existing uses of this story
+
+- Status: **Applied locally — assistant draft; awaiting PR review**
+- Existing source: `preview-v3/src/content/stories.js`
+- Target: corresponding field in `preview-v4/src/`
+- Field: dreamers-and-achievers.summary
+
+**Old text**
+
+Dorothy Adams, Executive Director of Dreamers & Achievers, reported follow-ups growing from 60 to 1,400 people after joining the H1S network.
+
+**New text**
+
+Dreamers & Achievers used H1S to stay connected with its community and learn about unmet needs. The partner reported follow-ups growing from 60 to 1,400 people after joining the H1S network.
+
+### T29 — Home cards, /case-studies, /case-studies/dreamers-and-achievers, and other existing uses of this story
+
+- Status: **Applied locally — assistant draft; awaiting PR review**
+- Existing source: `preview-v3/src/content/stories.js`
+- Target: corresponding field in `preview-v4/src/`
+- Field: dreamers-and-achievers.metricsCaption
+
+**Old text**
+
+Partner-reported, before and after joining the H1S network.
+
+**New text**
+
+Partner-reported figures from before and after joining the H1S network. Reporting dates were not provided.
+
+### T30 — Home cards, /case-studies, /case-studies/dreamers-and-achievers, and other existing uses of this story
+
+- Status: **Applied locally — assistant draft; awaiting PR review**
+- Existing source: `preview-v3/src/content/stories.js`
+- Target: corresponding field in `preview-v4/src/`
+- Field: dreamers-and-achievers.body
+
+**Old text**
+
+1. Dreamers & Achievers used Hope1Source to stay in touch with clients, funders, and volunteers.
+
+2. The figures are what the partner reported after joining the H1S network.
+
+**New text**
+
+1. For a community organization, knowing how people are doing takes continued contact. Dreamers & Achievers used H1S to stay in touch with clients, funders, and volunteers and to learn about health and unmet needs.
+
+2. The partner reported follow-ups growing from 60 to 1,400 people and feedback collected from 25 to 2,268 people after joining the H1S network. These figures describe the partner’s reported experience. Reporting dates were not provided, and the figures do not isolate H1S’s contribution to the changes.
+
+### T31 — /case-studies
+
+- Status: **Applied locally — assistant draft; awaiting PR review**
+- Existing source: `preview-v3/src/pages/CaseStudies.jsx`
+- Target: corresponding field in `preview-v4/src/`
+- Field: Hero title
+
+**Old text**
+
+What changed.
+
+**New text**
+
+Making support easier to reach.
+
+### T32 — /case-studies
+
+- Status: **Applied locally — assistant draft; awaiting PR review**
+- Existing source: `preview-v3/src/pages/CaseStudies.jsx`
+- Target: corresponding field in `preview-v4/src/`
+- Field: Hero lede
+
+**Old text**
+
+A published study, a past weather-alert partnership, and results a partner reported.
+
+**New text**
+
+Different partners. One purpose: make support easier to reach and help organizations improve how they serve people. These stories explain the need, our role, and what was reported.
+
+### T33 — /case-studies
+
+- Status: **Applied locally — assistant draft; awaiting PR review**
+- Existing source: `preview-v3/src/pages/CaseStudies.jsx`
+- Target: corresponding field in `preview-v4/src/`
+- Field: SEO description
+
+**Old text**
+
+A published study, a past weather-alert partnership, and partner-reported results from Dreamers and Achievers.
+
+**New text**
+
+How Hope1Source has helped partners understand barriers, share useful information, and stay connected through follow-up.
+
+### T34 — /about
+
+- Status: **Applied locally — assistant draft; awaiting PR review**
+- Existing source: `preview-v3/src/pages/About.jsx`
+- Target: corresponding field in `preview-v4/src/`
+- Field: Hero title
+
+**Old text**
+
+Earn trust.
+
+**New text**
+
+Help people get support.
+
+### T35 — /about
+
+- Status: **Applied locally — assistant draft; awaiting PR review**
+- Existing source: `preview-v3/src/pages/About.jsx`
+- Target: corresponding field in `preview-v4/src/`
+- Field: Hero lede
+
+**Old text**
+
+H1S Check-ins makes it easier to connect resources to people who need them. Dignity first. People opt in.
+
+**New text**
+
+Hope1Source helps organizations reach people, understand their needs, and improve services. H1S Check-ins supports that work through outreach, private feedback, and follow-up.
+
+### T36 — /about
+
+- Status: **Applied locally — assistant draft; awaiting PR review**
+- Existing source: `preview-v3/src/pages/About.jsx`
+- Target: corresponding field in `preview-v4/src/`
+- Field: SEO description
+
+**Old text**
+
+H1S Check-ins makes it easier to connect resources to people who need them. People opt in. Hope with Love is the 501(c)(3).
+
+**New text**
+
+Hope1Source helps organizations reach people, understand needs, and improve services. Hope with Love is the 501(c)(3) behind the work.
+
+### T37 — /about
+
+- Status: **Applied locally — assistant draft; awaiting PR review**
+- Existing source: `preview-v3/src/pages/About.jsx`
+- Target: corresponding field in `preview-v4/src/`
+- Field: First Mission paragraph
+
+**Old text**
+
+Hope1Source provides tools that make it easier to connect resources to people who need them. Partners send opt-in alerts and check-ins, hear back privately, and follow up.
+
+**New text**
+
+Our purpose is to help people get support and help partners serve them better. We bring together outreach tools, feedback, and practical support for partner teams. People choose to take part, and partners use what they learn to follow up and improve services.
+
+### T38 — /learn-more
+
+- Status: **Applied locally — assistant draft; awaiting PR review**
+- Existing source: `preview-v3/src/pages/LearnMore.jsx`
+- Target: corresponding field in `preview-v4/src/`
+- Field: Hero title
+
+**Old text**
+
+How we support.
+
+**New text**
+
+Reach people. Follow through.
+
+### T39 — /learn-more
+
+- Status: **Applied locally — assistant draft; awaiting PR review**
+- Existing source: `preview-v3/src/pages/LearnMore.jsx`
+- Target: corresponding field in `preview-v4/src/`
+- Field: Hero lede
+
+**Old text**
+
+Tools that make it easier to connect resources to people who need them. People opt in.
+
+**New text**
+
+Outreach, feedback, and practical support help partners understand needs and improve services. People choose to take part.
+
+### T40 — /outreach-tools
+
+- Status: **Applied locally — assistant draft; awaiting PR review**
+- Existing source: `preview-v3/src/pages/OutreachTools.jsx`
+- Target: corresponding field in `preview-v4/src/`
+- Field: Hero h1 and SEO title
+
+**Old text**
+
+Alert. Check in. Connect.
+
+**New text**
+
+Reach. Listen. Follow up.
+
+### T41 — /outreach-tools
+
+- Status: **Applied locally — assistant draft; awaiting PR review**
+- Existing source: `preview-v3/src/pages/OutreachTools.jsx`
+- Target: corresponding field in `preview-v4/src/`
+- Field: Hero lede
+
+**Old text**
+
+No app. Any phone. People choose to take part.
+
+**New text**
+
+H1S Check-ins helps partners share useful information, hear back privately, and follow up with people who choose to take part.
+
+### T42 — /outreach-tools
+
+- Status: **Applied locally — assistant draft; awaiting PR review**
+- Existing source: `preview-v3/src/pages/OutreachTools.jsx`
+- Target: corresponding field in `preview-v4/src/`
+- Field: SEO description
+
+**Old text**
+
+Opt-in alerts, a private check-in, and a follow-up. No app. Any phone. People choose to take part.
+
+**New text**
+
+Share useful information, hear back privately, and follow up. H1S Check-ins helps partners stay connected with people who choose to take part.
+
+### T43 — / and /for-providers
+
+- Status: **Applied locally — assistant draft; awaiting PR review**
+- Existing source: `preview-v3/src/content/roles.js`
+- Target: corresponding field in `preview-v4/src/`
+- Field: providers.lede
+
+**Old text**
+
+Tell people where help is tonight, hear back when it did not work, and show what changed.
+
+**New text**
+
+Share useful information, hear what people need, and follow up on what comes next.
+
+### T44 — / and /for-backers
+
+- Status: **Applied locally — assistant draft; awaiting PR review**
+- Existing source: `preview-v3/src/content/roles.js`
+- Target: corresponding field in `preview-v4/src/`
+- Field: backers.lede
+
+**Old text**
+
+Partners reach people before harm happens, and report what changed. Gifts go to Hope with Love through Every.org.
+
+**New text**
+
+Help partners reach people, improve services, and report what changed. Gifts go to Hope with Love through Every.org.
+
+### T45 — All third-preview pages
+
+- Status: **Applied locally — assistant draft; awaiting PR review**
+- Existing source: `preview-v3/src/components/Layout.jsx`
+- Target: corresponding field in `preview-v4/src/`
+- Field: Preview banner
+
+**Old text**
+
+Preview of recommended version.
+
+**New text**
+
+Third preview: a shared story across our work.
+
+## Resolved placement
+
+### C01 — Partner Success
+
+- Status: **Applied locally in T03 following the request to apply in realtime**
+- Exact new text: **Partner Success**
+- Page / field: homepage case-study section heading; exact old text: `Stories`.
+- Supersedes the assistant's `Support in practice.` proposal in T03. Navigation labels are unchanged.
