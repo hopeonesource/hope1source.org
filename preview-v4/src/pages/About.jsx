@@ -8,7 +8,7 @@ import { publicUrl } from '../lib/links.js'
 const phoneQuery = '(max-width: 720px)'
 
 function usePhone() {
-  const [phone, setPhone] = useState(() => window.matchMedia(phoneQuery).matches)
+  const [phone, setPhone] = useState(false)
 
   useEffect(() => {
     const query = window.matchMedia(phoneQuery)
@@ -63,11 +63,18 @@ export default function About() {
             className="about-logo"
             src={publicUrl('logo-hope-one-source.png')}
             alt="Hope One Source"
+            width="2500"
+            height="805"
+            decoding="async"
           />
           <img
             className="about-photo"
             src={publicUrl('photos/hos-team.jpg')}
             alt="Hope1Source team gathered around a table."
+            width="1200"
+            height="675"
+            loading="lazy"
+            decoding="async"
           />
           <p className="about-lead">
             {org.product}. {org.legalName} is the 501(c)(3).

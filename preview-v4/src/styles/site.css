@@ -61,6 +61,12 @@ body.nav-open {
 
 img {
   max-width: 100%;
+  height: auto;
+}
+
+main,
+.site-footer {
+  overflow-wrap: anywhere;
 }
 
 h1,
@@ -268,6 +274,9 @@ a:hover {
 }
 
 .site-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   text-decoration: none;
   font-weight: 600;
   font-size: 1rem;
@@ -437,15 +446,6 @@ a:hover {
     animation: wash-drift 22s ease-in-out infinite alternate;
   }
 
-  @supports (animation-timeline: view()) {
-    .story-card,
-    .door,
-    .path-card {
-      animation: lift linear both;
-      animation-timeline: view();
-      animation-range: entry 0% cover 28%;
-    }
-  }
 }
 
 @keyframes wash-drift {
@@ -455,18 +455,6 @@ a:hover {
 
   to {
     transform: translate3d(-2%, 3%, 0) scale(1.05);
-  }
-}
-
-@keyframes lift {
-  from {
-    opacity: 0.15;
-    transform: translateY(1.75rem);
-  }
-
-  to {
-    opacity: 1;
-    transform: none;
   }
 }
 
@@ -489,6 +477,11 @@ a:hover {
   align-items: center;
   justify-content: center;
   min-height: 48px;
+  min-width: 0;
+  max-width: 100%;
+  text-align: center;
+  white-space: normal;
+  overflow-wrap: anywhere;
   padding: 0.7rem 1.15rem;
   border-radius: 999px;
   border: 1px solid transparent;
@@ -604,6 +597,15 @@ a:hover {
 
 .section {
   padding: 1rem 0 4.5rem;
+}
+
+/* The section already supplies the page gutter. Avoid a second gutter inside. */
+.section > .wrap {
+  width: 100%;
+}
+
+.section > .wrap.narrow {
+  max-width: 760px;
 }
 
 .section-tight {
@@ -879,7 +881,7 @@ a:hover {
 
 .people article {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto minmax(0, 1fr);
   gap: 1rem;
   background: var(--white);
   border: 1px solid var(--line);
@@ -946,6 +948,7 @@ a:hover {
 
 .form label {
   display: grid;
+  min-width: 0;
   gap: 0.35rem;
   font-weight: 700;
 }
@@ -960,6 +963,12 @@ a:hover {
   border-radius: 12px;
   padding: 0.7rem 0.8rem;
   width: 100%;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.form textarea {
+  resize: vertical;
 }
 
 .form-status {
@@ -1119,6 +1128,12 @@ address {
 
 .footer-links li + li {
   margin-top: 0;
+}
+
+.footer-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
 }
 
 .site-footer h2 {
@@ -1330,9 +1345,16 @@ address {
 }
 
 .story-art {
+  position: relative;
   display: block;
   height: 13rem;
   background: #0c1411;
+}
+
+.story-art img {
+  position: absolute;
+  inset: 0;
+  display: block;
 }
 
 .story-art img,
@@ -1358,6 +1380,7 @@ address {
   height: 9.5rem;
   margin: -1.3rem -1.3rem 1rem;
   width: calc(100% + 2.6rem);
+  max-width: none;
 }
 
 .study-figure {
@@ -1405,7 +1428,7 @@ address {
 .metric-set td {
   font-variant-numeric: tabular-nums;
   text-align: right;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .metric-set td:last-child {
@@ -1843,4 +1866,33 @@ body.nav-open .site-header {
 
 .facts dd {
   margin: 0;
+}
+
+/* Let columns and long labels shrink to the available viewport without clipping. */
+.study-grid > *,
+.service-grid > *,
+.press-layout > *,
+.contact-grid > *,
+.donate-grid > *,
+.cause-inner > * {
+  min-width: 0;
+}
+
+.offerings-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (max-width: 560px) {
+  .people article,
+  .offerings-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .metric-set table {
+    font-size: 1rem;
+  }
+
+  .cause-inner .hero-actions {
+    justify-content: flex-start;
+  }
 }

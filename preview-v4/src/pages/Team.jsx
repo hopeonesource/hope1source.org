@@ -13,6 +13,10 @@ function People({ people }) {
               className="avatar avatar-photo"
               src={publicUrl(person.photo)}
               alt=""
+              width="76"
+              height="76"
+              loading="lazy"
+              decoding="async"
               style={person.imagePosition ? { objectPosition: person.imagePosition } : undefined}
             />
             <div>

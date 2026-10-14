@@ -7,6 +7,8 @@ export const roles = [
     nav: 'If you provide a service',
     kicker: 'Nonprofits, shelters, program leads',
     title: 'If you run a program',
+    seoTitle: 'SMS Check-ins for Nonprofits & Service Providers',
+    seoDescription: 'Use H1S SMS check-ins, emergency alerts, and service feedback to stay connected with the people you serve. Request a partnership conversation.',
     panel: 'Nonprofits, shelters, and program leads.',
     lede: 'Share useful information, hear what people need, and follow up on what comes next.',
     points: [

@@ -24,7 +24,11 @@ export default function CaseStudies() {
                 <img
                   className={story.imageFit ? `study-thumb is-${story.imageFit}` : 'study-thumb'}
                   src={publicUrl(story.image)}
+                  width={story.imageWidth}
+                  height={story.imageHeight}
                   alt=""
+                  loading="lazy"
+                  decoding="async"
                   style={{
                     ...(story.imagePosition ? { objectPosition: story.imagePosition } : {}),
                     ...(story.imageAspectRatio ? { aspectRatio: story.imageAspectRatio } : {}),

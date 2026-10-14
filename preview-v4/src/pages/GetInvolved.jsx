@@ -39,8 +39,8 @@ export default function GetInvolved() {
   return (
     <>
       <Seo
-        title="Get involved"
-        description="Run a program, host an access point, volunteer, or fund prevention you can measure."
+        title="Partner, Volunteer or Support Community Outreach"
+        description="Partner with Hope1Source as a service provider, host a check-in access point, volunteer your skills, or support community outreach and follow-up."
       />
       <PageHero
         kicker="Get involved"

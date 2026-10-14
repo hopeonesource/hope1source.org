@@ -37,7 +37,11 @@ export default function Contact() {
       </PageHero>
       <section className="section">
         <div className="wrap narrow">
-          <form className="form" onSubmit={onSubmit}>
+          <noscript>
+            <style>{'.contact-email-form { display: none; }'}</style>
+            <p>Use the email button above to start a conversation.</p>
+          </noscript>
+          <form className="form contact-email-form" onSubmit={onSubmit}>
             <label>
               Name
               <input name="name" autoComplete="name" required />

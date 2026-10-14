@@ -3,7 +3,7 @@ import { services } from './services.js'
 import { stories } from './stories.js'
 
 /**
- * Public URLs for the v3 sitemap. Written only into dist/v3.
+ * Public URLs for the v4 prerender and sitemap. Written only into dist/v4.
  * The current site's public/sitemap.xml is not touched.
  */
 export const pages = [

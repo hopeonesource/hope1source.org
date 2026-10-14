@@ -45,13 +45,13 @@ export default function LearnMore() {
   return (
     <>
       <Seo
-        title="How we support partners"
-        description="A published study, a past weather-alert partnership, and partner-reported results from Dreamers and Achievers."
+        title="Partner Support, Service Feedback & Case Studies"
+        description="See how Hope1Source supports outreach, service feedback, and follow-up, with a published veterans study and partner case studies."
       />
 
       <section className="hero">
         <div className="hero-photo is-team">
-          <img src={publicUrl('photos/hos-team.jpg')} alt="" />
+          <img src={publicUrl('photos/hos-team.jpg')} alt="" width="1200" height="675" />
         </div>
         <MissionWash tone="home" />
         <div className="wrap hero-copy">
@@ -146,10 +146,10 @@ export default function LearnMore() {
         <div className="wrap cause-inner">
           <div>
             <h2 id="partner-cta">Bring this to your program</h2>
-            <p>Outreach, check-ins, and a note to partnerships.</p>
+            <p>Talk with us about outreach, check-ins, and service feedback for the people you serve.</p>
           </div>
-          <Link className="btn btn-primary" to="/get-involved">
-            Pick a way to take part
+          <Link className="btn btn-primary" to="/contact">
+            Request a partnership conversation
           </Link>
         </div>
       </section>

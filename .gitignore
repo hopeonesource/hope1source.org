@@ -9,3 +9,5 @@ dist
 *.local
 .cursor
 coverage
+.playwright-cli/
+output/playwright/

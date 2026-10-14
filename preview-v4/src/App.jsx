@@ -25,14 +25,8 @@ import ServicePage from './pages/ServicePage.jsx'
 import Team from './pages/Team.jsx'
 import Terms from './pages/Terms.jsx'
 
-/**
- * BrowserRouter + a copied 404.html (see scripts/spa-fallback.mjs).
- * GitHub Pages has no rewrite rules, so unknown paths return 404.html,
- * which is the built app. React Router then reads the real pathname.
- * basename follows Vite's base so project Pages (/hope1source.org/) and
- * a custom domain (/) both work.
- */
-const basename = import.meta.env.BASE_URL.replace(/\/$/, '')
+/** One route tree shared by the browser and the static HTML build. */
+export const basename = import.meta.env.BASE_URL.replace(/\/$/, '')
 
 function StripTrailingSlash() {
   const { pathname, search, hash } = useLocation()
@@ -42,9 +36,9 @@ function StripTrailingSlash() {
   return null
 }
 
-export default function App() {
+export function AppRoutes() {
   return (
-    <BrowserRouter basename={basename}>
+    <>
       <StripTrailingSlash />
       <Routes>
         <Route element={<Layout />}>
@@ -83,12 +77,17 @@ export default function App() {
           {aliases.map(([from, to]) => (
             <Route key={from} path={from.slice(1)} element={<Navigate to={to} replace />} />
           ))}
-          <Route path="article/*" element={<Navigate to="/press" replace />} />
-          <Route path="post/*" element={<Navigate to="/press" replace />} />
-          <Route path="blog-categories/*" element={<Navigate to="/press" replace />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
+    </>
+  )
+}
+
+export default function App() {
+  return (
+    <BrowserRouter basename={basename}>
+      <AppRoutes />
     </BrowserRouter>
   )
 }

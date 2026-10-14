@@ -1,0 +1,61 @@
+/* Keep anchor destinations and keyboard focus clear of the sticky navigation. */
+#main,
+main [id] {
+  scroll-margin-top: calc(var(--header) + 1rem);
+}
+
+#main:focus {
+  outline: none;
+}
+
+.back-to-top {
+  position: fixed;
+  z-index: 9;
+  right: max(1rem, env(safe-area-inset-right));
+  bottom: max(1rem, env(safe-area-inset-bottom));
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  padding: 0;
+  border: 1px solid var(--cream);
+  border-radius: 50%;
+  background: var(--cream);
+  color: var(--ink-on-light);
+  box-shadow: 0 3px 16px rgb(0 0 0 / 35%);
+  cursor: pointer;
+}
+
+.back-to-top[hidden] {
+  display: none;
+}
+
+.back-to-top:hover {
+  background: var(--gold-soft);
+}
+
+.back-to-top svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* Leave room beside the final footer line for the floating control. */
+.site-footer .footer-base {
+  padding-bottom: max(4.75rem, calc(env(safe-area-inset-bottom) + 3.75rem));
+}
+
+@media (max-width: 960px) {
+  .site-header .site-nav {
+    top: 100%;
+    max-height: max(0px, calc(var(--nav-available-height, calc(100dvh - var(--header))) - env(safe-area-inset-bottom)));
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+}
+
+@media print {
+  .back-to-top {
+    display: none;
+  }
+}

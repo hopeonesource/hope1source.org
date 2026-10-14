@@ -20,8 +20,8 @@ export default function Readiness() {
   return (
     <>
       <Seo
-        title="Cold nights are coming."
-        description="Opt-in alerts with shelter, ride, and service updates. Used for cold, heat, storms, and closures."
+        title="Opt-in Emergency Alerts & Outreach Planning"
+        description="Plan opt-in emergency text alerts for cold, heat, storms, and closures. Share shelter and service updates, check in on needs, and follow up."
       />
       <PageHero
         kicker="Winter and emergency readiness"

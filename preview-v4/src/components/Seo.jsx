@@ -1,17 +1,10 @@
-import { useEffect } from 'react'
+import { createContext, useContext, useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import { org } from '../content/org.js'
+import { pageMetadata, jsonForScript } from '../lib/seo.js'
 
-const origin = (import.meta.env.VITE_SITE_ORIGIN || 'https://hope1source.org').replace(/\/$/, '')
-
-/** Absolute URL for the current deploy base (project Pages or a custom domain). */
-export function absoluteUrl(pathname = '/') {
-  const base = import.meta.env.BASE_URL || '/'
-  const prefix = base === '/' ? '' : base.replace(/\/$/, '')
-  if (!pathname || pathname === '/') return `${origin}${prefix}/`
-  const path = pathname.startsWith('/') ? pathname : `/${pathname}`
-  return `${origin}${prefix}${path}`
-}
+export { absoluteUrl } from '../lib/seo.js'
+export const SeoContext = createContext(null)
 
 function upsertMeta(attr, key, content) {
   let el = document.head.querySelector(`meta[${attr}="${key}"]`)
@@ -24,44 +17,46 @@ function upsertMeta(attr, key, content) {
 }
 
 /**
- * Per-route title, description, Open Graph, canonical, and optional JSON-LD.
- * GitHub Pages serves one HTML shell, so tags have to be set in the browser.
+ * Static metadata is collected at build time and kept current on navigation.
  */
 export default function Seo({ title, description, jsonLd }) {
   const { pathname } = useLocation()
+  const collector = useContext(SeoContext)
+  const metadata = pageMetadata({ title, description, jsonLd, pathname })
+  if (collector) collector.current = metadata
 
   useEffect(() => {
-    const fullTitle = title ? `${title} · ${org.program}` : org.brand
-    document.title = fullTitle
-    const url = absoluteUrl(pathname)
-    const image = absoluteUrl('/og.png')
+    document.title = metadata.title
 
-    upsertMeta('name', 'description', description)
-    upsertMeta('property', 'og:title', fullTitle)
-    upsertMeta('property', 'og:description', description)
+    upsertMeta('name', 'description', metadata.description)
+    upsertMeta('name', 'robots', metadata.robots)
+    upsertMeta('property', 'og:title', metadata.title)
+    upsertMeta('property', 'og:description', metadata.description)
     upsertMeta('property', 'og:type', 'website')
-    upsertMeta('property', 'og:url', url)
-    upsertMeta('property', 'og:image', image)
+    upsertMeta('property', 'og:url', metadata.url)
+    upsertMeta('property', 'og:image', metadata.image)
     upsertMeta('property', 'og:site_name', org.brand)
     upsertMeta('name', 'twitter:card', 'summary_large_image')
-    upsertMeta('name', 'twitter:title', fullTitle)
-    upsertMeta('name', 'twitter:description', description)
-    upsertMeta('name', 'twitter:image', image)
+    upsertMeta('name', 'twitter:title', metadata.title)
+    upsertMeta('name', 'twitter:description', metadata.description)
+    upsertMeta('name', 'twitter:image', metadata.image)
 
     let canonical = document.head.querySelector('link[rel="canonical"]')
-    if (!canonical) {
-      canonical = document.createElement('link')
-      canonical.setAttribute('rel', 'canonical')
-      document.head.appendChild(canonical)
-    }
-    canonical.setAttribute('href', url)
+    if (metadata.canonical) {
+      if (!canonical) {
+        canonical = document.createElement('link')
+        canonical.setAttribute('rel', 'canonical')
+        document.head.appendChild(canonical)
+      }
+      canonical.setAttribute('href', metadata.canonical)
+    } else canonical?.remove()
 
     const existing = document.getElementById('jsonld')
-    if (jsonLd) {
+    if (metadata.jsonLd) {
       const script = existing || document.createElement('script')
       script.id = 'jsonld'
       script.type = 'application/ld+json'
-      script.textContent = JSON.stringify(jsonLd)
+      script.textContent = jsonForScript(metadata.jsonLd)
       if (!existing) document.head.appendChild(script)
     } else if (existing) {
       existing.remove()

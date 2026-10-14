@@ -18,7 +18,7 @@ export default function CaseStudy({ slug }) {
           <div className="prose">
             {story.image ? (
               <figure className={story.portrait ? 'study-figure is-portrait' : 'study-figure'}>
-                <img src={publicUrl(story.image)} alt={story.imageAlt} />
+                <img src={publicUrl(story.image)} width={story.imageWidth} height={story.imageHeight} alt={story.imageAlt} decoding="async" />
               </figure>
             ) : null}
             {story.metrics?.length ? (

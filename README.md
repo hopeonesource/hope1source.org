@@ -54,10 +54,14 @@ npm run dev
 
 `npm run dev` serves http://localhost:5173 with `base: /`, so routes look like `/about`.
 
-The separate third wording preview uses the v3 design and lives in `preview-v4/`.
-Run `npm run dev:v4` and open http://localhost:5175/v4/ for live wording review.
-The production build includes it at `/hope1source.org/v4/`, alongside the current site and v3.
-The running copy-edit log is in [EDITS.md](EDITS.md).
+The separate third preview lives in `preview-v4/`, with the approved wording,
+responsive refinements, and partnership-focused service descriptions.
+Run `npm run dev:v4` and open http://localhost:5175/v4/ for live review.
+The build includes it at `/hope1source.org/v4/`, alongside the current site and v3.
+It prerenders every page and keeps the review preview `noindex`. See
+[SEARCH_READINESS.md](docs/SEARCH_READINESS.md) for the future `hope1source.org`
+release settings and publication checks. Publication follows PR review.
+The running edit log is in [EDITS.md](EDITS.md).
 
 ```bash
 npm run build
@@ -199,7 +203,9 @@ Counsel should review `/privacy` and `/terms` and then remove the draft banner.
 |---------|----------------|
 | `npm run dev` | Local site at `/` |
 | `npm run check:routes` | Fails if the sitemap list and `App.jsx` drift apart |
-| `npm run build` | SEO files, production bundle, `404.html` copy |
+| `npm run dev:v4` | Live third preview at `/v4/` |
+| `npm run build` | Current/v3 builds plus prerendered v4 and its output checks |
+| `npm run check:v4` | Validate built v4 pages, links, metadata, aliases, and sitemap |
 | `npm run preview` | Serve the last build |
 
 Stack: React, Vite, React Router, plain CSS. Fonts are self-hosted through Fontsource so the pages do not call Google at runtime.

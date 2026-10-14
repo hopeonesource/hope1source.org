@@ -12,13 +12,17 @@ export default function RolePage({ id }) {
 
   return (
     <>
-      <Seo title={role.title} description={role.lede} />
+      <Seo title={role.seoTitle || role.title} description={role.seoDescription || role.lede} />
       <PageHero stage tone={role.id} kicker={role.kicker} title={role.title} lede={role.lede}>
         <div className="hero-actions">
           {role.donate ? (
             <a className="btn btn-primary" href={org.donateUrl} target="_blank" rel="noopener noreferrer">
               {role.cta}
             </a>
+          ) : role.id === 'providers' ? (
+            <Link className="btn btn-primary" to="/contact">
+              Request a partnership conversation
+            </Link>
           ) : (
             <a className="btn btn-primary" href={mailto({ subject: role.subject })}>
               {role.cta}

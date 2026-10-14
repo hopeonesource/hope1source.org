@@ -1,15 +1,22 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Link, NavLink, Outlet, useLocation } from 'react-router-dom'
 import { footerLinks, org, primaryNav } from '../content/org.js'
 import { mailto, publicUrl } from '../lib/links.js'
+import { siteIndexable } from '../lib/seo.js'
+import BackToTop from './BackToTop.jsx'
+import RouteNavigation from './RouteNavigation.jsx'
+import '../styles/navigation.css'
 
-function Brand({ onClick }) {
+function Brand({ onClick, id }) {
   return (
-    <Link className="brand" to="/" onClick={onClick}>
+    <Link className="brand" to="/" onClick={onClick} id={id}>
       <img
         className="brand-logo"
         src={publicUrl('logo-hope-one-source.png')}
         alt="Hope1Source Check-ins"
+        width="2500"
+        height="805"
+        decoding="async"
       />
     </Link>
   )
@@ -18,11 +25,22 @@ function Brand({ onClick }) {
 export default function Layout() {
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const header = useRef(null)
+  const menuToggle = useRef(null)
   const location = useLocation()
 
   useEffect(() => {
     setOpen(false)
-  }, [location.pathname])
+  }, [location.pathname, location.search, location.hash])
+
+  useEffect(() => {
+    const desktop = window.matchMedia('(min-width: 961px)')
+    const onResize = () => {
+      if (desktop.matches) setOpen(false)
+    }
+    desktop.addEventListener('change', onResize)
+    return () => desktop.removeEventListener('change', onResize)
+  }, [])
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8)
@@ -38,8 +56,35 @@ export default function Layout() {
 
   useEffect(() => {
     if (!open) return undefined
+    const element = header.current
+    const fitMenu = () => {
+      const viewport = window.visualViewport
+      const bottom = viewport ? viewport.height + viewport.offsetTop : window.innerHeight
+      const available = Math.max(0, bottom - element.getBoundingClientRect().bottom)
+      element.style.setProperty('--nav-available-height', `${available}px`)
+    }
+    fitMenu()
+    const observer = new ResizeObserver(fitMenu)
+    observer.observe(element)
+    window.addEventListener('resize', fitMenu)
+    window.visualViewport?.addEventListener('resize', fitMenu)
+    window.visualViewport?.addEventListener('scroll', fitMenu)
+    return () => {
+      observer.disconnect()
+      window.removeEventListener('resize', fitMenu)
+      window.visualViewport?.removeEventListener('resize', fitMenu)
+      window.visualViewport?.removeEventListener('scroll', fitMenu)
+      element.style.removeProperty('--nav-available-height')
+    }
+  }, [open])
+
+  useEffect(() => {
+    if (!open) return undefined
     const onKey = (event) => {
-      if (event.key === 'Escape') setOpen(false)
+      if (event.key === 'Escape') {
+        setOpen(false)
+        menuToggle.current?.focus()
+      }
     }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
@@ -47,17 +92,35 @@ export default function Layout() {
 
   return (
     <div className="site">
+      <RouteNavigation />
+      <noscript>
+        <style>{`@media (max-width: 960px) {
+          .site .site-header { position: static; }
+          .site .header-inner { flex-wrap: wrap; }
+          .site .nav-toggle { display: none; }
+          .site .hero, .site .page-hero.stage { margin-top: 0; }
+          .site .site-nav { display: flex; position: static; flex: 1 0 100%; max-height: none; overflow: visible; }
+        }`}</style>
+      </noscript>
       <a className="skip-link" href="#main">
         Skip to content
       </a>
-      <aside className="preview-banner" role="note">
-        Third preview: a shared story across our work.{' '}
-        <a href={org.currentSiteUrl}>View the current site</a>
-      </aside>
-      <header className={scrolled ? 'site-header is-scrolled' : 'site-header'}>
-        <div className="header-inner">
-          <Brand onClick={() => setOpen(false)} />
+      {!siteIndexable && (
+        <aside className="preview-banner" role="note">
+          Third preview: a shared story across our work.{' '}
+          <a href={org.currentSiteUrl}>View the current site</a>
+        </aside>
+      )}
+      <header ref={header} className={scrolled ? 'site-header is-scrolled' : 'site-header'}>
+        <div
+          className="header-inner"
+          onBlur={(event) => {
+            if (!event.currentTarget.contains(event.relatedTarget)) setOpen(false)
+          }}
+        >
+          <Brand id="page-top" onClick={() => setOpen(false)} />
           <button
+            ref={menuToggle}
             type="button"
             className="nav-toggle"
             aria-expanded={open}
@@ -84,7 +147,7 @@ export default function Layout() {
         </div>
       </header>
 
-      <main id="main">
+      <main id="main" tabIndex={-1}>
         <Outlet />
       </main>
 
@@ -124,6 +187,14 @@ export default function Layout() {
           <p>© {new Date().getFullYear()} {org.legalName}</p>
         </div>
       </footer>
+      <BackToTop />
+      <noscript>
+        <a className="back-to-top" href="#page-top" aria-label="Back to top" title="Back to top">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+            <path d="m5 12 7-7 7 7M12 5v15" />
+          </svg>
+        </a>
+      </noscript>
     </div>
   )
 }

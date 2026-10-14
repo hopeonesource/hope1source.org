@@ -1,62 +1,102 @@
-import { mkdirSync, readFileSync, writeFileSync } from 'node:fs'
-import { spawnSync } from 'node:child_process'
+import { mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
 import path from 'node:path'
-import { fileURLToPath } from 'node:url'
+import { fileURLToPath, pathToFileURL } from 'node:url'
+import { build } from 'vite'
+import { pages, aliases } from '../preview-v4/src/content/routes.js'
 
-/**
- * Build the third preview into dist/v4 after the current site build.
- * Does not run write-seo.mjs, so public/sitemap.xml stays the current site's.
- */
+/** Build readable HTML for every v4 route, without changing the current site. */
 const root = fileURLToPath(new URL('..', import.meta.url))
 const base = process.env.VITE_V4_BASE || '/hope1source.org/v4/'
-const origin = (process.env.VITE_SITE_ORIGIN || 'https://hopeonesource.github.io').replace(/\/$/, '')
+if (!base.startsWith('/') || !base.endsWith('/')) {
+  throw new Error('VITE_V4_BASE must be an absolute path ending in /')
+}
+const origin = new URL(process.env.VITE_SITE_ORIGIN || 'https://hopeonesource.github.io')
+if (!['http:', 'https:'].includes(origin.protocol) || origin.pathname !== '/' || origin.search || origin.hash) {
+  throw new Error('VITE_SITE_ORIGIN must be an HTTP(S) origin without a path')
+}
+// Client and SSR builds must receive identical deployment settings.
+process.env.VITE_BASE = base
+process.env.VITE_SITE_ORIGIN = origin.origin
+process.env.VITE_SITE_INDEXABLE = process.env.VITE_SITE_INDEXABLE === 'true' ? 'true' : 'false'
 
-const result = spawnSync('npx', ['vite', 'build', '--config', 'preview-v4/vite.config.js'], {
-  cwd: root,
-  env: { ...process.env, VITE_BASE: base },
-  stdio: 'inherit',
-})
-
-if (result.status) process.exit(result.status ?? 1)
-
-const { pages, aliases } = await import('../preview-v4/src/content/routes.js')
+const configFile = path.join(root, 'preview-v4/vite.config.js')
 const dist = path.join(root, 'dist/v4')
-const index = readFileSync(path.join(dist, 'index.html'))
-const routes = new Set()
+// Keep the temporary SSR bundle in-project so external dependencies resolve.
+mkdirSync(path.join(root, 'node_modules/.vite'), { recursive: true })
+const serverBuild = mkdtempSync(path.join(root, 'node_modules/.vite/v4-prerender-'))
 
-for (const page of pages) {
-  if (page.path !== '/') routes.add(page.path.replace(/^\//, ''))
-}
-for (const [from] of aliases) routes.add(from.replace(/^\//, ''))
-
-for (const rel of routes) {
-  const dir = path.join(dist, rel)
-  mkdirSync(dir, { recursive: true })
-  writeFileSync(path.join(dir, 'index.html'), index)
-}
-
-writeFileSync(path.join(dist, '404.html'), index)
-
-const prefix = base.endsWith('/') ? base : `${base}/`
-function loc(pagePath) {
-  if (pagePath === '/') return `${origin}${prefix}`
-  return `${origin}${prefix}${pagePath.replace(/^\//, '')}`
-}
-
-const xmlBody = pages
-  .map(
-    (page) =>
-      `  <url>\n    <loc>${loc(page.path)}</loc>\n    <changefreq>${page.changefreq}</changefreq>\n    <priority>${page.priority}</priority>\n  </url>`,
+try {
+  await build({ configFile })
+  const template = readFileSync(path.join(dist, 'index.html'), 'utf8')
+  if (!template.includes('<!--seo-start-->') || !template.includes('<div id="root"></div>')) {
+    throw new Error('The v4 HTML template is missing its prerender placeholders')
+  }
+  await build({
+    configFile,
+    build: {
+      ssr: path.join(root, 'preview-v4/src/entry-server.jsx'),
+      outDir: serverBuild,
+      emptyOutDir: true,
+      copyPublicDir: false,
+      rollupOptions: { output: { entryFileNames: 'entry-server.mjs' } },
+    },
+  })
+  const { renderRoute, absoluteUrl, escapeHtml, siteIndexable } = await import(
+    pathToFileURL(path.join(serverBuild, 'entry-server.mjs')).href
   )
-  .join('\n')
+  const manifest = []
+  const renderPage = (route) => {
+    const rendered = renderRoute(route)
+    return {
+      ...rendered,
+      document: template
+        .replace(/<!--seo-start-->[\s\S]*?<!--seo-end-->/, rendered.head)
+        .replace('<div id="root"></div>', `<div id="root">${rendered.html}</div>`),
+    }
+  }
 
-writeFileSync(
-  path.join(dist, 'sitemap.xml'),
-  `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${xmlBody}\n</urlset>\n`,
-)
-writeFileSync(
-  path.join(dist, 'robots.txt'),
-  `User-agent: *\nAllow: /\n\nSitemap: ${loc('/sitemap.xml')}\n`,
-)
+  for (const page of pages) {
+    const rendered = renderPage(page.path)
+    const directory = path.join(dist, page.path.replace(/^\//, ''))
+    mkdirSync(directory, { recursive: true })
+    writeFileSync(path.join(directory, 'index.html'), rendered.document)
+    manifest.push({ path: page.path, ...rendered.metadata })
+  }
 
-console.log(`v4 preview: ${routes.size} deep links under dist/v4`)
+  // Canonical destination + refresh + real link works without JavaScript.
+  // Aliases are never included in the sitemap.
+  for (const [from, to] of aliases) {
+    const directory = path.join(dist, from.replace(/^\//, ''))
+    mkdirSync(directory, { recursive: true })
+    const destination = escapeHtml(absoluteUrl(to))
+    const localDestination = escapeHtml(new URL(absoluteUrl(to)).pathname)
+    writeFileSync(path.join(directory, 'index.html'), `<!doctype html>
+<html lang="en"><head><meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Page moved · Hope1Source</title>
+<meta name="robots" content="noindex, follow" />
+<link rel="canonical" href="${destination}" />
+<meta http-equiv="refresh" content="0; url=${localDestination}" />
+</head><body><main><h1>This page has moved.</h1>
+<p><a href="${localDestination}">Continue to the Hope1Source page</a>.</p>
+</main></body></html>\n`)
+  }
+
+  writeFileSync(path.join(dist, '404.html'), renderPage('/404.html').document)
+  const xmlBody = siteIndexable ? pages.map((page) => `  <url><loc>${escapeHtml(absoluteUrl(page.path))}</loc></url>`).join('\n') : ''
+  writeFileSync(path.join(dist, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${xmlBody}
+</urlset>\n`)
+  // A nested robots.txt cannot control host crawling. A root deployment uses
+  // these rules to let crawlers read the page-level index/noindex metadata.
+  writeFileSync(path.join(dist, 'robots.txt'), `# Effective only when deployed as the host-root /robots.txt.
+# This build's HTML carries the index/noindex policy.
+User-agent: *
+Allow: /
+${siteIndexable ? `\nSitemap: ${absoluteUrl('/sitemap.xml')}\n` : ''}`)
+  writeFileSync(path.join(dist, 'prerender-manifest.json'), `${JSON.stringify({ base, origin: origin.origin, indexable: siteIndexable, pages: manifest, aliases }, null, 2)}\n`)
+  console.log(`v4: prerendered ${pages.length} pages, ${aliases.length} aliases and a noindex 404 (${siteIndexable ? 'indexable release' : 'noindex preview'})`)
+} finally {
+  rmSync(serverBuild, { recursive: true, force: true })
+}

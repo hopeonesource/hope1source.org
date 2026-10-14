@@ -11,7 +11,11 @@ export function StoryCard({ story }) {
       >
         <img
           src={publicUrl(story.image)}
+          width={story.imageWidth}
+          height={story.imageHeight}
           alt=""
+          loading="lazy"
+          decoding="async"
           style={story.imagePosition ? { objectPosition: story.imagePosition } : undefined}
         />
       </span>

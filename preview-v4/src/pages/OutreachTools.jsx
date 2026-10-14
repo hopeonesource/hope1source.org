@@ -10,30 +10,57 @@ import { mailto, publicUrl } from '../lib/links.js'
 const proof = stories.filter((story) => story.slug !== 'dreamers-and-achievers')
 const dreamers = stories.find((story) => story.slug === 'dreamers-and-achievers')
 
+const offerings = [
+  {
+    title: 'SMS check-ins',
+    text: 'Invite people to opt in to text messages, share what they need, and stay connected with your team.',
+    to: '/for-providers',
+    linkLabel: 'Check-ins for service providers',
+  },
+  {
+    title: 'Emergency alerts',
+    text: 'Share shelter, transportation, and service updates during cold, heat, storms, and closures.',
+    to: '/readiness',
+    linkLabel: 'Plan your alerts',
+  },
+  {
+    title: 'Service feedback',
+    text: 'Hear what worked, understand unmet needs, and use what you learn to improve services.',
+    to: '/learn-more',
+    linkLabel: 'See partner support and results',
+  },
+  {
+    title: 'Outreach tools',
+    text: 'Use a QR code, NFC tap, or kiosk at places people already visit to help them opt in and ask for support.',
+    to: '/access-points',
+    linkLabel: 'Explore access points',
+  },
+]
+
 export default function OutreachTools() {
   return (
     <>
       <Seo
-        title="Reach. Listen. Follow up."
-        description="Share useful information, hear back privately, and follow up. H1S Check-ins helps partners stay connected with people who choose to take part."
+        title="SMS Check-ins, Emergency Alerts & Service Feedback"
+        description="Explore H1S outreach tools for service providers: opt-in SMS check-ins, emergency alerts, service feedback, and QR, NFC, or kiosk access points."
       />
 
       <section className="hero">
         <div className="hero-photo">
-          <img src={publicUrl('photos/homepage-hero.jpg')} alt="" />
+          <img src={publicUrl('photos/homepage-hero.jpg')} alt="" width="1200" height="630" fetchPriority="high" />
         </div>
         <MissionWash tone="home" />
         <div className="wrap hero-copy">
           <p className="kicker">{org.product}</p>
           <h1>Reach. Listen. Follow up.</h1>
-          <p className="lede">H1S Check-ins helps partners share useful information, hear back privately, and follow up with people who choose to take part.</p>
+          <p className="lede">H1S Check-ins gives service providers outreach tools for opt-in SMS check-ins, emergency alerts, and service feedback. Stay connected, understand needs, and follow up.</p>
           <div className="hero-actions">
-            <a className="btn btn-primary" href={mailto({ subject: 'Live demo' })}>
+            <Link className="btn btn-primary" to="/contact">
+              Request a partnership conversation
+            </Link>
+            <a className="btn btn-secondary" href={mailto({ subject: 'Live demo' })}>
               Request a live demo
             </a>
-            <Link className="btn btn-secondary" to="/get-involved">
-              Pick a way to take part
-            </Link>
           </div>
           <p className="hero-note">
             For people who <Link to="/for-providers">run a program</Link> or{' '}
@@ -44,6 +71,21 @@ export default function OutreachTools() {
       </section>
 
       <div className="horizon" aria-hidden="true" />
+
+      <section className="section" aria-labelledby="outreach-offerings">
+        <div className="wrap">
+          <h2 id="outreach-offerings">Tools for staying connected</h2>
+          <div className="door-row offerings-grid">
+            {offerings.map((offering) => (
+              <article key={offering.title} className="door">
+                <h3>{offering.title}</h3>
+                <p>{offering.text}</p>
+                <Link className="door-go" to={offering.to}>{offering.linkLabel}</Link>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
 
       <section className="doors-section" aria-labelledby="outreach-steps">
         <div className="wrap">
@@ -60,7 +102,7 @@ export default function OutreachTools() {
             ))}
           </div>
           <figure className="product-shot">
-            <img src={publicUrl('photos/phone-checkins.png')} alt="Phone showing an H1S Check-ins screen." />
+            <img src={publicUrl('photos/phone-checkins.png')} alt="Phone showing an H1S Check-ins screen." width="900" height="856" loading="lazy" decoding="async" />
           </figure>
           <p className="hero-note">
             Text also works with email, QR codes, Facebook, and WhatsApp. {org.brand}. {org.legalName} is the
@@ -97,12 +139,12 @@ export default function OutreachTools() {
       <section className="cause-band" aria-labelledby="outreach-cta">
         <div className="wrap cause-inner">
           <div>
-            <h2 id="outreach-cta">See it on a phone</h2>
-            <p>Ask partnerships for a live demo. We do not publish a text code on this site.</p>
+            <h2 id="outreach-cta">Bring check-ins to your service</h2>
+            <p>Tell us who you serve and what you want to improve. We can discuss your needs and arrange a live demo.</p>
           </div>
-          <a className="btn btn-primary" href={mailto({ subject: 'Live demo' })}>
-            Request a live demo
-          </a>
+          <Link className="btn btn-primary" to="/contact">
+            Request a partnership conversation
+          </Link>
         </div>
       </section>
     </>

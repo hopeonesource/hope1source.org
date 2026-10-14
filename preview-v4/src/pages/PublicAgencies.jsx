@@ -17,8 +17,8 @@ export default function PublicAgencies() {
   return (
     <>
       <Seo
-        title="Reach residents before harm happens."
-        description="Opt-in alerts, check-ins, and follow-up for human services, emergency management, public health, VA, and housing teams."
+        title="SMS Check-ins & Emergency Alerts for Public Agencies"
+        description="Opt-in text messages, emergency alerts, and service feedback for health, housing, human services, and emergency teams. Explore agency facts and case studies."
       />
       <PageHero
         kicker="Public agencies"
@@ -61,6 +61,8 @@ export default function PublicAgencies() {
           </p>
           <p>
             <Link to="/case-studies/veterans-affairs-national-homeless-programs">Read the veterans story</Link>
+            {' · '}
+            <a href="https://academic.oup.com/jpubhealth/article/44/1/207/6218923">Read the published study</a>
           </p>
           <p>
             DC Human Services adopted the alert approach we brought. Alerts carried shelter and ride information in

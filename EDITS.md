@@ -5,7 +5,7 @@
 - Current: https://hopeonesource.github.io/hope1source.org/
 - Preview: https://hopeonesource.github.io/hope1source.org/v3/
 - Repository: https://github.com/hopeonesource/hope1source.org
-- Third preview: implemented in `preview-v4/`, running locally at http://127.0.0.1:5176/v4/. The GitHub Pages path `/hope1source.org/v4/` will become available after review and merge; it is not published yet.
+- Third preview: implemented in `preview-v4/`, running locally at http://127.0.0.1:5175/v4/. The GitHub Pages path `/hope1source.org/v4/` will become available after review and merge; it is not published yet.
 
 ## Workflow
 
@@ -13,7 +13,9 @@ Record each wording change with the page, exact old text, exact new text, and st
 
 The user said **apply them in realtime**. Apply wording edits immediately to the local third preview and keep this log current. Work on branch `codex/third-preview-copy` and open a pull request for review. Do not change layout or design; do not merge or publish automatically.
 
-The separate third preview uses v3 as its structural base. Its layout, styles, imagery, and section order are preserved. The current site and v3 are unchanged. Separate preview setup consists of `preview-v4/vite.config.js`, `scripts/build-v4.mjs`, the package scripts, and README instructions. Initial HTML title and description metadata match T01/T02. Review this setup separately from the wording diff.
+The separate third preview started from v3 as its structural base. The wording and subsequent user-requested visual, navigation, and responsive changes are recorded below. The current site and v3 source are unchanged. Separate preview setup consists of `preview-v4/vite.config.js`, `scripts/build-v4.mjs`, the package scripts, and README instructions. Review this setup separately from the wording diff.
+
+**Scope update, October 14, 2026:** Later requests authorize the visual corrections recorded below and responsive, navigation, and search improvements across **all v4 pages**. The user selected service providers as the priority audience, a partnership conversation as the primary action, and SMS check-ins, emergency alerts, service feedback, and outreach tools as the offerings to describe. The intended future production domain is **hope1source.org**. Publication still follows PR review; this work does not merge, publish, or change DNS. T101–T105 supersede the original text-only constraint only for this authorized work.
 
 ## Third version — applied locally
 
@@ -1586,6 +1588,69 @@ Use what you learn to follow up and understand what changed.
 **New text**
 
 Use what you learn to understand what changed and follow up.
+
+### T101 — All v4 pages: navigation and return to top
+
+- Status: **Applied locally — user-requested behavior; awaiting PR review**
+- Ordinary page links now open the destination at the top, including same-page route links and history navigation. Explicit section links still open their intended section.
+- Added a labeled, keyboard-accessible up-arrow after scrolling. It returns to the top and honors reduced-motion preferences.
+- Added route focus handling, mobile-menu Escape behavior, viewport-aware menu sizing, and mobile navigation when JavaScript is unavailable.
+
+### T102 — All v4 pages: responsive presentation
+
+- Status: **Applied locally — user-requested mobile and desktop review; awaiting PR review**
+- Fixed the narrow-screen Dreamers & Achievers results table and unnecessary double page gutters.
+- Made long button labels and content wrap, constrained form controls, stacked team profiles on narrow phones, and enlarged navigation/footer tap targets.
+- Preserved image proportions, supplied known image dimensions, and deferred offscreen photos. Case-study graphics remain fully contained.
+- Removed the scroll-driven card fade so text and graphics remain fully readable.
+- Arranged the four outreach offerings in two columns on larger screens and one on phones.
+
+### T103 — Service-provider discovery and partnership conversations
+
+- Status: **Applied locally — assistant-drafted copy implementing the user's marketing answers; awaiting PR review**
+- Pages: `/`, `/outreach-tools`, `/learn-more`, `/for-providers`
+- Preserved the approved homepage headline, mission, and case-study results.
+
+**Homepage actions**
+
+- Old: `Take part` → New: `Request a partnership conversation` (opens `/contact`).
+- Old: `Contact partnerships` → New: `Explore outreach tools` (opens `/outreach-tools`).
+
+**Homepage service summary**
+
+- Old: `Earn trust by listening, following up, and showing what changed. People choose to take part.`
+- New: `Our outreach tools help service providers use SMS check-ins, emergency alerts, and service feedback to stay connected and follow up. People choose to take part.`
+
+**Outreach Tools lead**
+
+- Old: `H1S Check-ins helps partners share useful information, hear back privately, and follow up with people who choose to take part.`
+- New: `H1S Check-ins gives service providers outreach tools for opt-in SMS check-ins, emergency alerts, and service feedback. Stay connected, understand needs, and follow up.`
+
+**Added offering descriptions**
+
+- SMS check-ins: `Invite people to opt in to text messages, share what they need, and stay connected with your team.`
+- Emergency alerts: `Share shelter, transportation, and service updates during cold, heat, storms, and closures.`
+- Service feedback: `Hear what worked, understand unmet needs, and use what you learn to improve services.`
+- Outreach tools: `Use a QR code, NFC tap, or kiosk at places people already visit to help them opt in and ask for support.`
+
+Each offering links to an existing relevant v4 page. Outreach Tools and partner-support/provider calls to action also lead to a partnership conversation. No service coverage area was inferred.
+
+### T104 — All v4 pages: readable HTML and search metadata
+
+- Status: **Applied locally — user-requested search/crawler optimization; awaiting PR review**
+- Replaced JavaScript-only HTML shells with 29 fully rendered pages, 12 static alias redirects, and a useful noindex 404.
+- Added unique initial-response titles/descriptions, canonical URLs, social metadata, and organization/website/page structured data that stay current after navigation.
+- Marketing metadata names the relevant services and audiences without adding ratings, geographic coverage, or unsupported outcomes.
+- Review previews remain `noindex, follow`; an explicitly configured future production build targets `https://hope1source.org/`, enables indexing, and includes its canonical sitemap. The preview banner disappears for that release configuration.
+- Added generated-output validation to the normal build. Existing current-site and v3 source/configuration are untouched by this task.
+
+### T105 — Existing evidence and publication review
+
+- Status: **Review notes recorded; no new outcome claims added**
+- Added a direct `Read the published study` link beside the veterans case-study link on `/public-agencies`.
+- The existing Oxford reference uses 2019, but the linked paper was published online in 2021 and in a 2022 journal issue. The approved visible wording is preserved pending review; the discrepancy is documented.
+- Recorded source-linking needs for the existing Google-review/funding, hypothermia, and AWS-security wording in `docs/SEARCH_READINESS.md`. These notes are for review and were not added as on-page disclaimers.
+- The user confirmed evidence is already on the site; no new studies, certifications, testimonials, or outcomes were invented.
 
 ## Resolved placement
 
