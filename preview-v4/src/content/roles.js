@@ -4,7 +4,7 @@ export const roles = [
     path: '/for-providers',
     doorTo: '/outreach-tools',
     doorLabel: 'See how outreach works',
-    nav: 'If you run a program',
+    nav: 'If you provide a service',
     kicker: 'Nonprofits, shelters, program leads',
     title: 'If you run a program',
     panel: 'Nonprofits, shelters, and program leads.',

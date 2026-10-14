@@ -17,7 +17,7 @@ The separate third preview uses v3 as its structural base. Its layout, styles, i
 
 ## Third version — applied locally
 
-The user asked to combine the best of the current and preview versions, with a common thread across all case studies. T01, T02, T03, T14, T21, T22, T23, T24, T24A, T27, T28, T29, T30, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61, T62, T63, T64, T65, T66, T67, T68, T69, T70, T71, T72, T73, T74, T75, T76, T77, T78, T79, T80, T81, T82, T83, T84, T85, and T86 contain user-supplied or user-requested changes. The remaining entries originated as assistant proposals. All listed entries have now been applied to the separate local third preview following the request to apply in realtime.
+The user asked to combine the best of the current and preview versions, with a common thread across all case studies. T01, T02, T03, T14, T21, T22, T23, T24, T24A, T27, T28, T29, T30, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61, T62, T63, T64, T65, T66, T67, T68, T69, T70, T71, T72, T73, T74, T75, T76, T77, T78, T79, T80, T81, T82, T83, T84, T85, T86, and T87 contain user-supplied or user-requested changes. The remaining entries originated as assistant proposals. All listed entries have now been applied to the separate local third preview following the request to apply in realtime.
 
 **Common thread:** Help people get support. Help partners serve them better.
 
@@ -1386,6 +1386,21 @@ Can you reach those you aim to serve?
 **New text**
 
 Can you remain connected to those you aim to serve?
+
+### T87 — /
+
+- Status: **Applied locally — user-supplied wording; awaiting PR review**
+- Existing source: `preview-v4/src/content/roles.js`
+- Target: `preview-v4/src/content/roles.js`
+- Field: Homepage first participation-card label
+
+**Old text**
+
+If you run a program
+
+**New text**
+
+If you provide a service
 
 ## Resolved placement
 
