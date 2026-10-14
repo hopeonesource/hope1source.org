@@ -56,7 +56,7 @@ export const stories = [
     quoteAttribution: 'DC Office of the Chief Medical Examiner, published H1S housing case study',
     home: 'Alerts that point to a warm place tonight.',
     body: [
-      'During extreme weather, people need to know where shelter is available and how to get there. DC Human Services used H1S to send emergency alerts with shelter and transportation information to hundreds of residents.',
+      'During extreme weather, people need to know where shelter is available and how to get there. DC Human Services used H1S to send emergency alerts with shelter and transportation information to thousands of residents.',
       'The alerts put practical details on residents’ phones so people could see where shelter was available and how to get there.',
       'DC reported that hypothermia deaths fell 78% during the supported period.',
     ],
