@@ -48,7 +48,7 @@ Replaced the cropped raster figure with a resolution-independent chart based on 
 - Approved source image: `IMG_8351.JPG`
 - Assets: `public/photos/hypothermia-alert-people.svg`, `public/photos/dc-homeless.jpg`, and `public/photos/dc-hypothermia-messages-focus.jpg`
 
-Replaced the unrelated VA team photo with a responsive graphic using the historic Washington, D.C. street photo published on the Hope1Source housing page. The revised composition shows the complete street photo instead of using a full-bleed crop. It pairs that photo with the approved historic message screenshot from `IMG_8351.JPG`, changes every visible `HOS` prefix to `H1S`, keeps the hypothermia message sharp, and leaves the surrounding resource messages visible with a soft blur. The graphic includes the reported 78% reduction during the supported period and uses a 3:2 safe composition with `contain` for mobile and desktop.
+Replaced the unrelated VA team photo with a responsive graphic using the historic Washington, D.C. street photo published on the Hope1Source housing page. The revised composition shows the complete street photo instead of using a full-bleed crop. It pairs that photo with the approved historic message screenshot from `IMG_8351.JPG`, changes every visible `HOS` prefix to `H1S`, keeps the hypothermia message sharp, and leaves the surrounding resource messages visible with a soft blur. The graphic states that DC reported hypothermia deaths fell 78% during the supported period and uses a 3:2 safe composition with `contain` for mobile and desktop.
 
 ### V03 — Dreamers & Achievers growth image
 
@@ -418,7 +418,7 @@ Nearly 80% fewer hypothermia deaths in Washington, D.C., from the change in the 
 
 **New text**
 
-DC Human Services used H1S emergency alerts to connect residents with shelter and transportation information during extreme weather. During the supported period, DC reported a 78% reduction in hypothermia deaths.
+DC Human Services used H1S emergency alerts to connect residents with shelter and transportation information during extreme weather. DC reported that hypothermia deaths fell 78% during the supported period.
 
 ### T23 — Home cards, /case-studies, /case-studies/emergency-shelter-alerts, and other existing uses of this story
 
@@ -454,7 +454,7 @@ DC Interagency Council on Homelessness, published H1S housing case study
 
 2. The alerts put practical details on residents’ phones so people could see where shelter was available and how to get there.
 
-3. During the supported period, DC reported a 78% reduction in hypothermia deaths.
+3. DC reported that hypothermia deaths fell 78% during the supported period.
 
 ### T24A — /case-studies/emergency-shelter-alerts
 
@@ -469,7 +469,7 @@ Hypothermia deaths in DC have consistently decreased over the past 5 years, down
 
 **New text**
 
-DC reported a 78% reduction in hypothermia deaths during the supported period.
+DC reported that hypothermia deaths fell 78% during the supported period.
 
 ### T25 — Home cards, /case-studies, /case-studies/dreamers-and-achievers, and other existing uses of this story
 
