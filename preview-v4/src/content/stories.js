@@ -53,7 +53,7 @@ export const stories = [
     summary:
       'DC Human Services used H1S emergency alerts to connect residents with shelter and transportation information during extreme weather. DC reported that hypothermia deaths fell 78% during the supported period.',
     quote: 'DC reported that hypothermia deaths fell 78% during the supported period.',
-    quoteAttribution: 'DC Interagency Council on Homelessness, published H1S housing case study',
+    quoteAttribution: 'DC Office of the Chief Medical Examiner, published H1S housing case study',
     home: 'Alerts that point to a warm place tonight.',
     body: [
       'During extreme weather, people need to know where shelter is available and how to get there. DC Human Services used H1S to send emergency alerts with shelter and transportation information to hundreds of residents.',
