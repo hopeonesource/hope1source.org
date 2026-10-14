@@ -17,7 +17,7 @@ The separate third preview uses v3 as its structural base. Its layout, styles, i
 
 ## Third version — applied locally
 
-The user asked to combine the best of the current and preview versions, with a common thread across all case studies. T01, T02, T03, T14, T21, T22, T23, T24, T24A, T27, T28, T29, T30, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, and T60 contain user-supplied or user-requested wording. The remaining entries originated as assistant proposals. All listed entries have now been applied to the separate local third preview following the request to apply in realtime.
+The user asked to combine the best of the current and preview versions, with a common thread across all case studies. T01, T02, T03, T14, T21, T22, T23, T24, T24A, T27, T28, T29, T30, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, and T61 contain user-supplied or user-requested wording. The remaining entries originated as assistant proposals. All listed entries have now been applied to the separate local third preview following the request to apply in realtime.
 
 **Common thread:** Help people get support. Help partners serve them better.
 
@@ -1010,6 +1010,17 @@ No app is needed. Only a free or discounted service you provide.
 - Field: How trust works
 
 **New text**
+
+No app is needed; only a free or discounted service.
+
+### T61 — /public-agencies
+
+- Status: **Applied locally — user-requested removal; awaiting PR review**
+- Existing source: `preview-v4/src/pages/PublicAgencies.jsx`
+- Target: `preview-v4/src/pages/PublicAgencies.jsx`
+- Field: How trust works
+
+**Removed text**
 
 No app is needed; only a free or discounted service.
 
