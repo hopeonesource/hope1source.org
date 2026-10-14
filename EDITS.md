@@ -5,7 +5,7 @@
 - Current: https://hopeonesource.github.io/hope1source.org/
 - Preview: https://hopeonesource.github.io/hope1source.org/v3/
 - Repository: https://github.com/hopeonesource/hope1source.org
-- Third preview: implemented in `preview-v4/`, running locally at http://127.0.0.1:5175/v4/. The GitHub Pages path `/hope1source.org/v4/` will become available after review and merge; it is not published yet.
+- Third preview: implemented in `preview-v4/`, running locally at http://127.0.0.1:5176/v4/. The GitHub Pages path `/hope1source.org/v4/` will become available after review and merge; it is not published yet.
 
 ## Workflow
 
@@ -17,7 +17,7 @@ The separate third preview uses v3 as its structural base. Its layout, styles, i
 
 ## Third version — applied locally
 
-The user asked to combine the best of the current and preview versions, with a common thread across all case studies. T01, T02, T03, and T46 contain user-supplied wording. The remaining entries originated as assistant proposals. All 46 entries have now been applied to the separate local third preview following the request to apply in realtime.
+The user asked to combine the best of the current and preview versions, with a common thread across all case studies. T01, T02, T03, T14, and T46 contain user-supplied wording. The remaining entries originated as assistant proposals. All 46 entries have now been applied to the separate local third preview following the request to apply in realtime.
 
 **Common thread:** Help people get support. Help partners serve them better.
 
@@ -247,7 +247,7 @@ Make care easier to reach.
 
 ### T14 — Home cards, /case-studies, /case-studies/veterans-affairs-national-homeless-programs, and other existing uses of this story
 
-- Status: **Applied locally — assistant draft; awaiting PR review**
+- Status: **Applied locally — user-supplied wording; “three” normalized to “three-year”; awaiting PR review**
 - Existing source: `preview-v3/src/content/stories.js`
 - Target: corresponding field in `preview-v4/src/`
 - Field: veterans-affairs-national-homeless-programs.card
@@ -258,7 +258,7 @@ Across 30 cities, access to food, counseling, and care rose from about 7 in 10 t
 
 **New text**
 
-H1S contributed to a study in 30 cities that used visits by trained actors and feedback to help service teams improve access to care.
+H1S co-authored a three-year quality improvement initiative with the VA in 30 communities that helped identify and improve access to care.
 
 ### T15 — Home cards, /case-studies, /case-studies/veterans-affairs-national-homeless-programs, and other existing uses of this story
 

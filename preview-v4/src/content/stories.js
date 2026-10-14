@@ -10,7 +10,7 @@ export const stories = [
     title: 'Veterans Affairs national homeless programs',
     outcome: 'Understand barriers',
     cardTitle: "Make care easier to reach.",
-    card: 'H1S contributed to a study in 30 cities that used visits by trained actors and feedback to help service teams improve access to care.',
+    card: 'H1S co-authored a three-year quality improvement initiative with the VA in 30 communities that helped identify and improve access to care.',
     org: 'Veterans Affairs / National Homeless Programs',
     industry: 'Federal government and nonprofit',
     location: '30 cities nationally',
