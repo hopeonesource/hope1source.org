@@ -49,7 +49,7 @@ export default function PublicAgencies() {
           <h2>How trust works</h2>
           <ul>
             <li>People opt in.</li>
-            <li>Partners own and control their check-in.</li>
+            <li>Partners own and control their experience.</li>
             <li>No app is needed.</li>
             <li>A sensitive service is never named in a text.</li>
           </ul>
