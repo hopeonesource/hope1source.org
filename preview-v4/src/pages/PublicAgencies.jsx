@@ -47,11 +47,11 @@ export default function PublicAgencies() {
             ))}
           </dl>
           <h2>How trust works</h2>
-          <ol>
+          <ul>
             <li>People opt-in interested in free and discounted services or games.</li>
             <li>No app is needed; only a cell phone with text messages to earn rewards.</li>
             <li>Partners own and control their digital experience and service delivery.</li>
-          </ol>
+          </ul>
           <h2>Proof you can forward</h2>
           <p>
             We provided the technical assistance to help measure what matters. Across 30 communities, access to food,
