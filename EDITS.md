@@ -47,7 +47,7 @@ Replaced the cropped raster figure with a resolution-independent chart based on 
 - Pages: Homepage, `/case-studies`, and `/case-studies/emergency-shelter-alerts`
 - Assets: `public/photos/hypothermia-alert-people.svg` and `public/photos/dc-homeless.jpg`
 
-Replaced the unrelated VA team photo with a responsive graphic using the historic Washington, D.C. street photo published on the Hope1Source housing page. The graphic pairs people with a phone-style alert describing emergency shelter and transportation information and includes the reported 80% reduction. It uses a 3:2 safe composition and `contain` so the people, alert, and result remain visible on mobile and desktop.
+Replaced the unrelated VA team photo with a responsive graphic using the historic Washington, D.C. street photo published on the Hope1Source housing page. The graphic pairs people with a phone-style alert describing emergency shelter and transportation information and includes the published change from 9 hypothermia deaths in 2015 to 2 in 2019. It uses a 3:2 safe composition and `contain` so the people, alert, and result remain visible on mobile and desktop.
 
 **Existing three-step section:** Reach. Listen. Follow up.
 
@@ -385,7 +385,7 @@ DC Human Services adopted the alert approach we brought. Alerts carried shelter 
 
 **New text**
 
-DC Human Services used H1S to send shelter and transportation information during extreme weather. During the wider city response, DC reported that hypothermia deaths fell 80%.
+DC Human Services used H1S to send shelter and transportation information during extreme weather. DC reported hypothermia deaths declining from 9 in 2015 to 2 in 2019.
 
 ### T22 — Home cards, /case-studies, /case-studies/emergency-shelter-alerts, and other existing uses of this story
 
@@ -400,7 +400,7 @@ Nearly 80% fewer hypothermia deaths in Washington, D.C., from the change in the 
 
 **New text**
 
-DC Human Services used H1S to help residents find shelter and transportation during extreme weather. During the wider city response, DC reported that hypothermia deaths fell 80%.
+DC Human Services used H1S to help residents find shelter and transportation during extreme weather. DC reported hypothermia deaths declining from 9 in 2015 to 2 in 2019.
 
 ### T23 — Home cards, /case-studies, /case-studies/emergency-shelter-alerts, and other existing uses of this story
 
