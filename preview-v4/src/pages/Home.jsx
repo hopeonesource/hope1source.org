@@ -73,7 +73,7 @@ export default function Home() {
         <div className="wrap cause-inner">
           <div>
             <h2 id="ready-title">Cold nights are coming.</h2>
-            <p>Can you reach those you aim to serve?</p>
+            <p>Can you remain connected to those you aim to serve?</p>
           </div>
           <Link className="btn btn-primary" to="/readiness">
             Plan your service
