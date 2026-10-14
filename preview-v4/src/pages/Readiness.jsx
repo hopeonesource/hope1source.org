@@ -29,8 +29,8 @@ export default function Readiness() {
         lede="Send opt-in alerts to check-in with people other channels miss. Used for cold, heat, storms, closures, and collecting any real-time need."
       >
         <div className="hero-actions">
-          <a className="btn btn-primary" href={mailto({ subject: 'Outreach planning' })}>
-            Plan your outreach
+          <a className="btn btn-primary" href={mailto({ subject: 'Service planning' })}>
+            Plan your service
           </a>
           <Link className="btn btn-secondary" to="/public-agencies">
             Read the agency facts
