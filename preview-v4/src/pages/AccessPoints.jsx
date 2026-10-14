@@ -59,10 +59,6 @@ export default function AccessPoints() {
             or delete it at any time.
           </p>
           <p>
-            No religious affiliation is required to give, volunteer, or be served by a partner. The private note stays
-            with the team.
-          </p>
-          <p>
             Business check-ins live on the partner hub linked in the footer. {org.legalName} is the 501(c)(3).
           </p>
           <p>
