@@ -1352,6 +1352,12 @@ address {
   object-fit: cover;
 }
 
+.story-art.is-contain {
+  height: auto;
+  aspect-ratio: 750 / 605;
+  background: #fff;
+}
+
 .study-thumb {
   display: block;
   height: 9.5rem;
@@ -1414,6 +1420,12 @@ address {
 
 .study-thumb.is-cover {
   object-fit: cover;
+}
+
+.study-thumb.is-contain {
+  height: auto;
+  aspect-ratio: 750 / 605;
+  background: #fff;
 }
 
 .study-figure img,

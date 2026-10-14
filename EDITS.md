@@ -31,6 +31,16 @@ Keep the current version's warmth and emphasis on trust, follow-up, and showing 
 
 The homepage headline and supporting line are user-supplied and supersede the earlier assistant drafts in T01 and T02. The homepage case-study heading is **Partner Success** (T03).
 
+## Visual adjustments
+
+### V01 — Veterans Affairs graph
+
+- Status: **Applied locally — user-requested visual correction; awaiting PR review**
+- Pages: Homepage, `/case-studies`, and `/case-studies/veterans-affairs-national-homeless-programs`
+- Asset: `public/photos/va-access-improvement.svg`
+
+Replaced the cropped raster figure with a resolution-independent chart based on the published study’s Table 2. It compares year two with year three for access to food, counseling, PTSD care, and hypertension/prediabetes care. Percentages are rounded and calculated as 100% minus the published reported-barrier rate. The graph uses `contain` and the source image’s aspect ratio so all labels and bars remain visible on mobile and desktop. Updated the image description to match the graph.
+
 **Existing three-step section:** Reach. Listen. Follow up.
 
 **Case-study writing pattern:** the need → H1S's role → what was reported. Use existing text fields and paragraphs. The studies share a purpose; do not imply they all used the same product or intervention.

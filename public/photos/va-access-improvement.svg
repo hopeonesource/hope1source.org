@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="750" height="605" viewBox="0 0 750 605" role="img" aria-labelledby="title desc">
+  <title id="title">Access improved in year three</title>
+  <desc id="desc">Four paired horizontal bars compare the percentage of visits without a reported barrier in 2018 and 2019. Food access rose from 74 to 97 percent, counseling from 68 to 87 percent, PTSD care from 77 to 97 percent, and blood pressure or prediabetes care from 74 to 83 percent.</desc>
+  <rect width="750" height="605" fill="#ffffff"/>
+
+  <text x="30" y="48" fill="#10211b" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700">Access improved in year three</text>
+  <text x="30" y="82" fill="#40524b" font-family="Arial, Helvetica, sans-serif" font-size="21">Visits with no reported barrier</text>
+
+  <rect x="30" y="104" width="20" height="20" rx="2" fill="#168b6d"/>
+  <text x="60" y="121" fill="#24362f" font-family="Arial, Helvetica, sans-serif" font-size="18">Year 2 (2018)</text>
+  <rect x="215" y="104" width="20" height="20" rx="2" fill="#c84a1b"/>
+  <text x="245" y="121" fill="#24362f" font-family="Arial, Helvetica, sans-serif" font-size="18">Year 3 (2019)</text>
+
+  <g fill="none" stroke="#d7dedb" stroke-width="1">
+    <line x1="265" y1="152" x2="265" y2="530"/>
+    <line x1="470" y1="152" x2="470" y2="530" stroke-dasharray="4 5"/>
+    <line x1="675" y1="152" x2="675" y2="530"/>
+  </g>
+  <g fill="#63736d" font-family="Arial, Helvetica, sans-serif" font-size="16">
+    <text x="265" y="146" text-anchor="middle">0%</text>
+    <text x="470" y="146" text-anchor="middle">50%</text>
+    <text x="675" y="146" text-anchor="middle">100%</text>
+  </g>
+
+  <g fill="#10211b" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">
+    <text x="30" y="205">Food</text>
+    <text x="30" y="305">Counseling</text>
+    <text x="30" y="405">PTSD care</text>
+    <text x="30" y="493">Blood pressure /</text>
+    <text x="30" y="519">prediabetes</text>
+  </g>
+
+  <g>
+    <rect x="265" y="172" width="304" height="28" rx="3" fill="#168b6d"/>
+    <rect x="265" y="206" width="396" height="28" rx="3" fill="#c84a1b"/>
+    <rect x="265" y="272" width="279" height="28" rx="3" fill="#168b6d"/>
+    <rect x="265" y="306" width="357" height="28" rx="3" fill="#c84a1b"/>
+    <rect x="265" y="372" width="316" height="28" rx="3" fill="#168b6d"/>
+    <rect x="265" y="406" width="396" height="28" rx="3" fill="#c84a1b"/>
+    <rect x="265" y="472" width="304" height="28" rx="3" fill="#168b6d"/>
+    <rect x="265" y="506" width="340" height="28" rx="3" fill="#c84a1b"/>
+  </g>
+
+  <g fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" text-anchor="end">
+    <text x="559" y="193">74%</text>
+    <text x="651" y="227">97%</text>
+    <text x="534" y="293">68%</text>
+    <text x="612" y="327">87%</text>
+    <text x="571" y="393">77%</text>
+    <text x="651" y="427">97%</text>
+    <text x="559" y="493">74%</text>
+    <text x="595" y="527">83%</text>
+  </g>
+
+  <line x1="30" y1="555" x2="720" y2="555" stroke="#d7dedb" stroke-width="1"/>
+  <text x="30" y="578" fill="#52645d" font-family="Arial, Helvetica, sans-serif" font-size="14">Source: Weiner et al., Journal of Public Health (2022), Table 2.</text>
+  <text x="30" y="596" fill="#52645d" font-family="Arial, Helvetica, sans-serif" font-size="14">Rounded; access shown as 100% minus the reported barrier rate.</text>
+</svg>

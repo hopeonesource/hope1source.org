@@ -5,7 +5,7 @@ import { publicUrl } from '../lib/links.js'
 export function StoryCard({ story }) {
   return (
     <Link className="story-card" to={`/case-studies/${story.slug}`}>
-      <span className={story.imageFit === 'cover' ? 'story-art is-cover' : 'story-art'}>
+      <span className={story.imageFit ? `story-art is-${story.imageFit}` : 'story-art'}>
         <img
           src={publicUrl(story.image)}
           alt=""

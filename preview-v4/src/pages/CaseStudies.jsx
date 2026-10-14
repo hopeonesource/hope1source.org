@@ -22,7 +22,7 @@ export default function CaseStudies() {
             <article key={story.slug}>
               {story.image ? (
                 <img
-                  className={story.imageFit === 'cover' ? 'study-thumb is-cover' : 'study-thumb'}
+                  className={story.imageFit ? `study-thumb is-${story.imageFit}` : 'study-thumb'}
                   src={publicUrl(story.image)}
                   alt=""
                   style={story.imagePosition ? { objectPosition: story.imagePosition } : undefined}

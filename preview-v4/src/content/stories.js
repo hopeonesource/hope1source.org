@@ -17,9 +17,9 @@ export const stories = [
     website: 'https://academic.oup.com/jpubhealth/article-abstract/44/1/207/6218923',
     websiteLabel: 'Journal of Public Health',
     studyUrl: 'https://pubmed.ncbi.nlm.nih.gov/33929036/',
-    image: 'photos/va-program.jpg',
-    imageFit: 'cover',
-    imageAlt: 'Two people outdoors, cropped from the photo on the Hope1Source Veterans Affairs case study.',
+    image: 'photos/va-access-improvement.svg',
+    imageFit: 'contain',
+    imageAlt: 'Bar chart showing access to food, counseling, PTSD care, and blood pressure or prediabetes care improving from year two to year three.',
     kicker: 'Journal of Public Health',
     summary:
       'H1S contributed to research on barriers faced by veterans experiencing homelessness. In 30 cities, trained actors tested access to services, and teams received feedback to improve how they responded.',
