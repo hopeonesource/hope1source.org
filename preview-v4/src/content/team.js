@@ -9,7 +9,7 @@ export const team = [
     role: 'Chief Executive Officer',
     photo: 'photos/tim-underwood.jpg',
     imagePosition: '40% center',
-    bio: 'Tim co-founded this 501(c)(3) charitable organization to help leaders maximize their effectiveness by optimizing outreach and experiences. An Air Force Reserve Officer, former Presidential Management Fellow, and three-time IEEE Humanitarian Activities Committee top global grantee winner, he dedicates himself to helping others build trust across diverse sectors, with a proven track record of service spanning from the White House to supporting those without a house.',
+    bio: 'Tim co-founded this 501(c)(3) charitable organization to help leaders maximize their effectiveness by optimizing outreach and experiences. An Air Force Reserve Officer, former Presidential Management Fellow, and three-time IEEE Humanitarian Activities Committee top global grantee winner, he dedicates himself to helping others build trust by solving problems across diverse sectors, with a proven track record of measuring what matters for impact from the White House to those without a house.',
   },
   {
     name: 'Frank Adames',

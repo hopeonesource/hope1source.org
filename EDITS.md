@@ -1756,6 +1756,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - Moved Tamecia McKenzie directly above Justin Robinson.
 - Preserved all biographies, roles, photos, and the relative order of everyone else.
 
+### T116 — /team — Tim Underwood biography
+
+- Status: **Applied locally — user-requested wording; awaiting PR review**
+- Target: `preview-v4/src/content/team.js`
+- Old text: `build trust across diverse sectors, with a proven track record of service spanning from the White House to supporting those without a house.`
+- New text: `build trust by solving problems across diverse sectors, with a proven track record of measuring what matters for impact from the White House to those without a house.`
+- Corrected the supplied typo `timpact` to `impact`; preserved the rest of his biography.
+
 ## Resolved placement
 
 ### C01 — Partner Success
