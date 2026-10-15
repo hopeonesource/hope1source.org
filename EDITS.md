@@ -2425,6 +2425,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** Feeding America story's card headline and this log. Publication remains pending PR review.
 - **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the updated headline in the rendered case-study library.
 
+### T198 — About — Simpler opening message
+
+- **Request:** Simplify the message around connecting people to services with dignity, security, and ease.
+- **Old text:** `We train and equip those who serve others for lasting change.`
+- **New text:** `We connect people to services with dignity, security, and ease.`
+- **Scope:** About page hero introduction and matching opening sentence in its search description, plus this log. Other pages and About sections retain their existing wording. Publication remains pending PR review.
+- **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the revised introduction and search description in rendered About HTML.
+
 ## Resolved placement
 
 ### C01 — Partner Success
