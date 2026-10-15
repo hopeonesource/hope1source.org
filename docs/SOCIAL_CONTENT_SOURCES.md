@@ -80,3 +80,12 @@ Other archive images examined during this pass included a June 7, 2024 QR-feedba
 - Replaced About's older team photo with Facebook's downloaded 2048 × 1536 JPEG, stored as `public/photos/h1s-equity-incubator-2023.jpg` (approximately 396 KB). The image is unaltered; no generated people, retouching, or upscaling. The original post is linked in the caption. The historical event is not presented as a current campaign or a measured outcome.
 - Compared against the June 23, 2024 Honduras STEM-event group photo, social testimonial graphics, and existing community-gathering images. Selected this photo for clear faces, visible H1S branding, a landscape frame, and direct relevance to service-provider and business partnerships.
 - The full image scales proportionally on both desktop and mobile. Removed About's previous mobile crop so the people and workshop setting remain visible. All previously approved About prose is preserved.
+
+## About replacement photo — Portsmouth community STEM event — T143
+
+- Post: https://www.facebook.com/hopewithlove/posts/pfbid0DrmxSxm5832z3bWH56PvYkhyF6Y8v2ZZ4rPAZN7gB16Ecmqker5EXpULaptMuhqel
+- Photo: https://www.facebook.com/photo/?fbid=6010971935664829&set=pcb.6010972062331483
+- The public post is dated May 15, 2023. Read the full caption and inspected its group and candid photographs in the user's signed-in Safari session. It describes a Portsmouth STEM/community-design event hosted by the Cavalier Civic Association, with design support from RBA Architects and tables/chairs from Trinity Episcopal. It describes youth presenting community-design ideas to an expert panel.
+- Selected the group photograph beside the H1S outreach van, replacing the T139 Equity Incubator photo at the user's request for a different, better About photo. It shows community participants and partners together with visible H1S branding. Compared with candid photos from this event and an existing DC service-provider convening image.
+- Downloaded the original 1440 × 1080 JPEG as `public/photos/h1s-portsmouth-community-2023.jpg` (approximately 318 KB). The image is unaltered and displayed at its full aspect ratio; no retouching, generated content, or upscaling. The caption identifies the historical event and links to the source post, without presenting it as a current program or adding outcomes.
+- All approved About prose, corporate links, and registration formatting are preserved. The earlier Equity Incubator asset and provenance remain available, but About no longer displays that image.

@@ -71,17 +71,17 @@ export default function About() {
           <figure className="about-figure">
             <img
               className="about-photo"
-              src={publicUrl('photos/h1s-equity-incubator-2023.jpg')}
-              alt="H1S team members seated together at a workshop table during the 2023 Equity Incubator."
-              width="2048"
-              height="1536"
+              src={publicUrl('photos/h1s-portsmouth-community-2023.jpg')}
+              alt="Community members and partners gathered beside the H1S outreach van at a Portsmouth STEM event."
+              width="1440"
+              height="1080"
               loading="lazy"
               decoding="async"
             />
             <figcaption>
-              H1S at the 2023 Equity Incubator, Universities at Shady Grove.{' '}
+              H1S and community partners at a Portsmouth STEM event, 2023.{' '}
               <a
-                href="https://www.facebook.com/hopewithlove/posts/pfbid02eHSxikHNW1mhfZ5qTL95WiKbK5FcJvcXZsDBQ1XEvVtYedN1MUMm5bsFYFDcCBQBl"
+                href="https://www.facebook.com/hopewithlove/posts/pfbid0DrmxSxm5832z3bWH56PvYkhyF6Y8v2ZZ4rPAZN7gB16Ecmqker5EXpULaptMuhqel"
                 target="_blank"
                 rel="noopener noreferrer"
               >

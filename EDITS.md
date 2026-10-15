@@ -1961,6 +1961,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Applied:** Updated the link text under `Who it’s for` on About. Preserved its Contact destination, all other wording, and the existing layout. Publication remains pending PR review.
 - **Validation:** Confirmed the exact replacement and unchanged `/contact` destination; whitespace check passes.
 
+### T143 — /about — Replace the photo with a community event
+
+- **Request:** Find another better photo for About.
+- **Applied:** Replaced the Equity Incubator photo with the published Portsmouth community STEM-event group photo beside the H1S outreach van. Updated the alt text, intrinsic dimensions, caption, and original-post link to match the new image.
+- **Source:** Hope with Love's May 15, 2023 Facebook post; details are recorded in `docs/SOCIAL_CONTENT_SOURCES.md`. The downloaded 1440 × 1080 JPEG is unaltered and keeps the full scene visible on phones and desktops.
+- **Scope:** Preserved all approved About wording, business/corporate links, SAM.gov spacing, and existing responsive layout. Publication remains pending PR review.
+- **Validation:** Source and rendered image inspected. At 390px and 1440px the new image loads at its full aspect ratio, the caption wraps, and there are no page errors or horizontal overflow. Build/static checks pass for 40 pages, 30 aliases, and 679 internal links; independent scope review passed.
+
 ## Resolved placement
 
 ### C01 — Partner Success
