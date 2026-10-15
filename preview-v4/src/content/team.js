@@ -57,7 +57,7 @@ export const team = [
     name: 'Jeff',
     role: 'Volunteer Spotlight',
     photo: 'photos/jeff.jpg',
-    bio: 'Jeff is a successful alumnus of the H1S team who brings lived experience to his work. He now helps nonprofits set up customer relationship management (CRM) databases.',
+    bio: 'Jeff is a successful alumnus of the H1S team who brings lived experience to his work. He now helps nonprofits set up customer relationship management (CRM) systems for easier management.',
   },
   {
     name: 'Tom Allin',

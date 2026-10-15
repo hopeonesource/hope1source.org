@@ -2642,6 +2642,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** Closing sentence in Nick Hanson's biography and this log only. Publication remains pending PR review.
 - **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the requested sentence in rendered Team HTML.
 
+### T225 — Team — Jeff's CRM systems wording
+
+- **Request / new phrase:** `management (CRM) systems for easier management.`
+- **Old phrase:** `management (CRM) databases.`
+- **New sentence:** `He now helps nonprofits set up customer relationship management (CRM) systems for easier management.`
+- **Scope:** Jeff's closing biography sentence and this log only. Retains his team-alumnus and lived-experience description. Publication remains pending PR review.
+- **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the updated closing sentence in rendered Team HTML.
+
 ## Resolved placement
 
 ### C01 — Partner Success
