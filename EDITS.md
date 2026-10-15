@@ -1955,6 +1955,12 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** Preserved all existing wording, the photo, and the SAM.gov paragraph spacing. Publication remains pending PR review.
 - **Validation:** Confirmed the visible link and exact destination at 390px and 1440px without horizontal overflow. Build/static checks, whitespace checks, and independent scope review pass.
 
+### T142 — /about — Business partnership link wording
+
+- **Request:** Change `Discuss a business partnership` to `Evaluate a business partnership`.
+- **Applied:** Updated the link text under `Who it’s for` on About. Preserved its Contact destination, all other wording, and the existing layout. Publication remains pending PR review.
+- **Validation:** Confirmed the exact replacement and unchanged `/contact` destination; whitespace check passes.
+
 ## Resolved placement
 
 ### C01 — Partner Success

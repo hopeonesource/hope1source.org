@@ -120,7 +120,7 @@ export default function About() {
             </p>
             <p>
               Restaurants and other businesses can offer free or discounted services, gather feedback, and stay
-              connected through H1S Check-ins. <Link to="/contact">Discuss a business partnership</Link>.
+              connected through H1S Check-ins. <Link to="/contact">Evaluate a business partnership</Link>.
             </p>
             <p>
               Corporate sponsors can help more service providers connect with the people they serve.{' '}
