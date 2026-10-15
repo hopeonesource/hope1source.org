@@ -2347,6 +2347,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** VA story's shared industry label and this log. Supersedes T185. Publication remains pending PR review.
 - **Validation:** v4 build, prerender checks, and whitespace check pass. Rendered case-study library includes `Federal Government` and omits `Public Sector`.
 
+### T187 — Case studies — Shorter VA organization label
+
+- **Request:** Remove `Homeless Programs` from the selected VA label.
+- **Old text:** `Veterans Affairs / National Homeless Programs`
+- **New text:** `Veterans Affairs / National`
+- **Scope:** VA story's shared organization label and this log. The full article title and study wording remain unchanged. Publication remains pending PR review.
+- **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the shortened label in the rendered case-study library.
+
 ## Resolved placement
 
 ### C01 — Partner Success
