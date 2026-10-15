@@ -1826,6 +1826,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - Added a caption directly beneath the phone photo: `Real H1S Check-ins make it fun and easy to connect with health, housing, and community services through familiar text messages.`
 - Reviewed the image and updated its alt text to describe the two phones and the types of service messages shown. Kept the existing image size and responsive styling.
 
+### T125 — v4 — Footer registration line
+
+- Status: **Applied locally — user-requested formatting; awaiting PR review**
+- Target: `preview-v4/src/components/Layout.jsx`
+- Placed `SAM.gov UEI...` on a new line immediately beneath `H1S Check-ins (dba Hope With Love, Inc.).` in the shared footer.
+- Used a single line break within the same paragraph, with no blank line or added paragraph spacing. Preserved all wording and identifiers.
+
 ## Resolved placement
 
 ### C01 — Partner Success

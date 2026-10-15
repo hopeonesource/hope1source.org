@@ -7,6 +7,8 @@ import BackToTop from './BackToTop.jsx'
 import RouteNavigation from './RouteNavigation.jsx'
 import '../styles/navigation.css'
 
+const [footerOperator, footerRegistration] = org.procurement.split(/ (?=SAM\.gov)/)
+
 function Brand({ onClick, id }) {
   return (
     <Link className="brand" to="/" onClick={onClick} id={id}>
@@ -183,7 +185,10 @@ export default function Layout() {
           <p className="footer-crisis">
             Crisis support in the U.S.: call or text <a href="tel:988">988</a>.
           </p>
-          <p className="footer-legal">{org.procurement}</p>
+          <p className="footer-legal">
+            {footerOperator}<br />
+            {footerRegistration}
+          </p>
           <p>© {new Date().getFullYear()} {org.legalName}</p>
         </div>
       </footer>
