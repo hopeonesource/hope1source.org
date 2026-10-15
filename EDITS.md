@@ -2449,6 +2449,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** About registration block and this log. Uses existing organization data and paragraph styling, with bold labels and line breaks. Preserves the organization text above, every identifier, and the nonprofit designation. Other pages retain their existing presentation. Publication remains pending PR review.
 - **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed both labeled groups, all identifiers, and the retained organization name in rendered About HTML. Independent copy review confirms clarity and preserved information.
 
+### T201 — About — Clarify H1S supports service providers
+
+- **Request:** Explain in plain language that H1S supports others in connecting people to their services with dignity, security, and ease.
+- **Old text:** `We connect people to services with dignity, security, and ease.`
+- **New text:** `We help organizations connect people to their services with dignity, security, and ease.`
+- **Scope:** About hero introduction and matching opening sentence in its search description, plus this log. Supersedes T198. Publication remains pending PR review.
+- **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the updated introduction and search description in rendered About HTML.
+
 ## Resolved placement
 
 ### C01 — Partner Success
