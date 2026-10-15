@@ -138,7 +138,7 @@ export const allStories = [
     title: 'Making food-bank check-ins easier.',
     cardTitle: 'Make the first step simpler.',
     org: 'Second Harvest Asia',
-    industry: 'Nonprofit - Food Access',
+    industry: 'National Nonprofit - Access',
     location: 'Japan',
     website: 'https://www.facebook.com/photo/?fbid=904654131689097&set=a.626564272831419',
     websiteLabel: 'Partner testimonial · August 20, 2024',

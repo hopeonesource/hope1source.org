@@ -2411,6 +2411,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** Feeding America story's shared industry label and this log. Supersedes T190 for Feeding America. Publication remains pending PR review.
 - **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the updated category in the rendered case-study library and preserved Second Harvest Asia's category.
 
+### T196 — Case studies — Second Harvest Asia National Nonprofit category
+
+- **Request / new text:** `National Nonprofit - Access`
+- **Old text:** `Nonprofit - Food Access`
+- **Scope:** Second Harvest Asia story's shared industry label and this log. Supersedes T191 and matches Feeding America's label from T195. Publication remains pending PR review.
+- **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed both organizations display the requested category in the rendered case-study library.
+
 ## Resolved placement
 
 ### C01 — Partner Success
