@@ -2159,6 +2159,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** Alaska article body only; headline, October 1 date, listing summary, and layout remain unchanged. Publication remains pending PR review.
 - **Validation:** v4 build and prerender checks pass (44 pages, 30 aliases, 748 internal links). Verified all four revised paragraphs and the preserved title/date in the running preview; whitespace check passes.
 
+### T170 — /press — Identify H1S leadership in the Alaska preview
+
+- **Request:** Make H1S's leadership clear on the main News & Stories page.
+- **Applied:** Changed the Alaska summary opening to `An H1S-led pilot in central Alaska`. Retained the existing check-in count, base-wide outreach, and services description.
+- **Scope:** Shared Alaska listing summary and description metadata only. Article title, body, date, and layout are unchanged. Publication remains pending PR review.
+- **Validation:** Confirmed the shared listing data and the updated summary on News & Stories in the running preview; whitespace check passes.
+
 ## Resolved placement
 
 ### C01 — Partner Success

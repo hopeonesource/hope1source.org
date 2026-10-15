@@ -52,7 +52,7 @@ export const pressArticlesUpdates = [
     dateTime: '2026-10-01',
     author: 'H1S Check-ins',
     kicker: 'Community update',
-    description: 'A central Alaska pilot supported 3,100 check-ins and outreach across an entire Air Force base, helping the military and veteran community find more than 27 services.',
+    description: 'An H1S-led pilot in central Alaska supported 3,100 check-ins and outreach across an entire Air Force base, helping the military and veteran community find more than 27 services.',
     blocks: [
       {
         type: 'p',
