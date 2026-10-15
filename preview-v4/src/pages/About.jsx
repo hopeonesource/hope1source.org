@@ -96,10 +96,8 @@ export default function About() {
             <p>
               We help partners connect people to health, housing, and other essential services.
             </p>
-            <p>
-              Connect. Listen. Repeat. Measure what matters and use what you learn for easier follow-up
-              that helps the people you serve.
-            </p>
+            <p>Measure what matters for connection.</p>
+            <p>Connect. Listen. Repeat.</p>
           </AboutFold>
           <AboutFold title="How check-ins work" phone={phone}>
             <p className="about-checkins-lead">No app needed. Just a cell phone with text messaging.</p>
