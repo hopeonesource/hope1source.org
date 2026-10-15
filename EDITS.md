@@ -2571,6 +2571,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** Tamecia McKenzie's biography and this log only. Uses the user's wording, including company-name capitalization. Publication remains pending PR review.
 - **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the complete requested biography in rendered Team HTML.
 
+### T216 — Team — Plain-language Nick biography
+
+- **Request:** Improve and replace Nick's biography using the supplied description of his Data Imagineering role, filmmaking, responsible data and AI use, and public/private-sector experience.
+- **Old text:** `Nick is the Communications Lead for H1S and works as a filmmaker specializing in short-form video for web and broadcast. He uses his communications skillset to strengthen and grow the verified network of organizations serving vulnerable community members.`
+- **New text:** `Nick is H1S’s Data Imagineering Lead and a filmmaker who creates short videos for web and broadcast. He uses data and AI responsibly to plan projects and guide creative decisions. He brings extensive experience supporting government and business clients.`
+- **Scope:** Nick Hanson's biography and this log only. Matches his existing Data Imagineering Lead role label and describes his work in concrete, plain language. Publication remains pending PR review.
+- **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the complete biography and corrected role in rendered Team HTML. Independent copy review confirms the rewrite preserves the supplied details.
+
 ## Resolved placement
 
 ### C01 — Partner Success
