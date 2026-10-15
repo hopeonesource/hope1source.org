@@ -2472,6 +2472,15 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** About hero introduction and matching opening sentence in its search description, plus this log. Supersedes T202. Publication remains pending PR review.
 - **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the updated introduction and search description in rendered About HTML.
 
+### T204 — About — Shorter introduction aligned with the homepage
+
+- **Request:** Make the introduction roughly 20% briefer and align it with the homepage's `train and equip` wording.
+- **Old text:** `We help our partners connect people to their services with dignity, security, and ease.`
+- **New text:** `We train and equip partners for safe, easy, dignified service access.`
+- **Rationale:** Reduces the introduction from 87 to 69 characters (about 21%) while retaining the partner-support role, service access, dignity, safety, and ease.
+- **Scope:** About hero introduction and matching opening sentence in its search description, plus this log. Supersedes T203. Homepage wording remains unchanged. Publication remains pending PR review.
+- **Validation:** Character-count check, v4 build, prerender checks, and whitespace check pass. Confirmed the updated introduction and search description in rendered About HTML.
+
 ## Resolved placement
 
 ### C01 — Partner Success
