@@ -2084,6 +2084,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** These two v4 articles and their listing/route integration only. Existing articles, approved copy, and layout are unchanged. Publication remains pending PR review.
 - **Validation:** v4 build and prerender checks pass (43 pages, 30 aliases, 730 internal links). Both article pages and the News & Stories listings were verified in the running preview; the kickoff registration link matches the public event. Whitespace check passes.
 
+### T160 — /press — George Mason story date
+
+- **Request:** Place the GMU story at September 2, 2026.
+- **Applied:** Changed the George Mason article date and its sorting/metadata date to September 2, 2026. The News & Stories listing uses the same date automatically.
+- **Scope:** George Mason story date only; partnership dates and article text are unchanged. Publication remains pending PR review.
+- **Validation:** Confirmed the shared article/listing date and chronological order; whitespace check passes.
+
 ## Resolved placement
 
 ### C01 — Partner Success
