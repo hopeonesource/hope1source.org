@@ -50,12 +50,12 @@ export default function About() {
     <div className="about-page">
       <Seo
         title="Our mission"
-        description="Hope1Source helps organizations reach people, understand needs, and improve services. Hope with Love is the 501(c)(3) behind the work."
+        description="We train and equip those who serve others for lasting change. Opt-in check-in text messages for health, housing, human, and emergency services."
       />
       <PageHero
-        kicker={org.product}
-        title="Help people get support."
-        lede="Hope1Source helps organizations reach people, understand their needs, and improve services. H1S Check-ins supports that work through outreach, private feedback, and follow-up."
+        kicker="HOPE1SOURCE (H1S) CHECK-INS"
+        title="Earn Trust."
+        lede="We train and equip those who serve others for lasting change."
       />
       <article className="section prose-section">
         <div className="wrap narrow prose">
@@ -81,18 +81,20 @@ export default function About() {
           </p>
           <AboutFold title="Mission" phone={phone}>
             <p>
-              Our purpose is to help people get support and help partners serve them better. We bring together outreach tools, feedback, and practical support for partner teams. People choose to take part, and partners use what they learn to follow up and improve services.
+              Opt-in check-in text messages for health, housing, human, and emergency services.
             </p>
             <p>
-              Public safety here means preventing harm: cold, heat, storms, service closures, and gaps in care. It
-              does not mean policing.
+              Connect. Listen. Repeat. Use what you learn to follow up and measure what matters.
             </p>
           </AboutFold>
           <AboutFold title="How trust works" phone={phone}>
-            <p>People opt in.</p>
-            <p>Partners own their data.</p>
-            <p>No app is needed. Any phone can take part.</p>
-            <p>Dignity comes first. A sensitive service is never named in a text.</p>
+            <p>People opt-in interested in free and discounted services or games.</p>
+            <p>No app is needed; only a cell phone with text messages to earn rewards.</p>
+            <p>Partners own and control their digital experience and service delivery.</p>
+            <p>
+              All partners must provide free or discounted services. They own their check-in data and can filter,
+              sort, or delete it at any time.
+            </p>
           </AboutFold>
           <AboutFold title="Who it’s for" phone={phone}>
             <p>
@@ -104,6 +106,10 @@ export default function About() {
               <Link to="/access-points">Become an access point</Link>.
             </p>
             <p>
+              Restaurants and other businesses can offer free or discounted services, gather feedback, and stay
+              connected through H1S Check-ins. <Link to="/contact">Discuss a business partnership</Link>.
+            </p>
+            <p>
               Funders can back prevention they can measure. <Link to="/for-backers">See the funder page</Link>.
             </p>
           </AboutFold>
@@ -113,7 +119,8 @@ export default function About() {
               written {org.program} and {org.programLegacy}.
             </p>
             <p>
-              Tim Underwood co-founded this 501(c)(3) so partners could reach people and show what changed.
+              Tim Underwood founded H1S to help service providers build trust, solve problems, and measure what
+              matters for impact.
             </p>
             <p>{org.procurement}</p>
           </AboutFold>

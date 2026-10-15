@@ -1924,6 +1924,15 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** The footer's branding, email, navigation links (including Media), and copyright remain. This changes the footer only; current-site/v3 files and other page content are untouched. Publication remains pending PR review.
 - **Validation:** Confirmed removal in all 40 prerendered pages and at 390px mobile/1440px desktop widths with no horizontal overflow. Build/static checks and independent scope review pass.
 
+### T138 — /about — Align with earlier approved edits
+
+- **Request:** Make About reflect the user's earlier wording changes.
+- **Hero and mission:** Replaced the older assistant-drafted `Help people get support.` hero with `Earn Trust.` and `We train and equip those who serve others for lasting change.`, under `HOPE1SOURCE (H1S) CHECK-INS`. Aligned the search description and mission with the approved health, housing, human, and emergency services wording, `Connect. Listen. Repeat.`, and `Use what you learn to follow up and measure what matters.` Replaced the older public-safety/policing explanation with this approved process wording.
+- **Trust:** Reused the latest Public Agencies wording for people opting in for free and discounted services or games, a cell phone with text messages to earn rewards, and partners owning and controlling their digital experience and service delivery. Removed the sensitive-service sentence. Included the approved Access Points requirement for free or discounted services and the ability to filter, sort, or delete partner-owned check-in data at any time.
+- **Partners and founder:** Reused the approved restaurant/business partnership description from Get Involved. Replaced `Tim Underwood co-founded this 501(c)(3)` with `Tim Underwood founded H1S to help service providers build trust, solve problems, and measure what matters for impact.`, matching the corrected team biography.
+- **Scope:** About copy and this log only. Preserved the page layout, photos, mobile expandable sections, and organization/registration information. The footer content removed in T137 remains removed. Current-site and v3 files are untouched; publication remains pending PR review.
+- **Validation:** Approved phrases are present and stale wording absent at 390px and 1440px; all four mobile sections expand, with no horizontal overflow, broken images, or page errors. Screenshots reviewed. Build/static checks pass for 40 pages, 30 aliases, and 679 internal links. Independent copy review passed.
+
 ## Resolved placement
 
 ### C01 — Partner Success
