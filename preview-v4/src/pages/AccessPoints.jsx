@@ -22,7 +22,7 @@ export default function AccessPoints() {
         title="Your front desk can be where people find help."
         lede="A QR code, NFC tap, or kiosk lets visitors ask for help privately. Your team follows up. Everything is built with the latest AWS security to maintain trust."
       >
-        <p className="hero-note">No app required. Limited internet ok.</p>
+        <p className="hero-note">No app required. Stickers, Signs, and Stands provided.</p>
         <div className="hero-actions">
           <a className="btn btn-primary" href={mailto({ subject: 'Access point' })}>
             Become an access point

@@ -2048,6 +2048,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** This Access Points phrase only. Publication remains pending PR review.
 - **Validation:** Reviewed the exact replacement; whitespace check passes.
 
+### T155 — /access-points — Describe provided outreach materials
+
+- **Request:** Replace `Limited internet ok` with `Stickers, Signs, and Stands provided.`
+- **Applied:** Updated the hero note to `No app required. Stickers, Signs, and Stands provided.` using the requested capitalization.
+- **Scope:** This Access Points phrase only. Publication remains pending PR review.
+- **Validation:** Reviewed the exact replacement; whitespace check passes.
+
 ## Resolved placement
 
 ### C01 — Partner Success
