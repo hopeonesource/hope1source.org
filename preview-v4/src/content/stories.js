@@ -41,7 +41,7 @@ export const stories = [
     title: 'Emergency shelter alerts',
     outcome: 'Share useful information',
     cardTitle: 'Put vital information within real-time reach.',
-    card: 'DC Human Services used H1S hypothermia alerts to share shelter and transportation information. Hypothermia deaths fell 78% during the supported period.',
+    card: 'DC Human Services used H1S hypothermia alerts to share shelter and transport details. Hypothermia deaths fell 78% during the supported period.',
     image: 'photos/hypothermia-alert-people.svg',
     imageWidth: 900,
     imageHeight: 600,

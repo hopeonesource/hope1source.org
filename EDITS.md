@@ -121,7 +121,7 @@ Standardized all three Partner Success image frames at 3:2 while keeping each im
 | Case study | Current homepage card headline | What readers should understand |
 | --- | --- | --- |
 | Veterans Affairs | Make care easier to reach. | Research and feedback helped service teams identify barriers. |
-| DC Human Services | Put vital information within real-time reach. | Hypothermia alerts shared shelter and transportation information; hypothermia deaths fell 78% during the supported period. |
+| DC Human Services | Put vital information within real-time reach. | Hypothermia alerts shared shelter and transport details; hypothermia deaths fell 78% during the supported period. |
 | Dreamers & Achievers | Stay connected through follow-up. | Continued contact and feedback helped a partner understand needs. |
 
 ## Evidence used for the original proposal
@@ -2314,6 +2314,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **New text:** `DC Human Services used H1S hypothermia alerts to share shelter and transportation information. Hypothermia deaths fell 78% during the supported period.`
 - **Scope:** Homepage shelter-alerts card description and this log. Retained the headline from T181. The full case study already includes the 78% result and attribution; its wording remains unchanged. The source comment now reflects the user's request to include this result on the home card. Publication remains pending PR review.
 - **Validation:** v4 build and prerender checks pass. Confirmed the new description, explicit hypothermia death reduction, and preserved headline in rendered homepage HTML; whitespace check passes.
+
+### T183 — Homepage — Shorter hypothermia card description
+
+- **Request:** Shorten the description by 7–9 characters.
+- **Old phrase:** `transportation information`
+- **New phrase:** `transport details`
+- **Scope:** Shortens the homepage card description by exactly 9 characters, from 151 to 142. Retains the headline and the 78% reduction in hypothermia deaths during the supported period. Full case-study wording remains unchanged. Publication remains pending PR review.
+- **Validation:** Character-count check, v4 build, prerender checks, and whitespace check pass.
 
 ## Resolved placement
 
