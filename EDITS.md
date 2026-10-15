@@ -2027,6 +2027,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** This Access Points paragraph only; other content and the call to action are unchanged. Publication remains pending PR review.
 - **Validation:** Reviewed the exact removal and confirmed no remaining reference to the removed import; whitespace check passes.
 
+### T152 — /access-points — Limited internet wording
+
+- **Request:** `No app and limited internet ok.`
+- **Applied:** Replaced the hero note `No app or internet needed.` with the exact requested wording.
+- **Scope:** This Access Points sentence only. Publication remains pending PR review.
+- **Validation:** Reviewed the exact replacement; whitespace check passes.
+
 ## Resolved placement
 
 ### C01 — Partner Success
