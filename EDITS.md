@@ -1764,6 +1764,15 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - New text: `build trust by solving problems across diverse sectors, with a proven track record of measuring what matters for impact from the White House to those without a house.`
 - Corrected the supplied typo `timpact` to `impact`; preserved the rest of his biography.
 
+### T117 — /team — Shorter Tim Underwood biography
+
+- Status: **Applied locally — user-requested shortening with LinkedIn context; awaiting PR review**
+- Target: `preview-v4/src/content/team.js`
+- Replaced the full biography from T116 with: `Tim co-founded H1S to help service providers build trust, solve problems, and measure what matters for impact. An Air Force Reserve officer and former Presidential Management Fellow, he brings experience across diverse sectors, from the White House to those without a house.`
+- Kept the user's trust, problem-solving, impact, and White House wording; retained the Air Force Reserve and Presidential Management Fellow credentials from the approved biography.
+- Considered publicly indexed content from [Tim's LinkedIn profile](https://www.linkedin.com/in/timothyunderwood1/), including his emphasis on measuring impact and community service. Direct profile fetching was rate-limited; no additional credentials were inferred.
+- Removed the nonprofit designation and lengthy IEEE recognition wording from this short biography. All other team content and ordering are unchanged.
+
 ## Resolved placement
 
 ### C01 — Partner Success
