@@ -1809,6 +1809,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - Changed the shared first-step label from `Reach` to `Connect`, updating Home, Outreach Tools, Readiness, and Access Points together.
 - Preserved ordinary uses of `reach` within sentences, all other copy, and layout. Current-site and v3 content are unchanged.
 
+### T123 — v4 — Follow-up step wording
+
+- Status: **Applied locally — user-requested wording; awaiting PR review**
+- Target: `preview-v4/src/components/HowItWorks.jsx`
+- Old text: `Use what you learn to follow up and understand what changed.`
+- New text: `Use what you learn to follow up and measure what matters.`
+- Updates the shared step on Home, Outreach Tools, and Readiness. Preserves the separately edited Access Points repeat step.
+
 ## Resolved placement
 
 ### C01 — Partner Success

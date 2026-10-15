@@ -9,6 +9,6 @@ export const howSteps = [
   },
   {
     title: 'Follow up',
-    text: 'Use what you learn to follow up and understand what changed.',
+    text: 'Use what you learn to follow up and measure what matters.',
   },
 ]
