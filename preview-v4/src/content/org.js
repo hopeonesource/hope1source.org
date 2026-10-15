@@ -18,7 +18,6 @@ export const org = {
   portalUrl: 'https://portal.hopeonesource.me',
   hubUrl: 'https://hopeonesource.me',
   siteHost: 'hope1source.org',
-  currentSiteUrl: 'https://hopeonesource.github.io/hope1source.org/',
   uei: 'HYQWP496LMJ8',
   cage: '77K55',
   ein: '27-5461163',

@@ -109,8 +109,7 @@ export default function Layout() {
       </a>
       {!siteIndexable && (
         <aside className="preview-banner" role="note">
-          Third preview: a shared story across our work.{' '}
-          <a href={org.currentSiteUrl}>View the current site</a>
+          Third preview: a shared story across our work.
         </aside>
       )}
       <header ref={header} className={scrolled ? 'site-header is-scrolled' : 'site-header'}>

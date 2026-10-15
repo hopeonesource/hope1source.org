@@ -83,6 +83,15 @@ try {
   }
 
   writeFileSync(path.join(dist, '404.html'), renderPage('/404.html').document)
+  // The shared legacy file redirects every /article/* to the press index.
+  // v4 owns its rules so recreated articles keep their individual destinations.
+  const localPath = (route) => new URL(absoluteUrl(route)).pathname
+  writeFileSync(path.join(dist, '_redirects'), [
+    '# Generated v4 route aliases. Existing static files take precedence.',
+    ...aliases.map(([from, to]) => `${localPath(from)}  ${localPath(to)}  301`),
+    `${base}*  ${base}index.html  200`,
+    '',
+  ].join('\n'))
   const xmlBody = siteIndexable ? pages.map((page) => `  <url><loc>${escapeHtml(absoluteUrl(page.path))}</loc></url>`).join('\n') : ''
   writeFileSync(path.join(dist, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

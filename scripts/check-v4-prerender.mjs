@@ -3,12 +3,13 @@ import { existsSync, readFileSync } from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { pages, aliases } from '../preview-v4/src/content/routes.js'
+import { pressArticles } from '../preview-v4/src/content/pressArticles.js'
 
 const dist = fileURLToPath(new URL('../dist/v4/', import.meta.url))
 const manifest = JSON.parse(readFileSync(path.join(dist, 'prerender-manifest.json'), 'utf8'))
 const baseUrl = `${manifest.origin}${manifest.base}`
 const routeUrl = (route) => new URL(route.replace(/^\//, ''), baseUrl).href
-const unescape = (value) => value.replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>')
+const unescape = (value) => value.replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#(?:39|x27);/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>')
 const routePaths = new Set([...pages.map((page) => page.path), ...aliases.map(([from]) => from)])
 const titles = new Set()
 const descriptions = new Set()
@@ -43,11 +44,29 @@ for (const page of pages) {
 
   for (const [, rawHref] of body.matchAll(/<a\b[^>]*\bhref="([^"]+)"/g)) {
     const href = unescape(rawHref)
+    assert(!/^https?:\/\/(?:(?:www|dc)\.)?(?:hope1source|hopeonesource)\.org(?:[/?#]|$)/i.test(href), `${page.path}: link returns to the old site: ${href}`)
+    assert(!/^https?:\/\/web\.archive\.org\/web\/[^/]+\/https?:\/\/(?:(?:www|dc)\.)?(?:hope1source|hopeonesource)\.org(?:[/?#]|$)/i.test(href), `${page.path}: link returns to an archived old-site page: ${href}`)
+    assert(href !== 'https://hopeonesource.github.io/hope1source.org/', `${page.path}: link returns to the previous site`)
     const url = new URL(href, canonical)
     if (url.origin !== manifest.origin || !url.pathname.startsWith(manifest.base)) continue
     checkedLinks += 1
     const relativePath = url.pathname.slice(manifest.base.length).replace(/\/$/, '')
     assert(routePaths.has(`/${relativePath}`) || existsSync(path.join(dist, relativePath)), `${page.path}: broken static link ${href}`)
+  }
+}
+
+// A recreated release must ship its complete prose and local images in HTML,
+// not just an article shell that depends on the old website or JavaScript.
+for (const article of pressArticles) {
+  const html = readFileSync(path.join(dist, 'press', article.id, 'index.html'), 'utf8')
+  const plainText = unescape(html.replace(/<[^>]*>/g, '')).replace(/\s+/g, ' ')
+  for (const block of article.blocks) {
+    for (const text of block.type === 'list' ? block.items : [block.text]) {
+      assert(plainText.includes(text.replace(/\s+/g, ' ')), `${article.id}: missing article text: ${text.slice(0, 70)}`)
+    }
+  }
+  if (article.image) {
+    assert(existsSync(path.join(dist, article.image.src.replace(/^\//, ''))), `${article.id}: missing local image`)
   }
 }
 
@@ -59,6 +78,12 @@ for (const [from, to] of aliases) {
   assert(html.includes(`<a href="${destination}">`), `${from}: no usable fallback link`)
   assert(html.includes('content="noindex, follow"'), `${from}: alias must be noindex`)
 }
+
+const redirects = readFileSync(path.join(dist, '_redirects'), 'utf8')
+for (const [from, to] of aliases) {
+  assert(redirects.includes(`${new URL(routeUrl(from)).pathname}  ${new URL(routeUrl(to)).pathname}  301`), `${from}: missing host redirect`)
+}
+assert(!/^\/article\/\*\s/m.test(redirects), 'A blanket article redirect would bypass recreated releases')
 
 const missingPage = readFileSync(path.join(dist, '404.html'), 'utf8')
 assert(missingPage.includes('content="noindex, follow"'), '404 must be noindex before JavaScript')

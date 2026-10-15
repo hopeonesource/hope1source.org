@@ -1,6 +1,7 @@
 import { roles } from './roles.js'
 import { services } from './services.js'
 import { stories } from './stories.js'
+import { pressArticles, pressArticleAliases } from './pressArticles.js'
 
 /**
  * Public URLs for the v4 prerender and sitemap. Written only into dist/v4.
@@ -19,6 +20,7 @@ export const pages = [
   { path: '/public-agencies', priority: '0.8', changefreq: 'monthly' },
   { path: '/faqs', priority: '0.6', changefreq: 'monthly' },
   { path: '/press', priority: '0.5', changefreq: 'monthly' },
+  ...pressArticles.map((article) => ({ path: `/press/${article.id}`, priority: '0.5', changefreq: 'yearly' })),
   { path: '/case-studies', priority: '0.7', changefreq: 'monthly' },
   ...stories.map((story) => ({
     path: `/case-studies/${story.slug}`,
@@ -41,6 +43,8 @@ export const pages = [
 
 /** Old paths the preview still catches. /for-venues opens the access-points page. */
 export const aliases = [
+  ...pressArticleAliases,
+  ['/form/get-involved', '/get-involved'],
   ['/privacy-policy', '/privacy'],
   ['/terms-of-service', '/terms'],
   ['/donate-now', '/donate'],

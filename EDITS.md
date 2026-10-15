@@ -1878,6 +1878,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Files:** `preview-v4/src/content/press.js`, `preview-v4/src/pages/Press.jsx`, `docs/PRESS_SOURCES.md`.
 - **Validation:** All 15 titles render as external links with safe new-tab attributes and semantic dates. Mobile (390px) and desktop (1440px) previews have no horizontal overflow. v4 build and prerender checks pass (29 pages, 12 aliases, 447 internal links). Publication remains pending PR review.
 
+### T132 — Sitewide — Recreate linked legacy H1S articles within v4
+
+- **Request:** Replace links to old H1S website pages with mobile- and desktop-friendly replicas inside the new website.
+- **Applied:** Recreated all ten H1S press releases as internal `/press/...` articles with their original substantive prose, quotes, historical dates, and available source images. The press index and article-body H1S links now remain within v4. Independent publisher coverage remains external. Removed the preview banner's old-site escape link.
+- **Navigation and presentation:** Added ten original `/article/...` aliases, seven `/news/...` aliases, and the historical participation-form alias. Articles use readable responsive typography, uncropped locally served responsive images, back links, the existing top-of-page navigation behavior, and the shared back-to-top button. Generated v4-specific host redirects preserve individual article destinations.
+- **Content fidelity:** Frank's reproduced article uses year-only 2022; the convening uses its original March 7, 2018 H1S dateline. Full source and omission details are in `docs/PRESS_SOURCES.md`. Previously approved copy elsewhere is retained.
+- **Validation:** All ten articles checked at 320px, 390px, and 1440px without horizontal overflow or broken images. Build and static checks pass for 39 pages, 30 aliases, and 616 internal links, including full article prose and a guard against outbound old-site links. Publication remains pending PR review.
+
 ## Resolved placement
 
 ### C01 — Partner Success

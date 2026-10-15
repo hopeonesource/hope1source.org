@@ -1,80 +1,57 @@
-/**
- * Direct publisher links and dates checked against the linked sources.
- * Preserve month/year precision when an exact publication day is unavailable.
- * Source evidence and legacy-date discrepancies: docs/PRESS_SOURCES.md.
- */
+import { pressArticleById } from './pressArticles.js'
+
+/** H1S releases live here; independent coverage stays with its publisher. */
 export const releases = [
   {
-    date: 'March 4, 2022',
-    dateTime: '2022-03-04',
-    title: 'Frank Adames receives National Service Award for helping those most vulnerable, including refugees',
-    source: 'Hope1Source · LinkedIn announcement',
-    href: 'https://www.linkedin.com/feed/update/urn:li:activity:6905633384241197056',
+    "id": "frank-adames-national-service-award",
+    "title": "Frank Adames receives National Service Award for helping those most vulnerable, including refugees"
   },
   {
-    date: 'October 10, 2022',
-    dateTime: '2022-10-10',
-    title: 'DC Councilmember steadfast on strengthening a proven network to serve everyone, including returning citizens and veterans',
-    source: 'Nick Hanson · Hope1Source',
-    href: 'https://www.hope1source.org/article/conveningdc2',
+    "id": "dc-community-network",
+    "title": "DC Councilmember steadfast on strengthening a proven network to serve everyone, including returning citizens and veterans"
   },
   {
-    date: 'September 13, 2018',
-    dateTime: '2018-09-13',
-    title: 'HopeOneSource releases emergency alerts during Hurricane Florence',
-    source: 'Hope1Source · archived release',
-    href: 'https://web.archive.org/web/20190819210945/https://www.hopeonesource.org/news/hopeonesource-hurricane-florence-press-release',
+    "id": "hurricane-florence-alerts",
+    "title": "HopeOneSource releases emergency alerts during Hurricane Florence"
   },
   {
-    date: '2020',
-    dateTime: '2020',
-    title: 'HopeOneSource gives local service providers a simple, contactless way to connect with the people they serve during COVID-19',
-    source: 'Hope1Source',
-    href: 'https://www.hope1source.org/article/hopeonesource-gives-local-service-providers-a-simple-contactless-way-to-connect-with-the-people-they-serve-during-covid-19',
+    "id": "contactless-outreach-covid-19",
+    "title": "HopeOneSource gives local service providers a simple, contactless way to connect with the people they serve during COVID-19"
   },
   {
-    date: 'November 2019',
-    dateTime: '2019-11',
-    title: 'HopeOneSource is now helping over 2,000 people experiencing homelessness',
-    source: 'Hope1Source · archived release',
-    href: 'https://web.archive.org/web/20191113001443/https://www.hopeonesource.org/news/hopeonesource-now-helping-over-2000-people-experiencing-homelessness',
+    "id": "helping-2000-people",
+    "title": "HopeOneSource is now helping over 2,000 people experiencing homelessness"
   },
   {
-    date: 'April 15, 2019',
-    dateTime: '2019-04-15',
-    title: 'HopeOneSource leverages the power of text messages to help vulnerable DC residents',
-    source: 'Hope1Source · archived release',
-    href: 'https://web.archive.org/web/20190819214019/https://www.hopeonesource.org/news/monica-pete-arent-alone',
+    "id": "text-messages-for-dc-residents",
+    "title": "HopeOneSource leverages the power of text messages to help vulnerable DC residents"
   },
   {
-    date: 'January 22, 2018',
-    dateTime: '2018-01-22',
-    title: 'How DC can prevent hypothermia deaths this winter',
-    source: 'Hope1Source · date printed on the archived release',
-    href: 'https://web.archive.org/web/20190819214524/https://www.hopeonesource.org/news/hopeonesource-winter-2019-press-release-0',
+    "id": "preventing-hypothermia-deaths",
+    "title": "How DC can prevent hypothermia deaths this winter"
   },
   {
-    date: 'March 9, 2018',
-    dateTime: '2018-03-09',
-    title: 'Local leaders from over 20 DC housing, career, and service providers fight homelessness',
-    source: 'HopeOneSource / HopeWith Love · PRWeb',
-    href: 'https://www.prweb.com/releases/dc_convening_to_increase_access_to_services_for_vulnerable_populations/prweb15291042.htm',
+    "id": "dc-service-provider-convening",
+    "title": "Local leaders from over 20 DC housing, career, and service providers fight homelessness"
   },
   {
-    date: 'January 19, 2017',
-    dateTime: '2017-01-19',
-    title: 'Derrick Woodfork: accessing free meals and job resources from more than 70 service providers',
-    source: 'Hope1Source · archived release',
-    href: 'https://web.archive.org/web/20190819213716/https://www.hopeonesource.org/news/hopeonesource-january-2017-release',
+    "id": "derrick-woodfork-resources",
+    "title": "Derrick Woodfork: accessing free meals and job resources from more than 70 service providers"
   },
   {
-    date: '2016',
-    dateTime: '2016',
-    title: 'HopeOneSource partners with service providers to work to reduce numbers of those experiencing homelessness',
-    source: 'Hope1Source · archived release',
-    href: 'https://web.archive.org/web/20191020151317/https://www.hopeonesource.org/news/hopeonesource-september-2016-release',
-  },
-]
+    "id": "partner-network-homelessness",
+    "title": "HopeOneSource partners with service providers to work to reduce numbers of those experiencing homelessness"
+  }
+].map((item) => {
+  const article = pressArticleById(item.id)
+  return {
+    ...item,
+    date: article.date,
+    dateTime: article.dateTime,
+    source: article.author || 'Hope1Source',
+    to: '/press/' + article.id,
+  }
+})
 
 export const coverage = [
   {

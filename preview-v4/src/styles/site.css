@@ -1024,6 +1024,58 @@ address {
   color: #ffd0c2;
 }
 
+.press-article {
+  padding: clamp(2rem, 5vw, 4rem) 0;
+}
+
+.press-article-header .kicker {
+  margin-top: 2rem;
+}
+
+.press-article-header h1 {
+  font-size: clamp(2rem, 4.5vw, 3.4rem);
+  line-height: 1.15;
+  text-wrap: balance;
+}
+
+.press-article-byline {
+  color: var(--muted);
+  margin: 1rem 0 2rem;
+}
+
+.press-article-body {
+  line-height: 1.75;
+}
+
+.press-article-body blockquote {
+  margin: 1.75rem 0;
+  padding: 0 0 0 1.25rem;
+  border-left: 3px solid var(--coral);
+}
+
+.press-article-image {
+  margin: 0 0 2rem;
+}
+
+.press-article-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.press-article-image figcaption {
+  margin-top: 0.75rem;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.press-article-footer {
+  border-top: 1px solid var(--line);
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+}
+
 .study-meta dl {
   margin: 0;
 }

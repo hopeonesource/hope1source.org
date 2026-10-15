@@ -9,12 +9,12 @@ export default function Press() {
     <>
       <Seo
         title="Press"
-        description="Press-release titles and outside coverage for Hope1Source. Full articles were not copied onto this site."
+        description="Read Hope1Source press releases and explore independent coverage of our work."
       />
       <PageHero
         kicker="Press"
         title="What has been public."
-        lede="Titles below come from the prior press and news indexes. Article text stays with the original publisher. For a quote or a photo, write the partnerships desk."
+        lede="Read our press releases here, or follow coverage to the original publisher. For a quote or a photo, write the partnerships desk."
       >
         <p>
           <a className="btn btn-secondary" href={mailto({ subject: 'Press inquiry' })}>
@@ -31,9 +31,9 @@ export default function Press() {
                 <li key={item.title}>
                   <p className="meta-label"><time dateTime={item.dateTime}>{item.date}</time></p>
                   <h3>
-                    <a href={item.href} target="_blank" rel="noopener noreferrer">
+                    <Link to={item.to}>
                       {item.title}
-                    </a>
+                    </Link>
                   </h3>
                   <p>{item.source}</p>
                 </li>
@@ -62,3 +62,4 @@ export default function Press() {
     </>
   )
 }
+import { Link } from 'react-router-dom'

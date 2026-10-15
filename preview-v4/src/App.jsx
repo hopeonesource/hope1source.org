@@ -3,6 +3,7 @@ import Layout from './components/Layout.jsx'
 import { aliases } from './content/routes.js'
 import { services } from './content/services.js'
 import { stories } from './content/stories.js'
+import { pressArticles } from './content/pressArticles.js'
 import About from './pages/About.jsx'
 import AccessPoints from './pages/AccessPoints.jsx'
 import ForBackers from './pages/ForBackers.jsx'
@@ -19,6 +20,7 @@ import LearnMore from './pages/LearnMore.jsx'
 import OutreachTools from './pages/OutreachTools.jsx'
 import NotFound from './pages/NotFound.jsx'
 import Press from './pages/Press.jsx'
+import PressArticle from './pages/PressArticle.jsx'
 import Privacy from './pages/Privacy.jsx'
 import RolePage from './pages/RolePage.jsx'
 import ServicePage from './pages/ServicePage.jsx'
@@ -57,6 +59,9 @@ export function AppRoutes() {
           <Route path="for-providers" element={<RolePage id="providers" />} />
           <Route path="faqs" element={<Faqs />} />
           <Route path="press" element={<Press />} />
+          {pressArticles.map((article) => (
+            <Route key={article.id} path={`press/${article.id}`} element={<PressArticle id={article.id} />} />
+          ))}
           <Route path="privacy" element={<Privacy />} />
           <Route path="terms" element={<Terms />} />
           <Route path="case-studies" element={<CaseStudies />} />

@@ -1,6 +1,6 @@
 # v4 press source audit
 
-Checked October 14, 2026 for T131. Scope: links, displayed dates, and publisher labels on `/v4/press`. Existing story titles, page copy, layout, and design are retained.
+Checked October 14, 2026 for T131. The source tables below record the external-link version. T132 now recreates all ten H1S releases within v4; see the migration notes below. Independent coverage continues to link to its publisher.
 
 The legacy H1S article template repeats November 24, 2020 on unrelated articles, including releases written later. Index dates also changed after migration. Use original release datelines or the linked publisher's publication date instead of those template/index values. Archive capture timestamps are not publication dates.
 
@@ -29,9 +29,47 @@ The legacy H1S article template repeats November 24, 2020 on unrelated articles,
 | Services open during COVID-19 | March 24, 2020 | [Street Sense Media](https://streetsensemedia.org/article/coronavirus-services-homeless-resource/), by Avi Bajpai. The [August 2020 archived publisher copy](https://web.archive.org/web/20200813115734/https://www.streetsensemedia.org/article/coronavirus-services-homeless-resource/) shows the byline date and `article:published_time="2020-03-24T21:38:10Z"`; a [March 2025 copy](https://web.archive.org/web/20250324062421/https://streetsensemedia.org/article/coronavirus-services-homeless-resource/) agrees in its visible date and JSON-LD. |
 | Text-messaging system as a guide to homeless services | September 9, 2015 | [Street Sense Media](https://streetsensemedia.org/article/text-messaging-system-a-potential-guide-to-homeless-services/), byline Lindsey Habenicht, September 9, 2015. |
 
-## Verification
+## T131 verification
 
 - All 15 titles render as direct external links with `target="_blank"` and `rel="noopener noreferrer"`.
 - Dates use semantic `<time>` elements with matching machine-readable precision.
 - Mobile (390px) and desktop (1440px) render without horizontal overflow; inspected full-page screenshots.
 - v4 build and prerender checks pass for 29 pages, 12 aliases, and 447 internal links, including metadata, JSON-LD, sitemap, and the noindex preview 404.
+
+## T132: internal article migration
+
+All ten H1S releases now open at `/v4/press/{id}`. Their full substantive prose and quotations are preserved from first-party source bodies, with original headings, contacts, and historical names. They are labeled “Archived press release.” Site navigation, related-article cards, repeated template dates, and empty paragraphs are not article content and were excluded. Independent coverage was not copied.
+
+| New article path (relative to v4) | Original route preserved as an alias |
+| --- | --- |
+| `/press/frank-adames-national-service-award` | `/article/northern-va-resident-receives-national-service-award-for-helping-those-most-vulnerable-including-refugees` |
+| `/press/dc-community-network` | `/article/conveningdc2` |
+| `/press/hurricane-florence-alerts` | `/article/emergency-alerts-during-hurricane-florence` |
+| `/press/contactless-outreach-covid-19` | `/article/hopeonesource-gives-local-service-providers-a-simple-contactless-way-to-connect-with-the-people-they-serve-during-covid-19` |
+| `/press/helping-2000-people` | `/article/helping-over-2-000-people-experiencing-homelessness` |
+| `/press/text-messages-for-dc-residents` | `/article/power-of-text-messages-to-help-vulnerable-dc-residents` |
+| `/press/preventing-hypothermia-deaths` | `/article/how-dc-can-prevent-hypothermia-deaths-this-winter` |
+| `/press/dc-service-provider-convening` | `/article/enabling-sso-with-a-generic-identity-provider` |
+| `/press/derrick-woodfork-resources` | `/article/accessing-free-meals-and-job-resources-from-more-than-70-service-providers` |
+| `/press/partner-network-homelessness` | `/article/reduce-numbers-of-those-experiencing-homelessness` |
+
+Seven original `/news/…` paths also map to these articles. The historical `/form/get-involved` path maps to `/get-involved`. All links to old H1S pages inside article bodies now resolve to the corresponding v4 page, including the `dc.hopeonesource.org` host. Provenance URLs remain in content metadata and this audit, not as outbound reader links. The preview banner's old-site comparison link was removed.
+
+### Date and source fidelity
+
+- Frank's article now displays **2022**, because the reproduced H1S article has no verified day. March 4 dated the separate LinkedIn announcement previously used as the destination.
+- The service-provider convening now displays **March 7, 2018**, matching the original H1S release reproduced here. March 9 dated the PRWeb version previously used as the destination.
+- Other source precision limits remain as documented above. The hypothermia date conflict is explicitly retained in an article note; a precise `datePublished` is omitted from its structured data.
+- The Council release's apparent “October 12, 2012” typo remains in its original prose. Its contact anchor had a mismatched mailto address; the destination now matches the displayed `partnerships@hope1source.me` address.
+- An orphan caption referencing two photographs was omitted from the 2018 convening release after its source PDF returned 404 and photo assets were unavailable. No substantive article prose was removed.
+- The original Hurricane Florence alert screenshot could not be recovered from the legacy asset URLs or archive. Its generic replacement phone photograph was omitted, and only the positional lead-in “Pictured above, the” was changed to “The”; the paragraph's substantive wording is unchanged.
+
+### Delivery and checks
+
+- One responsive article template keeps readable line lengths, complete uncropped images, local navigation, and the existing back-to-top control.
+- Source-site images are served locally in smaller and larger variants with intrinsic dimensions and responsive selection. Asset filenames and source URLs are retained as provenance metadata where available.
+- Full article content, individual canonical URLs, and article structured data are prerendered. The build remains a noindex preview pending PR review.
+- v4 generates its own host redirect file so the shared legacy `/article/* → /press` rule cannot bypass the recreated releases. Current-site routing files are unchanged.
+- Build verification checks all 39 pages, 30 aliases, 616 internal links, complete article prose in static HTML, local images, and absence of outbound old-site links.
+- All ten articles were checked at 320px, 390px, and 1440px: no horizontal overflow, one H1 per page, and no broken article images. A release-title click, legacy article URL, and return-to-index navigation were exercised; return navigation starts at the top.
+- The future `https://hope1source.org/` root build also passed (39 pages, 30 aliases, 704 internal links). The default noindex preview build was restored afterward; no deployment occurred. The back-to-top button was exercised on a migrated article and returned both scroll and keyboard focus to the page top.
