@@ -12,7 +12,7 @@ export const stories = [
     cardTitle: "Make care easier to reach.",
     card: 'H1S co-authored a three-year quality improvement initiative with the VA in 30 communities that helped identify and improve access to care.',
     org: 'Veterans Affairs / National',
-    industry: 'Federal Government',
+    industry: 'Federal Government - Access',
     location: '30 cities nationally',
     website: 'https://academic.oup.com/jpubhealth/article-abstract/44/1/207/6218923',
     websiteLabel: 'Journal of Public Health',

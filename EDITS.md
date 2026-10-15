@@ -2383,6 +2383,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** Second Harvest Asia story's shared industry label and this log. Matches the Feeding America category applied in T190. Publication remains pending PR review.
 - **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed both food-access case studies display the requested category in the rendered library.
 
+### T192 — Case studies — Federal Government - Access category
+
+- **Request / new text:** `Federal Government - Access`
+- **Old text:** `Federal Government`
+- **Scope:** VA story's shared industry label and this log. Supersedes T186. Publication remains pending PR review.
+- **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the updated category in the rendered case-study library.
+
 ## Resolved placement
 
 ### C01 — Partner Success
