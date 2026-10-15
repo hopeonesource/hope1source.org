@@ -18,12 +18,6 @@ export const team = [
     bio: 'Frank is a 2025 40 Under 40 award nominee, a 2022 National Volunteer In Service to America alumni winner, and the H1S technology lead. He assists with project management for the Check-ins technology and enjoys solving complex problems with technology.',
   },
   {
-    name: 'Veronica Thornton',
-    role: 'Digital Experience Engineer',
-    photo: 'photos/veronica-thornton.jpg',
-    bio: 'Veronica is H1S’s Digital Experience Engineer and a digital peer navigator. She creates accessible games and digital experiences that help people take meaningful next steps, complete check-ins, and connect with community resources. Drawing on her software development background and lived experience, she helps others navigate challenges she has faced, building trust and making support easier to access.',
-  },
-  {
     name: 'Justin Robinson',
     role: 'Custom Tech Lead',
     photo: 'photos/justin-robinson.jpg',
@@ -34,6 +28,12 @@ export const team = [
     role: 'Data Imagineering Lead',
     photo: 'photos/nick-hanson.jpg',
     bio: 'Nick is the Communications Lead for H1S and works as a filmmaker specializing in short-form video for web and broadcast. He uses his communications skillset to strengthen and grow the verified network of organizations serving vulnerable community members.',
+  },
+  {
+    name: 'Veronica Thornton',
+    role: 'Digital Experience Engineer',
+    photo: 'photos/veronica-thornton.jpg',
+    bio: 'Veronica is H1S’s Digital Experience Engineer and a digital peer navigator. She creates accessible games and digital experiences that help people take meaningful next steps, complete check-ins, and connect with community resources. Drawing on her software development background and lived experience, she helps others navigate challenges she has faced, building trust and making support easier to access.',
   },
   {
     name: 'Tamecia McKenzie',

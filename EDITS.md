@@ -1735,6 +1735,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - Moved Veronica Thornton directly beneath Frank Adames.
 - Preserved all biographies, roles, and photos.
 
+### T113 — /team — Veronica Thornton placement
+
+- Status: **Applied locally — user-requested reorder; awaiting PR review**
+- Target: `preview-v4/src/content/team.js`
+- Moved Veronica Thornton directly beneath Nick Hanson, superseding her placement in T112.
+- Preserved all biographies, roles, photos, and the relative order of everyone else.
+
 ## Resolved placement
 
 ### C01 — Partner Success
