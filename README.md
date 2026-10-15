@@ -4,6 +4,21 @@ Mission and trust website for Hope1Source (H1S) Check-ins. [Hope with Love](http
 
 This replaces the Webflow site. It is a static React app. It does not run a donation checkout, a login, or a database.
 
+## Production deployment: v4 on Netlify
+
+The approved v4 site is built from `preview-v4/` and deployed from `main` to the dedicated Netlify project [hope1source-org](https://app.netlify.com/projects/hope1source-org). Its Netlify address is [hope1source-org.netlify.app](https://hope1source-org.netlify.app); the primary custom domain is `hope1source.org`. The GoDaddy DNS cutover status is tracked in [EDITS.md](EDITS.md).
+
+`netlify.toml` builds and validates v4, publishes **`dist/v4`**, uses `/` as the base path, and sets production canonicals to `https://hope1source.org`. Only production builds are indexable. To reproduce the release locally:
+
+```sh
+VITE_V4_BASE=/ VITE_SITE_ORIGIN=https://hope1source.org VITE_SITE_INDEXABLE=true node scripts/build-v4.mjs
+node scripts/check-v4-prerender.mjs
+```
+
+Every public page is prerendered. Old URLs use HTTP 301 redirects; missing URLs return HTTP 404. `.netlify/` is ignored and contains only local site-link state. Future merged changes to `main` deploy automatically through Netlify.
+
+The existing `npm run build` and GitHub Pages workflow continue to publish the original site, v3, and the noindex v4 preview. The older concept and alternative-host notes below describe the original site; use `preview-v4/`, `netlify.toml`, and `EDITS.md` for the approved production version. Do not deploy the encompassing `dist` folder to the v4 production project.
+
 ## Concept
 
 Think of three doors that should not be the same door.

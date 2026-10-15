@@ -6,7 +6,8 @@
 - Preview: https://hopeonesource.github.io/hope1source.org/v3/
 - Repository: https://github.com/hopeonesource/hope1source.org
 - Review pull request: https://github.com/hopeonesource/hope1source.org/pull/15
-- Third preview: implemented in `preview-v4/`, running locally at http://127.0.0.1:5175/v4/. The GitHub Pages path `/hope1source.org/v4/` will become available after review and merge; it is not published yet.
+- v4 source: `preview-v4/`, running locally at http://127.0.0.1:5175/v4/ and published as a noindex GitHub preview at https://hopeonesource.github.io/hope1source.org/v4/.
+- Netlify release: https://hope1source-org.netlify.app — primary-domain cutover to https://hope1source.org is pending GoDaddy sign-in/DNS access (T232).
 
 ## Current record — October 15, 2026
 
@@ -2694,6 +2695,16 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Routing:** Legacy aliases use forced HTTP 301 redirects over their static fallback files. Unknown URLs return the prerendered 404 page with HTTP 404 instead of homepage HTML with status 200.
 - **Content:** Preserved all approved wording, images, order, and design, including the latest team biographies through T230.
 - **Validation:** Root production build and prerender checks pass: 46 pages, 30 aliases, 886 internal links, metadata, JSON-LD, sitemap, and 404. Whitespace check passes. Domain cutover remains pending until the Netlify deploy is verified and GoDaddy access is available.
+
+### T232 — PR merged and Netlify release verified; GoDaddy cutover pending
+
+- **Authorization:** The user's October 15 instruction authorizes PR merge and replacement of hope1source.org with v4. The signed-in GitHub account authored PR #15, so it cannot submit a self-approval review; the PR was merged using the user's authorization without bypassing repository protections.
+- **Repository:** PR #15 merged as `3130dcf0772d12ce93ab5da51181b51e5572a8be`. The local workspace is now on `main`.
+- **Netlify:** Created the dedicated `hope1source-org` project (`c12caaa2-7ce9-4538-bd5b-e07aa3d2e3f7`) in the existing team and connected the repository's `main` branch through its existing GitHub integration. Production deploy `6ad1626fb0b07f6fcedd59b6` is ready and published at `https://hope1source-org.netlify.app`. Configured custom domains `hope1source.org` and `www.hope1source.org`.
+- **Live checks:** All 46 public pages return HTTP 200 with indexable HTML and the correct hope1source.org canonical URL. All 30 legacy aliases return the expected HTTP 301 and destination. A missing URL returns HTTP 404. Root robots.txt permits crawling and advertises the production sitemap. GitHub Pages also published successfully after retrying a transient GitHub server-500 deployment error; its build passed on the first attempt.
+- **GoDaddy / pending action:** Safari requires user sign-in. No DNS records have been changed. Existing authoritative web records are apex A `75.2.70.75` and `99.83.190.102`, and www CNAME `proxy-ssl.webflow.com` (TTL 600). The intended replacement is one apex A `75.2.60.5` and www CNAME `hope1source-org.netlify.app`, following Netlify's external-DNS instructions. Keep GoDaddy nameservers and all unrelated/subdomain/mail records. Complete certificate issuance, HTTPS enforcement, and public-domain verification after DNS access is available.
+- **Other services:** Verified `https://h1s.me/eielsonafb/` and `https://hopeonesource.me/` still return their existing HTTP-200 applications. Their site/domain mappings were not modified.
+- **Documentation:** Added current Netlify deployment instructions to README and updated search-readiness guidance. No approved page content, layout, or design changed during launch preparation.
 
 ## Resolved placement
 

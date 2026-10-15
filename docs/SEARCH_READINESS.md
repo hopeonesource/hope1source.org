@@ -1,6 +1,6 @@
-# Search readiness for the v4 review
+# Search readiness for v4
 
-Updated October 14, 2026. The intended audience is service providers, the conversion is a partnership conversation, and the confirmed future production domain is `https://hope1source.org`. Publishing follows PR review; these changes do not publish the site or change DNS.
+Updated October 15, 2026. The intended audience is service providers, the conversion is a partnership conversation, and the production domain is `https://hope1source.org`. The user authorized publication and PR #15 has merged. Netlify now builds the indexable root release from `main`, using `netlify.toml` and publishing `dist/v4`. GoDaddy DNS cutover status is tracked in `EDITS.md`.
 
 ## What this build supplies
 
@@ -8,7 +8,7 @@ Updated October 14, 2026. The intended audience is service providers, the conver
 - Each page has its own title, description, canonical URL, social metadata, and JSON-LD before JavaScript runs. The metadata is kept consistent when visitors navigate in the application.
 - Structured data describes the organization, website, and current page using existing public facts. It does not invent service areas, certifications, ratings, reviews, or aggregate outcomes.
 - Legacy aliases have a destination canonical, an immediate static redirect, and a working fallback link. The real 404 page has useful content and `noindex`.
-- Unknown article/post/category paths use that same 404 rather than silently redirecting only after JavaScript runs. The 12 explicitly mapped legacy aliases remain available.
+- Unknown article/post/category paths use that same 404 rather than silently redirecting only after JavaScript runs. All 30 explicitly mapped legacy aliases remain available as forced HTTP 301 redirects on Netlify.
 - The default v4 build remains a `noindex, follow` review preview. Its sitemap contains no URLs. The current site's root sitemap and robots files are unchanged.
 
 ## Build and validate
@@ -30,7 +30,7 @@ The preview server resolves each route to its generated HTML and returns the gen
 
 Default canonicals match `https://hopeonesource.github.io/hope1source.org/v4/`; they no longer combine the custom domain with a GitHub project path.
 
-After PR review and approval to launch, prepare the confirmed root-domain release with:
+The approved root-domain release can be reproduced with:
 
 ```sh
 VITE_SITE_ORIGIN=https://hope1source.org VITE_V4_BASE=/ VITE_SITE_INDEXABLE=true node scripts/build-v4.mjs
