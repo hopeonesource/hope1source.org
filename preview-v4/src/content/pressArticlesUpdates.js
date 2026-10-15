@@ -56,23 +56,19 @@ export const pressArticlesUpdates = [
     blocks: [
       {
         type: 'p',
-        text: 'In 60 days, H1S supported 3,100 check-in interactions in central Alaska, helping members of the military and veteran community find and connect with more than 27 services, including mental health support.',
+        text: 'In 60 days, H1S supported 3,100 check-in interactions in central Alaska, helping the military and veteran community connect with more than 27 services, including mental health support.',
       },
       {
         type: 'p',
-        text: 'During the pilot, H1S worked with the senior Air Force installation commander to extend outreach across the entire Air Force base, inviting the installation community to check in and learn about available support. Local military and veteran service organizations closely supported the effort.',
+        text: 'Working with the senior Air Force installation commander and local military and veteran service organizations, H1S extended outreach across the entire Air Force base. Check-ins gave people a simple way to share their needs and find support.',
       },
       {
         type: 'p',
-        text: 'H1S reported a 68% game completion rate during the pilot. The games were designed to build recognition of participating service providers, including a memory-matching game designed to help players recognize and recall available mental health services.',
+        text: 'H1S sent participants text messages linking to games designed to take 15 seconds or less. The games highlighted local counseling and mental health providers alongside available national services. A memory-matching game aimed to make those services easier to recognize and remember. H1S reported a 68% game completion rate during the pilot.',
       },
       {
         type: 'p',
-        text: 'The check-ins gave people a way to share their needs and discover services they could turn to. Including mental health support made suicide prevention an important part of the outreach’s purpose. The pilot created repeated opportunities to listen and follow up across the base.',
-      },
-      {
-        type: 'p',
-        text: 'H1S reports that many of the supporting military and veteran service organizations have expressed interest in continuing. The pilot concluded in September 2026. Its results provide a basis for senior military and veteran leadership to evaluate whether and how the approach could be used in the future.',
+        text: 'The pilot concluded in September 2026. H1S reports that many supporting organizations are eager to continue. The results give senior military and veteran leadership a basis to evaluate next steps.',
       },
     ],
   },

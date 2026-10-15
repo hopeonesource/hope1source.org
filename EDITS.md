@@ -2151,6 +2151,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** Full Alaska article only; title, date, and News & Stories summary are unchanged. Publication remains pending PR review.
 - **Validation:** Confirmed the updated article data and viewed the new paragraph in the running preview. Title, October 1 date, and summary remain unchanged; whitespace check passes.
 
+### T169 — /press/central-alaska-check-in-pilot — Crisp story and quick games by text
+
+- **Request:** Make the Alaska story concise and convincing, explain games delivered by text message that reinforce recognition of local counseling and mental health services and available national services, and include the 15-seconds-or-less experience.
+- **Applied:** Tightened the story to four paragraphs. Explained that participants received text messages linking to games designed to take 15 seconds or less, highlighted local and national services, and described the memory-matching game's purpose in helping people recognize and remember them. Retained the reported 68% game completion rate.
+- **Evidence:** The user supplied the delivery method and timing. Timing is described as a design target and service recognition as an intended benefit; the article does not claim measured recall or health improvements. Preserved 3,100 check-in interactions, more than 27 services, base-wide outreach, the completed September pilot, and leadership evaluation of next steps.
+- **Scope:** Alaska article body only; headline, October 1 date, listing summary, and layout remain unchanged. Publication remains pending PR review.
+- **Validation:** v4 build and prerender checks pass (44 pages, 30 aliases, 748 internal links). Verified all four revised paragraphs and the preserved title/date in the running preview; whitespace check passes.
+
 ## Resolved placement
 
 ### C01 — Partner Success
