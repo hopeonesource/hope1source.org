@@ -6,7 +6,7 @@ import { org } from '../content/org.js'
 import { publicUrl } from '../lib/links.js'
 
 const phoneQuery = '(max-width: 720px)'
-const [operator, registration] = org.procurement.split(/ (?=SAM\.gov)/)
+const [operator] = org.procurement.split(/ (?=SAM\.gov)/)
 
 function usePhone() {
   const [phone, setPhone] = useState(false)
@@ -152,7 +152,16 @@ export default function About() {
               matters for impact.
             </p>
             <p>{operator}</p>
-            <p>{registration}</p>
+            <p>
+              <strong>SAM.gov registration</strong>
+              <br />
+              UEI: {org.uei} · CAGE: {org.cage}
+            </p>
+            <p>
+              <strong>Nonprofit status</strong>
+              <br />
+              501(c)(3) · EIN: {org.ein}
+            </p>
           </AboutFold>
           <p>
             <Link className="btn btn-primary" to="/team">

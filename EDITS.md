@@ -2441,6 +2441,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** Adds a colon to the shared procurement text displayed on About and For Backers, plus this log. Publication remains pending PR review.
 - **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the separator in rendered About HTML.
 
+### T200 — About — Simpler registration details
+
+- **Request:** Improve the registration block for simplicity.
+- **Old text:** `SAM.gov: UEI HYQWP496LMJ8. CAGE 77K55. EIN 27-5461163. 501(c)(3).`
+- **New presentation:** `SAM.gov registration` followed by `UEI: HYQWP496LMJ8 · CAGE: 77K55`; a separate `Nonprofit status` paragraph followed by `501(c)(3) · EIN: 27-5461163`.
+- **Scope:** About registration block and this log. Uses existing organization data and paragraph styling, with bold labels and line breaks. Preserves the organization text above, every identifier, and the nonprofit designation. Other pages retain their existing presentation. Publication remains pending PR review.
+- **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed both labeled groups, all identifiers, and the retained organization name in rendered About HTML. Independent copy review confirms clarity and preserved information.
+
 ## Resolved placement
 
 ### C01 — Partner Success
