@@ -1,0 +1,43 @@
+# Social content source audit
+
+Reviewed October 14, 2026, through the user's signed-in Safari session on the public Hope with Love Facebook page. Read published posts and their images; no social posts, comments, messages, reactions, or account settings were changed.
+
+The additions below fill gaps in v4 while preserving the three featured homepage stories and previously approved wording. Social-source dates describe when the source was shared, not when this website content was created. New prose is a summary, not a reproduced press release.
+
+## Second Harvest Asia — August 20, 2024
+
+- Source: https://www.facebook.com/photo/?fbid=904654131689097&set=a.626564272831419
+- Read the full testimonial in the source image. Attribution: Charles McJilton, Founder, Second Harvest Asia. The post is dated August 20, 2024.
+- Supported account: Second Harvest Asia partnered with H1S to help a Japanese food bank move from a manual recipient-verification process to an online system with immediate validation. McJilton also described opportunities for new services, future outreach, and real-time information for management and donors.
+- Added: `/case-studies/second-harvest-asia`; links from the case-study library, Learn More, Food and Meals, and Press. The story clearly attributes the account to the partner. No new numerical outcome, eligibility rule, current operating status, or causal impact claim is introduced.
+- The new story is included in `allStories`; the existing `stories` collection continues to supply the three homepage cards. No unrelated photo is used to depict this partner.
+
+## Hurricane Helene field account — October 16, 2024
+
+- Source: https://www.facebook.com/hopewithlove/posts/pfbid036Vero7qHFBwnxeHb9vHLt6GjswP3StUpojmJnVKH3xXeRPWCweSFXnWEA1wUab9Xl
+- Tim and Wayne Underwood described returning from North Carolina, observing organizations with more donated supplies than they could accept while other needs persisted. The post identifies ongoing needs assessment and coordination of supplies and repairs as priorities.
+- Added: a short attributed section on `/readiness#changing-needs`, linked from Press.
+- This is a field observation, not evidence of a specific H1S technology deployment, message count, or measured disaster-response outcome. The post's historical call for volunteers is not represented as a current campaign.
+
+## Practical support and human-led automation — 2025
+
+- July 29, 2025 source: https://www.facebook.com/hopewithlove/videos/780893854293582/
+- Read the expanded public caption, which describes helping partners listen, deliver services honestly, and improve quality. No claims are derived from unreviewed video footage.
+- June 21, 2025 source: https://www.facebook.com/hopewithlove/posts/pfbid02Vt3VGEuDBvS7grkhkasBYK6QzYddtdWiX9dvAVavyN2onCgBfbbe9GeMAHHE1FPtl
+- Read the expanded caption calling for human-driven automation and keeping people involved. The public page introduction also describes evidence-based technical assistance for connecting people and services.
+- Added: a short explanation on `/learn-more`, with direct source links. No training schedule, support service level, autonomous decision-making capability, or product feature is invented.
+
+## Frank V. Adames recognition — March 6, 2025
+
+- Social source: https://www.facebook.com/hopewithlove/posts/pfbid02Z2kahJaAMEusLJAhZVj8FB4Fxk5yqfwTYEVemuX7hn8S1Neq2gD3WqQdgJmJsELrl
+- Verified primary announcement: https://www.leadercenter.org/press-releases/announcing-2025-northern-virginia-40-under-40-honorees/
+- The organizer lists Frank V. Adames with KPMG and Hope1Source among the 2025 Northern Virginia 40 Under 40 honorees. March 6 is the announcement date; April 8 is the celebration date.
+- Added the official announcement to Press coverage. This is distinct from the existing 2022 National Service Award release.
+
+## Reviewed but not turned into new claims
+
+- May 21, 2025 Checkins District video caption calls the facility a future project. Do not describe it as an operating facility without an updated source.
+- February 5, 2025 and November 4, 2024 posts describe dated community-count milestones. They do not establish the current network size.
+- August 19, 2025 cause discussion and individual comments do not establish new partner relationships.
+- Historical donation-match deadlines are not current fundraising offers.
+- Posts and image captions from August 2024 through August 2025 were reviewed selectively; this is not an exhaustive audit of every post or video.

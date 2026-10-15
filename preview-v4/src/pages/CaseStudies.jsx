@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero.jsx'
 import Seo from '../components/Seo.jsx'
-import { stories } from '../content/stories.js'
+import { allStories } from '../content/stories.js'
 import { publicUrl } from '../lib/links.js'
 
 export default function CaseStudies() {
@@ -18,7 +18,7 @@ export default function CaseStudies() {
       />
       <section className="section">
         <div className="wrap story-cards">
-          {stories.map((story) => (
+          {allStories.map((story) => (
             <article key={story.slug}>
               {story.image ? (
                 <img

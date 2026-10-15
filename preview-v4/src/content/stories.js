@@ -106,6 +106,32 @@ export const stories = [
   },
 ]
 
+// Additional stories appear in the library without expanding the homepage.
+export const allStories = [
+  ...stories,
+  {
+    slug: 'second-harvest-asia',
+    title: 'Making food-bank check-ins easier.',
+    cardTitle: 'Make the first step simpler.',
+    org: 'Second Harvest Asia',
+    industry: 'Food access and nonprofit',
+    location: 'Japan',
+    website: 'https://www.facebook.com/photo/?fbid=904654131689097&set=a.626564272831419',
+    websiteLabel: 'Partner testimonial · August 20, 2024',
+    kicker: 'Partner experience',
+    summary:
+      'Second Harvest Asia partnered with H1S to help a food bank in Japan move from manual recipient checks to immediate online validation, according to founder Charles McJilton.',
+    quote:
+      'H1S Checkins also provides opportunities to introduce new services, automate future outreach, and collect vital real-time data needed for management and donors.',
+    quoteAttribution: 'Charles McJilton, Founder, Second Harvest Asia · shared August 20, 2024',
+    body: [
+      'Before the change, each recipient needed to be verified through a manual process before using the pantry. Second Harvest Asia worked with H1S to help move that step online.',
+      'In the partner testimonial shared by Hope with Love, McJilton described immediate validation in the new system. This gave the pantry a simpler way to confirm recipients before they used the service.',
+      'He also described opportunities to introduce services, automate future outreach, and gather real-time information for managers and donors. The common thread is practical: make it easier to connect, learn from each check-in, and use that information to improve service.',
+    ],
+  },
+]
+
 export function storyBySlug(slug) {
-  return stories.find((story) => story.slug === slug || story.legacySlug === slug)
+  return allStories.find((story) => story.slug === slug || story.legacySlug === slug)
 }

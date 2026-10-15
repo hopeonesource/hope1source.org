@@ -1,6 +1,6 @@
 import { roles } from './roles.js'
 import { services } from './services.js'
-import { stories } from './stories.js'
+import { allStories } from './stories.js'
 import { pressArticles, pressArticleAliases } from './pressArticles.js'
 
 /**
@@ -22,7 +22,7 @@ export const pages = [
   { path: '/press', priority: '0.5', changefreq: 'monthly' },
   ...pressArticles.map((article) => ({ path: `/press/${article.id}`, priority: '0.5', changefreq: 'yearly' })),
   { path: '/case-studies', priority: '0.7', changefreq: 'monthly' },
-  ...stories.map((story) => ({
+  ...allStories.map((story) => ({
     path: `/case-studies/${story.slug}`,
     priority: '0.6',
     changefreq: 'yearly',

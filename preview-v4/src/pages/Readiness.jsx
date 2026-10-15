@@ -75,6 +75,22 @@ export default function Readiness() {
           <p>
             <Link to="/case-studies/emergency-shelter-alerts">Read the shelter alerts story</Link>
           </p>
+          <h2 id="changing-needs">Keep checking what people need</h2>
+          <p>
+            After visiting North Carolina following Hurricane Helene, Tim and Wayne Underwood described aid groups
+            overflowing with water, food, and clothing, and turning away most donations while unmet needs remained.
+          </p>
+          <p>
+            They identified ongoing needs assessment and coordination of supplies and repairs as critical parts of
+            the response.{' '}
+            <a
+              href="https://www.facebook.com/hopewithlove/posts/pfbid036Vero7qHFBwnxeHb9vHLt6GjswP3StUpojmJnVKH3xXeRPWCweSFXnWEA1wUab9Xl"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Read the October 16, 2024 field update
+            </a>.
+          </p>
           <h2>Readiness checklist</h2>
           <ol>
             {checklist.map((item) => (

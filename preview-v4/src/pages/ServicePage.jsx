@@ -47,6 +47,13 @@ export default function ServicePage({ slug }) {
             ))}
             <h2>If you run this service</h2>
             <p>{service.forPartner}</p>
+            {service.partnerExample ? (
+              <>
+                <h3>{service.partnerExample.title}</h3>
+                <p>{service.partnerExample.text}</p>
+                <p><Link to={service.partnerExample.to}>{service.partnerExample.label}</Link></p>
+              </>
+            ) : null}
             <p>
               <a className="btn btn-primary" href={mailto({ subject: `Partnership: ${service.title}` })}>
                 Partner on {service.title.toLowerCase()}

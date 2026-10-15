@@ -13,6 +13,12 @@ export const services = [
       'Pantry hours, meal sites, and eligibility change faster than a marketing page can. Ask a library, a 211 specialist, or a provider you already trust. Partners in this network have used text alerts so a change in hours reaches people who opted in.',
     forPartner:
       'Food banks, meal programs, and campus or congregate kitchens can use check-ins and alerts to confirm a visit, learn what did not work, and tell funders what happened. A private note stays with the team.',
+    partnerExample: {
+      title: 'A simpler check-in at a food bank',
+      text: 'Second Harvest Asia’s founder described how H1S helped a food bank in Japan move from manual recipient checks to immediate online validation.',
+      to: '/case-studies/second-harvest-asia',
+      label: 'Read the Second Harvest Asia story',
+    },
   },
   {
     slug: 'medical',

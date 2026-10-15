@@ -2,7 +2,7 @@ import { BrowserRouter, Navigate, Route, Routes, useLocation } from 'react-route
 import Layout from './components/Layout.jsx'
 import { aliases } from './content/routes.js'
 import { services } from './content/services.js'
-import { stories } from './content/stories.js'
+import { allStories } from './content/stories.js'
 import { pressArticles } from './content/pressArticles.js'
 import About from './pages/About.jsx'
 import AccessPoints from './pages/AccessPoints.jsx'
@@ -65,7 +65,7 @@ export function AppRoutes() {
           <Route path="privacy" element={<Privacy />} />
           <Route path="terms" element={<Terms />} />
           <Route path="case-studies" element={<CaseStudies />} />
-          {stories.map((story) => (
+          {allStories.map((story) => (
             <Route
               key={story.slug}
               path={`case-studies/${story.slug}`}

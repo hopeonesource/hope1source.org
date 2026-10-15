@@ -142,6 +142,31 @@ export default function LearnMore() {
         </div>
       </section>
 
+      <section className="section section-tight" aria-labelledby="partner-support">
+        <div className="wrap narrow prose">
+          <h2 id="partner-support">Practical support for your team</h2>
+          <p>
+            H1S combines outreach tools with technical assistance for frontline service organizations.
+            We help partners listen to the people they serve and use that feedback to improve services.
+          </p>
+          <p>
+            People guide the work. Our approach to automation keeps people involved in understanding
+            information and deciding what happens next.
+          </p>
+          <p>
+            <a href="https://www.facebook.com/hopewithlove/videos/780893854293582/" target="_blank" rel="noopener noreferrer">How we support partners</a>
+            {' · '}
+            <a href="https://www.facebook.com/hopewithlove/posts/pfbid02Vt3VGEuDBvS7grkhkasBYK6QzYddtdWiX9dvAVavyN2onCgBfbbe9GeMAHHE1FPtl" target="_blank" rel="noopener noreferrer">Our approach to human-led automation</a>
+          </p>
+          <h3>A simpler check-in at a food bank</h3>
+          <p>
+            Second Harvest Asia’s founder described how H1S helped a food bank in Japan replace manual
+            recipient checks with immediate online validation.
+          </p>
+          <p><Link to="/case-studies/second-harvest-asia">Read the Second Harvest Asia story</Link></p>
+        </div>
+      </section>
+
       <section className="cause-band" aria-labelledby="partner-cta">
         <div className="wrap cause-inner">
           <div>

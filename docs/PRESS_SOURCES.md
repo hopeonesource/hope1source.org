@@ -73,3 +73,7 @@ Seven original `/news/…` paths also map to these articles. The historical `/fo
 - Build verification checks all 39 pages, 30 aliases, 616 internal links, complete article prose in static HTML, local images, and absence of outbound old-site links.
 - All ten articles were checked at 320px, 390px, and 1440px: no horizontal overflow, one H1 per page, and no broken article images. A release-title click, legacy article URL, and return-to-index navigation were exercised; return navigation starts at the top.
 - The future `https://hope1source.org/` root build also passed (39 pages, 30 aliases, 704 internal links). The default noindex preview build was restored afterward; no deployment occurred. The back-to-top button was exercised on a migrated article and returned both scroll and keyboard focus to the page top.
+
+## Social-derived additions
+
+The October 14, 2026 social review added Frank V. Adames's March 6, 2025 Northern Virginia 40 Under 40 recognition, with a direct link to the official organizer announcement. Two dated community updates link to new content within v4: Second Harvest Asia's partner testimonial and a Hurricane Helene field account. Their source links and date evidence are recorded in [SOCIAL_CONTENT_SOURCES.md](SOCIAL_CONTENT_SOURCES.md).

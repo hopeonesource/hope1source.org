@@ -1886,6 +1886,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Content fidelity:** Frank's reproduced article uses year-only 2022; the convening uses its original March 7, 2018 H1S dateline. Full source and omission details are in `docs/PRESS_SOURCES.md`. Previously approved copy elsewhere is retained.
 - **Validation:** All ten articles checked at 320px, 390px, and 1440px without horizontal overflow or broken images. Build and static checks pass for 39 pages, 30 aliases, and 616 internal links, including full article prose and a guard against outbound old-site links. Publication remains pending PR review.
 
+### T133 — v4 — Fill content gaps from published social stories
+
+- **Request:** Review Hope with Love's Facebook content in the already signed-in Safari browser and create website content that fills gaps.
+- **Applied:** Added a Second Harvest Asia case study from Charles McJilton's August 20, 2024 testimonial, linked from the case-study library, Food and Meals, Learn More, and Press. Added a dated Hurricane Helene field account on Readiness and a corresponding Press link. Added a concise explanation of practical partner support and human-led automation on Learn More, plus Frank V. Adames's March 6, 2025 Northern Virginia 40 Under 40 recognition linked to the official organizer announcement.
+- **Preserved:** Existing approved copy, design, and the three featured homepage stories. The new food-bank story is added to the full story library without expanding the homepage. Current site and v3 are untouched.
+- **Sources:** `docs/SOCIAL_CONTENT_SOURCES.md` records direct post links, publication dates, the source-image testimonial, and the distinction between reported experience, field observations, and future plans. No social-media posts or account settings were changed.
+- **Validation:** Seven affected/reference pages checked at 320px, 390px, and 1440px with no horizontal overflow, broken images, or page errors; the Press-to-Readiness anchor lands and receives focus correctly. Mobile and desktop screenshots reviewed. Static checks pass for 40 pages, 30 aliases, and 636 internal links in preview; the future root-domain configuration also passes with 726 internal links. The final local build is restored to the noindex preview. Publication remains pending PR review.
+
 ## Resolved placement
 
 ### C01 — Partner Success

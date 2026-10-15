@@ -55,6 +55,13 @@ export const releases = [
 
 export const coverage = [
   {
+    date: 'March 6, 2025',
+    dateTime: '2025-03-06',
+    title: 'Frank V. Adames named a Northern Virginia 40 Under 40 honoree',
+    detail: 'Leadership Center of Arlington and Leadership Fairfax · Official 2025 honoree announcement.',
+    href: 'https://www.leadercenter.org/press-releases/announcing-2025-northern-virginia-40-under-40-honorees/',
+  },
+  {
     date: 'December 6, 2020',
     dateTime: '2020-12-06',
     title: 'Veterans notified by text of free produce at Charleston VA',
@@ -88,5 +95,23 @@ export const coverage = [
     title: 'Text-messaging system as a guide to homeless services',
     detail: 'Street Sense Media, on the early District pilot with Miriam’s Kitchen and the Interagency Council on Homelessness.',
     href: 'https://streetsensemedia.org/article/text-messaging-system-a-potential-guide-to-homeless-services/',
+  },
+]
+
+/** Dated social posts with readable summaries on this website. */
+export const communityUpdates = [
+  {
+    date: 'October 16, 2024',
+    dateTime: '2024-10-16',
+    title: 'Hurricane Helene: keep checking what people need',
+    detail: 'Tim and Wayne Underwood’s field observations on changing needs and coordinating support in North Carolina.',
+    to: '/readiness#changing-needs',
+  },
+  {
+    date: 'August 20, 2024',
+    dateTime: '2024-08-20',
+    title: 'Second Harvest Asia: making food-bank check-ins easier',
+    detail: 'A partner’s account of moving from manual recipient checks to immediate online validation.',
+    to: '/case-studies/second-harvest-asia',
   },
 ]

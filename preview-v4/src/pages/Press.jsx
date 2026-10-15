@@ -1,6 +1,6 @@
 import PageHero from '../components/PageHero.jsx'
 import Seo from '../components/Seo.jsx'
-import { coverage, releases } from '../content/press.js'
+import { communityUpdates, coverage, releases } from '../content/press.js'
 import { org } from '../content/org.js'
 import { mailto } from '../lib/links.js'
 
@@ -51,6 +51,16 @@ export default function Press() {
                       {item.title}
                     </a>
                   </h3>
+                  <p>{item.detail}</p>
+                </li>
+              ))}
+            </ul>
+            <h2>From our community</h2>
+            <ul className="press-list">
+              {communityUpdates.map((item) => (
+                <li key={item.to}>
+                  <p className="meta-label"><time dateTime={item.dateTime}>{item.date}</time></p>
+                  <h3><Link to={item.to}>{item.title}</Link></h3>
                   <p>{item.detail}</p>
                 </li>
               ))}
