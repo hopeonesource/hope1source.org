@@ -1802,6 +1802,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - Kept his role, degree, and practical research focus while matching the length and plain language of other team biographies.
 - All other team content and ordering are unchanged.
 
+### T122 — v4 — Connect wording
+
+- Status: **Applied locally — user-requested wording; awaiting PR review**
+- Replaced the standalone `Reach.` with `Connect.` in the Home, Outreach Tools, and Access Points headings, including the Outreach Tools page-title metadata.
+- Changed the shared first-step label from `Reach` to `Connect`, updating Home, Outreach Tools, Readiness, and Access Points together.
+- Preserved ordinary uses of `reach` within sentences, all other copy, and layout. Current-site and v3 content are unchanged.
+
 ## Resolved placement
 
 ### C01 — Partner Success

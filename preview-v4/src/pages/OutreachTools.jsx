@@ -41,7 +41,7 @@ export default function OutreachTools() {
   return (
     <>
       <Seo
-        title="Reach. Listen. Follow up."
+        title="Connect. Listen. Follow up."
         description="Share useful information, hear back privately, and follow up. H1S Check-ins helps partners stay connected with people who choose to take part."
       />
 
@@ -52,7 +52,7 @@ export default function OutreachTools() {
         <MissionWash tone="home" />
         <div className="wrap hero-copy">
           <p className="kicker">{org.product}</p>
-          <h1>Reach. Listen. Follow up.</h1>
+          <h1>Connect. Listen. Follow up.</h1>
           <p className="lede">H1S Check-ins helps partners share useful information, hear back privately, and follow up with people who choose to take part.</p>
           <div className="hero-actions">
             <a className="btn btn-primary" href={mailto({ subject: 'Live demo' })}>

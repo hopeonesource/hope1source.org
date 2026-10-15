@@ -51,7 +51,7 @@ export default function AccessPoints() {
       </section>
       <section className="section section-tight">
         <div className="wrap narrow prose">
-          <h2>Reach. Listen. Repeat.</h2>
+          <h2>Connect. Listen. Repeat.</h2>
           <p>No app. Any phone. People choose to take part.</p>
           <ol>
             {accessSteps.map((step) => (

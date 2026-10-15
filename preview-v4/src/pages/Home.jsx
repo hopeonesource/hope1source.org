@@ -105,7 +105,7 @@ export default function Home() {
 
       <section className="section" aria-labelledby="how-title">
         <div className="wrap">
-          <h2 id="how-title">Reach. Listen. Follow up.</h2>
+          <h2 id="how-title">Connect. Listen. Follow up.</h2>
           <p>Earn trust by listening, following up, and showing what changed. People choose to take part.</p>
           <div className="door-row">
             {howSteps.map((step, index) => (

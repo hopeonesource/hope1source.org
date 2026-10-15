@@ -1,6 +1,6 @@
 export const howSteps = [
   {
-    title: 'Reach',
+    title: 'Connect',
     text: 'Share useful information with people who choose to hear from you.',
   },
   {
