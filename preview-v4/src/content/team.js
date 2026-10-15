@@ -81,7 +81,7 @@ export const team = [
     name: 'Harry Kim',
     role: 'Advisory Board',
     photo: 'photos/harry-kim.jpg',
-    bio: 'Harry is a commander in the United States Navy Civil Engineer Corps and helps provide strategic design and implementation guidance for the organizational vision.',
+    bio: 'Harry is a recently retired commander from the United States Navy Civil Engineer Corps and helps provide strategic design and implementation guidance for the organizational vision.',
   },
   {
     name: 'Chris Burnett',

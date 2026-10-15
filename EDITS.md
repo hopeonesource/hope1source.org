@@ -1705,6 +1705,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - Target: `preview-v4/src/content/team.js`
 - Removed Greg Marmo’s team entry, including name, role, biography, and displayed photo.
 
+### T109 — /team — Harry Kim
+
+- Status: **Applied locally — user-requested wording; awaiting PR review**
+- Target: `preview-v4/src/content/team.js`
+- Old text: `Harry is a commander in the United States Navy Civil Engineer Corps`
+- New text: `Harry is a recently retired commander from the United States Navy Civil Engineer Corps`
+- The rest of his biography is unchanged.
+
 ## Resolved placement
 
 ### C01 — Partner Success
