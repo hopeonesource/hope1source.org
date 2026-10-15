@@ -1910,6 +1910,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** Other page copy, the header, the footer's Media option, and the current site/v3 are unchanged. Publication remains pending PR review.
 - **Validation:** All 18 previous entries preserved, with 24 unique items in correct descending order. One list renders at 320px, 390px, and 1440px with no horizontal overflow; source links have safe external-link attributes and the Dorothy link opens the existing case study. Mobile and desktop screenshots reviewed. Build and static checks pass for 40 pages, 30 aliases, and 678 internal links; independent review found no blocking issues.
 
+### T136 — v4 — Short author credits
+
+- **Request:** Format authors as the first initial of their first name, a period, and their last name.
+- **Applied:** Changed personal author credits to `N. Hanson`, `R. Patel`, `E. Curran`, `E. Blakley`, and `A. Bajpai`. Shared release data updates both the News & Stories index and individual article bylines.
+- **Scope:** Organization credits, names of article subjects, testimonials, team biographies, source URLs, and original-source documentation remain unchanged. Publication remains pending PR review.
+- **Validation:** Verified all 10 article bylines and all 5 abbreviated personal credits in the rendered News & Stories index. v4 build, static checks, and whitespace checks pass; independent audit found no missed author credits.
+
 ## Resolved placement
 
 ### C01 — Partner Success

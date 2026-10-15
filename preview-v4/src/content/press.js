@@ -65,14 +65,14 @@ export const coverage = [
     date: 'December 6, 2020',
     dateTime: '2020-12-06',
     title: 'Veterans notified by text of free produce at Charleston VA',
-    detail: 'Erin Curran · VA News.',
+    detail: 'E. Curran · VA News.',
     href: 'https://news.va.gov/81753/free-produce-veterans-charleston-va/',
   },
   {
     date: 'December 2, 2020',
     dateTime: '2020-12-02',
     title: 'On Giving Tuesday and social justice',
-    detail: 'Erin Blakley · LinkedIn. Published as “The User Experience of Homelessness.”',
+    detail: 'E. Blakley · LinkedIn. Published as “The User Experience of Homelessness.”',
     href: 'https://www.linkedin.com/pulse/giving-tuesday-social-justice-erin-blakley',
   },
   {
@@ -86,7 +86,7 @@ export const coverage = [
     date: 'March 24, 2020',
     dateTime: '2020-03-24',
     title: 'Street Sense on which DC services stayed open during COVID-19',
-    detail: 'Avi Bajpai · Street Sense Media.',
+    detail: 'A. Bajpai · Street Sense Media.',
     href: 'https://streetsensemedia.org/article/coronavirus-services-homeless-resource/',
   },
   {

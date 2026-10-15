@@ -88,7 +88,7 @@ export const pressArticlesRecent = [
     "title": "10/10/2022: DC Councilmember Steadfast on Strengthening a Proven Network to Serve Everyone, Including Returning Citizens and Veterans",
     "date": "October 10, 2022",
     "dateTime": "2022-10-10",
-    "author": "Nick Hanson",
+    "author": "N. Hanson",
     "sourceUrl": "https://www.hope1source.org/article/conveningdc2",
     "description": "Councilmember Robert White and Hope1Source announce a convening for DC health, housing, career, and social service providers.",
     "blocks": [
@@ -206,7 +206,7 @@ export const pressArticlesRecent = [
     "title": "HopeOneSource releases emergency alerts during Hurricane Florence",
     "date": "September 13, 2018",
     "dateTime": "2018-09-13",
-    "author": "Nick Hanson",
+    "author": "N. Hanson",
     "sourceUrl": "https://web.archive.org/web/20190819210945/https://www.hopeonesource.org/news/hopeonesource-hurricane-florence-press-release",
     "description": "DC Government uses HopeOneSource to send shelter and transportation alerts to people experiencing homelessness as Hurricane Florence approaches.",
     "blocks": [
@@ -304,7 +304,7 @@ export const pressArticlesRecent = [
     "title": "HopeOneSource gives local service providers a simple, contactless way to connect with the people they serve during COVID-19",
     "date": "2020",
     "dateTime": "2020",
-    "author": "Rima Patel",
+    "author": "R. Patel",
     "sourceUrl": "https://www.hope1source.org/article/hopeonesource-gives-local-service-providers-a-simple-contactless-way-to-connect-with-the-people-they-serve-during-covid-19",
     "description": "HopeOneSource offers local service providers contactless outreach tools to connect vulnerable DC residents with available services during COVID-19.",
     "blocks": [
