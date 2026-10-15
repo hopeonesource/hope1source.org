@@ -1846,6 +1846,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - Target: `preview-v4/src/components/Layout.jsx`
 - Changed the shared footer registration line from `SAM.gov UEI...` to `SAM.gov: UEI...`, preserving its smaller italic style and line break.
 
+### T128 — v4 — Corporate partner footer label
+
+- Status: **Applied locally — user-requested clarification; awaiting PR review**
+- Target: `preview-v4/src/components/Layout.jsx`
+- Added `For corporate partners —` before the shared footer registration details to identify the intended audience.
+- Preserved `SAM.gov:`, all identifiers, smaller italic styling, and the line break beneath H1S Check-ins.
+
 ## Resolved placement
 
 ### C01 — Partner Success
