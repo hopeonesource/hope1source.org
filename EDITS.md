@@ -1894,6 +1894,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Sources:** `docs/SOCIAL_CONTENT_SOURCES.md` records direct post links, publication dates, the source-image testimonial, and the distinction between reported experience, field observations, and future plans. No social-media posts or account settings were changed.
 - **Validation:** Seven affected/reference pages checked at 320px, 390px, and 1440px with no horizontal overflow, broken images, or page errors; the Press-to-Readiness anchor lands and receives focus correctly. Mobile and desktop screenshots reviewed. Static checks pass for 40 pages, 30 aliases, and 636 internal links in preview; the future root-domain configuration also passes with 726 internal links. The final local build is restored to the noindex preview. Publication remains pending PR review.
 
+### T134 — v4 — Make Media easy to find
+
+- **Request:** Add Media to the footer on every page and a direct link on Contact.
+- **Applied:** Added `Media` after `Contact` in the shared footer and a `Media` link beside the email action at the top of Contact. Both open the existing `/press` page using the site's internal navigation and existing responsive styles.
+- **Scope:** Header navigation and existing page wording are preserved. Publication remains pending PR review.
+- **Validation:** Both links open the Press page at 320px, 390px, and 1440px with no horizontal overflow. v4 build and static checks pass for 40 pages, 30 aliases, and 677 internal links.
+
 ## Resolved placement
 
 ### C01 — Partner Success

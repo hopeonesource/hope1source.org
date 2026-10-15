@@ -40,6 +40,7 @@ export const footerLinks = [
   { to: '/readiness', label: 'Readiness' },
   { to: '/public-agencies', label: 'Public agencies' },
   { to: '/contact', label: 'Contact' },
+  { to: '/press', label: 'Media' },
   { href: org.donateUrl, label: 'Donate', external: true },
   { to: '/privacy', label: 'Privacy' },
   { to: '/terms', label: 'Terms' },

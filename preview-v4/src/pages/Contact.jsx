@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero.jsx'
 import Seo from '../components/Seo.jsx'
 import { org } from '../content/org.js'
@@ -33,6 +34,9 @@ export default function Contact() {
           <a className="btn btn-primary" href={mailto({})}>
             Email {org.email}
           </a>
+          <Link className="btn btn-secondary" to="/press">
+            Media
+          </Link>
         </p>
       </PageHero>
       <section className="section">
