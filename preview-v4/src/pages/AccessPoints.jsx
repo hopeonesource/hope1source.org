@@ -60,8 +60,8 @@ export default function AccessPoints() {
             ))}
           </ol>
           <p>
-            All partners must provide free or discounted services. They own their check-in data and can filter, sort,
-            or delete it at any time.
+            All partners must provide free or discounted services. They own their check-in experience and data, and
+            can filter, sort, or delete their data at any time.
           </p>
           <p>
             <a className="btn btn-primary" href={mailto({ subject: 'Access point' })}>

@@ -2062,6 +2062,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** This Access Points phrase only. Publication remains pending PR review.
 - **Validation:** Reviewed the exact replacement; whitespace check passes.
 
+### T157 — /access-points — Check-in experience and data ownership
+
+- **Request:** `They own their check-in experience and data, and can...`
+- **Applied:** Updated the ownership sentence to `They own their check-in experience and data, and can filter, sort, or delete their data at any time.` Retained the preceding free/discounted-service requirement.
+- **Scope:** This Access Points sentence only. Publication remains pending PR review.
+- **Validation:** Reviewed the exact replacement; whitespace check passes.
+
 ## Resolved placement
 
 ### C01 — Partner Success
