@@ -1,7 +1,7 @@
 /**
  * Stories for the recommended preview.
  * VA leads. H1S provided technical assistance. It was not the intervention.
- * DC is past tense. The 78% result stays on the story, not the home card.
+ * DC is past tense. The home card includes the supported-period 78% result.
  * No Crystal quote. No 52% claim.
  */
 export const stories = [
@@ -41,7 +41,7 @@ export const stories = [
     title: 'Emergency shelter alerts',
     outcome: 'Share useful information',
     cardTitle: 'Put vital information within real-time reach.',
-    card: 'DC Human Services used H1S to share emergency shelter and transportation information with residents.',
+    card: 'DC Human Services used H1S hypothermia alerts to share shelter and transportation information. Hypothermia deaths fell 78% during the supported period.',
     image: 'photos/hypothermia-alert-people.svg',
     imageWidth: 900,
     imageHeight: 600,

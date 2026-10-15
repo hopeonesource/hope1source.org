@@ -121,7 +121,7 @@ Standardized all three Partner Success image frames at 3:2 while keeping each im
 | Case study | Current homepage card headline | What readers should understand |
 | --- | --- | --- |
 | Veterans Affairs | Make care easier to reach. | Research and feedback helped service teams identify barriers. |
-| DC Human Services | Put vital information within real-time reach. | Alerts shared information people could use during extreme weather. |
+| DC Human Services | Put vital information within real-time reach. | Hypothermia alerts shared shelter and transportation information; hypothermia deaths fell 78% during the supported period. |
 | Dreamers & Achievers | Stay connected through follow-up. | Continued contact and feedback helped a partner understand needs. |
 
 ## Evidence used for the original proposal
@@ -2306,6 +2306,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Applied:** Replaced the shared emergency-shelter-alerts card headline on the homepage and case-study library. Updated the current-headline summary above; earlier wording remains in the historical record.
 - **Scope:** This headline and edit log only. Publication remains pending PR review.
 - **Validation:** v4 build and prerender checks pass. Confirmed the new headline appears and the old headline is absent in rendered Home and Case Studies HTML; whitespace check passes.
+
+### T182 — Homepage — Hypothermia alerts and reduction in deaths
+
+- **Request:** Specify that the alerts were for hypothermia and supported a 78% reduction in deaths.
+- **Old text:** `DC Human Services used H1S to share emergency shelter and transportation information with residents.`
+- **New text:** `DC Human Services used H1S hypothermia alerts to share shelter and transportation information. Hypothermia deaths fell 78% during the supported period.`
+- **Scope:** Homepage shelter-alerts card description and this log. Retained the headline from T181. The full case study already includes the 78% result and attribution; its wording remains unchanged. The source comment now reflects the user's request to include this result on the home card. Publication remains pending PR review.
+- **Validation:** v4 build and prerender checks pass. Confirmed the new description, explicit hypothermia death reduction, and preserved headline in rendered homepage HTML; whitespace check passes.
 
 ## Resolved placement
 
