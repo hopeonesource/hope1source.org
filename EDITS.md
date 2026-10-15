@@ -1683,6 +1683,22 @@ Confirmed the final Public Agencies wording and bullet order, 70%/90%, 97% fundi
 
 Verification: full build and prerender checks pass; 44 approved/restored phrases confirmed across eight rendered pages. Home and Learn More now differ from the pre-search baseline only in image-loading attributes; Readiness, Access Points, Providers, Funders, and Get Involved page copy matches that baseline.
 
+### T107 — /team introduction
+
+- Status: **Applied locally — assistant-drafted replacement requested by the user; awaiting PR review**
+- Target: `preview-v4/src/pages/Team.jsx`
+- Field: Supporting line below `The people behind the work.`, with matching page-description metadata.
+
+**Old text**
+
+Names, roles, and photos from the public team page.
+
+**New text**
+
+We bring together service, technology, and lived experience to help those who serve others create lasting change.
+
+The headline, roster, roles, biographies, and photos are unchanged.
+
 ## Resolved placement
 
 ### C01 — Partner Success

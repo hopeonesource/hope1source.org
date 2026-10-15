@@ -36,12 +36,12 @@ export default function Team() {
     <>
       <Seo
         title="Team"
-        description="The H1S Check-ins team: names, roles, and photos from the public team page. Hope with Love is the 501(c)(3)."
+        description="Meet the H1S Check-ins team. We bring together service, technology, and lived experience to help those who serve others create lasting change."
       />
       <PageHero
         kicker="Team"
         title="The people behind the work."
-        lede="Names, roles, and photos from the public team page."
+        lede="We bring together service, technology, and lived experience to help those who serve others create lasting change."
       />
       <section className="section">
         <div className="wrap">
