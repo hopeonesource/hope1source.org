@@ -2355,6 +2355,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** VA story's shared organization label and this log. The full article title and study wording remain unchanged. Publication remains pending PR review.
 - **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the shortened label in the rendered case-study library.
 
+### T188 — Case studies — Feeding America organization label
+
+- **Request / new text:** `Feeding America`
+- **Old text:** `Veterans Affairs / Feeding America`
+- **Scope:** Feeding America story's shared organization label and this log. Publication remains pending PR review.
+- **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the updated organization label in the rendered case-study library.
+
 ## Resolved placement
 
 ### C01 — Partner Success
