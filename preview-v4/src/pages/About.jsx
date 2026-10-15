@@ -94,7 +94,7 @@ export default function About() {
           </p>
           <AboutFold title="Mission" phone={phone}>
             <p>
-              Opt-in check-in text messages for health, housing, human, and emergency services.
+              We help partners connect people to health, housing, and other essential services by text.
             </p>
             <p>
               Connect. Listen. Repeat. Measure what matters and use what you learn to follow up.

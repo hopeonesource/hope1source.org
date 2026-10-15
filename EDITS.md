@@ -2481,6 +2481,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** About hero introduction and matching opening sentence in its search description, plus this log. Supersedes T203. Homepage wording remains unchanged. Publication remains pending PR review.
 - **Validation:** Character-count check, v4 build, prerender checks, and whitespace check pass. Confirmed the updated introduction and search description in rendered About HTML.
 
+### T205 — About — Plain-language Mission sentence
+
+- **Request:** Simplify the sentence under `Mission`, identified by the user's screenshot; the hero introduction is not the target.
+- **Old text:** `Opt-in check-in text messages for health, housing, human, and emergency services.`
+- **New text:** `We help partners connect people to health, housing, and other essential services by text.`
+- **Scope:** First Mission paragraph and this log only. Retains the hero, the Connect/Listen/Repeat paragraph, and the opt-in explanation under How check-ins work. Publication remains pending PR review.
+- **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the revised Mission sentence and retained surrounding copy in rendered About HTML.
+
 ## Resolved placement
 
 ### C01 — Partner Success
