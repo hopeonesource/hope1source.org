@@ -100,14 +100,18 @@ export default function About() {
               Connect. Listen. Repeat. Measure what matters and use what you learn to follow up.
             </p>
           </AboutFold>
-          <AboutFold title="How trust works" phone={phone}>
-            <p>People opt-in interested in free and discounted services or games.</p>
-            <p>No app is needed; only a cell phone with text messages to earn rewards.</p>
-            <p>Partners own and control their digital experience and service delivery.</p>
-            <p>
-              All partners must provide free or discounted services. They own their check-in data and can filter,
-              sort, or delete it at any time.
-            </p>
+          <AboutFold title="How check-ins work" phone={phone}>
+            <ul className="about-checkins-lead">
+              <li>No app is needed; only a cell phone with text messages to earn rewards.</li>
+            </ul>
+            <ol className="about-checkins-steps">
+              <li>People opt-in interested in free and discounted services or games.</li>
+              <li>Partners own and control their digital experience and service delivery.</li>
+              <li>
+                All partners must provide free or discounted services. They own their check-in data and can filter,
+                sort, or delete it at any time.
+              </li>
+            </ol>
           </AboutFold>
           <AboutFold title="Who it’s for" phone={phone}>
             <ul className="about-audiences">

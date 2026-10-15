@@ -1998,6 +1998,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** About wording only. Publication remains pending PR review.
 - **Validation:** Reviewed the exact text replacement; whitespace check passes.
 
+### T148 — /about — How check-ins work
+
+- **Request:** Rename the section `How check-ins work`, place `No app is needed...` directly underneath as a subhero bullet, and number the other three points.
+- **Applied:** Renamed `How trust works`. Moved the unchanged no-app sentence to an emphasized lead bullet and converted the remaining three statements to a semantic numbered list, preserving their wording and relative order.
+- **Scope:** About section markup and scoped lead/list styles only. All other content is preserved. Publication remains pending PR review.
+- **Validation:** Confirmed the lead text, three decimal-numbered points, mobile disclosure behavior, and no horizontal overflow at 320px, 390px, and 1440px. Mobile/desktop screenshots reviewed; no page errors. v4 build/static checks, whitespace check, and independent scope review pass.
+
 ## Resolved placement
 
 ### C01 — Partner Success

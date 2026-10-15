@@ -1516,7 +1516,14 @@ address {
   line-height: 1.5;
 }
 
-.about-audiences li + li {
+.about-checkins-lead {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.about-audiences li + li,
+.about-checkins-steps li + li {
   margin-top: 0.85rem;
 }
 
