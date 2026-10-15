@@ -2166,6 +2166,15 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** Shared Alaska listing summary and description metadata only. Article title, body, date, and layout are unchanged. Publication remains pending PR review.
 - **Validation:** Confirmed the shared listing data and the updated summary on News & Stories in the running preview; whitespace check passes.
 
+### T171 — /press — Miami veteran cancer-screening outreach story
+
+- **Request:** Add a story about H1S's role supporting veteran early cancer detection, grounded in email and study results. The user clarified that H1S provided check-ins, training, and equipping.
+- **Applied:** Added `H1S equips Miami partners for veteran cancer-screening outreach`, dated October 15, 2026, describing the 2025 work. Leads with check-ins, staff training, and outreach equipment; explains QR/tap access and computer/tablet options, plus coordination between Miami VA and local veteran-service organizations. The new article appears automatically in News & Stories.
+- **Evidence:** Reviewed relevant March–July 2025 email correspondence documenting check-in form/response access, outreach material preparation, training and demonstrations, partner introductions, and the July meeting with United Way of Broward County's Mission United team. The user's confirmation supports the provided check-ins, training, and equipment. No private contact details, email quotations, or internal check-in links are published.
+- **Study context:** Verified the original 2024 REFLECTION presentation: 1.3% is the cancer-signal detection rate among 2,854 analyzable veterans across seven VA sites, including Miami. It is not an early-stage cancer diagnosis rate or an outcome attributable to H1S's later outreach. The article identifies the result as historical research context, explains clinical evaluation, and links the original presentation, Miami VA's program, and the 2025 study update. It makes no unsupported claim about family/caregiver outreach, enrollment counts, health improvement, or automated appointment reminders.
+- **Scope:** One new v4 article with existing responsive article layout, automatic listing, route, and metadata integration. Publication remains pending PR review.
+- **Validation:** v4 build and prerender checks pass (45 pages, 30 aliases, 765 internal links). Clicked the new News & Stories entry and verified the full article, date, and all three source links in the running preview; whitespace check passes.
+
 ## Resolved placement
 
 ### C01 — Partner Success

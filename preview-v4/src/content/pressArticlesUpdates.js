@@ -1,6 +1,56 @@
 /** New H1S stories; partnership dates are confirmed by H1S. */
 export const pressArticlesUpdates = [
   {
+    id: 'miami-veteran-cancer-screening-outreach',
+    legacyPaths: [],
+    title: 'H1S equips Miami partners for veteran cancer-screening outreach',
+    date: 'October 15, 2026',
+    dateTime: '2026-10-15',
+    author: 'H1S Check-ins',
+    kicker: 'Partner story',
+    description: 'H1S provided check-ins, training, and outreach equipment to support Miami VA’s cancer-screening research and help community partners connect veterans with the study team.',
+    blocks: [
+      {
+        type: 'p',
+        text: 'In 2025, H1S provided check-ins, training, and outreach equipment to support Miami VA’s multi-cancer early detection research. The goal was simple: help veterans learn about the opportunity, review eligibility information, and connect with the study team.',
+      },
+      {
+        type: 'p',
+        text: 'H1S trained staff to manage check-in forms and responses, and provided outreach materials with QR codes and tap-to-check-in options. Partners could also offer the check-in on a computer or tablet for veterans without a phone.',
+      },
+      {
+        type: 'p',
+        text: 'H1S connected Miami VA staff with local veteran-service organizations. A July meeting with United Way of Broward County’s Mission United team focused on bringing screening outreach to veterans at risk of homelessness.',
+      },
+      {
+        type: 'h2',
+        text: 'The research behind the outreach',
+      },
+      {
+        type: 'p',
+        text: 'An initial 2024 analysis of the REFLECTION study reported cancer signals in 1.3% of 2,854 veterans across seven VA sites, including Miami. These blood-test signals required clinical evaluation to determine whether cancer was present.',
+        links: [{
+          text: 'initial 2024 analysis of the REFLECTION study',
+          href: 'https://grail.com/wp-content/uploads/2024/10/Atwood_EDCC-2024_REFLECTION-VA.Oral_FINAL.pdf',
+        }],
+      },
+      {
+        type: 'p',
+        text: 'Learn more about Miami VA’s research and read the updated 2025 REFLECTION findings.',
+        links: [
+          {
+            text: 'Miami VA’s research',
+            href: 'https://www.va.gov/miami-health-care/programs/lung-precision-oncology-program-lpop/',
+          },
+          {
+            text: 'updated 2025 REFLECTION findings',
+            href: 'https://grail.com/wp-content/uploads/2025/10/Atwood.EDCC-2025.REFLECTION.pdf',
+          },
+        ],
+      },
+    ],
+  },
+  {
     id: 'portsmouth-community-kickoff',
     legacyPaths: [],
     title: 'Join the Portsmouth Wellness Check-ins Hub community kickoff on October 23',
