@@ -2680,6 +2680,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** Frank Adames's closing biography phrase and this log only, with the requested wording smoothed for grammar. Publication remains pending PR review.
 - **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the new phrase in rendered Team HTML.
 
+### T230 — Team — Tamecia's experience supporting churches
+
+- **Request / new phrase:** `supporting churches, along with small and large service providers.`
+- **Old phrase:** `supporting small and large service providers.`
+- **Scope:** Tamecia McKenzie's closing biography phrase and this log only. Publication remains pending PR review.
+- **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the requested phrase in rendered Team HTML.
+
 ## Resolved placement
 
 ### C01 — Partner Success
