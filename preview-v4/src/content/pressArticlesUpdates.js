@@ -52,23 +52,23 @@ export const pressArticlesUpdates = [
     dateTime: '2026-09-02',
     author: 'H1S Check-ins',
     kicker: 'Partner story',
-    description: 'From September 1, 2025, to September 1, 2026, H1S and George Mason University Honors College connected student research and practical learning with community service.',
+    description: 'A year with George Mason University Honors College brought student ideas, grant-support prototypes, and community research into H1S’s planning.',
     blocks: [
       {
         type: 'p',
-        text: 'From September 1, 2025, to September 1, 2026, H1S partnered with George Mason University Honors College to connect student research, technical learning, and practical problem-solving with community service.',
+        text: 'From September 1, 2025, to September 1, 2026, H1S partnered with George Mason University Honors College around a practical need: helping a small volunteer team find suitable funding opportunities and prepare grant applications without starting from scratch each time.',
       },
       {
         type: 'p',
-        text: 'Honors College students worked with H1S volunteers on prototypes for grant discovery and writing. Their fall 2025 project handoff included a final report, a writing framework, and a structured intake document—tools designed to help organize information and prepare funding applications.',
+        text: 'The collaboration took root in Buchanan Hall, where the Honors College provided workspace for Dr. Hugo Diaz. Dr. Melanie Fedri, the college’s Experiential Learning Coordinator, helped bring H1S and student consultants together. Hugo asked the students what success would look like to them and encouraged them to share their strengths and prepare questions for H1S founder Tim Underwood.',
       },
       {
         type: 'p',
-        text: 'The partnership continued with a spring 2026 student cohort and academic training supported by university space and guidance. Student research also informed H1S’s planning for the Portsmouth Wellness Check-ins Hub.',
+        text: 'By December 2025, the students had delivered two AI prototypes: one to find and rank grant opportunities, and another to help draft proposals. They also created a writing framework and a form to organize the facts behind each application. The design called for people to approve opportunities and review proposals before submission.',
       },
       {
         type: 'p',
-        text: 'The work reflected a shared commitment to listening, learning, and developing practical ways to support those who serve others. H1S thanks the Honors College students, faculty, and volunteers who contributed their time and expertise throughout the year.',
+        text: 'Student research into economic disparity in Portsmouth also informed H1S’s planning for the Wellness Check-ins Hub. Over the year, the partnership gave students experience tackling a real nonprofit’s challenges and gave H1S practical tools and insights to develop further.',
       },
     ],
   },

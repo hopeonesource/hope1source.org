@@ -2091,6 +2091,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** George Mason story date only; partnership dates and article text are unchanged. Publication remains pending PR review.
 - **Validation:** Confirmed the shared article/listing date and chronological order; whitespace check passes.
 
+### T161 — /press/george-mason-honors-college-partnership — Tell a mini story
+
+- **Request:** Update the GMU story with details from emails with Hugo and Melanie, told as a mini story.
+- **Applied:** Recast the article as four short paragraphs: H1S’s grant-preparation need; Buchanan Hall workspace and Hugo and Melanie’s collaboration with students; the December prototype handoff and human-review design; and student research informing Portsmouth planning. Updated the listing summary to match.
+- **Sources:** Reviewed the September 2025 student/Hugo exchange and project brief, Melanie’s December thank-you with the student deliverable handoff, and the October 2026 retrospective thank-you. The narrative paraphrases relevant project details; private email links and administrative details are not published.
+- **Scope:** GMU article body and summary only. Preserved the September 2, 2026 story date, the September 1, 2025–September 1, 2026 partnership period, and the existing layout.
+- **Validation:** v4 build and prerender checks pass (43 pages, 30 aliases, 730 internal links). Verified the four-paragraph story and September 2 date in the running preview; whitespace check passes. Publication remains pending PR review.
+
 ## Resolved placement
 
 ### C01 — Partner Success
