@@ -2706,6 +2706,15 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Other services:** Verified `https://h1s.me/eielsonafb/` and `https://hopeonesource.me/` still return their existing HTTP-200 applications. Their site/domain mappings were not modified.
 - **Documentation:** Added current Netlify deployment instructions to README and updated search-readiness guidance. No approved page content, layout, or design changed during launch preparation.
 
+### T233 — Homepage — sharper hero and readable story artwork
+
+- **Request:** Improve all homepage images and resolution for a more impressive presentation.
+- **Hero:** Refined the existing cherry-blossom / Jefferson Memorial scene with built-in image generation and created a separate portrait composition for phones. Desktop output is 1734 × 907; mobile output is 1024 × 1536. Responsive JPEG variants avoid downloading the largest file on every screen. Original assets are retained.
+- **Partner Success:** Added homepage-only vector artwork with larger labels and metrics. VA retains all four comparisons with proportional bars; DC keeps the complete historic photo, the approved message context, crisp hypothermia-message text, and the 78% supported-period result; Dreamers retains Dorothy's small portrait and exact before/after figures with clear numeric comparisons.
+- **Preserved:** Approved homepage wording, story facts, overall layout, existing logo, and full figures within the case studies. Shared story cards use the new artwork only when explicitly requested by Home.
+- **Provenance:** See `docs/HOMEPAGE_IMAGE_REFRESH.md` for asset paths, generation prompts, dimensions, and the distinction between refined scenic hero imagery and unchanged documentary photos.
+- **Validation / review:** Preview build and prerender checks pass: 46 pages, 30 aliases, and 784 internal links. Browser checks at 320, 390, 768, 1440, and 1920px confirm no horizontal overflow or clipped graphic text. All embedded photos load, and a high-density phone selects the 1024px portrait hero. Desktop and phone screenshots were visually reviewed. A new review PR and deploy preview follow the existing review workflow; this entry does not authorize or record a new DNS cutover.
+
 ## Resolved placement
 
 ### C01 — Partner Success

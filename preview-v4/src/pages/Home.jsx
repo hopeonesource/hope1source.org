@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import MissionWash from '../components/MissionWash.jsx'
 import Seo, { absoluteUrl } from '../components/Seo.jsx'
 import StoryCards from '../components/StoryCards.jsx'
+import HomeStoryArt from '../components/HomeStoryArt.jsx'
 import { howSteps } from '../components/HowItWorks.jsx'
 import { org } from '../content/org.js'
 import { roles } from '../content/roles.js'
@@ -32,9 +33,27 @@ export default function Home() {
         jsonLd={jsonLd}
       />
 
-      <section className="hero">
+      <section className="hero homepage-hero">
         <div className="hero-photo">
-          <img src={publicUrl('photos/homepage-hero.jpg')} alt="" width="1200" height="630" fetchPriority="high" />
+          <picture>
+            <source
+              media="(max-width: 700px)"
+              srcSet={`${publicUrl('photos/homepage-hero-mobile-512.jpg')} 512w, ${publicUrl('photos/homepage-hero-mobile-768.jpg')} 768w, ${publicUrl('photos/homepage-hero-mobile-1024.jpg')} 1024w`}
+              sizes="100vw"
+              width="1024"
+              height="1536"
+            />
+            <img
+              src={publicUrl('photos/homepage-hero-refined-1734.jpg')}
+              srcSet={`${publicUrl('photos/homepage-hero-refined-800.jpg')} 800w, ${publicUrl('photos/homepage-hero-refined-1200.jpg')} 1200w, ${publicUrl('photos/homepage-hero-refined-1734.jpg')} 1734w`}
+              sizes="100vw"
+              alt=""
+              width="1734"
+              height="907"
+              fetchPriority="high"
+              decoding="async"
+            />
+          </picture>
         </div>
         <MissionWash tone="home" />
         <div className="wrap hero-copy">
@@ -62,7 +81,7 @@ export default function Home() {
       <section className="section stories-section" aria-labelledby="stories-title">
         <div className="wrap">
           <h2 id="stories-title">Partner Success</h2>
-          <StoryCards stories={stories} />
+          <StoryCards stories={stories} renderArt={(story) => <HomeStoryArt story={story} />} />
           <p className="doors-support">
             <a href={stories[0].studyUrl}>See the veterans study</a>
           </p>
