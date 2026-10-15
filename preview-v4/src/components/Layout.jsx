@@ -187,7 +187,7 @@ export default function Layout() {
           </p>
           <p className="footer-legal">
             {footerOperator}<br />
-            <span className="footer-registration">{footerRegistration}</span>
+            <span className="footer-registration">{footerRegistration.replace('SAM.gov ', 'SAM.gov: ')}</span>
           </p>
           <p>© {new Date().getFullYear()} {org.legalName}</p>
         </div>

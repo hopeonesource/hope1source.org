@@ -1840,6 +1840,12 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - Made the `SAM.gov UEI...` registration line smaller (`0.875rem`) and italic throughout v4.
 - Preserved the single line break, compact spacing, and wording. The H1S Check-ins line keeps its existing typography.
 
+### T127 — v4 — Footer SAM.gov punctuation
+
+- Status: **Applied locally — user-requested wording; awaiting PR review**
+- Target: `preview-v4/src/components/Layout.jsx`
+- Changed the shared footer registration line from `SAM.gov UEI...` to `SAM.gov: UEI...`, preserving its smaller italic style and line break.
+
 ## Resolved placement
 
 ### C01 — Partner Success
