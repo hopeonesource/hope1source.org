@@ -2601,6 +2601,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** Appended sentence in Justin Robinson's biography and this log only. Preserves the existing biography, including the executive KPI example from T218. Publication remains pending PR review.
 - **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the addition and retained KPI example in rendered Team HTML.
 
+### T220 — Team — Clarify service-provider support in Tim's bio
+
+- **Request:** Clarify that the closing White House/house comparison refers to supporting service providers rather than directly supporting individuals.
+- **Old phrase:** `from the White House to those without a house.`
+- **New phrase:** `from the White House to service providers helping people without a house.`
+- **Scope:** Tim Underwood's closing biography phrase and this log only. Publication remains pending PR review.
+- **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the new phrase replaces the old wording in rendered Team HTML.
+
 ## Resolved placement
 
 ### C01 — Partner Success
