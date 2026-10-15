@@ -35,8 +35,8 @@ export default function CorporateSponsors() {
               service providers.
             </li>
             <li>
-              <strong>Sponsor access.</strong> Help more organizations use check-ins to listen, follow up, and
-              measure what matters.
+              <strong>Sponsor access.</strong> Help more organizations use check-ins to listen, measure what matters,
+              and follow-up.
             </li>
           </ul>
           <h2>Companies in our story</h2>

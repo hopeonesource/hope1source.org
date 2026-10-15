@@ -2005,6 +2005,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** About section markup and scoped lead/list styles only. All other content is preserved. Publication remains pending PR review.
 - **Validation:** Confirmed the lead text, three decimal-numbered points, mobile disclosure behavior, and no horizontal overflow at 320px, 390px, and 1440px. Mobile/desktop screenshots reviewed; no page errors. v4 build/static checks, whitespace check, and independent scope review pass.
 
+### T149 — /corporate-sponsors — Sponsor access wording
+
+- **Request:** `listen, measure what matters, and follow-up.`
+- **Applied:** Updated the Sponsor access sentence to `Help more organizations use check-ins to listen, measure what matters, and follow-up.`
+- **Scope:** This sentence only; all other wording and formatting are unchanged. Publication remains pending PR review.
+- **Validation:** Reviewed the exact text replacement; whitespace check passes.
+
 ## Resolved placement
 
 ### C01 — Partner Success
