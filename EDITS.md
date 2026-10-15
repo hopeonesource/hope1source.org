@@ -2730,6 +2730,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** Access-point role summary shown in the homepage's "If people come to you" card and any shared role rendering. Applied the user's exact wording. Layout and other content are unchanged. Included in review PR #16.
 - **Validation:** v4 build, prerender checks, and whitespace check pass.
 
+### T236 — Homepage — shorter QR/NFC invitation
+
+- **Request:** The user clarified that the QR/NFC homepage paragraph should be shorter, rather than the Dreamers & Achievers summary.
+- **Old text:** `A QR scan, NFC tap, or kiosk entry lets visitors privately share their experience, and more easily connect with approved services. Your team follows up. No app.`
+- **New text:** `Scan, tap, or use a kiosk to privately share feedback and connect with approved services. Your team follows up. No app.`
+- **Scope:** Supersedes T235 in the shared access-point role summary. Retains scan/tap/kiosk options, private feedback, approved services, team follow-up, and no app. Other wording and layout are unchanged. Included in PR #16.
+- **Validation:** Shortened from 27 to 21 words (22.2%) and 160 to 119 characters (25.6%). v4 build, prerender checks, and whitespace check pass.
+
 ## Resolved placement
 
 ### C01 — Partner Success
