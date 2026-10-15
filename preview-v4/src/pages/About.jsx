@@ -105,8 +105,8 @@ export default function About() {
             <ol className="about-checkins-steps">
               <li>
                 <strong>It starts with a real human connection.</strong>
-                A partner invites people to explore services or games that interest them, with opportunities
-                to earn rewards. Each person chooses whether to opt in.
+                A partner invites people to assess their needs, explore services or games, and earn rewards.
+                Each person chooses whether to opt in.
               </li>
               <li>
                 <strong>Partners shape the experience.</strong>

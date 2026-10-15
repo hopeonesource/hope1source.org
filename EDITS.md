@@ -2507,6 +2507,15 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** First numbered step under How check-ins work and this log only. Retains the voluntary opt-in and opportunities to earn rewards. Publication remains pending PR review.
 - **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the revised first step and retained subsequent steps in rendered About HTML.
 
+### T208 — About — Invite people to assess needs, with shorter wording
+
+- **Request:** Include an invitation to assess needs and shorten the paragraph by about 10%.
+- **Old text:** `A partner invites people to explore services or games that interest them, with opportunities to earn rewards. Each person chooses whether to opt in.`
+- **New text:** `A partner invites people to assess their needs, explore services or games, and earn rewards. Each person chooses whether to opt in.`
+- **Length:** Reduced from 148 to 131 characters (about 11%); from 24 to 22 words.
+- **Scope:** First step's description under How check-ins work and this log only. Retains the human-connection heading and voluntary opt-in. Supersedes the paragraph from T207. Publication remains pending PR review.
+- **Validation:** Character-count check, v4 build, prerender checks, and whitespace check pass. Confirmed the shorter paragraph, needs assessment, voluntary opt-in, and retained heading in rendered About HTML.
+
 ## Resolved placement
 
 ### C01 — Partner Success
