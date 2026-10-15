@@ -1780,6 +1780,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - Moved Nick Hanson directly above Justin Robinson.
 - Preserved all biographies, roles, photos, and the relative order of everyone else.
 
+### T119 — /team — Tim Underwood founding and credentials
+
+- Status: **Applied locally — user-requested wording; awaiting PR review**
+- Target: `preview-v4/src/content/team.js`
+- Changed `Tim co-founded H1S` to `Tim founded H1S`.
+- Added `Eagle Scout, Honor Medal Recipient` immediately after `Air Force Reserve officer`.
+- Preserved the rest of his biography and all team ordering.
+
 ## Resolved placement
 
 ### C01 — Partner Success
