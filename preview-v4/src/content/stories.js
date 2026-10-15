@@ -112,7 +112,7 @@ export const allStories = [
   {
     slug: 'veterans-affairs-feeding-america-partnership',
     title: 'Feeding America and Charleston VA: connecting veterans with food and support.',
-    cardTitle: 'Turn a food check-in into a connection to support.',
+    cardTitle: 'Turn a food check-in into connection',
     org: 'Feeding America',
     industry: 'National Nonprofit - Access',
     location: 'Charleston, South Carolina',

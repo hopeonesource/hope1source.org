@@ -2418,6 +2418,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** Second Harvest Asia story's shared industry label and this log. Supersedes T191 and matches Feeding America's label from T195. Publication remains pending PR review.
 - **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed both organizations display the requested category in the rendered case-study library.
 
+### T197 — Case studies — Shorter Feeding America headline
+
+- **Request / new text:** `Turn a food check-in into connection`
+- **Old text:** `Turn a food check-in into a connection to support.`
+- **Scope:** Feeding America story's card headline and this log. Publication remains pending PR review.
+- **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the updated headline in the rendered case-study library.
+
 ## Resolved placement
 
 ### C01 — Partner Success
