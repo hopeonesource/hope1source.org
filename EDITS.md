@@ -1713,6 +1713,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - New text: `Harry is a recently retired commander from the United States Navy Civil Engineer Corps`
 - The rest of his biography is unchanged.
 
+### T110 — /team — Sarah Lindsay
+
+- Status: **Applied locally — user-requested wording; awaiting PR review**
+- Target: `preview-v4/src/content/team.js`
+- Old text: `and led one of the`
+- New text: `and has led one of the`
+- The rest of her biography is unchanged.
+
 ## Resolved placement
 
 ### C01 — Partner Success

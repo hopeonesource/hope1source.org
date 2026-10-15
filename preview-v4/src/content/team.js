@@ -75,7 +75,7 @@ export const team = [
     name: 'Sarah Lindsay',
     role: 'Advisory Board',
     photo: 'photos/sarah-lindsay.jpg',
-    bio: 'Sarah has executive healthcare administration experience and led one of the largest teleservice rollouts in the nation while maintaining HIPAA-compliant standards.',
+    bio: 'Sarah has executive healthcare administration experience and has led one of the largest teleservice rollouts in the nation while maintaining HIPAA-compliant standards.',
   },
   {
     name: 'Harry Kim',
