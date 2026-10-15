@@ -121,7 +121,7 @@ Standardized all three Partner Success image frames at 3:2 while keeping each im
 | Case study | Current homepage card headline | What readers should understand |
 | --- | --- | --- |
 | Veterans Affairs | Make care easier to reach. | Research and feedback helped service teams identify barriers. |
-| DC Human Services | Put vital information within real-time reach. | Hypothermia alerts shared shelter and transport details; hypothermia deaths fell 78% during the supported period. |
+| DC Human Services | A text points the way to warmth. | Hypothermia alerts shared shelter and transport details; hypothermia deaths fell 78% during the supported period. |
 | Dreamers & Achievers | Stay connected through follow-up. | Continued contact and feedback helped a partner understand needs. |
 
 ## Evidence used for the original proposal
@@ -2322,6 +2322,15 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **New phrase:** `transport details`
 - **Scope:** Shortens the homepage card description by exactly 9 characters, from 151 to 142. Retains the headline and the 78% reduction in hypothermia deaths during the supported period. Full case-study wording remains unchanged. Publication remains pending PR review.
 - **Validation:** Character-count check, v4 build, prerender checks, and whitespace check pass.
+
+### T184 — Homepage and case-study library — Concise shelter-alerts headline
+
+- **Request:** Match the other story headlines in length and make the headline more compelling, with a newspaper-like hook.
+- **Old headline:** `Put vital information within real-time reach.`
+- **New headline:** `A text points the way to warmth.`
+- **Rationale:** Centers the text alert and its human purpose in 32 characters, between the other homepage headlines at 26 and 33 characters. Replaces the abstract wording with a concrete connection between shelter information and protection from the cold.
+- **Scope:** Shared shelter-alerts card headline on the homepage and case-study library, plus this log. Preserves the approved description, 78% result, full story, and design. Publication remains pending PR review.
+- **Validation:** Confirmed headline lengths of 26, 32, and 33 characters. v4 build, prerender checks, and whitespace check pass; rendered homepage and case-study library contain the new headline and omit the old one.
 
 ## Resolved placement
 
