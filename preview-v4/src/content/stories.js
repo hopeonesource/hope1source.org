@@ -72,7 +72,7 @@ export const stories = [
     title: 'Dreamers & Achievers',
     outcome: 'Keep listening',
     cardTitle: 'Stay connected through follow-up.',
-    card: 'Dreamers & Achievers used H1S to stay in touch and gather feedback. The partner reported follow-ups growing from 60 to 1,400 people and funding growing 5x during the supported period.',
+    card: 'Dreamers & Achievers used H1S to gather feedback. It reported follow-ups growing from 60 to 1,400 people and 5x funding growth during the supported period.',
     org: 'Dreamers & Achievers',
     industry: 'Local Nonprofit - Access',
     location: 'Washington, D.C.',

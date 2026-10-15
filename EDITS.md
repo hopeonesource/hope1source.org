@@ -2715,6 +2715,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Provenance:** See `docs/HOMEPAGE_IMAGE_REFRESH.md` for asset paths, generation prompts, dimensions, and the distinction between refined scenic hero imagery and unchanged documentary photos.
 - **Validation / review:** Preview build and prerender checks pass: 46 pages, 30 aliases, and 784 internal links. Browser checks at 320, 390, 768, 1440, and 1920px confirm no horizontal overflow or clipped graphic text. All embedded photos load, and a high-density phone selects the 1024px portrait hero. Desktop and phone screenshots were visually reviewed. A new review PR and deploy preview follow the existing review workflow; this entry does not authorize or record a new DNS cutover.
 
+### T234 — Dreamers & Achievers — shorter homepage summary
+
+- **Request:** Shorten the homepage story text by 15–20%.
+- **Old text:** `Dreamers & Achievers used H1S to stay in touch and gather feedback. The partner reported follow-ups growing from 60 to 1,400 people and funding growing 5x during the supported period.`
+- **New text:** `Dreamers & Achievers used H1S to gather feedback. It reported follow-ups growing from 60 to 1,400 people and 5x funding growth during the supported period.`
+- **Length:** Reduced from 30 to 25 words (16.7%) and from 183 to 155 characters (15.3%).
+- **Scope:** Shared story-card summary, including the homepage. Headline, artwork, figures, partner attribution, supported-period qualifier, and full case study are preserved. Included in review PR #16.
+
 ## Resolved placement
 
 ### C01 — Partner Success
