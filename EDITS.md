@@ -2034,6 +2034,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** This Access Points sentence only. Publication remains pending PR review.
 - **Validation:** Reviewed the exact replacement; whitespace check passes.
 
+### T153 — /access-points — Shorten the hero note
+
+- **Request:** `No app. Limited internet ok.`
+- **Applied:** Replaced `No app and limited internet ok.` with the exact requested wording.
+- **Scope:** This Access Points hero note only. Publication remains pending PR review.
+- **Validation:** Reviewed the exact replacement; whitespace check passes.
+
 ## Resolved placement
 
 ### C01 — Partner Success
