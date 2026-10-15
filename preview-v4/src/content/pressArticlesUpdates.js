@@ -64,6 +64,10 @@ export const pressArticlesUpdates = [
       },
       {
         type: 'p',
+        text: 'H1S reported a 68% game completion rate during the pilot. The games were designed to build recognition of participating service providers, including a memory-matching game designed to help players recognize and recall available mental health services.',
+      },
+      {
+        type: 'p',
         text: 'The check-ins gave people a way to share their needs and discover services they could turn to. Including mental health support made suicide prevention an important part of the outreach’s purpose. The pilot created repeated opportunities to listen and follow up across the base.',
       },
       {

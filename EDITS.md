@@ -2143,6 +2143,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** One new v4 news article and its automatic listing/route integration. Existing stories and layout are unchanged. Publication remains pending PR review.
 - **Validation:** v4 build and prerender checks pass (44 pages, 30 aliases, 748 internal links). Confirmed the October 1 chronological placement and viewed the complete article with the corrected base-wide outreach in the running preview; whitespace check passes.
 
+### T168 — /press/central-alaska-check-in-pilot — Game completion and service recognition
+
+- **Request:** Add the reported 68% game engagement and explain games designed for service branding and recall, including a mental-health-service memory game. The user clarified that engagement means completing the game.
+- **Applied:** Added a paragraph reporting H1S’s 68% game completion rate and explaining the games’ intended role in recognizing service providers and recalling available mental health services.
+- **Evidence:** The rate and completion definition were supplied by the user. A focused email review supported the memory-matching design purpose but did not establish a denominator or earlier record for comparison. `Record-breaking` is omitted pending that comparison; the copy does not claim measured improvement in recall or health outcomes.
+- **Scope:** Full Alaska article only; title, date, and News & Stories summary are unchanged. Publication remains pending PR review.
+- **Validation:** Confirmed the updated article data and viewed the new paragraph in the running preview. Title, October 1 date, and summary remain unchanged; whitespace check passes.
+
 ## Resolved placement
 
 ### C01 — Partner Success
