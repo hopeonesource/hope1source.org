@@ -1853,6 +1853,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - Added `For corporate partners —` before the shared footer registration details to identify the intended audience.
 - Preserved `SAM.gov:`, all identifiers, smaller italic styling, and the line break beneath H1S Check-ins.
 
+### T129 — /access-points — Clearer wording on all four cards
+
+- Status: **Applied locally — user-approved replacement; awaiting PR review**
+- Target: `preview-v4/src/pages/AccessPoints.jsx`
+- Old text: `People come to you first. You do not have to collect a file to point them toward help.`
+- New text: `People come to you first. Help them connect with support through a simple check-in.`
+- Applied to Congregations, Libraries, Community centers, and Food sites through their shared card text.
+
 ## Resolved placement
 
 ### C01 — Partner Success

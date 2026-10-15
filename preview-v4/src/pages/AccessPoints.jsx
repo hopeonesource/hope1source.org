@@ -43,7 +43,7 @@ export default function AccessPoints() {
                   0{index + 1}
                 </span>
                 <h3>{place}</h3>
-                <p>People come to you first. You do not have to collect a file to point them toward help.</p>
+                <p>People come to you first. Help them connect with support through a simple check-in.</p>
               </article>
             ))}
           </div>
