@@ -2650,6 +2650,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** Jeff's closing biography sentence and this log only. Retains his team-alumnus and lived-experience description. Publication remains pending PR review.
 - **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the updated closing sentence in rendered Team HTML.
 
+### T226 — Team — Jeff Drain's displayed name
+
+- **Request / new text:** `Jeff Drain`
+- **Old text:** `Jeff`
+- **Scope:** Name displayed above Jeff's biography and this log only. Publication remains pending PR review.
+- **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the `Jeff Drain` heading in rendered Team HTML.
+
 ## Resolved placement
 
 ### C01 — Partner Success

@@ -54,7 +54,7 @@ export const team = [
     bio: 'Damien is a doctoral researcher in chemical physics at Harvard and helps H1S implement AI tools that strengthen the communities served. His work spans quantum computing, science policy, case studies, and state legislation.',
   },
   {
-    name: 'Jeff',
+    name: 'Jeff Drain',
     role: 'Volunteer Spotlight',
     photo: 'photos/jeff.jpg',
     bio: 'Jeff is a successful alumnus of the H1S team who brings lived experience to his work. He now helps nonprofits set up customer relationship management (CRM) systems for easier management.',
