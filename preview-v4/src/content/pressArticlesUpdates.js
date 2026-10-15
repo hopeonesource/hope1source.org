@@ -68,7 +68,7 @@ export const pressArticlesUpdates = [
       },
       {
         type: 'p',
-        text: 'The design kept people responsible for approving opportunities and reviewing and editing proposals before submission. The aim was to give volunteers a more consistent starting point for future grant cycles, with tools shaped around the organization’s needs, capacity, and evidence. The partnership produced custom prototypes for H1S to test and refine as its work developed.',
+        text: 'The design kept people responsible for approving opportunities and reviewing and editing proposals before submission. The aim was to give volunteers a more consistent starting point for future grant cycles, with tools shaped around the organization’s needs, capacity, and evidence. The partnership gave H1S practical tools and insights to better support nonprofits and the communities they serve.',
       },
     ],
   },

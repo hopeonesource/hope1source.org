@@ -2114,6 +2114,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** GMU story only; preserved its route, September 2, 2026 date, and September 1, 2025–September 1, 2026 partnership period. Publication remains pending PR review.
 - **Validation:** v4 build and prerender checks pass (43 pages, 731 internal links). Verified the updated headline, four-paragraph story, and preserved date in the preview; whitespace check passes.
 
+### T164 — /press/george-mason-honors-college-partnership — Practical tools and community insight
+
+- **Request:** Mention that the partnership gave H1S practical tools and insights to further serve nonprofits and their communities.
+- **Applied:** Updated the closing sentence to `The partnership gave H1S practical tools and insights to better support nonprofits and the communities they serve.`
+- **Scope:** This sentence only. Publication remains pending PR review.
+- **Validation:** Confirmed the article data loads with the updated sentence; whitespace check passes.
+
 ## Resolved placement
 
 ### C01 — Partner Success
