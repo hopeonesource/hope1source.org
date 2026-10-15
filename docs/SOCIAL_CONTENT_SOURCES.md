@@ -71,3 +71,12 @@ The `/press` index is now titled **News & Stories**. One newest-first list inclu
 - Added a summary of participation and stated purpose. The testimony itself was not reviewed, so no specific testimony excerpt, legislative result, endorsement, or subsequent contract is claimed.
 
 Other archive images examined during this pass included a June 7, 2024 QR-feedback graphic, a May 3, 2024 outreach graphic, and a November 10, 2023 Veterans Day message. These were not added because the selected posts provide more distinct examples. No social-media actions or account changes were made.
+
+## About photo — Equity Incubator, September 22, 2023 — T139
+
+- Post: https://www.facebook.com/hopewithlove/posts/pfbid02eHSxikHNW1mhfZ5qTL95WiKbK5FcJvcXZsDBQ1XEvVtYedN1MUMm5bsFYFDcCBQBl
+- Photo: https://www.facebook.com/photo/?fbid=698755862278926&set=pcb.698755915612254
+- Reviewed the published caption and full photo in the user's signed-in Safari session. The caption identifies H1S participation in the 2023 Equity Incubator at the Universities at Shady Grove and work with entrepreneurs and community leaders. The photo shows three H1S team members seated at a workshop table, with recognizable H1S shirts and other participants in the room.
+- Replaced About's older team photo with Facebook's downloaded 2048 × 1536 JPEG, stored as `public/photos/h1s-equity-incubator-2023.jpg` (approximately 396 KB). The image is unaltered; no generated people, retouching, or upscaling. The original post is linked in the caption. The historical event is not presented as a current campaign or a measured outcome.
+- Compared against the June 23, 2024 Honduras STEM-event group photo, social testimonial graphics, and existing community-gathering images. Selected this photo for clear faces, visible H1S branding, a landscape frame, and direct relevance to service-provider and business partnerships.
+- The full image scales proportionally on both desktop and mobile. Removed About's previous mobile crop so the people and workshop setting remain visible. All previously approved About prose is preserved.

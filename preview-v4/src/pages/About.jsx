@@ -67,15 +67,27 @@ export default function About() {
             height="805"
             decoding="async"
           />
-          <img
-            className="about-photo"
-            src={publicUrl('photos/hos-team.jpg')}
-            alt="Hope1Source team gathered around a table."
-            width="1200"
-            height="675"
-            loading="lazy"
-            decoding="async"
-          />
+          <figure className="about-figure">
+            <img
+              className="about-photo"
+              src={publicUrl('photos/h1s-equity-incubator-2023.jpg')}
+              alt="H1S team members seated together at a workshop table during the 2023 Equity Incubator."
+              width="2048"
+              height="1536"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
+              H1S at the 2023 Equity Incubator, Universities at Shady Grove.{' '}
+              <a
+                href="https://www.facebook.com/hopewithlove/posts/pfbid02eHSxikHNW1mhfZ5qTL95WiKbK5FcJvcXZsDBQ1XEvVtYedN1MUMm5bsFYFDcCBQBl"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View original post
+              </a>.
+            </figcaption>
+          </figure>
           <p className="about-lead">
             {org.product}. {org.legalName} is the 501(c)(3).
           </p>

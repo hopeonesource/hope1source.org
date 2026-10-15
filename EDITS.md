@@ -1933,6 +1933,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** About copy and this log only. Preserved the page layout, photos, mobile expandable sections, and organization/registration information. The footer content removed in T137 remains removed. Current-site and v3 files are untouched; publication remains pending PR review.
 - **Validation:** Approved phrases are present and stale wording absent at 390px and 1440px; all four mobile sections expand, with no horizontal overflow, broken images, or page errors. Screenshots reviewed. Build/static checks pass for 40 pages, 30 aliases, and 679 internal links. Independent copy review passed.
 
+### T139 — /about — Stronger photo from H1S social media
+
+- **Request:** Find a better About photo from the organization's social media.
+- **Applied:** Replaced the older team image with the authentic H1S team photo from the September 22, 2023 Facebook post about the Equity Incubator at the Universities at Shady Grove. Selected it for clear faces, H1S branding, and relevance to work with entrepreneurs and community leaders.
+- **Photo and source:** Saved Facebook's unaltered 2048 × 1536 JPEG as `public/photos/h1s-equity-incubator-2023.jpg`. Added a concise event caption, descriptive alt text, and a link to the original post. Full provenance and compared candidates are recorded in `docs/SOCIAL_CONTENT_SOURCES.md`.
+- **Presentation and scope:** The full image scales proportionally at all screen sizes; removed About's former mobile crop. Kept all previously approved About wording, images on other pages, and current-site/v3 code unchanged. Publication remains pending PR review.
+- **Validation:** Viewed the downloaded source and rendered mobile/desktop photo. At 320px, 390px, and 1440px, the image loads at its original aspect ratio, caption wraps, and no horizontal overflow or page errors occur. Build/static checks pass for 40 pages, 30 aliases, and 679 internal links. Independent scope and markup review passed.
+
 ## Resolved placement
 
 ### C01 — Partner Success

@@ -1505,6 +1505,17 @@ address {
   border-radius: 2px;
 }
 
+.about-figure {
+  margin: 0 0 1.5rem;
+}
+
+.about-figure figcaption {
+  margin-top: 0.65rem;
+  color: var(--muted);
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+
 /* Phone: one short lead, then disclosures. Wider screens show the full article. */
 .about-lead {
   display: none;
@@ -1604,13 +1615,6 @@ address {
     order: -2;
     width: min(100%, 16rem);
     margin-bottom: 0.85rem;
-  }
-
-  .about-page .about-photo {
-    max-height: 11rem;
-    object-fit: cover;
-    object-position: center 35%;
-    margin-bottom: 0.35rem;
   }
 
   .about-page .section {
