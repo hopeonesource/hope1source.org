@@ -47,28 +47,28 @@ export const pressArticlesUpdates = [
   {
     id: 'george-mason-honors-college-partnership',
     legacyPaths: [],
-    title: 'A year of partnership with George Mason University Honors College',
+    title: 'Custom agentic AI starts with understanding nonprofit needs',
     date: 'September 2, 2026',
     dateTime: '2026-09-02',
     author: 'H1S Check-ins',
     kicker: 'Partner story',
-    description: 'A year with George Mason University Honors College brought student ideas, grant-support prototypes, and community research into H1S’s planning.',
+    description: 'H1S and George Mason University Honors College explored grant-cycle and volunteer challenges to design custom AI prototypes around a nonprofit’s work.',
     blocks: [
       {
         type: 'p',
-        text: 'From September 1, 2025, to September 1, 2026, H1S partnered with George Mason University Honors College around a practical need: helping a small volunteer team find suitable funding opportunities and prepare grant applications without starting from scratch each time.',
+        text: 'Many nonprofits juggle grant deadlines with the changing availability of volunteers. Each funding cycle can bring different eligibility rules and requests for evidence. When people’s availability changes, keeping that information organized and the work moving becomes a challenge of its own.',
       },
       {
         type: 'p',
-        text: 'The collaboration took root in Buchanan Hall, where the Honors College provided workspace for Dr. Hugo Diaz. Dr. Melanie Fedri, the college’s Experiential Learning Coordinator, helped bring H1S and student consultants together. Hugo asked the students what success would look like to them and encouraged them to share their strengths and prepare questions for H1S founder Tim Underwood.',
+        text: 'H1S brought its own experience to a partnership with George Mason University Honors College from September 1, 2025, to September 1, 2026. Dr. Hugo Diaz helped students understand the needs of a small volunteer team often starting grant applications from scratch. Dr. Melanie Fedri coordinated the student consulting experience. Together, they explored how custom agentic AI could support that work.',
       },
       {
         type: 'p',
-        text: 'By December 2025, the students had delivered two AI prototypes: one to find and rank grant opportunities, and another to help draft proposals. They also created a writing framework and a form to organize the facts behind each application. The design called for people to approve opportunities and review proposals before submission.',
+        text: 'By December 2025, the students had delivered two AI agent prototypes: one designed to find, filter, and rank grant opportunities, and another to help draft proposals for government agencies or private foundations. A structured intake form organized the nonprofit’s budget, results, and other supporting facts before drafting began.',
       },
       {
         type: 'p',
-        text: 'Student research into economic disparity in Portsmouth also informed H1S’s planning for the Wellness Check-ins Hub. Over the year, the partnership gave students experience tackling a real nonprofit’s challenges and gave H1S practical tools and insights to develop further.',
+        text: 'The design kept people responsible for approving opportunities and reviewing and editing proposals before submission. The aim was to give volunteers a more consistent starting point for future grant cycles, with tools shaped around the organization’s needs, capacity, and evidence. The partnership produced custom prototypes for H1S to test and refine as its work developed.',
       },
     ],
   },

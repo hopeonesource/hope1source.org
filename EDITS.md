@@ -2106,6 +2106,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** Case Studies index only. Publication remains pending PR review.
 - **Validation:** v4 build and prerender checks pass (43 pages, 731 internal links). Clicked the new link in the preview and confirmed it opens News & Stories at `/v4/press`; whitespace check passes.
 
+### T163 — /press/george-mason-honors-college-partnership — Nonprofit needs and custom agentic AI
+
+- **Request:** Tell a story about understanding nonprofit challenges and providing custom agentic AI solutions, including grant cycles and volunteers.
+- **Applied:** Reframed the existing GMU mini story around recurring grant demands, volunteer availability, understanding H1S’s workflow, and the custom discovery and writing agent prototypes. Explained structured intake, government/private-foundation drafting, and human review. Updated the headline and listing summary to match.
+- **Evidence:** Uses the previously reviewed Hugo project brief and Melanie/student handoff. Describes delivered prototypes and their intended use without claiming deployment, funding awards, or measured time savings.
+- **Scope:** GMU story only; preserved its route, September 2, 2026 date, and September 1, 2025–September 1, 2026 partnership period. Publication remains pending PR review.
+- **Validation:** v4 build and prerender checks pass (43 pages, 731 internal links). Verified the updated headline, four-paragraph story, and preserved date in the preview; whitespace check passes.
+
 ## Resolved placement
 
 ### C01 — Partner Success
