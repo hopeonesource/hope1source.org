@@ -2020,6 +2020,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** This About section and its scoped typography only; the mobile disclosure and all other approved content remain. Publication remains pending PR review.
 - **Validation:** Checked semantic paragraph/numbered-list structure, all three labels, and no horizontal overflow at 320px, 390px, and 1440px. Mobile/desktop screenshots reviewed; no page errors. Build/static and whitespace checks pass. Independent copy review prompted preservation of the explicit `must provide` requirement.
 
+### T151 — /access-points — Remove the business check-ins paragraph
+
+- **Request:** Remove the text beginning `Business check-ins...`.
+- **Applied:** Removed `Business check-ins live on the partner hub linked in the footer. Hope with Love is the 501(c)(3).` and its now-unused organization import.
+- **Scope:** This Access Points paragraph only; other content and the call to action are unchanged. Publication remains pending PR review.
+- **Validation:** Reviewed the exact removal and confirmed no remaining reference to the removed import; whitespace check passes.
+
 ## Resolved placement
 
 ### C01 — Partner Success

@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero.jsx'
 import Seo from '../components/Seo.jsx'
 import { howSteps } from '../components/HowItWorks.jsx'
-import { org } from '../content/org.js'
 import { mailto } from '../lib/links.js'
 
 const accessSteps = howSteps.map((step) =>
@@ -63,9 +62,6 @@ export default function AccessPoints() {
           <p>
             All partners must provide free or discounted services. They own their check-in data and can filter, sort,
             or delete it at any time.
-          </p>
-          <p>
-            Business check-ins live on the partner hub linked in the footer. {org.legalName} is the 501(c)(3).
           </p>
           <p>
             <a className="btn btn-primary" href={mailto({ subject: 'Access point' })}>
