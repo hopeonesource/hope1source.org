@@ -1723,9 +1723,17 @@ The headline, roster, roles, biographies, and photos are unchanged.
 
 ### T111 — /team — Sarah Lindsay placement
 
-- Status: **Applied locally — user-requested reorder; awaiting PR review**
+- Status: **Superseded by T112 — assistant misinterpreted which person to move**
 - Target: `preview-v4/src/content/team.js`
 - Moved Sarah Lindsay directly beneath Frank Adames, preserving her updated biography, role, and photo.
+
+### T112 — /team — Correct team placement
+
+- Status: **Applied locally — user clarification; awaiting PR review**
+- Target: `preview-v4/src/content/team.js`
+- Returned Sarah Lindsay to her prior position between Chris Teitzel and Harry Kim.
+- Moved Veronica Thornton directly beneath Frank Adames.
+- Preserved all biographies, roles, and photos.
 
 ## Resolved placement
 

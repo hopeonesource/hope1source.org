@@ -18,10 +18,10 @@ export const team = [
     bio: 'Frank is a 2025 40 Under 40 award nominee, a 2022 National Volunteer In Service to America alumni winner, and the H1S technology lead. He assists with project management for the Check-ins technology and enjoys solving complex problems with technology.',
   },
   {
-    name: 'Sarah Lindsay',
-    role: 'Advisory Board',
-    photo: 'photos/sarah-lindsay.jpg',
-    bio: 'Sarah has executive healthcare administration experience and has led one of the largest teleservice rollouts in the nation while maintaining HIPAA-compliant standards.',
+    name: 'Veronica Thornton',
+    role: 'Digital Experience Engineer',
+    photo: 'photos/veronica-thornton.jpg',
+    bio: 'Veronica is H1S’s Digital Experience Engineer and a digital peer navigator. She creates accessible games and digital experiences that help people take meaningful next steps, complete check-ins, and connect with community resources. Drawing on her software development background and lived experience, she helps others navigate challenges she has faced, building trust and making support easier to access.',
   },
   {
     name: 'Justin Robinson',
@@ -48,12 +48,6 @@ export const team = [
     bio: 'Damien is a doctoral researcher in chemical physics at Harvard and helps H1S implement AI tools that strengthen the communities served. His work spans quantum computing, science policy, case studies, and state legislation.',
   },
   {
-    name: 'Veronica Thornton',
-    role: 'Digital Experience Engineer',
-    photo: 'photos/veronica-thornton.jpg',
-    bio: 'Veronica is H1S’s Digital Experience Engineer and a digital peer navigator. She creates accessible games and digital experiences that help people take meaningful next steps, complete check-ins, and connect with community resources. Drawing on her software development background and lived experience, she helps others navigate challenges she has faced, building trust and making support easier to access.',
-  },
-  {
     name: 'Hugo Diaz',
     role: 'Economic Research Analyst',
     photo: 'photos/hugo-diaz.jpg',
@@ -76,6 +70,12 @@ export const team = [
     role: 'Advisory Board',
     photo: 'photos/chris-teitzel.jpg',
     bio: 'Chris is the founder and CEO of Cellar Door Media Group. He brings technology, security, and data privacy experience to help guide secure technology components.',
+  },
+  {
+    name: 'Sarah Lindsay',
+    role: 'Advisory Board',
+    photo: 'photos/sarah-lindsay.jpg',
+    bio: 'Sarah has executive healthcare administration experience and has led one of the largest teleservice rollouts in the nation while maintaining HIPAA-compliant standards.',
   },
   {
     name: 'Harry Kim',
