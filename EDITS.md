@@ -2183,6 +2183,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** Miami article and its shared summary/date only. H1S's contribution remains explicit; no unrelated story or design changes. Publication remains pending PR review.
 - **Validation:** v4 build and prerender checks pass (45 pages, 30 aliases, 765 internal links). Confirmed the September 23 article date, chronological placement, revised summary, and full research paragraph in the running preview; whitespace check passes.
 
+### T173 — /press — Miami story date: March 2026
+
+- **Request:** Change the Miami story date to March 2026.
+- **Applied:** Set the shared display date to `March 2026` and chronological value to `2026-03`, preserving month precision without inventing a day. This supersedes the September 23 date in T172.
+- **Scope:** Miami article and listing date only. Publication remains pending PR review.
+- **Validation:** Confirmed the shared date, chronological placement after the September GMU story, and March 2026 label in the running preview; whitespace check passes.
+
 ## Resolved placement
 
 ### C01 — Partner Success
