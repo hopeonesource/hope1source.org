@@ -2723,6 +2723,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Length:** Reduced from 30 to 25 words (16.7%) and from 183 to 155 characters (15.3%).
 - **Scope:** Shared story-card summary, including the homepage. Headline, artwork, figures, partner attribution, supported-period qualifier, and full case study are preserved. Included in review PR #16.
 
+### T235 — Homepage — access-point invitation
+
+- **Request / new text:** `A QR scan, NFC tap, or kiosk entry lets visitors privately share their experience, and more easily connect with approved services. Your team follows up. No app.`
+- **Old text:** `A QR code or kiosk lets visitors ask for help privately. Your team follows up. No app.`
+- **Scope:** Access-point role summary shown in the homepage's "If people come to you" card and any shared role rendering. Applied the user's exact wording. Layout and other content are unchanged. Included in review PR #16.
+- **Validation:** v4 build, prerender checks, and whitespace check pass.
+
 ## Resolved placement
 
 ### C01 — Partner Success

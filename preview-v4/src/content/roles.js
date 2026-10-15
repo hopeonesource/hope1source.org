@@ -36,7 +36,7 @@ export const roles = [
     kicker: 'Congregations, libraries, community centers',
     title: 'Your front desk can be where people find help.',
     panel: 'Congregations, libraries, community centers, and food sites.',
-    lede: 'A QR code or kiosk lets visitors ask for help privately. Your team follows up. No app.',
+    lede: 'A QR scan, NFC tap, or kiosk entry lets visitors privately share their experience, and more easily connect with approved services. Your team follows up. No app.',
     points: [],
     cta: 'Become an access point',
     subject: 'Access point',
