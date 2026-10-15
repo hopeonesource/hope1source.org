@@ -45,6 +45,34 @@ export const pressArticlesUpdates = [
     ],
   },
   {
+    id: 'central-alaska-check-in-pilot',
+    legacyPaths: [],
+    title: 'Alaska pilot records 3,100 check-ins in 60 days',
+    date: 'October 1, 2026',
+    dateTime: '2026-10-01',
+    author: 'H1S Check-ins',
+    kicker: 'Community update',
+    description: 'A central Alaska pilot supported 3,100 check-ins and outreach across an entire Air Force base, helping the military and veteran community find more than 27 services.',
+    blocks: [
+      {
+        type: 'p',
+        text: 'In 60 days, H1S supported 3,100 check-in interactions in central Alaska, helping members of the military and veteran community find and connect with more than 27 services, including mental health support.',
+      },
+      {
+        type: 'p',
+        text: 'During the pilot, H1S worked with the senior Air Force installation commander to extend outreach across the entire Air Force base, inviting the installation community to check in and learn about available support. Local military and veteran service organizations closely supported the effort.',
+      },
+      {
+        type: 'p',
+        text: 'The check-ins gave people a way to share their needs and discover services they could turn to. Including mental health support made suicide prevention an important part of the outreach’s purpose. The pilot created repeated opportunities to listen and follow up across the base.',
+      },
+      {
+        type: 'p',
+        text: 'H1S reports that many of the supporting military and veteran service organizations have expressed interest in continuing. The pilot concluded in September 2026. Its results provide a basis for senior military and veteran leadership to evaluate whether and how the approach could be used in the future.',
+      },
+    ],
+  },
+  {
     id: 'george-mason-honors-college-partnership',
     legacyPaths: [],
     title: 'Custom agentic AI starts with understanding needs',

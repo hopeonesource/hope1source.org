@@ -2135,6 +2135,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** GMU introduction and summary only. Removed the repeated dates from the later paragraph. Publication remains pending PR review.
 - **Validation:** Confirmed the article introduction and shared listing summary load correctly; whitespace check passes.
 
+### T167 — /press — Alaska pilot story dated October 1
+
+- **Request:** Review the Alaska draft skeptically, strengthen its impact, and add it dated October 1.
+- **Applied:** Added `Alaska pilot records 3,100 check-ins in 60 days`, dated October 1, 2026. Led with the reported check-in interactions and service access, described outreach across the entire Air Force base and support from local organizations, and closed with the completed pilot and evaluation of possible future use. The News & Stories listing sorts it between the October 15 kickoff announcement and September 2 GMU story.
+- **Evidence:** Counts, central Alaska location, commander involvement, 60-day duration, September conclusion, and local organizations’ interest were supplied by the user. The user clarified that outreach covered the entire Air Force base; the article and summary use that scope instead of the dorm reference. The copy distinguishes check-in interactions and available services from unique people or completed service visits. It makes no claim of reduced suicide or approved continuation and uses no on-base imagery or official logos.
+- **Scope:** One new v4 news article and its automatic listing/route integration. Existing stories and layout are unchanged. Publication remains pending PR review.
+- **Validation:** v4 build and prerender checks pass (44 pages, 30 aliases, 748 internal links). Confirmed the October 1 chronological placement and viewed the complete article with the corrected base-wide outreach in the running preview; whitespace check passes.
+
 ## Resolved placement
 
 ### C01 — Partner Success
