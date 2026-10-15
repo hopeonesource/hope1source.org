@@ -49,7 +49,7 @@ export const stories = [
     imageAspectRatio: '3 / 2',
     imageAlt: 'Full historic Washington, D.C. street photo beside an H1S message screenshot with the hypothermia shelter transportation alert in focus.',
     org: 'DC Human Services',
-    industry: 'Local government',
+    industry: 'Local Government - Access',
     location: 'Washington, D.C.',
     website: 'https://dhs.dc.gov/',
     websiteLabel: 'DC Human Services',

@@ -2390,6 +2390,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** VA story's shared industry label and this log. Supersedes T186. Publication remains pending PR review.
 - **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the updated category in the rendered case-study library.
 
+### T193 — Case studies — Local Government - Access category
+
+- **Request / new text:** `Local Government - Access`
+- **Old text:** `Local government`
+- **Scope:** DC Human Services story's shared industry label and this log. Publication remains pending PR review.
+- **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the updated category in the rendered case-study library.
+
 ## Resolved placement
 
 ### C01 — Partner Success
