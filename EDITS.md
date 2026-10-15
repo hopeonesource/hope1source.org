@@ -2190,6 +2190,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** Miami article and listing date only. Publication remains pending PR review.
 - **Validation:** Confirmed the shared date, chronological placement after the September GMU story, and March 2026 label in the running preview; whitespace check passes.
 
+### T174 — /press — Miami story date: October 1, 2025
+
+- **Request:** Change the Miami story date to October 1, 2025.
+- **Applied:** Set the shared display date to `October 1, 2025` and chronological value to `2025-10-01`. This supersedes T173.
+- **Scope:** Miami article and listing date only. Publication remains pending PR review.
+- **Validation:** Confirmed the shared date, chronological placement, and October 1, 2025 label in the running preview; whitespace check passes.
+
 ## Resolved placement
 
 ### C01 — Partner Success
