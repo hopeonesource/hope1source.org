@@ -2332,6 +2332,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** Shared shelter-alerts card headline on the homepage and case-study library, plus this log. Preserves the approved description, 78% result, full story, and design. Publication remains pending PR review.
 - **Validation:** Confirmed headline lengths of 26, 32, and 33 characters. v4 build, prerender checks, and whitespace check pass; rendered homepage and case-study library contain the new headline and omit the old one.
 
+### T185 — Case studies — Public Sector label
+
+- **Request:** Change `Federal Gov...` to `Public Sector`.
+- **Old text:** `Federal government and nonprofit`
+- **New text:** `Public Sector`
+- **Scope:** VA story's shared industry label and this log. Publication remains pending PR review.
+- **Validation:** v4 build, prerender checks, and whitespace check pass. Rendered case-study library includes `Public Sector` and omits the previous label.
+
 ## Resolved placement
 
 ### C01 — Partner Success
