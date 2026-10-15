@@ -2657,6 +2657,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** Name displayed above Jeff's biography and this log only. Publication remains pending PR review.
 - **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the `Jeff Drain` heading in rendered Team HTML.
 
+### T227 — Team — Justin's custom partner support wording
+
+- **Request / new text:** `custom partner support.`
+- **Old text:** `customer development.`
+- **Scope:** Closing phrase in Justin Robinson's biography and this log only. Supersedes that phrase from T219. Publication remains pending PR review.
+- **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the replacement in rendered Team HTML.
+
 ## Resolved placement
 
 ### C01 — Partner Success
