@@ -1788,6 +1788,12 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - Added `Eagle Scout, Honor Medal Recipient` immediately after `Air Force Reserve officer`.
 - Preserved the rest of his biography and all team ordering.
 
+### T120 — /team — Tim Underwood capitalization
+
+- Status: **Applied locally — user-requested wording; awaiting PR review**
+- Target: `preview-v4/src/content/team.js`
+- Changed `Honor Medal Recipient` to `Honor Medal recipient`.
+
 ## Resolved placement
 
 ### C01 — Partner Success
