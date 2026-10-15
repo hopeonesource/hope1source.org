@@ -112,12 +112,12 @@ export default function About() {
           <AboutFold title="Who it’s for" phone={phone}>
             <ul className="about-audiences">
               <li>
-                Public agencies, shelters, and program leads use the tools to reach people other channels miss.{' '}
-                <Link to="/public-agencies">Read the agency facts</Link>.
+                Congregations, community centers, libraries, and food sites can be the place people ask for help.{' '}
+                <Link to="/access-points">Become an access point</Link>.
               </li>
               <li>
-                Congregations, libraries, community centers, and food sites can be the place people ask for help.{' '}
-                <Link to="/access-points">Become an access point</Link>.
+                Public agencies, shelters, and program leads use the tools to reach people other channels miss.{' '}
+                <Link to="/public-agencies">Read the agency facts</Link>.
               </li>
               <li>
                 Restaurants and other businesses can offer free or discounted services, gather feedback, and stay

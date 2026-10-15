@@ -1984,6 +1984,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** Reused existing responsive page, list, and button styles. Preserved all other About wording, the photo, registration spacing, and existing Get Involved cards. No current-site/v3 code or footer changes. Publication remains pending PR review.
 - **Validation:** No overflow at 320px, 390px, and 1440px on the new page; About and Get Involved checked at 390px/1440px. Confirmed company text, CTA destinations, sponsor alias, navigation to the top, and back-to-top arrow; no page errors. Mobile/desktop screenshots reviewed. Build/static checks pass for 41 pages and 30 aliases in both preview and root-release configurations; restored the preview build. Independent factual and code review passed, including HTTP 200 for Blackstone's partnership announcement.
 
+### T146 — /about — Put community access points first
+
+- **Request:** Place libraries after community centers and move this audience bullet to the top.
+- **Applied:** The first `Who it’s for` bullet now begins `Congregations, community centers, libraries, and food sites`. Public agencies follows it; all other bullet wording, order, and links are unchanged.
+- **Scope:** About copy/order only. Publication remains pending PR review.
+- **Validation:** Reviewed the exact diff and unchanged access-point link; whitespace check passes.
+
 ## Resolved placement
 
 ### C01 — Partner Success
