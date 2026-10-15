@@ -2627,6 +2627,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** Jeff's biography and this log only. Adds the user's description without specifying personal experiences that were not supplied. Supersedes Jeff's wording in T221. Publication remains pending PR review.
 - **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed Jeff's complete revised biography and Frank's reduced repetition in rendered Team HTML.
 
+### T223 — Team — Tom's Secretary level appointment
+
+- **Request:** Replace `Secretary appointed appointee` with `Secretary level appointment`.
+- **Old wording:** `He previously served as a Secretary appointed appointee`
+- **New wording:** `He previously held a Secretary level appointment`
+- **Scope:** Requested phrase in Tom Allin's biography and this log only, with the preceding verb adjusted for grammar. Publication remains pending PR review.
+- **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the replacement in rendered Team HTML.
+
 ## Resolved placement
 
 ### C01 — Partner Success
