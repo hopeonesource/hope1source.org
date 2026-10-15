@@ -2556,6 +2556,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** Founder sentence in The organization section and this log only. Publication remains pending PR review.
 - **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the updated founder sentence in rendered About HTML.
 
+### T214 — Team — Management Fellow national service-provider support
+
+- **Request:** `Management Fellow supporting thousands of service providers nationally`
+- **Old phrase:** `former Presidential Management Fellow`
+- **New phrase:** `former Presidential Management Fellow supporting thousands of service providers nationally`
+- **Scope:** Requested phrase in Tim Underwood's team biography and this log only. Retains the rest of his biography. Publication remains pending PR review.
+- **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the requested phrase in rendered Team HTML.
+
 ## Resolved placement
 
 ### C01 — Partner Success

@@ -9,7 +9,7 @@ export const team = [
     role: 'Chief Executive Officer',
     photo: 'photos/tim-underwood.jpg',
     imagePosition: '40% center',
-    bio: 'Tim founded H1S to help service providers build trust, solve problems, and measure what matters for impact. An Air Force Reserve officer, Eagle Scout, Honor Medal recipient, and former Presidential Management Fellow, he brings experience across diverse sectors, from the White House to those without a house.',
+    bio: 'Tim founded H1S to help service providers build trust, solve problems, and measure what matters for impact. An Air Force Reserve officer, Eagle Scout, Honor Medal recipient, and former Presidential Management Fellow supporting thousands of service providers nationally, he brings experience across diverse sectors, from the White House to those without a house.',
   },
   {
     name: 'Frank Adames',
