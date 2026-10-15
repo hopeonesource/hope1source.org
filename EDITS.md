@@ -2397,6 +2397,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** DC Human Services story's shared industry label and this log. Publication remains pending PR review.
 - **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the updated category in the rendered case-study library.
 
+### T194 — Case studies — Local Nonprofit - Access category
+
+- **Request / new text:** `Local Nonprofit - Access`
+- **Old text:** `Local nonprofit`
+- **Scope:** Dreamers & Achievers story's shared industry label and this log. Publication remains pending PR review.
+- **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the updated category in the rendered case-study library.
+
 ## Resolved placement
 
 ### C01 — Partner Success
