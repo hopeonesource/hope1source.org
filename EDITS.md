@@ -1699,6 +1699,12 @@ We bring together service, technology, and lived experience to help those who se
 
 The headline, roster, roles, biographies, and photos are unchanged.
 
+### T108 — /team
+
+- Status: **Applied locally — user-requested removal; awaiting PR review**
+- Target: `preview-v4/src/content/team.js`
+- Removed Greg Marmo’s team entry, including name, role, biography, and displayed photo.
+
 ## Resolved placement
 
 ### C01 — Partner Success

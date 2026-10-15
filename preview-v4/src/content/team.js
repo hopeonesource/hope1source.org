@@ -54,12 +54,6 @@ export const team = [
     bio: 'Hugo is an Economic Research Analyst at H1S, where he applies advanced econometric methodologies to analyze the effectiveness of non-profit interventions. With a recent Ph.D. in Economics, Hugo specializes in using causal identification strategies and predictive modeling to inform evidence-based policy recommendations and strategic planning. His work leverages his doctoral research on institutional economics and resource allocation to address real-world challenges in the non-profit sector. In his free time, he enjoys playing soccer. At H1S, Hugo is dedicated to bridging the gap between theoretical economic analysis and practical, data-driven solutions to build more equitable and effective communities.',
   },
   {
-    name: 'Greg Marmo',
-    role: 'Partner Success Analyst',
-    photo: 'photos/greg-marmo.jpg',
-    bio: 'Greg was a Division 1 student-athlete and team captain at George Washington University, where he completed his Bachelor of Science in Business Administration with a concentration in Entrepreneurship. He serves as the Partner Success Lead for H1S Check-ins, spearheading territory management, prospecting, and strategic outreach to independent restaurants. Blending data-driven market research with a consultative selling approach, Greg focuses on helping restaurant operators maximize customer retention, capture real-time guest feedback, and drive long-term revenue growth.',
-  },
-  {
     name: 'Jeff',
     role: 'Volunteer Spotlight',
     photo: 'photos/jeff.jpg',
