@@ -148,8 +148,8 @@ export default function About() {
               written {org.program} and {org.programLegacy}.
             </p>
             <p>
-              Tim Underwood founded H1S to help service providers build trust, solve problems, and measure what
-              matters for impact.
+              Tim Underwood founded H1S to help service providers more easily build trust, solve problems,
+              and measure what matters for impact.
             </p>
             <p>{operator}</p>
             <p>

@@ -2548,6 +2548,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** Partners control their data step under How check-ins work and this log only. Publication remains pending PR review.
 - **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the requested sentence in rendered About HTML.
 
+### T213 — About — More easily build trust
+
+- **Request:** Add `more easily` before `build trust` in the founder sentence.
+- **Old text:** `Tim Underwood founded H1S to help service providers build trust, solve problems, and measure what matters for impact.`
+- **New text:** `Tim Underwood founded H1S to help service providers more easily build trust, solve problems, and measure what matters for impact.`
+- **Scope:** Founder sentence in The organization section and this log only. Publication remains pending PR review.
+- **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the updated founder sentence in rendered About HTML.
+
 ## Resolved placement
 
 ### C01 — Partner Success
