@@ -1,11 +1,54 @@
-# Wording edits
+# Website edit log
 
 ## Pages for review
 
 - Current: https://hopeonesource.github.io/hope1source.org/
 - Preview: https://hopeonesource.github.io/hope1source.org/v3/
 - Repository: https://github.com/hopeonesource/hope1source.org
+- Review pull request: https://github.com/hopeonesource/hope1source.org/pull/15
 - Third preview: implemented in `preview-v4/`, running locally at http://127.0.0.1:5175/v4/. The GitHub Pages path `/hope1source.org/v4/` will become available after review and merge; it is not published yet.
+
+## Current record — October 15, 2026
+
+This is the running record for all v4 edits, including wording, images, ordering, formatting, navigation, responsive behavior, search preparation, and new stories. The existing file remains `EDITS.md`; no separate `edit.md` is needed.
+
+Reconciled the conversation, current v4 source, and branch history through `71cd1a1`. All T01–T177 entries and T24A were already present exactly once, along with V01–V04 and resolved placement C01. T178 records this documentation reconciliation. Every one of the 140 branch commits ahead of `origin/main` at that checkpoint included an edit-log update.
+
+**How to read the history:** Entries record what was applied at that point in the conversation. Later instructions supersede earlier versions only within their stated page and field. An older entry marked “Applied” is not a direction to restore superseded text. Per-entry requests and provenance distinguish user wording from assistant drafts. Historical build counts and validation results describe the version tested at the time.
+
+**Review status:** Changes remain on `codex/third-preview-copy` for PR review. Publication is not authorized until review. This reconciliation changes documentation only.
+
+### Current choices and where to find their history
+
+| Area | Current state / scope | Log references |
+| --- | --- | --- |
+| Homepage | `HOPE1SOURCE (H1S) CHECK-INS`, `Earn Trust.`, and `We train and equip those who serve others for lasting change.` Three featured `Partner Success` stories; `Take part` and `Contact partnerships` actions. `Can you remain connected to those you aim to serve?` and `Plan your service` remain. | T01–T03, T46–T47, T54, T86–T87, T106 |
+| Shared process | Home and Outreach Tools use `Connect. Listen. Follow up.` The shared final step says `Use what you learn to follow up and measure what matters.` Access Points retains its separate `Repeat` step and wording. | T98–T100, T122–T123 |
+| Case studies and graphics | Full, responsive VA chart; DC photo/message composition with `H1S` prefixes and hypothermia message in focus; Dreamers growth graphic with a small enhanced portrait. DC text specifies a 78% reduction in hypothermia deaths during the supported period, attributed to the DC Office of the Chief Medical Examiner. Dreamers includes 5x funding growth. | V01–V04, T23–T30, T85, T88–T91, T106 |
+| Readiness | Outreach planning, opt-in alerts, tap/scan list building, easy and fun check-ins, and valuable follow-up; added the sourced Hurricane Helene field account. | T47–T54, T106, T133 |
+| Public Agencies | Preserves the user's opt-in, phone, partner-control, bulleted-list, past-performance, and results wording, including the later percentage and funding-language revisions. | T55–T84, T106 |
+| Team | Greg Marmo removed; Harry's retired-commander wording, Sarah's leadership wording, shortened Tim and Hugo bios, and all requested ordering revisions recorded. Tim `founded H1S`; credentials include `Eagle Scout, Honor Medal recipient`. Current source order: Tim, Frank, Tamecia, Nick, Justin, Veronica, Hugo, Damien, Jeff, Tom, Chris Teitzel, Sarah, Harry, Chris Burnett. | T107–T121 |
+| Outreach Tools | `social media` replaces `Facebook`; adjacent repeated organization text removed; real-check-in phone caption added. | T124 |
+| About | Approved hero restored; Portsmouth STEM-event photo replaces the Equity Incubator photo. Mission ends `Measure what matters and use what you learn to follow up.` Plain no-app introduction precedes three numbered explanations: people choose to connect, partners shape the experience, partners control their data. Community access points lead the audience bullets, with libraries after community centers. Business action says `Evaluate a business partnership`; sponsors link to `/corporate-sponsors`. SAM.gov details remain in a separate paragraph beneath H1S Check-ins. | T138–T150 |
+| Access Points | Hero note: `Cell Phone required. Stickers, Signs, and Stands provided.` Four cards use the clearer check-in explanation. Process is `Connect. Listen. Repeat.` Final ownership sentence: `They own their check-in experience, and can filter, sort, or delete their data at any time.` Business-hub paragraph removed. | T92–T100, T122, T129, T151–T158 |
+| Business and corporate partners | Business option on Get Involved; separate corporate-sponsor page covers volunteer outreach, community connection, team building, and partner examples including publicly documented Cisco support and user-confirmed Adobe involvement. | T130, T141–T142, T145, T149 |
+| Media and footer | Footer and Contact link to Media; Case Studies links to more stories and updates. Removed the pictured footer row containing the hub link, crisis line, DBA, and procurement details. About registration information remains. | T125–T128 (superseded footer treatment), T134, T137, T140, T162 |
+| News, source links, and authors | One newest-first `News & Stories` list. Ten migrated H1S releases have internal responsive articles; independent coverage remains external. Source-based dates, social-media stories, and first-initial/last-name author credits are recorded. Current list: 28 items, including 14 internal articles. | T131–T136, T159–T177 |
+| Social stories and library | Second Harvest Asia added to the four-story case-study library; homepage retains its three featured stories. Social-source evidence and additional community updates are recorded. | T133, T135, T162 |
+| Navigation, mobile, and search | Page navigation returns to the top, with a shared back-to-top arrow; responsive and accessibility improvements, rendered HTML, metadata, structured data, sitemap/robots preparation, and legacy aliases cover v4. Current source defines 45 pages and 30 aliases. User copy restored after the search rewrite; future domain is `hope1source.org`, with publication after PR review. | T101–T106, T132, T145, T159–T177 |
+
+### Latest article dates and content
+
+All four new articles and their Media summaries use shared data in `preview-v4/src/content/pressArticlesUpdates.js`.
+
+| Article | Final display date | Latest content / revisions |
+| --- | --- | --- |
+| Join the Portsmouth Wellness Check-ins Hub community kickoff on October 23 | October 15, 2026 | Event: October 23, 2026, 2–3 p.m. Eastern, 801 Dinwiddie Street, Portsmouth. Planned hub and participation information, with the official registration link. T159. |
+| Alaska pilot records 3,100 check-ins in 60 days | October 1, 2026 | H1S-led central Alaska pilot; outreach across the entire Air Force base; more than 27 services; text-linked games designed for 15 seconds or less, highlighting local and national mental-health services; 68% specifically means game completion. Pilot concluded in September 2026; results provide a basis for leadership to evaluate next steps. Wellness purpose appears in both article and Media summary. T167–T170, T177. |
+| Custom agentic AI starts with understanding needs | September 2, 2026 | Year-long GMU Honors College partnership, September 1, 2025–September 1, 2026. Grant-cycle and volunteer challenges, custom agentic AI prototypes, and practical tools and insights to support nonprofits and their communities. T159–T166. |
+| H1S equips Miami partners for veteran cancer-screening outreach | October 1, 2025 | H1S check-ins, training, and equipment support veteran wellness outreach. Summary uses `REFLECTION’s early analysis found`; 1.3% is the study's cancer-signal rate, with 12 diagnoses confirmed through follow-up. Wellness purpose appears in both article and Media summary. T171–T176. The final date in T174 supersedes T171–T173. |
+
+**Latest wellness wording:** Alaska's article introduction and Media summary both state: `The purpose was to encourage service members and veterans to complete wellness activities that support their health.` Miami's introduction states: `The purpose was to encourage veterans to complete wellness activities that support their health.` Its Media summary includes the same purpose in the opening sentence. These describe the purpose of the outreach; the Alaska 68% result remains game completion.
 
 ## Workflow
 
@@ -21,9 +64,9 @@ The separate third preview started from v3 as its structural base. The wording a
 
 ## Third version — applied locally
 
-The user asked to combine the best of the current and preview versions, with a common thread across all case studies. T01, T02, T03, T14, T21, T22, T23, T24, T24A, T27, T28, T29, T30, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61, T62, T63, T64, T65, T66, T67, T68, T69, T70, T71, T72, T73, T74, T75, T76, T77, T78, T79, T80, T81, T82, T83, T84, T85, T86, T87, T88, T89, T90, T91, T92, T93, T94, T95, T96, T97, T98, T99, and T100 contain user-supplied or user-requested changes. The remaining entries originated as assistant proposals. All listed entries have now been applied to the separate local third preview following the request to apply in realtime.
+The user asked to combine the best of the current and preview versions, with a common thread across all case studies, then authorized edits in realtime. The entries below record user-supplied wording, user-requested changes, and assistant drafts with their individual provenance. Later entries include additional explicit user requests and corrections. Read them chronologically with the current choices above; superseded versions are retained as history.
 
-**Common thread:** Help people get support. Help partners serve them better.
+**Original working theme:** Help people get support. Help partners serve them better.
 
 Keep the current version's warmth and emphasis on trust, follow-up, and showing what changed. Keep v3's concrete explanations, voluntary participation, and distinctions between study findings, a past partnership, and partner-reported results.
 
@@ -71,21 +114,23 @@ Used the clearest approved portrait and full before-and-after graphic from `IMG_
 
 Standardized all three Partner Success image frames at 3:2 while keeping each image set to `contain`, so the cards align without cropping their evidence graphics. Anchored every “Read the story” button to the bottom of its card so different copy lengths no longer create uneven action rows.
 
-**Existing three-step section:** Reach. Listen. Follow up.
+**Current shared three-step section:** Connect. Listen. Follow up. The final step says `Use what you learn to follow up and measure what matters.` About and Access Points retain their separately edited `Connect. Listen. Repeat.` language (T122–T123, T138, T147).
 
 **Case-study writing pattern:** the need → H1S's role → what was reported. Use existing text fields and paragraphs. The studies share a purpose; do not imply they all used the same product or intervention.
 
-| Case study | Proposed card headline | What readers should understand |
+| Case study | Current homepage card headline | What readers should understand |
 | --- | --- | --- |
 | Veterans Affairs | Make care easier to reach. | Research and feedback helped service teams identify barriers. |
 | DC Human Services | Put shelter information within reach. | Alerts shared information people could use during extreme weather. |
 | Dreamers & Achievers | Stay connected through follow-up. | Continued contact and feedback helped a partner understand needs. |
 
-## Evidence used for the proposal
+## Evidence used for the original proposal
+
+These notes record the initial source review. Later user-requested wording and attribution changes are documented in the numbered entries and summarized above.
 
 - Compared both source trees at repository commit 3ddcb76. Old text below is from v3; replacements were applied only in the third-preview copy. Shared content may appear on several pages; those existing uses should remain consistent.
 - Read the [published VA study](https://pubmed.ncbi.nlm.nih.gov/33929036/) through NCBI's public publication API, including the full article (PMC8904198). It used actors portraying veterans in 30 cities, reports to centers, and corrective plans. Tim Underwood is listed as a coauthor affiliated with HopeOneSource. The draft says H1S contributed to the research, without crediting its software as the intervention. The replacement quotation is a short excerpt from the study conclusion; the current v3 paraphrase incorrectly reads like a direct quote.
-- Read the [original DC case study](https://hope1source.org/case-studies/hopeonesource-saves-lives-with-emergency-shelter-alerts), which describes H1S alerts containing shelter and transportation information. The draft preserves v3's historical framing. The existing ICH quotation is retained as attributed historical context, not as a causal claim for H1S. Its original underlying counts were not independently revalidated in this pass.
+- Read the [original DC case study](https://hope1source.org/case-studies/hopeonesource-saves-lives-with-emergency-shelter-alerts), which describes H1S alerts containing shelter and transportation information. The initial draft retained the older ICH quotation as historical context; that wording and attribution were subsequently replaced. The current quote is `DC reported that hypothermia deaths fell 78% during the supported period.`, attributed to `DC Office of the Chief Medical Examiner, published H1S housing case study` (T85, T106). The original underlying counts were not independently revalidated in the initial pass.
 - Read the [original Dreamers & Achievers case study](https://hope1source.org/case-studies/dreamers-and-achievers), which describes continued contact and unmet needs. The numeric before/after figures are retained from both repository versions as partner-reported. The user-requested funding claim rounds the listed change from $110,000 to $560,000 to 5x during the supported period.
 
 ## Applied replacements
@@ -1531,7 +1576,7 @@ No app or internet needed.
 
 All partners must provide free or discounted services. Their check-in data is owned by them and can be filtered, sorted, or deleted at anytime by them.
 
-**Published wording**
+**Applied wording at this step**
 
 All partners must provide free or discounted services. They own their check-in data and can filter, sort, or delete it at any time.
 
@@ -1828,6 +1873,7 @@ The headline, roster, roles, biographies, and photos are unchanged.
 
 ### T125 — v4 — Footer registration line
 
+- **Later superseded:** T137 removes this entire footer row, including the formatting and wording revised in T125–T128. About's separate registration text remains under T140.
 - Status: **Applied locally — user-requested formatting; awaiting PR review**
 - Target: `preview-v4/src/components/Layout.jsx`
 - Placed `SAM.gov UEI...` on a new line immediately beneath `H1S Check-ins (dba Hope With Love, Inc.).` in the shared footer.
@@ -1835,6 +1881,7 @@ The headline, roster, roles, biographies, and photos are unchanged.
 
 ### T126 — v4 — Footer registration typography
 
+- **Later superseded:** Footer row removed in T137.
 - Status: **Applied locally — user-requested formatting; awaiting PR review**
 - Targets: `preview-v4/src/components/Layout.jsx`, `preview-v4/src/styles/site.css`
 - Made the `SAM.gov UEI...` registration line smaller (`0.875rem`) and italic throughout v4.
@@ -1842,12 +1889,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 
 ### T127 — v4 — Footer SAM.gov punctuation
 
+- **Later superseded:** Footer row removed in T137.
 - Status: **Applied locally — user-requested wording; awaiting PR review**
 - Target: `preview-v4/src/components/Layout.jsx`
 - Changed the shared footer registration line from `SAM.gov UEI...` to `SAM.gov: UEI...`, preserving its smaller italic style and line break.
 
 ### T128 — v4 — Corporate partner footer label
 
+- **Later superseded:** Footer row removed in T137.
 - Status: **Applied locally — user-requested clarification; awaiting PR review**
 - Target: `preview-v4/src/components/Layout.jsx`
 - Added `For corporate partners —` before the shared footer registration details to identify the intended audience.
@@ -1872,6 +1921,7 @@ The headline, roster, roles, biographies, and photos are unchanged.
 
 ### T131 — /press — Direct source links and source-based dates
 
+- **Later destination change:** T132 replaces the ten legacy H1S release links with internal v4 articles; independent coverage remains external. The external-link validation below describes the earlier version.
 - **Request:** Make the press items link to the actual sources and match their publication dates.
 - **Applied:** All 10 releases and 5 coverage titles now link directly to the publisher, official announcement, or archived original. Replaced copied migration dates with original datelines, added source labels, and retained month/year precision where an exact date was not established. The hypothermia release retains the date printed on its original HTML/PDF with a matching label; its conflicting year references are documented.
 - **Sources:** [Press source audit](docs/PRESS_SOURCES.md) records each destination, date evidence, and remaining precision limits. Existing titles, page wording, layout, and design are retained.
@@ -1935,6 +1985,7 @@ The headline, roster, roles, biographies, and photos are unchanged.
 
 ### T139 — /about — Stronger photo from H1S social media
 
+- **Later superseded:** T143 replaces this Equity Incubator photo with the Portsmouth community STEM-event photo.
 - **Request:** Find a better About photo from the organization's social media.
 - **Applied:** Replaced the older team image with the authentic H1S team photo from the September 22, 2023 Facebook post about the Equity Incubator at the Universities at Shady Grove. Selected it for clear faces, H1S branding, and relevance to work with entrepreneurs and community leaders.
 - **Photo and source:** Saved Facebook's unaltered 2048 × 1536 JPEG as `public/photos/h1s-equity-incubator-2023.jpg`. Added a concise event caption, descriptive alt text, and a link to the original post. Full provenance and compared candidates are recorded in `docs/SOCIAL_CONTENT_SOURCES.md`.
@@ -1950,6 +2001,7 @@ The headline, roster, roles, biographies, and photos are unchanged.
 
 ### T141 — /about — Corporate sponsors in Who it’s for
 
+- **Later destination change:** T145 links this action to the new internal `/corporate-sponsors` page, which includes the business-hub link.
 - **Request:** Add corporate sponsors under `Who it’s for` with a link to `hopeonesource.me`.
 - **Applied:** Added `Corporate sponsors can help more service providers connect with the people they serve.` followed by `Explore corporate sponsorship`, linking to `https://hopeonesource.me` in a new tab. Placed it after the business-partner paragraph and before funders, using the existing paragraph style.
 - **Scope:** Preserved all existing wording, the photo, and the SAM.gov paragraph spacing. Publication remains pending PR review.
@@ -2000,6 +2052,7 @@ The headline, roster, roles, biographies, and photos are unchanged.
 
 ### T148 — /about — How check-ins work
 
+- **Later superseded:** T150 replaces the introductory bullet and revises the three numbered explanations for clearer flow.
 - **Request:** Rename the section `How check-ins work`, place `No app is needed...` directly underneath as a subhero bullet, and number the other three points.
 - **Applied:** Renamed `How trust works`. Moved the unchanged no-app sentence to an emphasized lead bullet and converted the remaining three statements to a semantic numbered list, preserving their wording and relative order.
 - **Scope:** About section markup and scoped lead/list styles only. All other content is preserved. Publication remains pending PR review.
@@ -2078,6 +2131,7 @@ The headline, roster, roles, biographies, and photos are unchanged.
 
 ### T159 — /press — Two new stories only
 
+- **Later revisions:** T160 sets the GMU story date to September 2, 2026; T161–T166 refine its narrative, title, and year-long introduction. Portsmouth retains October 15, 2026. Alaska and Miami were added only after subsequent explicit requests in T167 and T171.
 - **Request:** Create one story for the George Mason University Honors College partnership from September 1, 2025, to September 1, 2026, and one for the October 23 community kickoff. Only those two.
 - **Applied:** Added two full articles and their News & Stories listings: the completed year-long Honors College partnership, and the upcoming Portsmouth Wellness Check-ins Hub kickoff on October 23, 2026, from 2–3 p.m. Eastern at 801 Dinwiddie Street. Both announcements are dated October 15, 2026; the partnership period and event date are explicit in the articles.
 - **Sources:** Partnership dates supplied by the user; project handoff and training details verified in the previously reviewed correspondence. Event details and the public registration link come from the official Eventbrite listing. Private correspondence and email links are not published.
@@ -2168,6 +2222,7 @@ The headline, roster, roles, biographies, and photos are unchanged.
 
 ### T171 — /press — Miami veteran cancer-screening outreach story
 
+- **Later revisions:** The final story date is October 1, 2025 (T174), superseding the dates in T171–T173. T172 and T175–T176 refine the results, summary, and wellness purpose.
 - **Request:** Add a story about H1S's role supporting veteran early cancer detection, grounded in email and study results. The user clarified that H1S provided check-ins, training, and equipping.
 - **Applied:** Added `H1S equips Miami partners for veteran cancer-screening outreach`, dated October 15, 2026, describing the 2025 work. Leads with check-ins, staff training, and outreach equipment; explains QR/tap access and computer/tablet options, plus coordination between Miami VA and local veteran-service organizations. The new article appears automatically in News & Stories.
 - **Evidence:** Reviewed relevant March–July 2025 email correspondence documenting check-in form/response access, outreach material preparation, training and demonstrations, partner introductions, and the July meeting with United Way of Broward County's Mission United team. The user's confirmation supports the provided check-ins, training, and equipment. No private contact details, email quotations, or internal check-in links are published.
@@ -2217,6 +2272,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Applied:** Added `The purpose was to encourage service members and veterans to complete wellness activities that support their health.` to the Alaska summary and article introduction. Confirmed that the Miami summary already includes its wellness purpose on the same Media page.
 - **Scope:** Alaska summary and introduction only. Wellness completion is expressed as the purpose; the 68% figure remains specifically game completion. Existing dates, results, and layout are unchanged. Publication remains pending PR review.
 - **Validation:** Confirmed the Alaska summary and introduction share the new purpose, preserved the October 1, 2026 date, and verified both Alaska and Miami wellness wording on the running Media page; whitespace check passes.
+
+### T178 — Edit log — Reconcile all edits and current choices
+
+- **Request:** Update the edit log with all edits.
+- **Applied:** Reconciled the existing `EDITS.md` with the conversation, current v4 source, and all 140 branch commits through `71cd1a1`. Confirmed T01–T177 and T24A were already recorded once each; retained all historical entries, V01–V04, and C01. Added a current-state index, final article dates, and the latest Alaska/Miami wellness-purpose wording.
+- **Corrections:** Removed the stale claim that every entry after the original attribution list was an assistant proposal. Updated the overview's `Reach` wording to `Connect`, clarified the current DC attribution, changed `Published wording` to `Applied wording at this step`, and explicitly marked superseded footer, source-link, About-photo, sponsor-link, check-in-flow, and story-date versions.
+- **Scope:** Documentation only. No website wording, images, design, routes, or publication settings changed. Publication remains pending PR review.
+- **Validation:** Checked numbered-entry continuity and uniqueness, current source counts and story dates, summary references, and whitespace. Confirmed only `EDITS.md` changed. Historical site-build results remain attached to their original entries; no new site build is needed for this documentation-only update.
 
 ## Resolved placement
 
