@@ -15,7 +15,7 @@ export const team = [
     name: 'Frank Adames',
     role: 'Chief Technology Officer',
     photo: 'photos/frank-adames.jpg',
-    bio: 'Frank is a 2025 40 Under 40 honoree, a 2022 National Volunteer In Service to America alumni winner, and the H1S technology lead. He assists with product management and architecture for Check-ins and enjoys solving complex problems.',
+    bio: 'Frank is a 2025 40 Under 40 honoree, a 2022 National Volunteer In Service to America alumni winner, and the H1S technology lead. He assists with product management and architecture for Check-ins and enjoys solving complex problems that bring positive change to people’s lives.',
   },
   {
     name: 'Tamecia McKenzie',

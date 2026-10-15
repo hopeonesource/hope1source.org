@@ -2672,6 +2672,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** Tamecia McKenzie's closing biography sentence and this log only. Retains the existing pronoun and opening sentence. Supersedes the closing sentence from T215. Publication remains pending PR review.
 - **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the replacement and absence of the duplicated word in rendered Team HTML.
 
+### T229 — Team — Frank's positive impact
+
+- **Request:** Describe solving complex problems that result in positive change in people's lives.
+- **Old phrase:** `solving complex problems.`
+- **New phrase:** `solving complex problems that bring positive change to people’s lives.`
+- **Scope:** Frank Adames's closing biography phrase and this log only, with the requested wording smoothed for grammar. Publication remains pending PR review.
+- **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the new phrase in rendered Team HTML.
+
 ## Resolved placement
 
 ### C01 — Partner Success
