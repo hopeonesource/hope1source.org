@@ -1917,6 +1917,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** Organization credits, names of article subjects, testimonials, team biographies, source URLs, and original-source documentation remain unchanged. Publication remains pending PR review.
 - **Validation:** Verified all 10 article bylines and all 5 abbreviated personal credits in the rendered News & Stories index. v4 build, static checks, and whitespace checks pass; independent audit found no missed author credits.
 
+### T137 — v4 — Remove the pictured footer row
+
+- **Request:** Remove the footer content shown in the supplied screenshot.
+- **Applied:** Removed the `hopeonesource.me` link, the crisis-support/988 line, the H1S Check-ins DBA line, and the corporate SAM.gov/UEI/CAGE/EIN registration line from the shared v4 footer.
+- **Scope:** The footer's branding, email, navigation links (including Media), and copyright remain. This changes the footer only; current-site/v3 files and other page content are untouched. Publication remains pending PR review.
+- **Validation:** Confirmed removal in all 40 prerendered pages and at 390px mobile/1440px desktop widths with no horizontal overflow. Build/static checks and independent scope review pass.
+
 ## Resolved placement
 
 ### C01 — Partner Success
