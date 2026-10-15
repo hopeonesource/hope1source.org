@@ -24,16 +24,16 @@ export const team = [
     bio: 'Tamecia leads community outreach growth for H1S by managing outreach efforts and identifying key partners to strengthen the communities served. She brings deep experience in partnerships and customer service quality assurance.',
   },
   {
-    name: 'Justin Robinson',
-    role: 'Custom Tech Lead',
-    photo: 'photos/justin-robinson.jpg',
-    bio: 'Justin is the Tech Lead for H1S. He is a public-sector web developer specializing in custom technology solutions that improve user experiences, from sports applications to executive KPI data collection.',
-  },
-  {
     name: 'Nick Hanson',
     role: 'Data Imagineering Lead',
     photo: 'photos/nick-hanson.jpg',
     bio: 'Nick is the Communications Lead for H1S and works as a filmmaker specializing in short-form video for web and broadcast. He uses his communications skillset to strengthen and grow the verified network of organizations serving vulnerable community members.',
+  },
+  {
+    name: 'Justin Robinson',
+    role: 'Custom Tech Lead',
+    photo: 'photos/justin-robinson.jpg',
+    bio: 'Justin is the Tech Lead for H1S. He is a public-sector web developer specializing in custom technology solutions that improve user experiences, from sports applications to executive KPI data collection.',
   },
   {
     name: 'Veronica Thornton',

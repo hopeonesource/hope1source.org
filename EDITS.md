@@ -1773,6 +1773,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - Considered publicly indexed content from [Tim's LinkedIn profile](https://www.linkedin.com/in/timothyunderwood1/), including his emphasis on measuring impact and community service. Direct profile fetching was rate-limited; no additional credentials were inferred.
 - Removed the nonprofit designation and lengthy IEEE recognition wording from this short biography. All other team content and ordering are unchanged.
 
+### T118 — /team — Nick Hanson placement
+
+- Status: **Applied locally — user-requested reorder; awaiting PR review**
+- Target: `preview-v4/src/content/team.js`
+- Moved Nick Hanson directly above Justin Robinson.
+- Preserved all biographies, roles, photos, and the relative order of everyone else.
+
 ## Resolved placement
 
 ### C01 — Partner Success
