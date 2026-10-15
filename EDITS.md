@@ -2340,6 +2340,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** VA story's shared industry label and this log. Publication remains pending PR review.
 - **Validation:** v4 build, prerender checks, and whitespace check pass. Rendered case-study library includes `Public Sector` and omits the previous label.
 
+### T186 — Case studies — Federal Government label
+
+- **Request / new text:** `Federal Government`
+- **Old text:** `Public Sector`
+- **Scope:** VA story's shared industry label and this log. Supersedes T185. Publication remains pending PR review.
+- **Validation:** v4 build, prerender checks, and whitespace check pass. Rendered case-study library includes `Federal Government` and omits `Public Sector`.
+
 ## Resolved placement
 
 ### C01 — Partner Success
