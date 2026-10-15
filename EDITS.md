@@ -2664,6 +2664,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** Closing phrase in Justin Robinson's biography and this log only. Supersedes that phrase from T219. Publication remains pending PR review.
 - **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the replacement in rendered Team HTML.
 
+### T228 — Team — Tamecia's service-provider experience
+
+- **Request:** Describe experience supporting small and large service providers; remove the duplicated `supporting` in the supplied wording.
+- **Old sentence:** `She brings deep experience in partnerships and customer service quality assurance supporting Amazon and AirBnB.`
+- **New sentence:** `She brings deep experience in partnerships and customer service quality assurance supporting small and large service providers.`
+- **Scope:** Tamecia McKenzie's closing biography sentence and this log only. Retains the existing pronoun and opening sentence. Supersedes the closing sentence from T215. Publication remains pending PR review.
+- **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the replacement and absence of the duplicated word in rendered Team HTML.
+
 ## Resolved placement
 
 ### C01 — Partner Success

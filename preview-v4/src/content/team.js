@@ -21,7 +21,7 @@ export const team = [
     name: 'Tamecia McKenzie',
     role: 'Community Partnership Lead',
     photo: 'photos/tamecia-mckenzie.jpg',
-    bio: 'Tamecia leads community outreach growth for H1S by managing outreach efforts and identifying key partners to strengthen the communities served. She brings deep experience in partnerships and customer service quality assurance supporting Amazon and AirBnB.',
+    bio: 'Tamecia leads community outreach growth for H1S by managing outreach efforts and identifying key partners to strengthen the communities served. She brings deep experience in partnerships and customer service quality assurance supporting small and large service providers.',
   },
   {
     name: 'Nick Hanson',
