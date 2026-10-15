@@ -2012,6 +2012,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** This sentence only; all other wording and formatting are unchanged. Publication remains pending PR review.
 - **Validation:** Reviewed the exact text replacement; whitespace check passes.
 
+### T150 — /about — Clearer check-in explanation
+
+- **Request:** Improve the subhero treatment and flow of the points as a marketer.
+- **Applied:** Replaced the bold lead bullet with the plain introduction `No app needed. Just a cell phone with text messaging.` Kept three numbered points with short, distinct labels: `People choose to connect.`, `Partners shape the experience.`, and `Partners control their data.` Rewrote the supporting sentences for easier scanning, placing rewards with opting in and the free/discounted-service requirement with the partner's role.
+- **Preserved:** Voluntary participation, services or games, opportunities to earn rewards, the requirement that every partner provide free or discounted services, partner ownership/control of the digital experience and service delivery, and the ability to filter, sort, or delete partner-owned check-in data at any time.
+- **Scope:** This About section and its scoped typography only; the mobile disclosure and all other approved content remain. Publication remains pending PR review.
+- **Validation:** Checked semantic paragraph/numbered-list structure, all three labels, and no horizontal overflow at 320px, 390px, and 1440px. Mobile/desktop screenshots reviewed; no page errors. Build/static and whitespace checks pass. Independent copy review prompted preservation of the explicit `must provide` requirement.
+
 ## Resolved placement
 
 ### C01 — Partner Success

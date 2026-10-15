@@ -1518,8 +1518,12 @@ address {
 
 .about-checkins-lead {
   font-size: 1.125rem;
-  font-weight: 600;
   line-height: 1.5;
+}
+
+.about-checkins-steps strong {
+  display: block;
+  margin-bottom: 0.2rem;
 }
 
 .about-audiences li + li,

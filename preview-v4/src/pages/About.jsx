@@ -101,15 +101,20 @@ export default function About() {
             </p>
           </AboutFold>
           <AboutFold title="How check-ins work" phone={phone}>
-            <ul className="about-checkins-lead">
-              <li>No app is needed; only a cell phone with text messages to earn rewards.</li>
-            </ul>
+            <p className="about-checkins-lead">No app needed. Just a cell phone with text messaging.</p>
             <ol className="about-checkins-steps">
-              <li>People opt-in interested in free and discounted services or games.</li>
-              <li>Partners own and control their digital experience and service delivery.</li>
               <li>
-                All partners must provide free or discounted services. They own their check-in data and can filter,
-                sort, or delete it at any time.
+                <strong>People choose to connect.</strong>
+                They opt in for services or games that interest them, with opportunities to earn rewards.
+              </li>
+              <li>
+                <strong>Partners shape the experience.</strong>
+                Every partner must provide free or discounted services. They own and control their digital
+                experience and service delivery.
+              </li>
+              <li>
+                <strong>Partners control their data.</strong>
+                They own their check-in data and can filter, sort, or delete it at any time.
               </li>
             </ol>
           </AboutFold>
