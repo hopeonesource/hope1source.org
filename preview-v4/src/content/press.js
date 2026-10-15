@@ -1,4 +1,5 @@
 import { pressArticleById } from './pressArticles.js'
+import { pressArticlesUpdates } from './pressArticlesUpdates.js'
 
 /** H1S releases live here; independent coverage stays with its publisher. */
 export const releases = [
@@ -165,6 +166,14 @@ export const communityUpdates = [
 // date follows precisely dated items in that same year/month; its label remains
 // at the source's known precision rather than inventing a month or day.
 export const newsItems = [
+  ...pressArticlesUpdates.map((article) => ({
+    date: article.date,
+    dateTime: article.dateTime,
+    title: article.title,
+    detail: article.description,
+    to: `/press/${article.id}`,
+    kind: article.kicker,
+  })),
   ...releases.map((item) => ({ ...item, kind: 'Announcement' })),
   ...coverage.map((item) => ({ ...item, kind: 'Coverage' })),
   ...communityUpdates.map((item) => ({ ...item, kind: 'Community update' })),

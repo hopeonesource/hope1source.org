@@ -2076,6 +2076,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** This Access Points phrase only. Publication remains pending PR review.
 - **Validation:** Reviewed the exact replacement; whitespace check passes.
 
+### T159 — /press — Two new stories only
+
+- **Request:** Create one story for the George Mason University Honors College partnership from September 1, 2025, to September 1, 2026, and one for the October 23 community kickoff. Only those two.
+- **Applied:** Added two full articles and their News & Stories listings: the completed year-long Honors College partnership, and the upcoming Portsmouth Wellness Check-ins Hub kickoff on October 23, 2026, from 2–3 p.m. Eastern at 801 Dinwiddie Street. Both announcements are dated October 15, 2026; the partnership period and event date are explicit in the articles.
+- **Sources:** Partnership dates supplied by the user; project handoff and training details verified in the previously reviewed correspondence. Event details and the public registration link come from the official Eventbrite listing. Private correspondence and email links are not published.
+- **Scope:** These two v4 articles and their listing/route integration only. Existing articles, approved copy, and layout are unchanged. Publication remains pending PR review.
+- **Validation:** v4 build and prerender checks pass (43 pages, 30 aliases, 730 internal links). Both article pages and the News & Stories listings were verified in the running preview; the kickoff registration link matches the public event. Whitespace check passes.
+
 ## Resolved placement
 
 ### C01 — Partner Success

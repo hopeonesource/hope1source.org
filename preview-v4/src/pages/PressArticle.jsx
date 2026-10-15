@@ -70,7 +70,7 @@ export default function PressArticle({ id }) {
       <article className="press-article">
         <header className="wrap narrow press-article-header">
           <Link className="text-link" to="/press">← All press and coverage</Link>
-          <p className="kicker">Archived press release</p>
+          <p className="kicker">{article.kicker || 'Archived press release'}</p>
           <h1>{article.title}</h1>
           <p className="press-article-byline">
             <time dateTime={article.dateTime}>{article.date}</time>
