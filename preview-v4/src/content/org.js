@@ -22,7 +22,7 @@ export const org = {
   cage: '77K55',
   ein: '27-5461163',
   procurement:
-    'H1S Check-ins (dba Hope With Love, Inc.). SAM.gov UEI HYQWP496LMJ8. CAGE 77K55. EIN 27-5461163. 501(c)(3).',
+    'H1S Check-ins (dba Hope With Love, Inc.). SAM.gov: UEI HYQWP496LMJ8. CAGE 77K55. EIN 27-5461163. 501(c)(3).',
 }
 
 /** Header links. Donate is an external gift link, not a second product pitch. */

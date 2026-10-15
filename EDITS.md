@@ -2433,6 +2433,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** About page hero introduction and matching opening sentence in its search description, plus this log. Other pages and About sections retain their existing wording. Publication remains pending PR review.
 - **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the revised introduction and search description in rendered About HTML.
 
+### T199 — About — Separate SAM.gov from UEI
+
+- **Request:** Differentiate `SAM.gov` from `UEI` in the registration line.
+- **Old text:** `SAM.gov UEI HYQWP496LMJ8.`
+- **New text:** `SAM.gov: UEI HYQWP496LMJ8.`
+- **Scope:** Adds a colon to the shared procurement text displayed on About and For Backers, plus this log. Publication remains pending PR review.
+- **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the separator in rendered About HTML.
+
 ## Resolved placement
 
 ### C01 — Partner Success
