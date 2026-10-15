@@ -2635,6 +2635,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** Requested phrase in Tom Allin's biography and this log only, with the preceding verb adjusted for grammar. Publication remains pending PR review.
 - **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the replacement in rendered Team HTML.
 
+### T224 — Team — Nick's executive and frontline experience
+
+- **Request / new text:** `He brings extensive experience supporting executive and frontline level government and business clients.`
+- **Old text:** `He brings extensive experience supporting government and business clients.`
+- **Scope:** Closing sentence in Nick Hanson's biography and this log only. Publication remains pending PR review.
+- **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the requested sentence in rendered Team HTML.
+
 ## Resolved placement
 
 ### C01 — Partner Success

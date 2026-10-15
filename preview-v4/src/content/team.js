@@ -27,7 +27,7 @@ export const team = [
     name: 'Nick Hanson',
     role: 'Data Imagineering Lead',
     photo: 'photos/nick-hanson.jpg',
-    bio: 'Nick is H1S’s Data Imagineering Lead and a filmmaker who creates short videos for web and broadcast. He uses data and AI responsibly to plan projects and guide creative decisions. He brings extensive experience supporting government and business clients.',
+    bio: 'Nick is H1S’s Data Imagineering Lead and a filmmaker who creates short videos for web and broadcast. He uses data and AI responsibly to plan projects and guide creative decisions. He brings extensive experience supporting executive and frontline level government and business clients.',
   },
   {
     name: 'Justin Robinson',
