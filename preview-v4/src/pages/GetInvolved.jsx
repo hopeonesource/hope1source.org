@@ -20,6 +20,13 @@ const paths = [
     href: mailto({ subject: 'Access point' }),
   },
   {
+    title: 'If you run a business',
+    text: 'Restaurants and other businesses can offer free or discounted services, gather feedback, and stay connected through H1S Check-ins.',
+    to: '/contact',
+    linkLabel: 'Discuss a business partnership',
+    href: mailto({ subject: 'Corporate and business partnership' }),
+  },
+  {
     title: 'Volunteers',
     text: 'Help keep neighbors safe with the skills you have.',
     to: '/contact',
@@ -40,12 +47,12 @@ export default function GetInvolved() {
     <>
       <Seo
         title="Get involved"
-        description="Run a program, host an access point, volunteer, or fund prevention you can measure."
+        description="Run a program, host an access point, partner as a restaurant or business, volunteer, or fund prevention you can measure."
       />
       <PageHero
         kicker="Get involved"
         title="Pick the seat you actually occupy."
-        lede="Run a program, host a front desk, volunteer, or fund the work."
+        lede="Run a program, host a front desk, partner as a business, volunteer, or fund the work."
       />
       <section className="section">
         <div className="wrap path-grid">

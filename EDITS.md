@@ -1861,6 +1861,15 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - New text: `People come to you first. Help them connect with support through a simple check-in.`
 - Applied to Congregations, Libraries, Community centers, and Food sites through their shared card text.
 
+### T130 — /get-involved — Business and corporate partnership option
+
+- Status: **Applied locally — user-requested business option; awaiting PR review**
+- Target: `preview-v4/src/pages/GetInvolved.jsx`
+- Added an `If you run a business` card after the access-point option using the existing card style.
+- New text: `Restaurants and other businesses can offer free or discounted services, gather feedback, and stay connected through H1S Check-ins.`
+- Added `Discuss a business partnership` linking to Contact, plus the existing email action with subject `Corporate and business partnership`.
+- Included business participation in the introductory sentence and restaurants/businesses in the page description. Preserved all existing options and the page heading.
+
 ## Resolved placement
 
 ### C01 — Partner Success
