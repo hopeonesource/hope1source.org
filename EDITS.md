@@ -2489,6 +2489,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** First Mission paragraph and this log only. Retains the hero, the Connect/Listen/Repeat paragraph, and the opt-in explanation under How check-ins work. Publication remains pending PR review.
 - **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the revised Mission sentence and retained surrounding copy in rendered About HTML.
 
+### T206 — About — Remove by text from Mission
+
+- **Request:** Remove `by text` from the Mission sentence.
+- **Old text:** `We help partners connect people to health, housing, and other essential services by text.`
+- **New text:** `We help partners connect people to health, housing, and other essential services.`
+- **Scope:** First Mission paragraph and this log only. Supersedes T205. Publication remains pending PR review.
+- **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the revised Mission sentence in rendered About HTML.
+
 ## Resolved placement
 
 ### C01 — Partner Success

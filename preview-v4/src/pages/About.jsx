@@ -94,7 +94,7 @@ export default function About() {
           </p>
           <AboutFold title="Mission" phone={phone}>
             <p>
-              We help partners connect people to health, housing, and other essential services by text.
+              We help partners connect people to health, housing, and other essential services.
             </p>
             <p>
               Connect. Listen. Repeat. Measure what matters and use what you learn to follow up.
