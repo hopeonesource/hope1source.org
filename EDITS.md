@@ -1749,6 +1749,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - Moved Hugo Diaz directly above Tamecia McKenzie.
 - Preserved all biographies, roles, photos, and the relative order of everyone else.
 
+### T115 — /team — Tamecia McKenzie placement
+
+- Status: **Applied locally — user-requested reorder; awaiting PR review**
+- Target: `preview-v4/src/content/team.js`
+- Moved Tamecia McKenzie directly above Justin Robinson.
+- Preserved all biographies, roles, photos, and the relative order of everyone else.
+
 ## Resolved placement
 
 ### C01 — Partner Success

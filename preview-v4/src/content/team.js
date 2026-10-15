@@ -18,6 +18,12 @@ export const team = [
     bio: 'Frank is a 2025 40 Under 40 award nominee, a 2022 National Volunteer In Service to America alumni winner, and the H1S technology lead. He assists with project management for the Check-ins technology and enjoys solving complex problems with technology.',
   },
   {
+    name: 'Tamecia McKenzie',
+    role: 'Community Partnership Lead',
+    photo: 'photos/tamecia-mckenzie.jpg',
+    bio: 'Tamecia leads community outreach growth for H1S by managing outreach efforts and identifying key partners to strengthen the communities served. She brings deep experience in partnerships and customer service quality assurance.',
+  },
+  {
     name: 'Justin Robinson',
     role: 'Custom Tech Lead',
     photo: 'photos/justin-robinson.jpg',
@@ -40,12 +46,6 @@ export const team = [
     role: 'Economic Research Analyst',
     photo: 'photos/hugo-diaz.jpg',
     bio: 'Hugo is an Economic Research Analyst at H1S, where he applies advanced econometric methodologies to analyze the effectiveness of non-profit interventions. With a recent Ph.D. in Economics, Hugo specializes in using causal identification strategies and predictive modeling to inform evidence-based policy recommendations and strategic planning. His work leverages his doctoral research on institutional economics and resource allocation to address real-world challenges in the non-profit sector. In his free time, he enjoys playing soccer. At H1S, Hugo is dedicated to bridging the gap between theoretical economic analysis and practical, data-driven solutions to build more equitable and effective communities.',
-  },
-  {
-    name: 'Tamecia McKenzie',
-    role: 'Community Partnership Lead',
-    photo: 'photos/tamecia-mckenzie.jpg',
-    bio: 'Tamecia leads community outreach growth for H1S by managing outreach efforts and identifying key partners to strengthen the communities served. She brings deep experience in partnerships and customer service quality assurance.',
   },
   {
     name: 'Damien Bérubé',
