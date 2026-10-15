@@ -2404,6 +2404,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** Dreamers & Achievers story's shared industry label and this log. Publication remains pending PR review.
 - **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the updated category in the rendered case-study library.
 
+### T195 — Case studies — National Nonprofit - Access category
+
+- **Request / new text:** `National Nonprofit - Access`
+- **Old text:** `Nonprofit - Food Access`
+- **Scope:** Feeding America story's shared industry label and this log. Supersedes T190 for Feeding America. Publication remains pending PR review.
+- **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the updated category in the rendered case-study library and preserved Second Harvest Asia's category.
+
 ## Resolved placement
 
 ### C01 — Partner Success
