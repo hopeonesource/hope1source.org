@@ -52,15 +52,19 @@ export const pressArticlesUpdates = [
     dateTime: '2026-09-02',
     author: 'H1S Check-ins',
     kicker: 'Partner story',
-    description: 'H1S and George Mason University Honors College explored grant-cycle and volunteer challenges to design custom AI prototypes around a nonprofit’s work.',
+    description: 'Over a year together, H1S and George Mason University Honors College explored grant-cycle and volunteer challenges to design custom AI prototypes around a nonprofit’s work.',
     blocks: [
+      {
+        type: 'p',
+        text: 'H1S and George Mason University Honors College worked together for a year, from September 1, 2025, to September 1, 2026, to understand nonprofit challenges and explore custom agentic AI solutions.',
+      },
       {
         type: 'p',
         text: 'Many nonprofits juggle grant deadlines with the changing availability of volunteers. Each funding cycle can bring different eligibility rules and requests for evidence. When people’s availability changes, keeping that information organized and the work moving becomes a challenge of its own.',
       },
       {
         type: 'p',
-        text: 'H1S brought its own experience to a partnership with George Mason University Honors College from September 1, 2025, to September 1, 2026. Dr. Hugo Diaz helped students understand the needs of a small volunteer team often starting grant applications from scratch. Dr. Melanie Fedri coordinated the student consulting experience. Together, they explored how custom agentic AI could support that work.',
+        text: 'Dr. Hugo Diaz helped students understand the needs of a small volunteer team often starting grant applications from scratch. Dr. Melanie Fedri coordinated the student consulting experience. Together, they explored how custom agentic AI could support that work.',
       },
       {
         type: 'p',

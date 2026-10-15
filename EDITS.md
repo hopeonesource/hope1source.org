@@ -2128,6 +2128,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** Title only. Publication remains pending PR review.
 - **Validation:** Confirmed the shared title loads correctly; whitespace check passes.
 
+### T166 — /press — Introduce the year-long GMU partnership
+
+- **Request:** Mention the year spent working together in the introduction.
+- **Applied:** Added `Over a year together` to the News & Stories summary. Moved the partnership period into the article’s opening paragraph, stating that H1S and George Mason University Honors College worked together for a year from September 1, 2025, to September 1, 2026.
+- **Scope:** GMU introduction and summary only. Removed the repeated dates from the later paragraph. Publication remains pending PR review.
+- **Validation:** Confirmed the article introduction and shared listing summary load correctly; whitespace check passes.
+
 ## Resolved placement
 
 ### C01 — Partner Success
