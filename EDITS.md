@@ -2099,6 +2099,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** GMU article body and summary only. Preserved the September 2, 2026 story date, the September 1, 2025–September 1, 2026 partnership period, and the existing layout.
 - **Validation:** v4 build and prerender checks pass (43 pages, 30 aliases, 730 internal links). Verified the four-paragraph story and September 2 date in the running preview; whitespace check passes. Publication remains pending PR review.
 
+### T162 — /case-studies — Link to more stories and updates
+
+- **Request:** Link from the bottom of Case Studies to the Media page for more stories and updates.
+- **Applied:** Added `More stories and updates in Media` after the case-study cards, linking to `/press` with the existing secondary-button style.
+- **Scope:** Case Studies index only. Publication remains pending PR review.
+- **Validation:** v4 build and prerender checks pass (43 pages, 731 internal links). Clicked the new link in the preview and confirmed it opens News & Stories at `/v4/press`; whitespace check passes.
+
 ## Resolved placement
 
 ### C01 — Partner Success

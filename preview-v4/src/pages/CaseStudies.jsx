@@ -47,6 +47,13 @@ export default function CaseStudies() {
             </article>
           ))}
         </div>
+        <div className="wrap">
+          <p className="path-actions">
+            <Link className="btn btn-secondary" to="/press">
+              More stories and updates in Media
+            </Link>
+          </p>
+        </div>
       </section>
     </>
   )
