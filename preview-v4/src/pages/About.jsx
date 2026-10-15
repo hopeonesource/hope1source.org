@@ -6,6 +6,7 @@ import { org } from '../content/org.js'
 import { publicUrl } from '../lib/links.js'
 
 const phoneQuery = '(max-width: 720px)'
+const [operator, registration] = org.procurement.split(/ (?=SAM\.gov)/)
 
 function usePhone() {
   const [phone, setPhone] = useState(false)
@@ -134,7 +135,8 @@ export default function About() {
               Tim Underwood founded H1S to help service providers build trust, solve problems, and measure what
               matters for impact.
             </p>
-            <p>{org.procurement}</p>
+            <p>{operator}</p>
+            <p>{registration}</p>
           </AboutFold>
           <p>
             <Link className="btn btn-primary" to="/team">

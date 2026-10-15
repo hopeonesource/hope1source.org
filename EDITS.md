@@ -1941,6 +1941,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Presentation and scope:** The full image scales proportionally at all screen sizes; removed About's former mobile crop. Kept all previously approved About wording, images on other pages, and current-site/v3 code unchanged. Publication remains pending PR review.
 - **Validation:** Viewed the downloaded source and rendered mobile/desktop photo. At 320px, 390px, and 1440px, the image loads at its original aspect ratio, caption wraps, and no horizontal overflow or page errors occur. Build/static checks pass for 40 pages, 30 aliases, and 679 internal links. Independent scope and markup review passed.
 
+### T140 — /about — Separate the SAM.gov registration line
+
+- **Request:** Place SAM.gov and the subsequent text directly beneath H1S Check-ins, with space between them.
+- **Applied:** Split the organization registration paragraph immediately before `SAM.gov`. The first paragraph remains `H1S Check-ins (dba Hope With Love, Inc.).`; the next contains the unchanged SAM.gov, UEI, CAGE, EIN, and nonprofit details, using the existing paragraph spacing.
+- **Scope:** About formatting only; all wording and identifiers are preserved, and the removed footer row remains removed. Publication remains pending PR review.
+- **Validation:** At 390px and 1440px, the registration paragraph sits directly below and aligns with the H1S line, with 16px spacing and no horizontal overflow. Build/static and whitespace checks pass.
+
 ## Resolved placement
 
 ### C01 — Partner Success
