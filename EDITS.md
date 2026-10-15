@@ -2532,6 +2532,15 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** Closing Mission paragraphs, their current-state summary in this log, and this entry. Supersedes T209. Publication remains pending PR review.
 - **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the new wording and separate paragraph order in rendered About HTML.
 
+### T211 — About — Tap or scan invitation in short sentences
+
+- **Request:** Add `With a tap or scan, partners…`, keep sentences short, and retain all key information.
+- **Old text:** `A partner invites people to assess their needs, explore services or games, and earn rewards. Each person chooses whether to opt in.`
+- **New text:** `With a tap or scan, partners invite people to opt in. People can assess needs, explore services or games, and earn rewards.`
+- **Length and content:** Two short sentences; 123 characters versus 131 previously. Retains the partner invitation, voluntary opt-in, needs assessment, services or games, and opportunity to earn rewards.
+- **Scope:** First step's description under How check-ins work and this log only. Keeps the human-connection heading. Supersedes T208. Publication remains pending PR review.
+- **Validation:** Verified 123 characters and two 11-word sentences. v4 build, prerender checks, and whitespace check pass. Confirmed all key information and the retained heading in rendered About HTML.
+
 ## Resolved placement
 
 ### C01 — Partner Success
