@@ -123,6 +123,12 @@ export default function About() {
               connected through H1S Check-ins. <Link to="/contact">Discuss a business partnership</Link>.
             </p>
             <p>
+              Corporate sponsors can help more service providers connect with the people they serve.{' '}
+              <a href={org.hubUrl} target="_blank" rel="noopener noreferrer">
+                Explore corporate sponsorship
+              </a>.
+            </p>
+            <p>
               Funders can back prevention they can measure. <Link to="/for-backers">See the funder page</Link>.
             </p>
           </AboutFold>

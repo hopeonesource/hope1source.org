@@ -1948,6 +1948,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** About formatting only; all wording and identifiers are preserved, and the removed footer row remains removed. Publication remains pending PR review.
 - **Validation:** At 390px and 1440px, the registration paragraph sits directly below and aligns with the H1S line, with 16px spacing and no horizontal overflow. Build/static and whitespace checks pass.
 
+### T141 — /about — Corporate sponsors in Who it’s for
+
+- **Request:** Add corporate sponsors under `Who it’s for` with a link to `hopeonesource.me`.
+- **Applied:** Added `Corporate sponsors can help more service providers connect with the people they serve.` followed by `Explore corporate sponsorship`, linking to `https://hopeonesource.me` in a new tab. Placed it after the business-partner paragraph and before funders, using the existing paragraph style.
+- **Scope:** Preserved all existing wording, the photo, and the SAM.gov paragraph spacing. Publication remains pending PR review.
+- **Validation:** Confirmed the visible link and exact destination at 390px and 1440px without horizontal overflow. Build/static checks, whitespace checks, and independent scope review pass.
+
 ## Resolved placement
 
 ### C01 — Partner Success
