@@ -2609,6 +2609,24 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** Tim Underwood's closing biography phrase and this log only. Publication remains pending PR review.
 - **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the new phrase replaces the old wording in rendered Team HTML.
 
+### T221 — Team — Frank's repetition and Jeff's nonprofit database work
+
+- **Request:** Reduce repetition of `technology` in Frank's bio; describe Jeff as a successful team alumnus now helping nonprofits configure customer relationship management databases.
+- **Frank, old text:** `Frank is a 2025 40 Under 40 honoree, a 2022 National Volunteer In Service to America alumni winner, and the H1S technology lead. He assists with the product management and architecture for the Check-ins technology and enjoys solving complex problems with technology.`
+- **Frank, new text:** `Frank is a 2025 40 Under 40 honoree, a 2022 National Volunteer In Service to America alumni winner, and the H1S technology lead. He assists with product management and architecture for Check-ins and enjoys solving complex problems.`
+- **Jeff, old text:** `Jeff is featured in the Hope1Source.org volunteer spotlight gallery as part of the broader volunteer community behind the work.`
+- **Jeff, new text:** `Jeff is a successful alumnus of the H1S team. He now helps nonprofits set up customer relationship management (CRM) databases.`
+- **Scope:** Frank's and Jeff's biographies and this log only. Preserves Frank's honors, product management, architecture, and problem-solving details. Publication remains pending PR review.
+- **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed both biographies in rendered Team HTML and that Frank's biography uses `technology` once.
+
+### T222 — Team — Jeff's lived experience
+
+- **Request:** Add Jeff's lived experience.
+- **Old text:** `Jeff is a successful alumnus of the H1S team. He now helps nonprofits set up customer relationship management (CRM) databases.`
+- **New text:** `Jeff is a successful alumnus of the H1S team who brings lived experience to his work. He now helps nonprofits set up customer relationship management (CRM) databases.`
+- **Scope:** Jeff's biography and this log only. Adds the user's description without specifying personal experiences that were not supplied. Supersedes Jeff's wording in T221. Publication remains pending PR review.
+- **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed Jeff's complete revised biography and Frank's reduced repetition in rendered Team HTML.
+
 ## Resolved placement
 
 ### C01 — Partner Success

@@ -15,7 +15,7 @@ export const team = [
     name: 'Frank Adames',
     role: 'Chief Technology Officer',
     photo: 'photos/frank-adames.jpg',
-    bio: 'Frank is a 2025 40 Under 40 honoree, a 2022 National Volunteer In Service to America alumni winner, and the H1S technology lead. He assists with the product management and architecture for the Check-ins technology and enjoys solving complex problems with technology.',
+    bio: 'Frank is a 2025 40 Under 40 honoree, a 2022 National Volunteer In Service to America alumni winner, and the H1S technology lead. He assists with product management and architecture for Check-ins and enjoys solving complex problems.',
   },
   {
     name: 'Tamecia McKenzie',
@@ -57,7 +57,7 @@ export const team = [
     name: 'Jeff',
     role: 'Volunteer Spotlight',
     photo: 'photos/jeff.jpg',
-    bio: 'Jeff is featured in the Hope1Source.org volunteer spotlight gallery as part of the broader volunteer community behind the work.',
+    bio: 'Jeff is a successful alumnus of the H1S team who brings lived experience to his work. He now helps nonprofits set up customer relationship management (CRM) databases.',
   },
   {
     name: 'Tom Allin',
