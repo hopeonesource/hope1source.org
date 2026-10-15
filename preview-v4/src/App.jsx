@@ -12,6 +12,7 @@ import Readiness from './pages/Readiness.jsx'
 import CaseStudies from './pages/CaseStudies.jsx'
 import CaseStudy from './pages/CaseStudy.jsx'
 import Contact from './pages/Contact.jsx'
+import CorporateSponsors from './pages/CorporateSponsors.jsx'
 import Donate from './pages/Donate.jsx'
 import Faqs from './pages/Faqs.jsx'
 import GetInvolved from './pages/GetInvolved.jsx'
@@ -48,6 +49,7 @@ export function AppRoutes() {
           <Route path="about" element={<About />} />
           <Route path="team" element={<Team />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="corporate-sponsors" element={<CorporateSponsors />} />
           <Route path="donate" element={<Donate />} />
           <Route path="get-involved" element={<GetInvolved />} />
           <Route path="outreach-tools" element={<OutreachTools />} />

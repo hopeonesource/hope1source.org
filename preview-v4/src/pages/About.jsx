@@ -124,10 +124,9 @@ export default function About() {
                 connected through H1S Check-ins. <Link to="/contact">Evaluate a business partnership</Link>.
               </li>
               <li>
-                Corporate sponsors can help more service providers connect with the people they serve.{' '}
-                <a href={org.hubUrl} target="_blank" rel="noopener noreferrer">
-                  Explore corporate sponsorship
-                </a>.
+                Corporate sponsors can support service providers and bring their teams together through volunteer
+                outreach for community connection and team building.{' '}
+                <Link to="/corporate-sponsors">Explore corporate sponsorship</Link>.
               </li>
               <li>
                 Funders can back prevention they can measure. <Link to="/for-backers">See the funder page</Link>.

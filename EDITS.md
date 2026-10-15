@@ -1976,6 +1976,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** Only this About section's markup and list spacing changed. Publication remains pending PR review.
 - **Validation:** All five bullets and original destinations render at 390px and 1440px with no horizontal overflow. Mobile screenshot reviewed; build/static and whitespace checks pass.
 
+### T145 — Corporate sponsorship and volunteer outreach
+
+- **Request:** Mention volunteer outreach for community connection and team building, with a linked background page naming corporate partners such as Adobe and Cisco.
+- **Applied:** Updated About's corporate-sponsor bullet and linked it to the new `/corporate-sponsors` page. The page explains outreach, shared skills, and sponsorship opportunities; names Adobe, Cisco, Blackstone Federal, and Lockr; and links to documented partnership and volunteer background. Added a corporate-sponsor card to Get Involved, retained `https://hopeonesource.me` on the new page, and directed the legacy `/our-sponsors` alias to it.
+- **Evidence:** Adobe is included based on the user's identification in this request, without adding an activity, date, or result. Cisco/Lockr support is documented in the existing H1S Hurricane Florence release. Blackstone's own 2017 announcements describe employee coding contributions and planned Veterans Day outreach. Details and source boundaries are in `docs/CORPORATE_PARTNERS_SOURCES.md`.
+- **Scope:** Reused existing responsive page, list, and button styles. Preserved all other About wording, the photo, registration spacing, and existing Get Involved cards. No current-site/v3 code or footer changes. Publication remains pending PR review.
+- **Validation:** No overflow at 320px, 390px, and 1440px on the new page; About and Get Involved checked at 390px/1440px. Confirmed company text, CTA destinations, sponsor alias, navigation to the top, and back-to-top arrow; no page errors. Mobile/desktop screenshots reviewed. Build/static checks pass for 41 pages and 30 aliases in both preview and root-release configurations; restored the preview build. Independent factual and code review passed, including HTTP 200 for Blackstone's partnership announcement.
+
 ## Resolved placement
 
 ### C01 — Partner Success

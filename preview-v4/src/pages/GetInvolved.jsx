@@ -27,6 +27,13 @@ const paths = [
     href: mailto({ subject: 'Corporate and business partnership' }),
   },
   {
+    title: 'Corporate sponsors',
+    text: 'Bring your team together through volunteer outreach for community connection and team building.',
+    to: '/corporate-sponsors',
+    linkLabel: 'Explore corporate sponsorship',
+    href: mailto({ subject: 'Corporate sponsorship and volunteer outreach' }),
+  },
+  {
     title: 'Volunteers',
     text: 'Help keep neighbors safe with the skills you have.',
     to: '/contact',
