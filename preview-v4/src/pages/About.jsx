@@ -97,7 +97,7 @@ export default function About() {
               Opt-in check-in text messages for health, housing, human, and emergency services.
             </p>
             <p>
-              Connect. Listen. Repeat. Use what you learn to follow up and measure what matters.
+              Connect. Listen. Repeat. Measure what matters and use what you learn to follow up.
             </p>
           </AboutFold>
           <AboutFold title="How trust works" phone={phone}>

@@ -1991,6 +1991,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** About copy/order only. Publication remains pending PR review.
 - **Validation:** Reviewed the exact diff and unchanged access-point link; whitespace check passes.
 
+### T147 — /about — Lead with measuring what matters
+
+- **Request:** `Measure what matters and use what you learn to follow up.`
+- **Applied:** Replaced `Use what you learn to follow up and measure what matters.` in About's Mission section with the exact requested sentence. Preserved `Connect. Listen. Repeat.` and all other content.
+- **Scope:** About wording only. Publication remains pending PR review.
+- **Validation:** Reviewed the exact text replacement; whitespace check passes.
+
 ## Resolved placement
 
 ### C01 — Partner Success
