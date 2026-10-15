@@ -4,15 +4,15 @@ export const pressArticlesUpdates = [
     id: 'miami-veteran-cancer-screening-outreach',
     legacyPaths: [],
     title: 'H1S equips Miami partners for veteran cancer-screening outreach',
-    date: 'October 15, 2026',
-    dateTime: '2026-10-15',
+    date: 'September 23, 2026',
+    dateTime: '2026-09-23',
     author: 'H1S Check-ins',
     kicker: 'Partner story',
-    description: 'H1S provided check-ins, training, and outreach equipment to support Miami VA’s cancer-screening research and help community partners connect veterans with the study team.',
+    description: 'H1S provided check-ins, training, and equipment for Miami VA’s outreach in 2025. REFLECTION’s earlier 2024 analysis found cancer signals in 1.3% of veterans tested; clinical follow-up confirmed 12 cancer diagnoses.',
     blocks: [
       {
         type: 'p',
-        text: 'In 2025, H1S provided check-ins, training, and outreach equipment to support Miami VA’s multi-cancer early detection research. The goal was simple: help veterans learn about the opportunity, review eligibility information, and connect with the study team.',
+        text: 'H1S helped Miami VA bring multi-cancer early detection research into community outreach in 2025. By providing check-ins, training, and outreach equipment, H1S helped partners give veterans a clearer path to eligibility information and the study team.',
       },
       {
         type: 'p',
@@ -24,14 +24,14 @@ export const pressArticlesUpdates = [
       },
       {
         type: 'h2',
-        text: 'The research behind the outreach',
+        text: 'What the study found',
       },
       {
         type: 'p',
-        text: 'An initial 2024 analysis of the REFLECTION study reported cancer signals in 1.3% of 2,854 veterans across seven VA sites, including Miami. These blood-test signals required clinical evaluation to determine whether cancer was present.',
+        text: 'The initial 2024 REFLECTION findings detected cancer signals in 37 of 2,854 veterans (1.3%) across seven VA sites, including Miami. Among 28 participants with positive results who completed six months of follow-up, 12 had confirmed cancer diagnoses. For those veterans, clinical follow-up provided answers that could guide their care.',
         links: [{
-          text: 'initial 2024 analysis of the REFLECTION study',
-          href: 'https://grail.com/wp-content/uploads/2024/10/Atwood_EDCC-2024_REFLECTION-VA.Oral_FINAL.pdf',
+          text: 'initial 2024 REFLECTION findings',
+          href: 'https://grail.com/press-releases/grail-presents-initial-results-from-reflection-real-world-evidence-study-of-galleri-multi-cancer-early-detection-mced-test-at-the-early-detection-of-cancer-conference/',
         }],
       },
       {

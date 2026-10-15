@@ -2175,6 +2175,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** One new v4 article with existing responsive article layout, automatic listing, route, and metadata integration. Publication remains pending PR review.
 - **Validation:** v4 build and prerender checks pass (45 pages, 30 aliases, 765 internal links). Clicked the new News & Stories entry and verified the full article, date, and all three source links in the running preview; whitespace check passes.
 
+### T172 — /press — Miami date and concrete research impact
+
+- **Request:** Date the Miami story September 23, 2026, feature the 1.3% result, and review the article and summary for clear, credible impact.
+- **Applied:** Updated the date and chronological listing placement. Tightened the introduction around H1S's check-ins, training, equipment, and the path to the study team. Added the 1.3% signal detection figure and 12 confirmed diagnoses to the listing summary; the article explains the full denominators and the value of answers that could guide care.
+- **Evidence:** Rechecked GRAIL's October 23, 2024 release and original presentation: 37 of 2,854 veterans had cancer signals (1.3%); among 28 positive-result participants with 180-day follow-up, 12 had confirmed cancer diagnoses. These pooled study findings predate H1S's 2025 Miami outreach. The copy does not recast the signal rate as confirmed early-stage diagnoses, a measured survival benefit, or H1S-attributed diagnoses. The study source and updated 2025 findings remain linked.
+- **Scope:** Miami article and its shared summary/date only. H1S's contribution remains explicit; no unrelated story or design changes. Publication remains pending PR review.
+- **Validation:** v4 build and prerender checks pass (45 pages, 30 aliases, 765 internal links). Confirmed the September 23 article date, chronological placement, revised summary, and full research paragraph in the running preview; whitespace check passes.
+
 ## Resolved placement
 
 ### C01 — Partner Success
