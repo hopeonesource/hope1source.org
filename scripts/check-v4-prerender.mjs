@@ -81,9 +81,10 @@ for (const [from, to] of aliases) {
 
 const redirects = readFileSync(path.join(dist, '_redirects'), 'utf8')
 for (const [from, to] of aliases) {
-  assert(redirects.includes(`${new URL(routeUrl(from)).pathname}  ${new URL(routeUrl(to)).pathname}  301`), `${from}: missing host redirect`)
+  assert(redirects.includes(`${new URL(routeUrl(from)).pathname}  ${new URL(routeUrl(to)).pathname}  301!`), `${from}: missing forced host redirect`)
 }
 assert(!/^\/article\/\*\s/m.test(redirects), 'A blanket article redirect would bypass recreated releases')
+assert(redirects.includes(`${manifest.base}*  ${manifest.base}404.html  404`), 'Unknown routes must return a real HTTP 404')
 
 const missingPage = readFileSync(path.join(dist, '404.html'), 'utf8')
 assert(missingPage.includes('content="noindex, follow"'), '404 must be noindex before JavaScript')

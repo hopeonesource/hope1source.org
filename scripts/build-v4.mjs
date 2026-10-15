@@ -87,9 +87,10 @@ try {
   // v4 owns its rules so recreated articles keep their individual destinations.
   const localPath = (route) => new URL(absoluteUrl(route)).pathname
   writeFileSync(path.join(dist, '_redirects'), [
-    '# Generated v4 route aliases. Existing static files take precedence.',
-    ...aliases.map(([from, to]) => `${localPath(from)}  ${localPath(to)}  301`),
-    `${base}*  ${base}index.html  200`,
+    '# Generated v4 route aliases. Force HTTP redirects over the static fallback pages.',
+    ...aliases.map(([from, to]) => `${localPath(from)}  ${localPath(to)}  301!`),
+    // Every valid route is prerendered; unknown URLs must remain real 404s.
+    `${base}*  ${base}404.html  404`,
     '',
   ].join('\n'))
   const xmlBody = siteIndexable ? pages.map((page) => `  <url><loc>${escapeHtml(absoluteUrl(page.path))}</loc></url>`).join('\n') : ''

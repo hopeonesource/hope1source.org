@@ -16,7 +16,7 @@ Reconciled the conversation, current v4 source, and branch history through `71cd
 
 **How to read the history:** Entries record what was applied at that point in the conversation. Later instructions supersede earlier versions only within their stated page and field. An older entry marked “Applied” is not a direction to restore superseded text. Per-entry requests and provenance distinguish user wording from assistant drafts. Historical build counts and validation results describe the version tested at the time.
 
-**Review status:** Changes remain on `codex/third-preview-copy` for PR review. Publication is not authorized until review. T178 was a documentation-only reconciliation; subsequent website edits continue below.
+**Review status:** On October 15, 2026, the user authorized merging PR #15 and replacing hope1source.org with v4 using Netlify and GoDaddy. Production preparation and verification are recorded from T231 onward. Earlier entries saying publication is pending describe their historical status.
 
 ### Current choices and where to find their history
 
@@ -2686,6 +2686,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Old phrase:** `supporting small and large service providers.`
 - **Scope:** Tamecia McKenzie's closing biography phrase and this log only. Publication remains pending PR review.
 - **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the requested phrase in rendered Team HTML.
+
+### T231 — Approved production launch preparation
+
+- **Request:** Approve/merge PR #15 and replace hope1source.org with the v4 website using Netlify and GoDaddy.
+- **Configuration:** Added a dedicated Netlify build that publishes only `dist/v4` at `/`, sets canonical URLs to `https://hope1source.org`, and enables search indexing only for the production context. GitHub Pages retains its separate current/v3/v4 build. `.netlify` remains gitignored.
+- **Routing:** Legacy aliases use forced HTTP 301 redirects over their static fallback files. Unknown URLs return the prerendered 404 page with HTTP 404 instead of homepage HTML with status 200.
+- **Content:** Preserved all approved wording, images, order, and design, including the latest team biographies through T230.
+- **Validation:** Root production build and prerender checks pass: 46 pages, 30 aliases, 886 internal links, metadata, JSON-LD, sitemap, and 404. Whitespace check passes. Domain cutover remains pending until the Netlify deploy is verified and GoDaddy access is available.
 
 ## Resolved placement
 
