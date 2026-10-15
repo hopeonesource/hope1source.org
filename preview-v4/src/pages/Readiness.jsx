@@ -1,0 +1,129 @@
+import { Link } from 'react-router-dom'
+import PageHero from '../components/PageHero.jsx'
+import Seo from '../components/Seo.jsx'
+import { howSteps } from '../components/HowItWorks.jsx'
+import { org } from '../content/org.js'
+import { mailto } from '../lib/links.js'
+
+const winterGift = `${org.donateUrl}?utm_campaign=winter`
+
+const checklist = [
+  'Build the opt-in list with a simple tap or scan.',
+  'Before the weather turns, agree who sends the alert and which official channel carries the live update.',
+  'During cold, heat, a storm, or a closure, send shelter, ride, or service information to people who opted in.',
+  'Check in privately. Hear what did not work.',
+  'Follow-up with valuable support and report what changed.',
+  'Point residents to the agency’s own channels for a live alert. This site is not a live alert feed.',
+]
+
+export default function Readiness() {
+  return (
+    <>
+      <Seo
+        title="Cold nights are coming."
+        description="Opt-in alerts with shelter, ride, and service updates. Used for cold, heat, storms, and closures."
+      />
+      <PageHero
+        kicker="Winter and emergency readiness"
+        title="Cold nights are coming. Can you reach those you aim to serve?"
+        lede="Send opt-in alerts to check-in with people other channels miss. Used for cold, heat, storms, closures, and collecting any real-time need."
+      >
+        <div className="hero-actions">
+          <a className="btn btn-primary" href={mailto({ subject: 'Service planning' })}>
+            Plan your service
+          </a>
+          <Link className="btn btn-secondary" to="/public-agencies">
+            Read the agency facts
+          </Link>
+        </div>
+      </PageHero>
+      <section className="section">
+        <div className="wrap">
+          <h2>Before. During. After.</h2>
+          <div className="door-row">
+            <article className="door">
+              <span className="door-index" aria-hidden="true">
+                01
+              </span>
+              <h3>Before</h3>
+              <p>Build the opt-in list with a simple tap or scan.</p>
+            </article>
+            <article className="door">
+              <span className="door-index" aria-hidden="true">
+                02
+              </span>
+              <h3>During</h3>
+              <p>Check-ins should be easy and fun.</p>
+            </article>
+            <article className="door">
+              <span className="door-index" aria-hidden="true">
+                03
+              </span>
+              <h3>After</h3>
+              <p>Follow-up with valuable support and report what changed.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section className="section section-tight">
+        <div className="wrap narrow prose">
+          <h2>What DC Human Services did</h2>
+          <p>
+            DC Human Services adopted the alert approach we brought. Alerts carried shelter and ride information in
+            extreme weather, including heat. DC Human Services now uses its own solution, modeled on the H1S approach.
+          </p>
+          <p>
+            <Link to="/case-studies/emergency-shelter-alerts">Read the shelter alerts story</Link>
+          </p>
+          <h2>Public health outreach through a trusted church</h2>
+          <p>
+            A church partner worked with H1S to promote public health resources in its community. The goal was
+            simple: help people find useful health information and available support through a familiar community
+            connection.
+          </p>
+          <h2 id="changing-needs">Keep checking what people need</h2>
+          <p>
+            After visiting North Carolina following Hurricane Helene, Tim and Wayne Underwood described aid groups
+            overflowing with water, food, and clothing, and turning away most donations while unmet needs remained.
+          </p>
+          <p>
+            They identified ongoing needs assessment and coordination of supplies and repairs as critical parts of
+            the response.{' '}
+            <a
+              href="https://www.facebook.com/hopewithlove/posts/pfbid036Vero7qHFBwnxeHb9vHLt6GjswP3StUpojmJnVKH3xXeRPWCweSFXnWEA1wUab9Xl"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Read the October 16, 2024 field update
+            </a>.
+          </p>
+          <h2>Readiness checklist</h2>
+          <ol>
+            {checklist.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ol>
+          <h2>Alert. Check in. Connect.</h2>
+          <ol>
+            {howSteps.map((step) => (
+              <li key={step.title}>
+                <strong>{step.title}.</strong> {step.text}
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+      <section className="cause-band">
+        <div className="wrap cause-inner">
+          <div>
+            <h2>Help a partner send alerts this winter.</h2>
+            <p>Gifts go to {org.legalName}, a 501(c)(3), through Every.org.</p>
+          </div>
+          <a className="btn btn-primary" href={winterGift}>
+            Donate on Every.org
+          </a>
+        </div>
+      </section>
+    </>
+  )
+}
