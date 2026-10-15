@@ -2369,6 +2369,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** Feeding America story's shared industry label and this log. Publication remains pending PR review.
 - **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the updated category in the rendered case-study library.
 
+### T190 — Case studies — Nonprofit - Food Access category
+
+- **Request / new text:** `Nonprofit - Food Access`
+- **Old text:** `Food Access`
+- **Scope:** Feeding America story's shared industry label and this log. Supersedes T189. Publication remains pending PR review.
+- **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the updated category in the rendered case-study library.
+
 ## Resolved placement
 
 ### C01 — Partner Success

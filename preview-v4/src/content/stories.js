@@ -114,7 +114,7 @@ export const allStories = [
     title: 'Feeding America and Charleston VA: connecting veterans with food and support.',
     cardTitle: 'Turn a food check-in into a connection to support.',
     org: 'Feeding America',
-    industry: 'Food Access',
+    industry: 'Nonprofit - Food Access',
     location: 'Charleston, South Carolina',
     website: 'https://news.va.gov/81753/free-produce-veterans-charleston-va/',
     websiteLabel: 'VA News · December 6, 2020',
