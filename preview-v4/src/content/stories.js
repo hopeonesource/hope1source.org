@@ -40,7 +40,7 @@ export const stories = [
     legacySlug: 'hopeonesource-saves-lives-with-emergency-shelter-alerts',
     title: 'Emergency shelter alerts',
     outcome: 'Share useful information',
-    cardTitle: 'Put shelter information within reach.',
+    cardTitle: 'Put vital information within real-time reach.',
     card: 'DC Human Services used H1S to share emergency shelter and transportation information with residents.',
     image: 'photos/hypothermia-alert-people.svg',
     imageWidth: 900,

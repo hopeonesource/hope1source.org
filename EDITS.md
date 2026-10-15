@@ -121,7 +121,7 @@ Standardized all three Partner Success image frames at 3:2 while keeping each im
 | Case study | Current homepage card headline | What readers should understand |
 | --- | --- | --- |
 | Veterans Affairs | Make care easier to reach. | Research and feedback helped service teams identify barriers. |
-| DC Human Services | Put shelter information within reach. | Alerts shared information people could use during extreme weather. |
+| DC Human Services | Put vital information within real-time reach. | Alerts shared information people could use during extreme weather. |
 | Dreamers & Achievers | Stay connected through follow-up. | Continued contact and feedback helped a partner understand needs. |
 
 ## Evidence used for the original proposal
@@ -2298,6 +2298,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Date and evidence:** Media uses `2020 report`, based on the PDF's creation year; no exact publication date is printed. All three source PDF pages were extracted and visually reviewed. [Source audit](docs/FEEDING_AMERICA_SOURCES.md) records provenance and the distinction between pilot percentages and separate event totals.
 - **Scope:** New case-study data and links, source documentation, and this log. Existing approved copy, design, and independent Media coverage remain unchanged. Publication remains pending PR review.
 - **Validation:** v4 build and prerender checks pass for 46 pages, 30 aliases, and 784 internal links. Confirmed every article paragraph is in rendered HTML, one dated Media listing, five library stories, the Food and Meals link, and three unchanged homepage cards. Checked all four affected pages at 320px, 390px, and 1440px with no horizontal overflow, broken images, or page errors; reviewed mobile and desktop screenshots and the Media-to-story navigation. Independent source/scope review and whitespace checks pass.
+
+### T181 — Homepage and case-study library — Shelter-alerts card headline
+
+- **Request / new text:** `Put vital information within real-time reach.`
+- **Old text:** `Put shelter information within reach.`
+- **Applied:** Replaced the shared emergency-shelter-alerts card headline on the homepage and case-study library. Updated the current-headline summary above; earlier wording remains in the historical record.
+- **Scope:** This headline and edit log only. Publication remains pending PR review.
+- **Validation:** v4 build and prerender checks pass. Confirmed the new headline appears and the old headline is absent in rendered Home and Case Studies HTML; whitespace check passes.
 
 ## Resolved placement
 
