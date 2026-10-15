@@ -1901,6 +1901,15 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** Header navigation and existing page wording are preserved. Publication remains pending PR review.
 - **Validation:** Both links open the Press page at 320px, 390px, and 1440px with no horizontal overflow. v4 build and static checks pass for 40 pages, 30 aliases, and 677 internal links.
 
+### T135 — /press — One dated News & Stories list with more social content
+
+- **Request:** Combine releases, coverage, and social updates into one list ordered by date, give it an inclusive title, and add more from H1S social media.
+- **Applied:** Renamed the page `News & Stories` and combined all existing entries into one newest-first list, with a small date and source-type label for each. Preserved all existing article titles, dates, and destinations. Partial dates keep their source precision.
+- **Added:** Six social summaries covering partner listening, human-led automation, Dorothy Adams, gaming and technical-career opportunities, QR check-ins on drinking glasses, and DC service-access testimony. The list now contains 24 items: 10 releases, 6 coverage items, and 8 community updates. Internal case-study links also include an original-post link where relevant.
+- **Sources and presentation:** Reviewed captions and source images in the user's signed-in Safari session. Direct links and scope are documented in `docs/SOCIAL_CONTENT_SOURCES.md`. Reused existing responsive list typography and limited styling changes to the requested unified presentation. Historical campaigns remain described in the past tense.
+- **Scope:** Other page copy, the header, the footer's Media option, and the current site/v3 are unchanged. Publication remains pending PR review.
+- **Validation:** All 18 previous entries preserved, with 24 unique items in correct descending order. One list renders at 320px, 390px, and 1440px with no horizontal overflow; source links have safe external-link attributes and the Dorothy link opens the existing case study. Mobile and desktop screenshots reviewed. Build and static checks pass for 40 pages, 30 aliases, and 678 internal links; independent review found no blocking issues.
+
 ## Resolved placement
 
 ### C01 — Partner Success

@@ -41,3 +41,33 @@ The additions below fill gaps in v4 while preserving the three featured homepage
 - August 19, 2025 cause discussion and individual comments do not establish new partner relationships.
 - Historical donation-match deadlines are not current fundraising offers.
 - Posts and image captions from August 2024 through August 2025 were reviewed selectively; this is not an exhaustive audit of every post or video.
+
+## Expanded News & Stories feed — T135
+
+The `/press` index is now titled **News & Stories**. One newest-first list includes all 10 existing releases, 6 coverage items, and 8 community updates. Six social entries were added to the index: the two 2025 support/automation posts documented above and the four posts below. Existing titles and dates are preserved. Month-only and year-only dates retain their original precision and follow precisely dated entries within the same period; no day is invented to sort them.
+
+### Dorothy Adams spotlight — March 24, 2024
+
+- Source: https://www.facebook.com/photo/?fbid=809284237892754&set=a.626564272831419
+- Read the caption and the image in Safari. The Women’s History Month graphic names Dorothy Adams as Executive Director of Dreamers and Achievers Center and contains the same before/after figures already supplied and approved for the case study.
+- Added a dated index summary linking to the existing Dreamers & Achievers case study, with a separate original-post link. Existing case-study wording and figures are unchanged.
+
+### Gaming and technical careers — February 2, 2024
+
+- Source: https://www.facebook.com/photo/?fbid=778745194279992&set=a.626564272831419
+- Read the caption and full image. The campaign invited veterans, refugees, and their families to virtual gaming events and described opportunities for Salesforce, AWS, and Microsoft Azure training.
+- Added a historical campaign summary linked to the original post. No active registration button, current prize promise, credential, training completion, or employment outcome is asserted.
+
+### Check-ins at the table — November 4, 2023
+
+- Source: https://www.facebook.com/photo/?fbid=724160976405081&set=a.626564272831419
+- Read the caption describing the start of drinking-glass deliveries to partners for experience feedback, quality improvement, and growth. The image shows a QR-marked drinking glass.
+- Added a concise practical example of inviting feedback where services happen. No shipping details, tracking identifiers, partner performance statistics, or QR destination are republished.
+
+### DC service-access testimony — February 23, 2023
+
+- Source: https://www.facebook.com/photo/?fbid=5765730620188963&set=a.626564272831419
+- The caption thanks Robert White for allowing Tim Underwood to testify alongside civil servants and expresses a commitment to improving how people discover and access services. The image identifies a DC Council Committee on Housing performance oversight hearing.
+- Added a summary of participation and stated purpose. The testimony itself was not reviewed, so no specific testimony excerpt, legislative result, endorsement, or subsequent contract is claimed.
+
+Other archive images examined during this pass included a June 7, 2024 QR-feedback graphic, a May 3, 2024 outreach graphic, and a November 10, 2023 Veterans Day message. These were not added because the selected posts provide more distinct examples. No social-media actions or account changes were made.

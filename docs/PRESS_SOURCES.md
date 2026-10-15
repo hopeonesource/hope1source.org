@@ -77,3 +77,5 @@ Seven original `/news/…` paths also map to these articles. The historical `/fo
 ## Social-derived additions
 
 The October 14, 2026 social review added Frank V. Adames's March 6, 2025 Northern Virginia 40 Under 40 recognition, with a direct link to the official organizer announcement. Two dated community updates link to new content within v4: Second Harvest Asia's partner testimonial and a Hurricane Helene field account. Their source links and date evidence are recorded in [SOCIAL_CONTENT_SOURCES.md](SOCIAL_CONTENT_SOURCES.md).
+
+T135 combines every release, coverage item, and community update into the **News & Stories** index, newest first. Six additional social summaries bring the index to 24 entries. Original dates and their known precision remain intact; the expanded source audit above records the additional social evidence.

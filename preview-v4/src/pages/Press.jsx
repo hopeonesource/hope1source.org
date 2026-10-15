@@ -1,6 +1,7 @@
+import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero.jsx'
 import Seo from '../components/Seo.jsx'
-import { communityUpdates, coverage, releases } from '../content/press.js'
+import { newsItems } from '../content/press.js'
 import { org } from '../content/org.js'
 import { mailto } from '../lib/links.js'
 
@@ -8,13 +9,13 @@ export default function Press() {
   return (
     <>
       <Seo
-        title="Press"
-        description="Read Hope1Source press releases and explore independent coverage of our work."
+        title="News & Stories"
+        description="Partner stories, community updates, announcements, and coverage of H1S."
       />
       <PageHero
-        kicker="Press"
-        title="What has been public."
-        lede="Read our press releases here, or follow coverage to the original publisher. For a quote or a photo, write the partnerships desk."
+        kicker="Media"
+        title="News & Stories"
+        lede="Partner stories, community updates, announcements, and coverage of H1S."
       >
         <p>
           <a className="btn btn-secondary" href={mailto({ subject: 'Press inquiry' })}>
@@ -23,53 +24,33 @@ export default function Press() {
         </p>
       </PageHero>
       <section className="section">
-        <div className="wrap press-layout">
-          <div>
-            <h2>Releases</h2>
-            <ul className="press-list">
-              {releases.map((item) => (
-                <li key={item.title}>
-                  <p className="meta-label"><time dateTime={item.dateTime}>{item.date}</time></p>
-                  <h3>
-                    <Link to={item.to}>
-                      {item.title}
-                    </Link>
-                  </h3>
-                  <p>{item.source}</p>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <h2>Coverage</h2>
-            <ul className="press-list">
-              {coverage.map((item) => (
-                <li key={item.title}>
-                  <p className="meta-label"><time dateTime={item.dateTime}>{item.date}</time></p>
-                  <h3>
+        <div className="wrap narrow">
+          <ol className="press-list" role="list">
+            {newsItems.map((item) => (
+              <li key={item.title}>
+                <p className="meta-label">
+                  <time dateTime={item.dateTime}>{item.date}</time>
+                  {' · '}{item.kind}
+                </p>
+                <h2>
+                  {item.to ? (
+                    <Link to={item.to}>{item.title}</Link>
+                  ) : (
                     <a href={item.href} target="_blank" rel="noopener noreferrer">
                       {item.title}
                     </a>
-                  </h3>
-                  <p>{item.detail}</p>
-                </li>
-              ))}
-            </ul>
-            <h2>From our community</h2>
-            <ul className="press-list">
-              {communityUpdates.map((item) => (
-                <li key={item.to}>
-                  <p className="meta-label"><time dateTime={item.dateTime}>{item.date}</time></p>
-                  <h3><Link to={item.to}>{item.title}</Link></h3>
-                  <p>{item.detail}</p>
-                </li>
-              ))}
-            </ul>
-            <p className="form-note">Media contact: {org.email}</p>
-          </div>
+                  )}
+                </h2>
+                <p>{item.detail || item.source}</p>
+                {item.sourceHref ? (
+                  <p><a className="text-link" href={item.sourceHref} target="_blank" rel="noopener noreferrer">Original Facebook post</a></p>
+                ) : null}
+              </li>
+            ))}
+          </ol>
+          <p className="form-note">Media contact: {org.email}</p>
         </div>
       </section>
     </>
   )
 }
-import { Link } from 'react-router-dom'
