@@ -75,6 +75,12 @@ export default function Readiness() {
           <p>
             <Link to="/case-studies/emergency-shelter-alerts">Read the shelter alerts story</Link>
           </p>
+          <h2>Public health outreach through a trusted church</h2>
+          <p>
+            A church partner worked with H1S to promote public health resources in its community. The goal was
+            simple: help people find useful health information and available support through a familiar community
+            connection.
+          </p>
           <h2 id="changing-needs">Keep checking what people need</h2>
           <p>
             After visiting North Carolina following Hurricane Helene, Tim and Wayne Underwood described aid groups

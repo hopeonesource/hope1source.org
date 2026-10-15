@@ -16,7 +16,7 @@ Reconciled the conversation, current v4 source, and branch history through `71cd
 
 **How to read the history:** Entries record what was applied at that point in the conversation. Later instructions supersede earlier versions only within their stated page and field. An older entry marked “Applied” is not a direction to restore superseded text. Per-entry requests and provenance distinguish user wording from assistant drafts. Historical build counts and validation results describe the version tested at the time.
 
-**Review status:** Changes remain on `codex/third-preview-copy` for PR review. Publication is not authorized until review. This reconciliation changes documentation only.
+**Review status:** Changes remain on `codex/third-preview-copy` for PR review. Publication is not authorized until review. T178 was a documentation-only reconciliation; subsequent website edits continue below.
 
 ### Current choices and where to find their history
 
@@ -25,7 +25,7 @@ Reconciled the conversation, current v4 source, and branch history through `71cd
 | Homepage | `HOPE1SOURCE (H1S) CHECK-INS`, `Earn Trust.`, and `We train and equip those who serve others for lasting change.` Three featured `Partner Success` stories; `Take part` and `Contact partnerships` actions. `Can you remain connected to those you aim to serve?` and `Plan your service` remain. | T01–T03, T46–T47, T54, T86–T87, T106 |
 | Shared process | Home and Outreach Tools use `Connect. Listen. Follow up.` The shared final step says `Use what you learn to follow up and measure what matters.` Access Points retains its separate `Repeat` step and wording. | T98–T100, T122–T123 |
 | Case studies and graphics | Full, responsive VA chart; DC photo/message composition with `H1S` prefixes and hypothermia message in focus; Dreamers growth graphic with a small enhanced portrait. DC text specifies a 78% reduction in hypothermia deaths during the supported period, attributed to the DC Office of the Chief Medical Examiner. Dreamers includes 5x funding growth. | V01–V04, T23–T30, T85, T88–T91, T106 |
-| Readiness | Outreach planning, opt-in alerts, tap/scan list building, easy and fun check-ins, and valuable follow-up; added the sourced Hurricane Helene field account. | T47–T54, T106, T133 |
+| Readiness | Outreach planning, opt-in alerts, tap/scan list building, easy and fun check-ins, and valuable follow-up; added the sourced Hurricane Helene field account and a church public-health outreach example. | T47–T54, T106, T133, T179 |
 | Public Agencies | Preserves the user's opt-in, phone, partner-control, bulleted-list, past-performance, and results wording, including the later percentage and funding-language revisions. | T55–T84, T106 |
 | Team | Greg Marmo removed; Harry's retired-commander wording, Sarah's leadership wording, shortened Tim and Hugo bios, and all requested ordering revisions recorded. Tim `founded H1S`; credentials include `Eagle Scout, Honor Medal recipient`. Current source order: Tim, Frank, Tamecia, Nick, Justin, Veronica, Hugo, Damien, Jeff, Tom, Chris Teitzel, Sarah, Harry, Chris Burnett. | T107–T121 |
 | Outreach Tools | `social media` replaces `Facebook`; adjacent repeated organization text removed; real-check-in phone caption added. | T124 |
@@ -2280,6 +2280,15 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Corrections:** Removed the stale claim that every entry after the original attribution list was an assistant proposal. Updated the overview's `Reach` wording to `Connect`, clarified the current DC attribution, changed `Published wording` to `Applied wording at this step`, and explicitly marked superseded footer, source-link, About-photo, sponsor-link, check-in-flow, and story-date versions.
 - **Scope:** Documentation only. No website wording, images, design, routes, or publication settings changed. Publication remains pending PR review.
 - **Validation:** Checked numbered-entry continuity and uniqueness, current source counts and story dates, summary references, and whitespace. Confirmed only `EDITS.md` changed. Historical site-build results remain attached to their original entries; no new site build is needed for this documentation-only update.
+
+### T179 — /readiness — Church public-health outreach
+
+- **Request:** Add what a church did with H1S to promote public health resources, without mentioning COVID in the website copy.
+- **Applied:** Added `Public health outreach through a trusted church` between the DC Human Services example and the Hurricane Helene field account.
+- **New text:** `A church partner worked with H1S to promote public health resources in its community. The goal was simple: help people find useful health information and available support through a familiar community connection.`
+- **Evidence and scope of attribution:** The user supplied the church partnership and public-health promotion purpose. This addition uses that account without naming the church or including private-email-derived details. No delivery totals or health outcomes are claimed.
+- **Scope:** One brief Readiness section using the existing responsive prose style, plus this log. Other approved content and layout are preserved. Publication remains pending PR review.
+- **Validation:** Verified the new heading and paragraph in the running Readiness preview. The v4 build and prerender checks pass for 45 pages, 30 aliases, and 765 internal links; whitespace check passes. The diff contains only the new section and its edit-log record.
 
 ## Resolved placement
 
