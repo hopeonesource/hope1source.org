@@ -2587,6 +2587,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** Two requested phrases in Frank Adames's biography and this log only. Retains the existing sentence ending after `for the`. Publication remains pending PR review.
 - **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed both requested phrases in rendered Team HTML.
 
+### T218 — Team — Justin's executive KPI example
+
+- **Request / new text:** `including executive KPI data collection.`
+- **Old text:** `from sports applications to executive KPI data collection.`
+- **Scope:** Requested phrase in Justin Robinson's biography and this log only. Publication remains pending PR review.
+- **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the replacement in rendered Team HTML.
+
 ## Resolved placement
 
 ### C01 — Partner Success
