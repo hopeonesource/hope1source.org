@@ -36,6 +36,12 @@ export const team = [
     bio: 'Veronica is H1S’s Digital Experience Engineer and a digital peer navigator. She creates accessible games and digital experiences that help people take meaningful next steps, complete check-ins, and connect with community resources. Drawing on her software development background and lived experience, she helps others navigate challenges she has faced, building trust and making support easier to access.',
   },
   {
+    name: 'Hugo Diaz',
+    role: 'Economic Research Analyst',
+    photo: 'photos/hugo-diaz.jpg',
+    bio: 'Hugo is an Economic Research Analyst at H1S, where he applies advanced econometric methodologies to analyze the effectiveness of non-profit interventions. With a recent Ph.D. in Economics, Hugo specializes in using causal identification strategies and predictive modeling to inform evidence-based policy recommendations and strategic planning. His work leverages his doctoral research on institutional economics and resource allocation to address real-world challenges in the non-profit sector. In his free time, he enjoys playing soccer. At H1S, Hugo is dedicated to bridging the gap between theoretical economic analysis and practical, data-driven solutions to build more equitable and effective communities.',
+  },
+  {
     name: 'Tamecia McKenzie',
     role: 'Community Partnership Lead',
     photo: 'photos/tamecia-mckenzie.jpg',
@@ -46,12 +52,6 @@ export const team = [
     role: 'AI Innovation Analyst',
     photo: 'photos/damien-berube.jpg',
     bio: 'Damien is a doctoral researcher in chemical physics at Harvard and helps H1S implement AI tools that strengthen the communities served. His work spans quantum computing, science policy, case studies, and state legislation.',
-  },
-  {
-    name: 'Hugo Diaz',
-    role: 'Economic Research Analyst',
-    photo: 'photos/hugo-diaz.jpg',
-    bio: 'Hugo is an Economic Research Analyst at H1S, where he applies advanced econometric methodologies to analyze the effectiveness of non-profit interventions. With a recent Ph.D. in Economics, Hugo specializes in using causal identification strategies and predictive modeling to inform evidence-based policy recommendations and strategic planning. His work leverages his doctoral research on institutional economics and resource allocation to address real-world challenges in the non-profit sector. In his free time, he enjoys playing soccer. At H1S, Hugo is dedicated to bridging the gap between theoretical economic analysis and practical, data-driven solutions to build more equitable and effective communities.',
   },
   {
     name: 'Jeff',

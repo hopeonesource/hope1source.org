@@ -1742,6 +1742,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - Moved Veronica Thornton directly beneath Nick Hanson, superseding her placement in T112.
 - Preserved all biographies, roles, photos, and the relative order of everyone else.
 
+### T114 — /team — Hugo Diaz placement
+
+- Status: **Applied locally — user-requested reorder; awaiting PR review**
+- Target: `preview-v4/src/content/team.js`
+- Moved Hugo Diaz directly above Tamecia McKenzie.
+- Preserved all biographies, roles, photos, and the relative order of everyone else.
+
 ## Resolved placement
 
 ### C01 — Partner Success
