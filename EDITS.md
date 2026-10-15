@@ -1794,6 +1794,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - Target: `preview-v4/src/content/team.js`
 - Changed `Honor Medal Recipient` to `Honor Medal recipient`.
 
+### T121 — /team — Shorter Hugo Diaz biography
+
+- Status: **Applied locally — user-requested shortening; awaiting PR review**
+- Target: `preview-v4/src/content/team.js`
+- Replaced Hugo's long biography with: `Hugo is H1S’s Economic Research Analyst and holds a Ph.D. in Economics. He uses data to measure nonprofit impact, guide planning, and help organizations use resources effectively.`
+- Kept his role, degree, and practical research focus while matching the length and plain language of other team biographies.
+- All other team content and ordering are unchanged.
+
 ## Resolved placement
 
 ### C01 — Partner Success

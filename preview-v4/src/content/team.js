@@ -45,7 +45,7 @@ export const team = [
     name: 'Hugo Diaz',
     role: 'Economic Research Analyst',
     photo: 'photos/hugo-diaz.jpg',
-    bio: 'Hugo is an Economic Research Analyst at H1S, where he applies advanced econometric methodologies to analyze the effectiveness of non-profit interventions. With a recent Ph.D. in Economics, Hugo specializes in using causal identification strategies and predictive modeling to inform evidence-based policy recommendations and strategic planning. His work leverages his doctoral research on institutional economics and resource allocation to address real-world challenges in the non-profit sector. In his free time, he enjoys playing soccer. At H1S, Hugo is dedicated to bridging the gap between theoretical economic analysis and practical, data-driven solutions to build more equitable and effective communities.',
+    bio: 'Hugo is H1S’s Economic Research Analyst and holds a Ph.D. in Economics. He uses data to measure nonprofit impact, guide planning, and help organizations use resources effectively.',
   },
   {
     name: 'Damien Bérubé',
