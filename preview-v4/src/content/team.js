@@ -18,6 +18,12 @@ export const team = [
     bio: 'Frank is a 2025 40 Under 40 award nominee, a 2022 National Volunteer In Service to America alumni winner, and the H1S technology lead. He assists with project management for the Check-ins technology and enjoys solving complex problems with technology.',
   },
   {
+    name: 'Sarah Lindsay',
+    role: 'Advisory Board',
+    photo: 'photos/sarah-lindsay.jpg',
+    bio: 'Sarah has executive healthcare administration experience and has led one of the largest teleservice rollouts in the nation while maintaining HIPAA-compliant standards.',
+  },
+  {
     name: 'Justin Robinson',
     role: 'Custom Tech Lead',
     photo: 'photos/justin-robinson.jpg',
@@ -70,12 +76,6 @@ export const team = [
     role: 'Advisory Board',
     photo: 'photos/chris-teitzel.jpg',
     bio: 'Chris is the founder and CEO of Cellar Door Media Group. He brings technology, security, and data privacy experience to help guide secure technology components.',
-  },
-  {
-    name: 'Sarah Lindsay',
-    role: 'Advisory Board',
-    photo: 'photos/sarah-lindsay.jpg',
-    bio: 'Sarah has executive healthcare administration experience and has led one of the largest teleservice rollouts in the nation while maintaining HIPAA-compliant standards.',
   },
   {
     name: 'Harry Kim',

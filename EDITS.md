@@ -1721,6 +1721,12 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - New text: `and has led one of the`
 - The rest of her biography is unchanged.
 
+### T111 — /team — Sarah Lindsay placement
+
+- Status: **Applied locally — user-requested reorder; awaiting PR review**
+- Target: `preview-v4/src/content/team.js`
+- Moved Sarah Lindsay directly beneath Frank Adames, preserving her updated biography, role, and photo.
+
 ## Resolved placement
 
 ### C01 — Partner Success
