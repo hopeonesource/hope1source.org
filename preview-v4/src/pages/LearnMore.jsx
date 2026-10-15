@@ -45,8 +45,8 @@ export default function LearnMore() {
   return (
     <>
       <Seo
-        title="Partner Support, Service Feedback & Case Studies"
-        description="See how Hope1Source supports outreach, service feedback, and follow-up, with a published veterans study and partner case studies."
+        title="How we support partners"
+        description="A published study, a past weather-alert partnership, and partner-reported results from Dreamers and Achievers."
       />
 
       <section className="hero">
@@ -146,10 +146,10 @@ export default function LearnMore() {
         <div className="wrap cause-inner">
           <div>
             <h2 id="partner-cta">Bring this to your program</h2>
-            <p>Talk with us about outreach, check-ins, and service feedback for the people you serve.</p>
+            <p>Outreach, check-ins, and a note to partnerships.</p>
           </div>
-          <Link className="btn btn-primary" to="/contact">
-            Request a partnership conversation
+          <Link className="btn btn-primary" to="/get-involved">
+            Pick a way to take part
           </Link>
         </div>
       </section>

@@ -21,7 +21,7 @@ const offerings = [
     title: 'Emergency alerts',
     text: 'Share shelter, transportation, and service updates during cold, heat, storms, and closures.',
     to: '/readiness',
-    linkLabel: 'Plan your alerts',
+    linkLabel: 'Plan your service',
   },
   {
     title: 'Service feedback',
@@ -41,8 +41,8 @@ export default function OutreachTools() {
   return (
     <>
       <Seo
-        title="SMS Check-ins, Emergency Alerts & Service Feedback"
-        description="Explore H1S outreach tools for service providers: opt-in SMS check-ins, emergency alerts, service feedback, and QR, NFC, or kiosk access points."
+        title="Reach. Listen. Follow up."
+        description="Share useful information, hear back privately, and follow up. H1S Check-ins helps partners stay connected with people who choose to take part."
       />
 
       <section className="hero">
@@ -53,14 +53,14 @@ export default function OutreachTools() {
         <div className="wrap hero-copy">
           <p className="kicker">{org.product}</p>
           <h1>Reach. Listen. Follow up.</h1>
-          <p className="lede">H1S Check-ins gives service providers outreach tools for opt-in SMS check-ins, emergency alerts, and service feedback. Stay connected, understand needs, and follow up.</p>
+          <p className="lede">H1S Check-ins helps partners share useful information, hear back privately, and follow up with people who choose to take part.</p>
           <div className="hero-actions">
-            <Link className="btn btn-primary" to="/contact">
-              Request a partnership conversation
-            </Link>
-            <a className="btn btn-secondary" href={mailto({ subject: 'Live demo' })}>
+            <a className="btn btn-primary" href={mailto({ subject: 'Live demo' })}>
               Request a live demo
             </a>
+            <Link className="btn btn-secondary" to="/get-involved">
+              Pick a way to take part
+            </Link>
           </div>
           <p className="hero-note">
             For people who <Link to="/for-providers">run a program</Link> or{' '}
@@ -139,12 +139,12 @@ export default function OutreachTools() {
       <section className="cause-band" aria-labelledby="outreach-cta">
         <div className="wrap cause-inner">
           <div>
-            <h2 id="outreach-cta">Bring check-ins to your service</h2>
-            <p>Tell us who you serve and what you want to improve. We can discuss your needs and arrange a live demo.</p>
+            <h2 id="outreach-cta">See it on a phone</h2>
+            <p>Ask partnerships for a live demo. We do not publish a text code on this site.</p>
           </div>
-          <Link className="btn btn-primary" to="/contact">
-            Request a partnership conversation
-          </Link>
+          <a className="btn btn-primary" href={mailto({ subject: 'Live demo' })}>
+            Request a live demo
+          </a>
         </div>
       </section>
     </>

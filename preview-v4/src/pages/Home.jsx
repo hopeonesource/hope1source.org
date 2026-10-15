@@ -27,8 +27,8 @@ export default function Home() {
   return (
     <>
       <Seo
-        title="SMS Check-ins & Outreach for Service Providers"
-        description="Hope1Source helps service providers use SMS check-ins, emergency alerts, service feedback, and outreach tools. Request a partnership conversation."
+        title="Earn Trust."
+        description="We train and equip those who serve others for lasting change."
         jsonLd={jsonLd}
       />
 
@@ -44,11 +44,11 @@ export default function Home() {
             We train and equip those who serve others for lasting change.
           </p>
           <div className="hero-actions">
-            <Link className="btn btn-primary" to="/contact">
-              Request a partnership conversation
-            </Link>
-            <Link className="btn btn-secondary" to="/outreach-tools">
-              Explore outreach tools
+            <a className="btn btn-primary" href="#doors">
+              Take part
+            </a>
+            <Link className="btn btn-secondary" to="/contact">
+              Contact partnerships
             </Link>
           </div>
           <p className="hero-note">
@@ -106,7 +106,7 @@ export default function Home() {
       <section className="section" aria-labelledby="how-title">
         <div className="wrap">
           <h2 id="how-title">Reach. Listen. Follow up.</h2>
-          <p>Our outreach tools help service providers use SMS check-ins, emergency alerts, and service feedback to stay connected and follow up. People choose to take part.</p>
+          <p>Earn trust by listening, following up, and showing what changed. People choose to take part.</p>
           <div className="door-row">
             {howSteps.map((step, index) => (
               <article key={step.title} className="door">

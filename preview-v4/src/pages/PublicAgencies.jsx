@@ -17,8 +17,8 @@ export default function PublicAgencies() {
   return (
     <>
       <Seo
-        title="SMS Check-ins & Emergency Alerts for Public Agencies"
-        description="Opt-in text messages, emergency alerts, and service feedback for health, housing, human services, and emergency teams. Explore agency facts and case studies."
+        title="Reach residents before harm happens."
+        description="Opt-in alerts, check-ins, and follow-up for human services, emergency management, public health, VA, and housing teams."
       />
       <PageHero
         kicker="Public agencies"

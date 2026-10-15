@@ -11,8 +11,8 @@ export default function ForBackers() {
   return (
     <>
       <Seo
-        title="Support Community Outreach & Partner Check-ins"
-        description="Support Hope1Source partners as they reach people, improve services, and report what changed. Give to Hope with Love, a 501(c)(3), through Every.org."
+        title="Fund prevention you can measure."
+        description="Gifts go to Hope with Love, a 501(c)(3), through Every.org. Partners report what changed."
       />
       <PageHero
         kicker="Funders"

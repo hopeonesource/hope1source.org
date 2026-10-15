@@ -15,8 +15,8 @@ export default function AccessPoints() {
   return (
     <>
       <Seo
-        title="QR, NFC & Kiosk Check-in Access Points"
-        description="Help visitors ask for support through a QR code, NFC tap, or kiosk at libraries, congregations, community centers, and food sites. Explore H1S access points."
+        title="Your front desk can be where people find help."
+        description="A QR code, NFC tap, or kiosk lets visitors ask for help privately. Everything is built with the latest AWS security to maintain trust. Congregations, libraries, community centers, and food sites."
       />
       <PageHero
         kicker="Trusted access points"

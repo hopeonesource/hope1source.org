@@ -17,6 +17,8 @@ The separate third preview started from v3 as its structural base. The wording a
 
 **Scope update, October 14, 2026:** Later requests authorize the visual corrections recorded below and responsive, navigation, and search improvements across **all v4 pages**. The user selected service providers as the priority audience, a partnership conversation as the primary action, and SMS check-ins, emergency alerts, service feedback, and outreach tools as the offerings to describe. The intended future production domain is **hope1source.org**. Publication still follows PR review; this work does not merge, publish, or change DNS. T101–T105 supersede the original text-only constraint only for this authorized work.
 
+**Copy-preservation correction (T106):** Mobile, navigation, and crawling work must preserve the user's edited wording. Do not replace existing headings, descriptions, or button labels with marketing rewrites. Keep expressly requested new material separate, and retain the page-specific scope of earlier edits.
+
 ## Third version — applied locally
 
 The user asked to combine the best of the current and preview versions, with a common thread across all case studies. T01, T02, T03, T14, T21, T22, T23, T24, T24A, T27, T28, T29, T30, T46, T47, T48, T49, T50, T51, T52, T53, T54, T55, T56, T57, T58, T59, T60, T61, T62, T63, T64, T65, T66, T67, T68, T69, T70, T71, T72, T73, T74, T75, T76, T77, T78, T79, T80, T81, T82, T83, T84, T85, T86, T87, T88, T89, T90, T91, T92, T93, T94, T95, T96, T97, T98, T99, and T100 contain user-supplied or user-requested changes. The remaining entries originated as assistant proposals. All listed entries have now been applied to the separate local third preview following the request to apply in realtime.
@@ -1607,7 +1609,7 @@ Use what you learn to understand what changed and follow up.
 
 ### T103 — Service-provider discovery and partnership conversations
 
-- Status: **Applied locally — assistant-drafted copy implementing the user's marketing answers; awaiting PR review**
+- Status: **Partially superseded by T106 — four new service offerings retained; replacements of existing copy and calls to action reverted**
 - Pages: `/`, `/outreach-tools`, `/learn-more`, `/for-providers`
 - Preserved the approved homepage headline, mission, and case-study results.
 
@@ -1643,6 +1645,7 @@ Each offering links to an existing relevant v4 page. Outreach Tools and partner-
 - Marketing metadata names the relevant services and audiences without adding ratings, geographic coverage, or unsupported outcomes.
 - Review previews remain `noindex, follow`; an explicitly configured future production build targets `https://hope1source.org/`, enables indexing, and includes its canonical sitemap. The preview banner disappears for that release configuration.
 - Added generated-output validation to the normal build. Existing current-site and v3 source/configuration are untouched by this task.
+- T106 restores the earlier approved title and description strings. The static HTML, metadata rendering, sitemap, and crawler improvements remain.
 
 ### T105 — Existing evidence and publication review
 
@@ -1651,6 +1654,34 @@ Each offering links to an existing relevant v4 page. Outreach Tools and partner-
 - The existing Oxford reference uses 2019, but the linked paper was published online in 2021 and in a 2022 journal issue. The approved visible wording is preserved pending review; the discrepancy is documented.
 - Recorded source-linking needs for the existing Google-review/funding, hypothermia, and AWS-security wording in `docs/SEARCH_READINESS.md`. These notes are for review and were not added as on-page disclaimers.
 - The user confirmed evidence is already on the site; no new studies, certifications, testimonials, or outcomes were invented.
+
+### T106 — Restore edited copy and audit earlier instructions
+
+- Status: **Applied locally — user-requested correction; awaiting PR review**
+- Baseline: the saved editing state at `a6c3927`, immediately before the mobile/search work.
+- Reviewed the latest effective versions of T01–T100, including later corrections and removals.
+
+**Restored existing visible copy**
+
+- Home: `Request a partnership conversation` → `Take part`; `Explore outreach tools` → `Contact partnerships`, with their earlier destinations. Restored `Earn trust by listening, following up, and showing what changed. People choose to take part.`
+- Outreach Tools: restored `H1S Check-ins helps partners share useful information, hear back privately, and follow up with people who choose to take part.` Restored the `Request a live demo` / `Pick a way to take part` actions and the `See it on a phone` closing section.
+- Learn More: restored `Outreach, check-ins, and a note to partnerships.` and `Pick a way to take part`.
+- Providers: restored `Talk with partnerships` and its existing email action.
+- Restored earlier page titles/descriptions on Home, Access Points, Funders, Get Involved, Learn More, Outreach Tools, Public Agencies, Readiness, and Providers. This includes `Earn Trust.` and the approved homepage mission in search metadata, and the QR/NFC/AWS description on Access Points.
+
+**Retained requested additions and technical improvements**
+
+- Kept the four service offerings in their separate Outreach Tools section. Changed its new `Plan your alerts` link to the approved shared wording, `Plan your service`.
+- Kept the direct study link, mobile/desktop fixes, back-to-top arrows, page-opening behavior, static HTML, and crawler metadata infrastructure.
+
+**Corrected a stale duplicate**
+
+- Housing quote: `Hypothermia deaths in DC have consistently decreased over the past 5 years, down from 9 in 2015 to 2 in 2019.` → `DC reported that hypothermia deaths fell 78% during the supported period.`
+- Housing attribution: `DC Interagency Council on Homelessness, as published on the Hope1Source housing page.` → `DC Office of the Chief Medical Examiner, published H1S housing case study`.
+
+Confirmed the final Public Agencies wording and bullet order, 70%/90%, 97% funding statement, 78% hypothermia result, 5x funding result, thousands of residents, and the placement of `It also measured...` remain present. `Reach. Listen. Repeat.` and the updated third step remain on Access Points as requested; page-specific changes were not silently spread elsewhere.
+
+Verification: full build and prerender checks pass; 44 approved/restored phrases confirmed across eight rendered pages. Home and Learn More now differ from the pre-search baseline only in image-loading attributes; Readiness, Access Points, Providers, Funders, and Get Involved page copy matches that baseline.
 
 ## Resolved placement
 

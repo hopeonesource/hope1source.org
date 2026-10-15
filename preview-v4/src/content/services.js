@@ -48,9 +48,9 @@ export const services = [
     forPartner:
       'Agencies that already message clients about shelter, prevention, or housing navigation can hear a private need, follow up, and send only the public service information outward.',
     quote:
-      'Hypothermia deaths in DC have consistently decreased over the past 5 years, down from 9 in 2015 to 2 in 2019.',
+      'DC reported that hypothermia deaths fell 78% during the supported period.',
     quoteBy:
-      'DC Interagency Council on Homelessness, as published on the Hope1Source housing page.',
+      'DC Office of the Chief Medical Examiner, published H1S housing case study',
     storyPath: '/case-studies/emergency-shelter-alerts',
     links: [{ to: '/readiness', label: 'Plan your service' }],
   },

@@ -5,7 +5,7 @@ October 14, 2026. Scope: the separate `preview-v4` site; publication follows PR 
 ## Build and crawler output
 
 - Full `npm run build` passes for the current site, v3, and v4. The build now includes `check-v4-prerender.mjs`.
-- The generated-output checker passes for 29 complete HTML pages, 12 explicit legacy aliases, and 448 internal links in the default preview build.
+- The generated-output checker passes for 29 complete HTML pages, 12 explicit legacy aliases, and 446 internal links in the default preview build.
 - Every page has one H1, unique title and description, a canonical matching the configured origin/base, social metadata, and valid JSON-LD before JavaScript runs.
 - Default preview HTML is `noindex, follow`, with an empty sitemap. The explicit future `https://hope1source.org/` indexable build and sitemap were separately built and validated, then the default preview was restored.
 - Unknown URLs return the generated HTTP 404 and `noindex` in the local static preview. Unknown article/post/category URLs remain consistent 404s with and without JavaScript.
@@ -25,6 +25,10 @@ Tested in local Chromium with simulated viewports; this is not a claim of physic
 - Visually inspected homepage, service offerings, contact, Dreamers & Achievers, emergency-shelter story, case-study cards, and the mobile footer/back-to-top control.
 
 Local screenshots are in ignored `output/playwright/`. No new runtime dependencies were added.
+
+## Copy-preservation review
+
+Following the user's correction, compared the search-work diff with the saved wording at `a6c3927` and reviewed the effective edits through T100. Restored earlier titles, descriptions, introductions, and button labels while keeping the four requested service additions separate. Corrected the stale Housing-page duplicate of the DC quote/attribution. Confirmed 44 approved or restored phrases across eight generated pages and reran the full build/output checker. Detailed before/after notes are in T106 of `EDITS.md`.
 
 ## Publication checks
 
