@@ -102,11 +102,13 @@ export default function OutreachTools() {
             ))}
           </div>
           <figure className="product-shot">
-            <img src={publicUrl('photos/phone-checkins.png')} alt="Phone showing an H1S Check-ins screen." width="900" height="856" loading="lazy" decoding="async" />
+            <img src={publicUrl('photos/phone-checkins.png')} alt="Two phones displaying H1S text messages about health, housing, food, education, and family services." width="900" height="856" loading="lazy" decoding="async" />
+            <figcaption className="hero-note">
+              <p>Real H1S Check-ins make it fun and easy to connect with health, housing, and community services through familiar text messages.</p>
+            </figcaption>
           </figure>
           <p className="hero-note">
-            Text also works with email, QR codes, Facebook, and WhatsApp. {org.brand}. {org.legalName} is the
-            501(c)(3).
+            Text also works with email, QR codes, social media, and WhatsApp.
           </p>
         </div>
       </section>

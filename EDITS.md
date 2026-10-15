@@ -1817,6 +1817,15 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - New text: `Use what you learn to follow up and measure what matters.`
 - Updates the shared step on Home, Outreach Tools, and Readiness. Preserves the separately edited Access Points repeat step.
 
+### T124 — /outreach-tools — Phone caption and messaging channels
+
+- Status: **Applied locally — user-requested wording and caption; awaiting PR review**
+- Target: `preview-v4/src/pages/OutreachTools.jsx`
+- Changed `Facebook` to `social media` in the messaging-channel note.
+- Removed the adjacent `Hope1Source Check-ins. Hope with Love is the 501(c)(3).` text from that note.
+- Added a caption directly beneath the phone photo: `Real H1S Check-ins make it fun and easy to connect with health, housing, and community services through familiar text messages.`
+- Reviewed the image and updated its alt text to describe the two phones and the types of service messages shown. Kept the existing image size and responsive styling.
+
 ## Resolved placement
 
 ### C01 — Partner Success
