@@ -1516,6 +1516,10 @@ address {
   line-height: 1.5;
 }
 
+.about-audiences li + li {
+  margin-top: 0.85rem;
+}
+
 /* Phone: one short lead, then disclosures. Wider screens show the full article. */
 .about-lead {
   display: none;

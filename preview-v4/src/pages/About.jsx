@@ -110,27 +110,29 @@ export default function About() {
             </p>
           </AboutFold>
           <AboutFold title="Who it’s for" phone={phone}>
-            <p>
-              Public agencies, shelters, and program leads use the tools to reach people other channels miss.{' '}
-              <Link to="/public-agencies">Read the agency facts</Link>.
-            </p>
-            <p>
-              Congregations, libraries, community centers, and food sites can be the place people ask for help.{' '}
-              <Link to="/access-points">Become an access point</Link>.
-            </p>
-            <p>
-              Restaurants and other businesses can offer free or discounted services, gather feedback, and stay
-              connected through H1S Check-ins. <Link to="/contact">Evaluate a business partnership</Link>.
-            </p>
-            <p>
-              Corporate sponsors can help more service providers connect with the people they serve.{' '}
-              <a href={org.hubUrl} target="_blank" rel="noopener noreferrer">
-                Explore corporate sponsorship
-              </a>.
-            </p>
-            <p>
-              Funders can back prevention they can measure. <Link to="/for-backers">See the funder page</Link>.
-            </p>
+            <ul className="about-audiences">
+              <li>
+                Public agencies, shelters, and program leads use the tools to reach people other channels miss.{' '}
+                <Link to="/public-agencies">Read the agency facts</Link>.
+              </li>
+              <li>
+                Congregations, libraries, community centers, and food sites can be the place people ask for help.{' '}
+                <Link to="/access-points">Become an access point</Link>.
+              </li>
+              <li>
+                Restaurants and other businesses can offer free or discounted services, gather feedback, and stay
+                connected through H1S Check-ins. <Link to="/contact">Evaluate a business partnership</Link>.
+              </li>
+              <li>
+                Corporate sponsors can help more service providers connect with the people they serve.{' '}
+                <a href={org.hubUrl} target="_blank" rel="noopener noreferrer">
+                  Explore corporate sponsorship
+                </a>.
+              </li>
+              <li>
+                Funders can back prevention they can measure. <Link to="/for-backers">See the funder page</Link>.
+              </li>
+            </ul>
           </AboutFold>
           <AboutFold title="The organization" phone={phone}>
             <p>

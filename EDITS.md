@@ -1969,6 +1969,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** Preserved all approved About wording, business/corporate links, SAM.gov spacing, and existing responsive layout. Publication remains pending PR review.
 - **Validation:** Source and rendered image inspected. At 390px and 1440px the new image loads at its full aspect ratio, the caption wraps, and there are no page errors or horizontal overflow. Build/static checks pass for 40 pages, 30 aliases, and 679 internal links; independent scope review passed.
 
+### T144 — /about — Bullets for Who it’s for
+
+- **Request:** Make the audience groups easier to distinguish with bullets.
+- **Applied:** Converted the five `Who it’s for` paragraphs into a semantic bulleted list, with a little spacing between entries. Preserved every sentence, link, and the order of the groups.
+- **Scope:** Only this About section's markup and list spacing changed. Publication remains pending PR review.
+- **Validation:** All five bullets and original destinations render at 390px and 1440px with no horizontal overflow. Mobile screenshot reviewed; build/static and whitespace checks pass.
+
 ## Resolved placement
 
 ### C01 — Partner Success
