@@ -187,7 +187,7 @@ export default function Layout() {
           </p>
           <p className="footer-legal">
             {footerOperator}<br />
-            {footerRegistration}
+            <span className="footer-registration">{footerRegistration}</span>
           </p>
           <p>© {new Date().getFullYear()} {org.legalName}</p>
         </div>

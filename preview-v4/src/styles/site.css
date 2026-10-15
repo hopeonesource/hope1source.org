@@ -1842,6 +1842,11 @@ body.nav-open .site-header {
   color: rgba(251, 247, 241, 0.72);
 }
 
+.footer-registration {
+  font-size: 0.875rem;
+  font-style: italic;
+}
+
 .facts {
   display: grid;
   gap: 0.75rem;

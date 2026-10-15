@@ -1833,6 +1833,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - Placed `SAM.gov UEI...` on a new line immediately beneath `H1S Check-ins (dba Hope With Love, Inc.).` in the shared footer.
 - Used a single line break within the same paragraph, with no blank line or added paragraph spacing. Preserved all wording and identifiers.
 
+### T126 — v4 — Footer registration typography
+
+- Status: **Applied locally — user-requested formatting; awaiting PR review**
+- Targets: `preview-v4/src/components/Layout.jsx`, `preview-v4/src/styles/site.css`
+- Made the `SAM.gov UEI...` registration line smaller (`0.875rem`) and italic throughout v4.
+- Preserved the single line break, compact spacing, and wording. The H1S Check-ins line keeps its existing typography.
+
 ## Resolved placement
 
 ### C01 — Partner Success
