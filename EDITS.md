@@ -29,7 +29,7 @@ Reconciled the conversation, current v4 source, and branch history through `71cd
 | Public Agencies | Preserves the user's opt-in, phone, partner-control, bulleted-list, past-performance, and results wording, including the later percentage and funding-language revisions. | T55–T84, T106 |
 | Team | Greg Marmo removed; Harry's retired-commander wording, Sarah's leadership wording, shortened Tim and Hugo bios, and all requested ordering revisions recorded. Tim `founded H1S`; credentials include `Eagle Scout, Honor Medal recipient`. Current source order: Tim, Frank, Tamecia, Nick, Justin, Veronica, Hugo, Damien, Jeff, Tom, Chris Teitzel, Sarah, Harry, Chris Burnett. | T107–T121 |
 | Outreach Tools | `social media` replaces `Facebook`; adjacent repeated organization text removed; real-check-in phone caption added. | T124 |
-| About | Approved hero restored; Portsmouth STEM-event photo replaces the Equity Incubator photo. Mission ends `Measure what matters and use what you learn to follow up.` Plain no-app introduction precedes three numbered explanations: people choose to connect, partners shape the experience, partners control their data. Community access points lead the audience bullets, with libraries after community centers. Business action says `Evaluate a business partnership`; sponsors link to `/corporate-sponsors`. SAM.gov details remain in a separate paragraph beneath H1S Check-ins. | T138–T150 |
+| About | Approved hero restored; Portsmouth STEM-event photo replaces the Equity Incubator photo. Mission ends `Measure what matters and use what you learn for easier follow-up that helps the people you serve.` Plain no-app introduction precedes three numbered explanations: people choose to connect, partners shape the experience, partners control their data. Community access points lead the audience bullets, with libraries after community centers. Business action says `Evaluate a business partnership`; sponsors link to `/corporate-sponsors`. SAM.gov details remain in a separate paragraph beneath H1S Check-ins. | T138–T150, T209 |
 | Access Points | Hero note: `Cell Phone required. Stickers, Signs, and Stands provided.` Four cards use the clearer check-in explanation. Process is `Connect. Listen. Repeat.` Final ownership sentence: `They own their check-in experience, and can filter, sort, or delete their data at any time.` Business-hub paragraph removed. | T92–T100, T122, T129, T151–T158 |
 | Business and corporate partners | Business option on Get Involved; separate corporate-sponsor page covers volunteer outreach, community connection, team building, and partner examples including publicly documented Cisco support and user-confirmed Adobe involvement. | T130, T141–T142, T145, T149 |
 | Media and footer | Footer and Contact link to Media; Case Studies links to more stories and updates. Removed the pictured footer row containing the hub link, crisis line, DBA, and procurement details. About registration information remains. | T125–T128 (superseded footer treatment), T134, T137, T140, T162 |
@@ -2515,6 +2515,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Length:** Reduced from 148 to 131 characters (about 11%); from 24 to 22 words.
 - **Scope:** First step's description under How check-ins work and this log only. Retains the human-connection heading and voluntary opt-in. Supersedes the paragraph from T207. Publication remains pending PR review.
 - **Validation:** Character-count check, v4 build, prerender checks, and whitespace check pass. Confirmed the shorter paragraph, needs assessment, voluntary opt-in, and retained heading in rendered About HTML.
+
+### T209 — About — Easier follow-up that helps people
+
+- **Request:** Use what partners learn for easier follow-up that provides people value.
+- **Old text:** `Connect. Listen. Repeat. Measure what matters and use what you learn to follow up.`
+- **New text:** `Connect. Listen. Repeat. Measure what matters and use what you learn for easier follow-up that helps the people you serve.`
+- **Scope:** Second Mission paragraph, its current-state summary in this log, and this entry. Publication remains pending PR review.
+- **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the updated follow-up wording in rendered About HTML.
 
 ## Resolved placement
 

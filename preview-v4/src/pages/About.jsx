@@ -97,7 +97,8 @@ export default function About() {
               We help partners connect people to health, housing, and other essential services.
             </p>
             <p>
-              Connect. Listen. Repeat. Measure what matters and use what you learn to follow up.
+              Connect. Listen. Repeat. Measure what matters and use what you learn for easier follow-up
+              that helps the people you serve.
             </p>
           </AboutFold>
           <AboutFold title="How check-ins work" phone={phone}>
