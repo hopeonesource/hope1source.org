@@ -2464,6 +2464,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** About hero introduction and matching opening sentence in its search description, plus this log. Supersedes T201. Publication remains pending PR review.
 - **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the updated introduction and search description in rendered About HTML.
 
+### T203 — About — Our partners
+
+- **Request:** Change the opening to `We help our partners…`.
+- **Old text:** `We help partners connect people to their services with dignity, security, and ease.`
+- **New text:** `We help our partners connect people to their services with dignity, security, and ease.`
+- **Scope:** About hero introduction and matching opening sentence in its search description, plus this log. Supersedes T202. Publication remains pending PR review.
+- **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the updated introduction and search description in rendered About HTML.
+
 ## Resolved placement
 
 ### C01 — Partner Success
