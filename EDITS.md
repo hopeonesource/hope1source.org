@@ -2564,6 +2564,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** Requested phrase in Tim Underwood's team biography and this log only. Retains the rest of his biography. Publication remains pending PR review.
 - **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the requested phrase in rendered Team HTML.
 
+### T215 — Team — Tamecia's Amazon and AirBnB experience
+
+- **Request / new text:** `Tamecia leads community outreach growth for H1S by managing outreach efforts and identifying key partners to strengthen the communities served. She brings deep experience in partnerships and customer service quality assurance supporting Amazon and AirBnB.`
+- **Old text:** `Tamecia leads community outreach growth for H1S by managing outreach efforts and identifying key partners to strengthen the communities served. She brings deep experience in partnerships and customer service quality assurance.`
+- **Scope:** Tamecia McKenzie's biography and this log only. Uses the user's wording, including company-name capitalization. Publication remains pending PR review.
+- **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the complete requested biography in rendered Team HTML.
+
 ## Resolved placement
 
 ### C01 — Partner Success
