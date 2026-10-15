@@ -29,8 +29,12 @@ export default function Press() {
             <ul className="press-list">
               {releases.map((item) => (
                 <li key={item.title}>
-                  <p className="meta-label">{item.date}</p>
-                  <h3>{item.title}</h3>
+                  <p className="meta-label"><time dateTime={item.dateTime}>{item.date}</time></p>
+                  <h3>
+                    <a href={item.href} target="_blank" rel="noopener noreferrer">
+                      {item.title}
+                    </a>
+                  </h3>
                   <p>{item.source}</p>
                 </li>
               ))}
@@ -41,15 +45,11 @@ export default function Press() {
             <ul className="press-list">
               {coverage.map((item) => (
                 <li key={item.title}>
-                  <p className="meta-label">{item.date}</p>
+                  <p className="meta-label"><time dateTime={item.dateTime}>{item.date}</time></p>
                   <h3>
-                    {item.href ? (
-                      <a href={item.href} target="_blank" rel="noopener noreferrer">
-                        {item.title}
-                      </a>
-                    ) : (
-                      item.title
-                    )}
+                    <a href={item.href} target="_blank" rel="noopener noreferrer">
+                      {item.title}
+                    </a>
                   </h3>
                   <p>{item.detail}</p>
                 </li>

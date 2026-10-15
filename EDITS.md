@@ -1870,6 +1870,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - Added `Discuss a business partnership` linking to Contact, plus the existing email action with subject `Corporate and business partnership`.
 - Included business participation in the introductory sentence and restaurants/businesses in the page description. Preserved all existing options and the page heading.
 
+### T131 — /press — Direct source links and source-based dates
+
+- **Request:** Make the press items link to the actual sources and match their publication dates.
+- **Applied:** All 10 releases and 5 coverage titles now link directly to the publisher, official announcement, or archived original. Replaced copied migration dates with original datelines, added source labels, and retained month/year precision where an exact date was not established. The hypothermia release retains the date printed on its original HTML/PDF with a matching label; its conflicting year references are documented.
+- **Sources:** [Press source audit](docs/PRESS_SOURCES.md) records each destination, date evidence, and remaining precision limits. Existing titles, page wording, layout, and design are retained.
+- **Files:** `preview-v4/src/content/press.js`, `preview-v4/src/pages/Press.jsx`, `docs/PRESS_SOURCES.md`.
+- **Validation:** All 15 titles render as external links with safe new-tab attributes and semantic dates. Mobile (390px) and desktop (1440px) previews have no horizontal overflow. v4 build and prerender checks pass (29 pages, 12 aliases, 447 internal links). Publication remains pending PR review.
+
 ## Resolved placement
 
 ### C01 — Partner Success
