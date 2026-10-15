@@ -2541,6 +2541,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** First step's description under How check-ins work and this log only. Keeps the human-connection heading. Supersedes T208. Publication remains pending PR review.
 - **Validation:** Verified 123 characters and two 11-word sentences. v4 build, prerender checks, and whitespace check pass. Confirmed all key information and the retained heading in rendered About HTML.
 
+### T212 — About — Include data downloads
+
+- **Request / new text:** `They own their check-in data and can filter, sort, download, or delete it at any time.`
+- **Old text:** `They own their check-in data and can filter, sort, or delete it at any time.`
+- **Scope:** Partners control their data step under How check-ins work and this log only. Publication remains pending PR review.
+- **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the requested sentence in rendered About HTML.
+
 ## Resolved placement
 
 ### C01 — Partner Success

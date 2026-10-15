@@ -114,7 +114,7 @@ export default function About() {
               </li>
               <li>
                 <strong>Partners control their data.</strong>
-                They own their check-in data and can filter, sort, or delete it at any time.
+                They own their check-in data and can filter, sort, download, or delete it at any time.
               </li>
             </ol>
           </AboutFold>
