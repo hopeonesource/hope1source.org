@@ -2211,6 +2211,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** Miami summary and introduction only. The purpose is expressed as an aim; study findings, date, and layout are unchanged. Publication remains pending PR review.
 - **Validation:** Confirmed the shared summary and article introduction, preserved October 1, 2025 date, and updated wording in the running News & Stories preview; whitespace check passes.
 
+### T177 — /press — Alaska wellness purpose and Media summaries
+
+- **Request:** Include the wellness purpose on the main Media page and add a similar purpose for veterans in the Alaska pilot.
+- **Applied:** Added `The purpose was to encourage service members and veterans to complete wellness activities that support their health.` to the Alaska summary and article introduction. Confirmed that the Miami summary already includes its wellness purpose on the same Media page.
+- **Scope:** Alaska summary and introduction only. Wellness completion is expressed as the purpose; the 68% figure remains specifically game completion. Existing dates, results, and layout are unchanged. Publication remains pending PR review.
+- **Validation:** Confirmed the Alaska summary and introduction share the new purpose, preserved the October 1, 2026 date, and verified both Alaska and Miami wellness wording on the running Media page; whitespace check passes.
+
 ## Resolved placement
 
 ### C01 — Partner Success

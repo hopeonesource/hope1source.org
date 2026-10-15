@@ -102,11 +102,11 @@ export const pressArticlesUpdates = [
     dateTime: '2026-10-01',
     author: 'H1S Check-ins',
     kicker: 'Community update',
-    description: 'An H1S-led pilot in central Alaska supported 3,100 check-ins and outreach across an entire Air Force base, helping the military and veteran community find more than 27 services.',
+    description: 'An H1S-led pilot in central Alaska supported 3,100 check-ins and outreach across an entire Air Force base, helping the military and veteran community find more than 27 services. The purpose was to encourage service members and veterans to complete wellness activities that support their health.',
     blocks: [
       {
         type: 'p',
-        text: 'In 60 days, H1S supported 3,100 check-in interactions in central Alaska, helping the military and veteran community connect with more than 27 services, including mental health support.',
+        text: 'In 60 days, H1S supported 3,100 check-in interactions in central Alaska, helping the military and veteran community connect with more than 27 services, including mental health support. The purpose was to encourage service members and veterans to complete wellness activities that support their health.',
       },
       {
         type: 'p',
