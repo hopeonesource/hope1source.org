@@ -2204,6 +2204,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** Shared Miami listing summary and description metadata only; full article and date are unchanged. Publication remains pending PR review.
 - **Validation:** Confirmed the shared summary and the final early-analysis wording in the running News & Stories preview; whitespace check passes.
 
+### T176 — /press — Explain the wellness purpose
+
+- **Request:** Include that the purpose is to promote completion of wellness activities to promote health.
+- **Applied:** Added the purpose of encouraging veterans to complete wellness activities that support their health to the Miami story's summary and opening paragraph.
+- **Scope:** Miami summary and introduction only. The purpose is expressed as an aim; study findings, date, and layout are unchanged. Publication remains pending PR review.
+- **Validation:** Confirmed the shared summary and article introduction, preserved October 1, 2025 date, and updated wording in the running News & Stories preview; whitespace check passes.
+
 ## Resolved placement
 
 ### C01 — Partner Success

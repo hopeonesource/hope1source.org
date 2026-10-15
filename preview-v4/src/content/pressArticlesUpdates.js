@@ -8,11 +8,11 @@ export const pressArticlesUpdates = [
     dateTime: '2025-10-01',
     author: 'H1S Check-ins',
     kicker: 'Partner story',
-    description: 'H1S provided check-ins, training, and equipment for Miami VA’s outreach in 2025. REFLECTION’s early analysis found cancer signals in 1.3% of veterans tested; clinical follow-up confirmed 12 cancer diagnoses.',
+    description: 'H1S provided check-ins, training, and equipment for Miami VA’s outreach in 2025 to encourage veterans to complete wellness activities that support their health. REFLECTION’s early analysis found cancer signals in 1.3% of veterans tested; clinical follow-up confirmed 12 cancer diagnoses.',
     blocks: [
       {
         type: 'p',
-        text: 'H1S helped Miami VA bring multi-cancer early detection research into community outreach in 2025. By providing check-ins, training, and outreach equipment, H1S helped partners give veterans a clearer path to eligibility information and the study team.',
+        text: 'H1S helped Miami VA bring multi-cancer early detection research into community outreach in 2025. The purpose was to encourage veterans to complete wellness activities that support their health. By providing check-ins, training, and outreach equipment, H1S helped partners give veterans a clearer path to eligibility information and the study team.',
       },
       {
         type: 'p',
