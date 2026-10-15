@@ -51,12 +51,12 @@ export default function About() {
     <div className="about-page">
       <Seo
         title="Our mission"
-        description="We help organizations connect people to their services with dignity, security, and ease. Opt-in check-in text messages for health, housing, human, and emergency services."
+        description="We help partners connect people to their services with dignity, security, and ease. Opt-in check-in text messages for health, housing, human, and emergency services."
       />
       <PageHero
         kicker="HOPE1SOURCE (H1S) CHECK-INS"
         title="Earn Trust."
-        lede="We help organizations connect people to their services with dignity, security, and ease."
+        lede="We help partners connect people to their services with dignity, security, and ease."
       />
       <article className="section prose-section">
         <div className="wrap narrow prose">
