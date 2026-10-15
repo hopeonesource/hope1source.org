@@ -2579,6 +2579,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** Nick Hanson's biography and this log only. Matches his existing Data Imagineering Lead role label and describes his work in concrete, plain language. Publication remains pending PR review.
 - **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the complete biography and corrected role in rendered Team HTML. Independent copy review confirms the rewrite preserves the supplied details.
 
+### T217 — Team — Frank's honor and product role
+
+- **Request:** Use `40 Under 40 honoree` and `He assists with the product management and architecture for the…`.
+- **Old text:** `Frank is a 2025 40 Under 40 award nominee, a 2022 National Volunteer In Service to America alumni winner, and the H1S technology lead. He assists with project management for the Check-ins technology and enjoys solving complex problems with technology.`
+- **New text:** `Frank is a 2025 40 Under 40 honoree, a 2022 National Volunteer In Service to America alumni winner, and the H1S technology lead. He assists with the product management and architecture for the Check-ins technology and enjoys solving complex problems with technology.`
+- **Scope:** Two requested phrases in Frank Adames's biography and this log only. Retains the existing sentence ending after `for the`. Publication remains pending PR review.
+- **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed both requested phrases in rendered Team HTML.
+
 ## Resolved placement
 
 ### C01 — Partner Success
