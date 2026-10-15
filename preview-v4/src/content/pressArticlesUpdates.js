@@ -47,7 +47,7 @@ export const pressArticlesUpdates = [
   {
     id: 'george-mason-honors-college-partnership',
     legacyPaths: [],
-    title: 'Custom agentic AI starts with understanding nonprofit needs',
+    title: 'Custom agentic AI starts with understanding needs',
     date: 'September 2, 2026',
     dateTime: '2026-09-02',
     author: 'H1S Check-ins',

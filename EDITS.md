@@ -2121,6 +2121,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** This sentence only. Publication remains pending PR review.
 - **Validation:** Confirmed the article data loads with the updated sentence; whitespace check passes.
 
+### T165 — /press/george-mason-honors-college-partnership — Shorten the title
+
+- **Request:** Remove `nonprofit` from the title.
+- **Applied:** Changed the title to `Custom agentic AI starts with understanding needs`. The article heading, News & Stories listing, and metadata share this title.
+- **Scope:** Title only. Publication remains pending PR review.
+- **Validation:** Confirmed the shared title loads correctly; whitespace check passes.
+
 ## Resolved placement
 
 ### C01 — Partner Success
