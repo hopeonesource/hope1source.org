@@ -166,6 +166,14 @@ export const communityUpdates = [
 // date follows precisely dated items in that same year/month; its label remains
 // at the source's known precision rather than inventing a month or day.
 export const newsItems = [
+  {
+    date: '2020 report',
+    dateTime: '2020',
+    title: 'Feeding America and Charleston VA: check-ins connect veterans with food and support',
+    detail: 'H1S supported check-ins, outreach, and reporting for the Charleston pilot. Its published case study reports 95% less time spent on reporting and follow-up connecting veterans with food assistance and housing support.',
+    to: '/case-studies/veterans-affairs-feeding-america-partnership',
+    kind: 'Case study',
+  },
   ...pressArticlesUpdates.map((article) => ({
     date: article.date,
     dateTime: article.dateTime,

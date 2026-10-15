@@ -110,6 +110,30 @@ export const stories = [
 export const allStories = [
   ...stories,
   {
+    slug: 'veterans-affairs-feeding-america-partnership',
+    title: 'Feeding America and Charleston VA: connecting veterans with food and support.',
+    cardTitle: 'Turn a food check-in into a connection to support.',
+    org: 'Veterans Affairs / Feeding America',
+    industry: 'Veteran services and food access',
+    location: 'Charleston, South Carolina',
+    website: 'https://news.va.gov/81753/free-produce-veterans-charleston-va/',
+    websiteLabel: 'VA News · December 6, 2020',
+    studyUrl: 'https://cdn.prod.website-files.com/5f904f4c523012193298304f/5f98d882ec51869390472125_VA%20Feeding%20America%20Partneship_Charleston%20Case%20Study_Final.pdf',
+    kicker: 'VA / Feeding America partnership',
+    summary:
+      'H1S supported Charleston VA’s Feeding America pilot with check-ins, outreach, and reporting. The published case study reports 95% less time spent on reporting, freeing staff for direct service while helping veterans connect with food and other support.',
+    quote: 'This virtual tool provides exactly what is needed to the right people.',
+    quoteAttribution: 'Margaret Bradbury, Chief of Nutrition and Food Service, Charleston VA',
+    body: [
+      'A food-pantry visit can reveal needs beyond groceries. Charleston’s Ralph H. Johnson VA Medical Center began piloting a check-in tool through the VA/Feeding America partnership in 2019. H1S supported real-time outreach, data collection, and reporting to help teams understand and respond to veterans’ needs.',
+      'Veterans could check in using a phone, tablet, or computer and share whether they wanted help with food benefits or faced housing instability. Staff could use those responses to connect them with a case manager and follow up.',
+      'The case study reports that 90% provided a cell phone number for follow-up. All participants interested in SNAP food assistance who provided a cell phone number were contacted for support. It also reports that 31% were identified as experiencing housing instability and connected with support.',
+      'Reporting took 95% less time, allowing staff to spend that time on direct service. The team also gained information about staffing, donations, demand, and gaps in food access to guide its work.',
+      'The report follows one veteran whose check-in revealed food and housing needs. Connections to food assistance helped free up money for other bills; he later reported that he was no longer experiencing housing instability.',
+      'VA News also described how Charleston VA used online registration and text reminders for its Fresh Xpress produce distribution with Lowcountry Food Bank, part of the Feeding America network. The event served 181 veterans with 280 boxes containing more than 5,600 pounds of produce.',
+    ],
+  },
+  {
     slug: 'second-harvest-asia',
     title: 'Making food-bank check-ins easier.',
     cardTitle: 'Make the first step simpler.',
