@@ -8,7 +8,7 @@ export const pressArticlesUpdates = [
     dateTime: '2025-10-01',
     author: 'H1S Check-ins',
     kicker: 'Partner story',
-    description: 'H1S provided check-ins, training, and equipment for Miami VA’s outreach in 2025. REFLECTION’s earlier 2024 analysis found cancer signals in 1.3% of veterans tested; clinical follow-up confirmed 12 cancer diagnoses.',
+    description: 'H1S provided check-ins, training, and equipment for Miami VA’s outreach in 2025. REFLECTION’s early analysis found cancer signals in 1.3% of veterans tested; clinical follow-up confirmed 12 cancer diagnoses.',
     blocks: [
       {
         type: 'p',

@@ -2197,6 +2197,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** Miami article and listing date only. Publication remains pending PR review.
 - **Validation:** Confirmed the shared date, chronological placement, and October 1, 2025 label in the running preview; whitespace check passes.
 
+### T175 — /press — Simplify the Miami summary
+
+- **Request:** Remove the `earlier 2024 analysis found` wording, then use `early analysis found` instead.
+- **Applied:** Changed `REFLECTION’s earlier 2024 analysis found` to `REFLECTION’s early analysis found`, retaining the named study attribution. This replaces the interim `REFLECTION reported` wording.
+- **Scope:** Shared Miami listing summary and description metadata only; full article and date are unchanged. Publication remains pending PR review.
+- **Validation:** Confirmed the shared summary and the final early-analysis wording in the running News & Stories preview; whitespace check passes.
+
 ## Resolved placement
 
 ### C01 — Partner Success
