@@ -2055,6 +2055,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** This Access Points phrase only. Publication remains pending PR review.
 - **Validation:** Reviewed the exact replacement; whitespace check passes.
 
+### T156 — /access-points — Cell phone requirement
+
+- **Request:** Change `No app required` to `Cell Phone required.`
+- **Applied:** Updated the hero note to `Cell Phone required. Stickers, Signs, and Stands provided.` using the requested capitalization.
+- **Scope:** This Access Points phrase only. Publication remains pending PR review.
+- **Validation:** Reviewed the exact replacement; whitespace check passes.
+
 ## Resolved placement
 
 ### C01 — Partner Success
