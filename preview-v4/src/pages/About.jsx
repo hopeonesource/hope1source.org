@@ -104,8 +104,9 @@ export default function About() {
             <p className="about-checkins-lead">No app needed. Just a cell phone with text messaging.</p>
             <ol className="about-checkins-steps">
               <li>
-                <strong>People choose to connect.</strong>
-                They opt in for services or games that interest them, with opportunities to earn rewards.
+                <strong>It starts with a real human connection.</strong>
+                A partner invites people to explore services or games that interest them, with opportunities
+                to earn rewards. Each person chooses whether to opt in.
               </li>
               <li>
                 <strong>Partners shape the experience.</strong>

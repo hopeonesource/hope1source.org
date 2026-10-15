@@ -2497,6 +2497,16 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** First Mission paragraph and this log only. Supersedes T205. Publication remains pending PR review.
 - **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the revised Mission sentence in rendered About HTML.
 
+### T207 — About — Human connection before the opt-in
+
+- **Request:** Show that the first check-in step starts with a real human connection, where people are offered services or games.
+- **Old heading:** `People choose to connect.`
+- **New heading:** `It starts with a real human connection.`
+- **Old text:** `They opt in for services or games that interest them, with opportunities to earn rewards.`
+- **New text:** `A partner invites people to explore services or games that interest them, with opportunities to earn rewards. Each person chooses whether to opt in.`
+- **Scope:** First numbered step under How check-ins work and this log only. Retains the voluntary opt-in and opportunities to earn rewards. Publication remains pending PR review.
+- **Validation:** v4 build, prerender checks, and whitespace check pass. Confirmed the revised first step and retained subsequent steps in rendered About HTML.
+
 ## Resolved placement
 
 ### C01 — Partner Success
