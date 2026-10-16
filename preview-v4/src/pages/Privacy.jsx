@@ -20,8 +20,8 @@ export default function Privacy() {
           <p>
             This policy applies to the websites, apps, and related services operated by {org.legalName} (“we,” “us”)
             under the names {org.program}, {org.programLegacy}, and {org.product}. The hosts in view are{' '}
-            <strong>https://{org.siteHost}</strong> (this mission site), <strong>{org.hubUrl}</strong> (the Check-ins
-            hub), and <strong>{org.portalUrl}</strong> (the partner portal), together the “Service.”
+            <strong>https://{org.siteHost}</strong> (this mission site), <strong>{org.hubUrl}</strong> (Corporate Partner ROI),
+            and <strong>{org.portalUrl}</strong> (the partner portal), together the “Service.”
           </p>
           <Confirm>
             Confirm that one policy should cover hope1source.org, hopeonesource.me, and the portal, or publish separate
