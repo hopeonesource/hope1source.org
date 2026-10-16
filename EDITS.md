@@ -5,8 +5,8 @@
 - Current: https://hopeonesource.github.io/hope1source.org/
 - Preview: https://hopeonesource.github.io/hope1source.org/v3/
 - Repository: https://github.com/hopeonesource/hope1source.org
-- Latest release pull request: https://github.com/hopeonesource/hope1source.org/pull/17 (merged and published on Netlify)
-- Previous release pull request: https://github.com/hopeonesource/hope1source.org/pull/16 (merged)
+- Latest release pull request: https://github.com/hopeonesource/hope1source.org/pull/18 (merged and published on Netlify)
+- Previous release pull request: https://github.com/hopeonesource/hope1source.org/pull/17 (merged and published on Netlify)
 - Approved wording release: `codex/dreamers-bulk-texting` (T244–T247)
 - Approved wording, metadata, and sharing release: https://github.com/hopeonesource/hope1source.org/pull/18 — `codex/winter-heading-period` (T248–T252)
 - Current review preview: https://codex-winter-heading-period--hope1source-org.netlify.app/
@@ -14,7 +14,7 @@
 - Previous image review preview: https://codex-homepage-image-polish--hope1source-org.netlify.app/
 - Latest Team preview: https://codex-homepage-image-polish--hope1source-org.netlify.app/team
 - v4 source: `preview-v4/`, running locally at http://127.0.0.1:5175/v4/ and published as a noindex GitHub preview at https://hopeonesource.github.io/hope1source.org/v4/.
-- Netlify release: https://hope1source-org.netlify.app — primary-domain cutover to https://hope1source.org is pending GoDaddy sign-in/DNS access (T232).
+- Netlify release: https://hope1source-org.netlify.app — GoDaddy DNS and custom-domain HTTPS verification are complete for https://hope1source.org; `www` redirects to the apex domain (T253).
 
 ## Current record — October 15, 2026
 
@@ -26,7 +26,7 @@ Earlier reconciliation through `71cd1a1`: all T01–T177 entries and T24A were a
 
 **How to read the history:** Entries record what was applied at that point in the conversation. Later instructions supersede earlier versions only within their stated page and field. An older entry marked “Applied” is not a direction to restore superseded text. Per-entry requests and provenance distinguish user wording from assistant drafts. Historical build counts and validation results describe the version tested at the time.
 
-**Release record:** The user authorized merging and publishing PR #17 in T247. It contains the final Dreamers headline and the shorter homepage winter invitation. Its reviewed source is `f55bc805a577dbd16ab4bf17ce5a435e3c3def59`, verified in Netlify review deploy `6ad17274fedb28ed07e55d6d`. PR #17 merged as `3e162886e9f8f2703a7eb77206278f6f046fcf32` and was published as production deploy `6ad17304f668a0153ee55d3c`. The preceding PR #16 release merged as `a722b10da77faf35e80d3b7eb615243f9d7177e5` and was published as production deploy `6ad16fdcbdc2100f84247ad5`. PR #18 contains the next wording and metadata review. The custom-domain cutover remains pending as recorded in T232. Earlier entries saying publication or review is pending describe their historical status.
+**Release record:** The user authorized merging and publishing PR #18 in T252. It contains the homepage/readiness heading edits, search metadata, structured data, heart favicon declarations, sharing artwork, and image-host correction from T248–T251. PR #18 merged into `main` at `a8abe0f3a492337ab9f21ef0b2e5972facb925be` and was published as production deploy `6ad179beccf00c5962d3ce3f` at `2026-10-16T01:11:38Z`. The preceding PR #17 release, authorized in T247, contains the final Dreamers headline and the shorter homepage winter invitation. Its reviewed source is `f55bc805a577dbd16ab4bf17ce5a435e3c3def59`, verified in Netlify review deploy `6ad17274fedb28ed07e55d6d`; it merged as `3e162886e9f8f2703a7eb77206278f6f046fcf32` and was published as production deploy `6ad17304f668a0153ee55d6d`. PR #16 merged as `a722b10da77faf35e80d3b7eb615243f9d7177e5` and was published as production deploy `6ad16fdcbdc2100f84247ad5`. GoDaddy DNS and custom-domain HTTPS verification are complete as recorded in T253. The production website remains the PR #18 release; this cutover record changes documentation only. Earlier entries saying publication, review, DNS access, or HTTPS is pending describe their historical status.
 
 ### Latest review changes
 
@@ -2886,6 +2886,18 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Approved release:** T248–T251's homepage/readiness heading edits, clearer search metadata, structured data, favicon declarations, sharing artwork, and image-host correction. This new entry changes documentation only; the reviewed website files are unchanged.
 - **Release action:** Merge PR #18 to `main`, build the resulting commit on the dedicated `hope1source-org` Netlify project, and verify the published production release. The PR and Netlify deployment provide the final merge/deploy identifiers.
 - **GoDaddy scope:** Confirm the exact apex/www DNS replacements and required account access. The intended primary domain remains `hope1source.org`; DNS access and custom-domain certificate verification are separate steps. This entry does not record a DNS change.
+
+### T253 — Authorized GoDaddy DNS cutover to Netlify
+
+- **Request / authorization:** The user authorized taking over the GoDaddy domain setup and completing the `hope1source.org` cutover to the published Netlify release. The user completed all three GoDaddy identity-verification prompts.
+- **Apex change:** Replaced the two `@` A records, `75.2.70.75` and `99.83.190.102`, with a single A record pointing to `75.2.60.5`.
+- **WWW change:** Replaced the `www` CNAME target `proxy-ssl.webflow.com` with `hope1source-org.netlify.app`.
+- **TTL / preserved settings:** The changed records use a 600-second TTL. GoDaddy's `ns35` and `ns36` nameservers and the `_domainconnect` record are unchanged.
+- **DNS verification:** Confirmed the saved changes in the GoDaddy UI and on both authoritative nameservers. Cloudflare's resolver confirms the new apex answer, and Google's resolver confirms the new `www` target.
+- **HTTPS status:** **Complete.** Netlify certificate `6ad17d1228a1201d2de4b99c` was issued at `2026-10-16T01:25:38.223Z` for `hope1source.org` and `www.hope1source.org`. It expires at `2027-01-14T00:27:05Z` and is renewable. The site's `ssl` and `force_ssl` settings are both `true`. Normal HTTPS requests return HTTP 200 for the apex and HTTP 301 from `www` to the canonical apex domain.
+- **Live verification:** Passed checks for all 46 pages, seven assets, four domain entry URLs, and three unrelated URLs. Page headings, canonical URLs, and indexable metadata match the approved release; checked image SHA-256 hashes match. Root `robots.txt` returns HTTP 200 and advertises the correct sitemap, which contains 46 URLs. A missing route returns HTTP 404 with `noindex`.
+- **Browser / propagation:** The in-app browser initially retained the old Webflow redirect. A fresh request, hard reload, and subsequent normal reload now render the approved site correctly at `https://hope1source.org/`. Cached redirects or DNS answers may persist in other browsers or resolvers while their caches expire.
+- **Scope:** DNS cutover and release documentation only. No website content changed in this entry. Production remains PR #18 at `a8abe0f3a492337ab9f21ef0b2e5972facb925be`, deployed as `6ad179beccf00c5962d3ce3f` at `2026-10-16T01:11:38Z`.
 
 ## Resolved placement
 
