@@ -2899,6 +2899,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Browser / propagation:** The in-app browser initially retained the old Webflow redirect. A fresh request, hard reload, and subsequent normal reload now render the approved site correctly at `https://hope1source.org/`. Cached redirects or DNS answers may persist in other browsers or resolvers while their caches expire.
 - **Scope:** DNS cutover and release documentation only. No website content changed in this entry. Production remains PR #18 at `a8abe0f3a492337ab9f21ef0b2e5972facb925be`, deployed as `6ad179beccf00c5962d3ce3f` at `2026-10-16T01:11:38Z`.
 
+### T254 — Homepage sharing title — avoid a visible HTML entity
+
+- **Request:** The user's Messages link preview displayed `&amp;` in the homepage title.
+- **Finding:** The published HTML contains one title, one Open Graph title, and one Twitter title, each correctly escaped once. There is no double encoding. The screenshot shows the preview displaying the HTML entity literally; its exact parser/cache behavior cannot be confirmed from the screenshot.
+- **Change:** `SMS Check-ins & Community Outreach` → `SMS Check-ins and Community Outreach` in the homepage search/sharing metadata. The existing `· Hope1Source` suffix remains. The shared model also updates the WebPage schema name and client-side title consistently.
+- **Scope:** Homepage metadata only; visible page wording, design, images, other page titles, and proper HTML escaping remain unchanged. Previously created message previews may retain their cached title.
+- **Validation:** Production prerender checks passed for all 46 pages, 30 aliases, and 886 internal links. The rebuilt homepage body is byte-for-byte identical to the published body before the change. The title, Open Graph title, and Twitter title each contain the new plain-language title once, with no ampersand entity.
+
 ## Resolved placement
 
 ### C01 — Partner Success
