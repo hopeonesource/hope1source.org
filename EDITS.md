@@ -5,9 +5,9 @@
 - Current: https://hopeonesource.github.io/hope1source.org/
 - Preview: https://hopeonesource.github.io/hope1source.org/v3/
 - Repository: https://github.com/hopeonesource/hope1source.org
-- Latest release pull request: https://github.com/hopeonesource/hope1source.org/pull/16
-- Previous release pull request: https://github.com/hopeonesource/hope1source.org/pull/15 (merged)
-- Current wording review: https://github.com/hopeonesource/hope1source.org/pull/17 — `codex/dreamers-bulk-texting` (T244–T246)
+- Latest release pull request: https://github.com/hopeonesource/hope1source.org/pull/17
+- Previous release pull request: https://github.com/hopeonesource/hope1source.org/pull/16 (merged)
+- Approved wording release: `codex/dreamers-bulk-texting` (T244–T247)
 - Latest wording preview: https://codex-dreamers-bulk-texting--hope1source-org.netlify.app/
 - Previous image review preview: https://codex-homepage-image-polish--hope1source-org.netlify.app/
 - Latest Team preview: https://codex-homepage-image-polish--hope1source-org.netlify.app/team
@@ -24,7 +24,7 @@ Earlier reconciliation through `71cd1a1`: all T01–T177 entries and T24A were a
 
 **How to read the history:** Entries record what was applied at that point in the conversation. Later instructions supersede earlier versions only within their stated page and field. An older entry marked “Applied” is not a direction to restore superseded text. Per-entry requests and provenance distinguish user wording from assistant drafts. Historical build counts and validation results describe the version tested at the time.
 
-**Release status:** PR #16 merged as `a722b10da77faf35e80d3b7eb615243f9d7177e5` and is published on Netlify as production deploy `6ad16fdcbdc2100f84247ad5`. It includes the homepage and Team image refresh, approved copy changes, and the final Nick biography correction. T244 is the subsequent headline edit on branch `codex/dreamers-bulk-texting`, prepared for a separate review. The custom-domain cutover remains pending as recorded in T232. Earlier entries saying publication or review is pending describe their historical status.
+**Release record:** The user authorized merging and publishing PR #17 in T247. It contains the final Dreamers headline and the shorter homepage winter invitation. Its reviewed source is `f55bc805a577dbd16ab4bf17ce5a435e3c3def59`, verified in Netlify review deploy `6ad17274fedb28ed07e55d6d`. The preceding PR #16 release merged as `a722b10da77faf35e80d3b7eb615243f9d7177e5` and was published as production deploy `6ad16fdcbdc2100f84247ad5`. The linked PR and Netlify project show the live release status. The custom-domain cutover remains pending as recorded in T232. Earlier entries saying publication or review is pending describe their historical status.
 
 ### Latest review changes
 
@@ -2834,6 +2834,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Old text:** `Stay connect with bulk texting.`
 - **New text:** `Stayed connected with bulk texting.`
 - **Scope:** Supersedes T244's headline on the shared Dreamers & Achievers story card. Other wording, imagery, and layout are unchanged. Included in PR #17 and its Netlify review preview.
+
+### T247 — Approve and release the latest homepage wording
+
+- **Request / authorization:** Push all changes to the PR, accept and merge it for Netlify, and report readiness for GoDaddy.
+- **Reviewed source:** PR #17 at `f55bc805a577dbd16ab4bf17ce5a435e3c3def59`; the working tree is clean and matches the remote branch. Netlify review deploy `6ad17274fedb28ed07e55d6d` serves the final wording from T245–T246.
+- **Approved wording:** `Stayed connected with bulk texting.`, `Winter is coming?`, and `Are you connected?`
+- **Release scope:** Merge PR #17 into `main`, publish and verify its production build on the dedicated `hope1source-org` Netlify project, and report when GoDaddy can be updated. This log entry changes no website content.
+- **Domain:** DNS changes and custom-domain HTTPS remain separate from this PR release. Existing domain/mail settings are not changed by this entry.
 
 ## Resolved placement
 
