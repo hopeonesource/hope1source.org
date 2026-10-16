@@ -2907,6 +2907,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** Homepage metadata only; visible page wording, design, images, other page titles, and proper HTML escaping remain unchanged. Previously created message previews may retain their cached title.
 - **Validation:** Production prerender checks passed for all 46 pages, 30 aliases, and 886 internal links. The rebuilt homepage body is byte-for-byte identical to the published body before the change. The title, Open Graph title, and Twitter title each contain the new plain-language title once, with no ampersand entity.
 
+### T255 — Team — Tim Underwood biography
+
+- **Request / authorization:** Replace Tim's biography with the user's exact wording and publish after checks.
+- **Old text:** Tim founded H1S to help service providers build trust, solve problems, and measure what matters for impact. An Air Force Reserve officer, Eagle Scout, Honor Medal recipient, and former Presidential Management Fellow supporting thousands of service providers nationally, he brings experience across diverse sectors, from the White House to service providers helping people without a house.
+- **New text:** Tim founded H1S to help service providers build trust, solve problems, and measure what matters to connect people and resources. A decorated leader—Air Force Reserve officer, Lance Sijan Leader Awardee, Honor Medal recipient, Eagle Scout, 3-year top global IEEE grantee, and Presidential Management Fellow alum—his work spans from scaling national policy at the White House to humanizing care on the streets.
+- **Scope:** Tim's biography on the published Team page, sourced from `preview-v4/src/content/team.js`. His title and photograph, other biographies, the About page, and the site's layout are unchanged.
+- **Validation / release:** Production build and prerender checks passed for all 46 pages, 30 aliases, and 886 internal links, including metadata, JSON-LD, sitemap, and 404 checks. Verified the exact requested bio in the production HTML and confirmed all other team content and portrait settings match `main`. Release is authorized through a dedicated PR and the existing `hope1source-org` Netlify project.
+
 ## Resolved placement
 
 ### C01 — Partner Success
