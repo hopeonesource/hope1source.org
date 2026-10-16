@@ -2752,6 +2752,19 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **New phrase:** `specializing in custom solutions`
 - **Scope:** Justin Robinson's biography only. Remaining wording and layout are unchanged. Included in PR #16.
 
+### T239 — Team — portrait clarity and responsive resolution
+
+- **Request:** Greatly improve all team photos for optimal resolution.
+- **Changes:** Added 41 responsive image variants for all 14 portraits, recovered larger exact originals for seven people, and improved face-centered framing without changing the circular portrait layout. Browser source selection accounts for crop enlargement and high-density screens.
+- **Restoration:** Justin's approved portrait received a conservative built-in image-generation restoration. His original is retained. Tamecia's generated candidate was rejected; her larger real photograph is used with a tighter crop. Veronica retains her existing approved portrait.
+- **Preserved:** Roster, ordering, roles, biography text, and original source files. See `docs/TEAM_PHOTO_REFRESH.md` and `docs/TEAM_PHOTO_ASSETS.json` for image provenance, paths, dimensions, and the selected restoration prompt.
+- **Validation:** All 14 photos load at 320, 390, 768, and 1440px with 3× pixel density, no horizontal overflow, and no page errors. Verified unchanged biography text and valid crop bounds. Included in PR #16.
+
+### T240 — Team — keep Chris Burnett's original photo
+
+- **Correction:** Keep Chris Burnett's existing photograph and improve resolution only.
+- **Applied:** Retained the boat photograph and its existing framing. Replaced the 600 × 800 source with the matching 900 × 1200 original and responsive delivery variants. The generated close-up was discarded and is not shipped.
+
 ## Resolved placement
 
 ### C01 — Partner Success

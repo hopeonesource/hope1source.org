@@ -1,0 +1,429 @@
+[
+  {
+    "name": "Tim Underwood",
+    "slug": "tim-underwood",
+    "treatment": "Higher-resolution original with optimized delivery",
+    "sourceUrl": "https://hopeonesource.me/assets/tim-underwood-Bs1D6vtZ.jpg",
+    "sourceDimensions": [
+      1200,
+      799
+    ],
+    "photoFrame": {
+      "left": 0.175,
+      "top": 0.0125,
+      "width": 0.5
+    },
+    "assets": [
+      {
+        "src": "photos/team/tim-underwood-256.jpg",
+        "width": 256,
+        "bytes": 18505
+      },
+      {
+        "src": "photos/team/tim-underwood-512.jpg",
+        "width": 512,
+        "bytes": 55395
+      },
+      {
+        "src": "photos/team/tim-underwood-1024.jpg",
+        "width": 1024,
+        "bytes": 163615
+      }
+    ]
+  },
+  {
+    "name": "Frank Adames",
+    "slug": "frank-adames",
+    "treatment": "Approved existing photo with optimized delivery",
+    "sourceUrl": "https://cdn.prod.website-files.com/5f904f4c523012193298304f/5f91f591826f040525769760_frank%20image.jpg",
+    "sourceDimensions": [
+      512,
+      512
+    ],
+    "photoFrame": {
+      "left": 0.078125,
+      "top": 0,
+      "width": 0.859375
+    },
+    "assets": [
+      {
+        "src": "photos/team/frank-adames-256.jpg",
+        "width": 256,
+        "bytes": 28869
+      },
+      {
+        "src": "photos/team/frank-adames-512.jpg",
+        "width": 512,
+        "bytes": 73491
+      }
+    ]
+  },
+  {
+    "name": "Justin Robinson",
+    "slug": "justin-robinson",
+    "treatment": "Conservative AI portrait restoration from the approved photo; fine detail is reconstructed",
+    "sourceUrl": "https://hopeonesource.me/assets/justin-robinson-BN4ZQA_b.jpg",
+    "sourceDimensions": [
+      1254,
+      1254
+    ],
+    "photoFrame": {
+      "left": 0.21929824561403508,
+      "top": 0.04784688995215311,
+      "width": 0.6778309409888357
+    },
+    "assets": [
+      {
+        "src": "photos/team/justin-robinson-256.jpg",
+        "width": 256,
+        "bytes": 23833
+      },
+      {
+        "src": "photos/team/justin-robinson-512.jpg",
+        "width": 512,
+        "bytes": 76509
+      },
+      {
+        "src": "photos/team/justin-robinson-1024.jpg",
+        "width": 1024,
+        "bytes": 220834
+      }
+    ]
+  },
+  {
+    "name": "Nick Hanson",
+    "slug": "nick-hanson",
+    "treatment": "Higher-resolution original with optimized delivery",
+    "sourceUrl": "https://cdn.prod.website-files.com/5f904f4c523012193298304f/5f91f6264495103ed2faac39_Nick.CameraSmile-square.jpg",
+    "sourceDimensions": [
+      1000,
+      1000
+    ],
+    "photoFrame": null,
+    "assets": [
+      {
+        "src": "photos/team/nick-hanson-256.jpg",
+        "width": 256,
+        "bytes": 31479
+      },
+      {
+        "src": "photos/team/nick-hanson-512.jpg",
+        "width": 512,
+        "bytes": 103928
+      },
+      {
+        "src": "photos/team/nick-hanson-1000.jpg",
+        "width": 1000,
+        "bytes": 356393
+      }
+    ]
+  },
+  {
+    "name": "Tamecia McKenzie",
+    "slug": "tamecia-mckenzie",
+    "treatment": "Higher-resolution original with optimized delivery",
+    "sourceUrl": "https://cdn.prod.website-files.com/5f904f4c523012193298304f/628425296a4515a8edc758fe_Tamecia%20McKenzie.jpg",
+    "sourceDimensions": [
+      672,
+      1073
+    ],
+    "photoFrame": {
+      "left": 0.3093812375249501,
+      "top": 0.10978043912175649,
+      "width": 0.469061876247505
+    },
+    "assets": [
+      {
+        "src": "photos/team/tamecia-mckenzie-256.jpg",
+        "width": 256,
+        "bytes": 44744
+      },
+      {
+        "src": "photos/team/tamecia-mckenzie-512.jpg",
+        "width": 512,
+        "bytes": 134316
+      },
+      {
+        "src": "photos/team/tamecia-mckenzie-672.jpg",
+        "width": 672,
+        "bytes": 157226
+      }
+    ]
+  },
+  {
+    "name": "Damien Bérubé",
+    "slug": "damien-berube",
+    "treatment": "Higher-resolution original with optimized delivery",
+    "sourceUrl": "https://cdn.prod.website-files.com/5f904f4c523012193298304f/627ada7c6237cac385198266_c9b3cf1dbb334ded2c523dded0523027_Headshot%202022.jpg",
+    "sourceDimensions": [
+      2402,
+      2997
+    ],
+    "photoFrame": {
+      "left": 0.093603744149766,
+      "top": 0,
+      "width": 0.8268330733229329
+    },
+    "assets": [
+      {
+        "src": "photos/team/damien-berube-256.jpg",
+        "width": 256,
+        "bytes": 27940
+      },
+      {
+        "src": "photos/team/damien-berube-512.jpg",
+        "width": 512,
+        "bytes": 95151
+      },
+      {
+        "src": "photos/team/damien-berube-1024.jpg",
+        "width": 1024,
+        "bytes": 314896
+      }
+    ]
+  },
+  {
+    "name": "Veronica Thornton",
+    "slug": "veronica-thornton",
+    "treatment": "Approved existing photo with optimized delivery",
+    "sourceUrl": null,
+    "sourceDimensions": [
+      800,
+      800
+    ],
+    "photoFrame": null,
+    "assets": [
+      {
+        "src": "photos/team/veronica-thornton-256.jpg",
+        "width": 256,
+        "bytes": 24669
+      },
+      {
+        "src": "photos/team/veronica-thornton-512.jpg",
+        "width": 512,
+        "bytes": 76496
+      },
+      {
+        "src": "photos/team/veronica-thornton-800.jpg",
+        "width": 800,
+        "bytes": 133071
+      }
+    ]
+  },
+  {
+    "name": "Hugo Diaz",
+    "slug": "hugo-diaz",
+    "treatment": "Higher-resolution original with optimized delivery",
+    "sourceUrl": "https://hopeonesource.me/assets/hugo-diaz-BWR-SEH6.jpg",
+    "sourceDimensions": [
+      1200,
+      800
+    ],
+    "photoFrame": {
+      "left": 0.24375,
+      "top": 0.00625,
+      "width": 0.475
+    },
+    "assets": [
+      {
+        "src": "photos/team/hugo-diaz-256.jpg",
+        "width": 256,
+        "bytes": 10702
+      },
+      {
+        "src": "photos/team/hugo-diaz-512.jpg",
+        "width": 512,
+        "bytes": 33695
+      },
+      {
+        "src": "photos/team/hugo-diaz-1024.jpg",
+        "width": 1024,
+        "bytes": 104187
+      }
+    ]
+  },
+  {
+    "name": "Jeff Drain",
+    "slug": "jeff",
+    "treatment": "Approved existing photo with optimized delivery",
+    "sourceUrl": "https://hopeonesource.me/assets/jeff-Bt2zRx8i.jpg",
+    "sourceDimensions": [
+      800,
+      679
+    ],
+    "photoFrame": {
+      "left": 0.125,
+      "top": 0,
+      "width": 0.75
+    },
+    "assets": [
+      {
+        "src": "photos/team/jeff-256.jpg",
+        "width": 256,
+        "bytes": 19341
+      },
+      {
+        "src": "photos/team/jeff-512.jpg",
+        "width": 512,
+        "bytes": 62784
+      },
+      {
+        "src": "photos/team/jeff-800.jpg",
+        "width": 800,
+        "bytes": 118205
+      }
+    ]
+  },
+  {
+    "name": "Tom Allin",
+    "slug": "tom-allin",
+    "treatment": "Approved existing photo with optimized delivery",
+    "sourceUrl": "https://cdn.prod.website-files.com/5f904f4c523012193298304f/6284220b497c90e3833b0e8b_Tom%20Allin.jpeg",
+    "sourceDimensions": [
+      800,
+      800
+    ],
+    "photoFrame": {
+      "left": 0.20625,
+      "top": 0,
+      "width": 0.625
+    },
+    "assets": [
+      {
+        "src": "photos/team/tom-allin-256.jpg",
+        "width": 256,
+        "bytes": 20055
+      },
+      {
+        "src": "photos/team/tom-allin-512.jpg",
+        "width": 512,
+        "bytes": 70972
+      },
+      {
+        "src": "photos/team/tom-allin-800.jpg",
+        "width": 800,
+        "bytes": 149648
+      }
+    ]
+  },
+  {
+    "name": "Chris Teitzel",
+    "slug": "chris-teitzel",
+    "treatment": "Approved existing photo with optimized delivery",
+    "sourceUrl": "https://cdn.prod.website-files.com/5f904f4c523012193298304f/6284225a658716b933d193d2_Chris%20Teitzel.jpeg",
+    "sourceDimensions": [
+      800,
+      800
+    ],
+    "photoFrame": {
+      "left": 0.4125,
+      "top": 0.08125,
+      "width": 0.3125
+    },
+    "assets": [
+      {
+        "src": "photos/team/chris-teitzel-256.jpg",
+        "width": 256,
+        "bytes": 34712
+      },
+      {
+        "src": "photos/team/chris-teitzel-512.jpg",
+        "width": 512,
+        "bytes": 102455
+      },
+      {
+        "src": "photos/team/chris-teitzel-800.jpg",
+        "width": 800,
+        "bytes": 186365
+      }
+    ]
+  },
+  {
+    "name": "Sarah Lindsay",
+    "slug": "sarah-lindsay",
+    "treatment": "Approved existing photo with optimized delivery",
+    "sourceUrl": "https://cdn.prod.website-files.com/5f904f4c523012193298304f/628422781f48397a90a48dad_Sarah%20Lindsay.jpeg",
+    "sourceDimensions": [
+      796,
+      796
+    ],
+    "photoFrame": null,
+    "assets": [
+      {
+        "src": "photos/team/sarah-lindsay-256.jpg",
+        "width": 256,
+        "bytes": 25805
+      },
+      {
+        "src": "photos/team/sarah-lindsay-512.jpg",
+        "width": 512,
+        "bytes": 84322
+      },
+      {
+        "src": "photos/team/sarah-lindsay-796.jpg",
+        "width": 796,
+        "bytes": 158494
+      }
+    ]
+  },
+  {
+    "name": "Harry Kim",
+    "slug": "harry-kim",
+    "treatment": "Higher-resolution original with optimized delivery",
+    "sourceUrl": "https://cdn.prod.website-files.com/5f904f4c523012193298304f/6284229fd28c467fe48128b0_Hary%20KiM.jpeg",
+    "sourceDimensions": [
+      640,
+      960
+    ],
+    "photoFrame": {
+      "left": 0.225140712945591,
+      "top": 0.18761726078799248,
+      "width": 0.7504690431519699
+    },
+    "assets": [
+      {
+        "src": "photos/team/harry-kim-256.jpg",
+        "width": 256,
+        "bytes": 31711
+      },
+      {
+        "src": "photos/team/harry-kim-512.jpg",
+        "width": 512,
+        "bytes": 105159
+      },
+      {
+        "src": "photos/team/harry-kim-640.jpg",
+        "width": 640,
+        "bytes": 123996
+      }
+    ]
+  },
+  {
+    "name": "Chris Burnett",
+    "slug": "chris-burnett",
+    "treatment": "Higher-resolution original with optimized delivery",
+    "sourceUrl": "https://hopeonesource.me/assets/chris-burnett-Dsm2N_j0.jpg",
+    "sourceDimensions": [
+      900,
+      1200
+    ],
+    "photoFrame": null,
+    "assets": [
+      {
+        "src": "photos/team/chris-burnett-256.jpg",
+        "width": 256,
+        "bytes": 36923
+      },
+      {
+        "src": "photos/team/chris-burnett-512.jpg",
+        "width": 512,
+        "bytes": 112204
+      },
+      {
+        "src": "photos/team/chris-burnett-900.jpg",
+        "width": 900,
+        "bytes": 292067
+      }
+    ]
+  }
+]

@@ -1667,6 +1667,19 @@ address {
   object-fit: cover;
 }
 
+.avatar-photo-frame {
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+}
+
+.avatar-photo-frame img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .story-svg {
   display: block;
   width: 100%;
