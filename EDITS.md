@@ -2744,6 +2744,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **New phrase:** `founded H1S Check-ins`
 - **Scope:** Tim Underwood's founder sentence on the About page only. Included in PR #16.
 
+### T238 — Team — Justin's custom-tech focus
+
+- **Old opening:** `Justin is the Tech Lead for H1S.`
+- **New opening:** `Justin leads custom tech for H1S.`
+- **Old phrase:** `specializing in custom technology solutions`
+- **New phrase:** `specializing in custom solutions`
+- **Scope:** Justin Robinson's biography only. Remaining wording and layout are unchanged. Included in PR #16.
+
 ## Resolved placement
 
 ### C01 — Partner Success

@@ -33,7 +33,7 @@ export const team = [
     name: 'Justin Robinson',
     role: 'Custom Tech Lead',
     photo: 'photos/justin-robinson.jpg',
-    bio: 'Justin is the Tech Lead for H1S. He is a public-sector web developer specializing in custom technology solutions that improve user experiences, including executive KPI data collection. He also coaches engineers and advises leadership on technology stack choices for custom partner support.',
+    bio: 'Justin leads custom tech for H1S. He is a public-sector web developer specializing in custom solutions that improve user experiences, including executive KPI data collection. He also coaches engineers and advises leadership on technology stack choices for custom partner support.',
   },
   {
     name: 'Veronica Thornton',
