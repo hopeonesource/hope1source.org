@@ -2,22 +2,24 @@ import { Link } from 'react-router-dom'
 import { publicUrl } from '../lib/links.js'
 
 /** Homepage story card. The title stays short. The case study holds the longer proof. */
-export function StoryCard({ story }) {
+export function StoryCard({ story, renderArt }) {
   return (
     <Link className="story-card" to={`/case-studies/${story.slug}`}>
       <span
         className={story.imageFit ? `story-art is-${story.imageFit}` : 'story-art'}
         style={story.imageAspectRatio ? { aspectRatio: story.imageAspectRatio } : undefined}
       >
-        <img
-          src={publicUrl(story.image)}
-          width={story.imageWidth}
-          height={story.imageHeight}
-          alt=""
-          loading="lazy"
-          decoding="async"
-          style={story.imagePosition ? { objectPosition: story.imagePosition } : undefined}
-        />
+        {renderArt ? renderArt(story) : (
+          <img
+            src={publicUrl(story.image)}
+            width={story.imageWidth}
+            height={story.imageHeight}
+            alt=""
+            loading="lazy"
+            decoding="async"
+            style={story.imagePosition ? { objectPosition: story.imagePosition } : undefined}
+          />
+        )}
       </span>
       <span className="story-body">
         {story.outcome ? <span className="kicker">{story.outcome}</span> : null}
@@ -29,11 +31,11 @@ export function StoryCard({ story }) {
   )
 }
 
-export default function StoryCards({ stories }) {
+export default function StoryCards({ stories, renderArt }) {
   return (
     <div className="story-cards">
       {stories.map((story) => (
-        <StoryCard key={story.slug} story={story} />
+        <StoryCard key={story.slug} story={story} renderArt={renderArt} />
       ))}
     </div>
   )

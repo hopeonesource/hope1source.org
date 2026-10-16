@@ -5,7 +5,10 @@
 - Current: https://hopeonesource.github.io/hope1source.org/
 - Preview: https://hopeonesource.github.io/hope1source.org/v3/
 - Repository: https://github.com/hopeonesource/hope1source.org
-- Review pull request: https://github.com/hopeonesource/hope1source.org/pull/15
+- Latest release pull request: https://github.com/hopeonesource/hope1source.org/pull/16
+- Previous release pull request: https://github.com/hopeonesource/hope1source.org/pull/15 (merged)
+- Latest review preview: https://codex-homepage-image-polish--hope1source-org.netlify.app/
+- Latest Team preview: https://codex-homepage-image-polish--hope1source-org.netlify.app/team
 - v4 source: `preview-v4/`, running locally at http://127.0.0.1:5175/v4/ and published as a noindex GitHub preview at https://hopeonesource.github.io/hope1source.org/v4/.
 - Netlify release: https://hope1source-org.netlify.app — primary-domain cutover to https://hope1source.org is pending GoDaddy sign-in/DNS access (T232).
 
@@ -13,11 +16,30 @@
 
 This is the running record for all v4 edits, including wording, images, ordering, formatting, navigation, responsive behavior, search preparation, and new stories. The existing file remains `EDITS.md`; no separate `edit.md` is needed.
 
-Reconciled the conversation, current v4 source, and branch history through `71cd1a1`. All T01–T177 entries and T24A were already present exactly once, along with V01–V04 and resolved placement C01. T178 records this documentation reconciliation. Every one of the 140 branch commits ahead of `origin/main` at that checkpoint included an edit-log update.
+Latest reconciliation: reviewed the source and branch history through `d8d4654`. Entries T233–T240 record the homepage image refresh, shorter Dreamers summary, final shortened QR/NFC invitation, About founder wording, Justin's biography edits, all 14 team portraits, and the correction retaining Chris Burnett's original boat photo. T241 records this log update. T242 records the clarified removal of “level” from Nick's biography.
+
+Earlier reconciliation through `71cd1a1`: all T01–T177 entries and T24A were already present exactly once, along with V01–V04 and resolved placement C01. T178 records that documentation checkpoint. Every one of the 140 branch commits ahead of `origin/main` at that checkpoint included an edit-log update.
 
 **How to read the history:** Entries record what was applied at that point in the conversation. Later instructions supersede earlier versions only within their stated page and field. An older entry marked “Applied” is not a direction to restore superseded text. Per-entry requests and provenance distinguish user wording from assistant drafts. Historical build counts and validation results describe the version tested at the time.
 
-**Review status:** On October 15, 2026, the user authorized merging PR #15 and replacing hope1source.org with v4 using Netlify and GoDaddy. Production preparation and verification are recorded from T231 onward. Earlier entries saying publication is pending describe their historical status.
+**Release status:** The user authorized completing PR #16 in T243. It contains the homepage and Team image refresh, approved copy changes, and the final Nick biography correction. The verified review preview is Netlify deploy `6ad16e8b3f26c58513e75a44` at commit `7362c3d`. PR #15 was the preceding production release. The live status of the latest release is available in the linked PR and Netlify project; the custom-domain cutover remains pending as recorded in T232. Earlier entries saying publication or review is pending describe their historical status.
+
+### Latest review changes
+
+| Area | Latest applied change | Log references |
+| --- | --- | --- |
+| Homepage imagery | Sharper desktop hero, a separate mobile composition, and clearer vector artwork for three Partner Success cards. | T233 |
+| Dreamers & Achievers | Story-card summary reduced from 30 to 25 words; reported outcomes and supported-period qualifier retained. | T234 |
+| Homepage access-point card | `Scan, tap, or use a kiosk to privately share feedback and connect with approved services. Your team follows up. No app.` Supersedes the longer wording in T235. | T235–T236 |
+| About | `Tim Underwood founded H1S Check-ins…` | T237 |
+| Justin's biography | `Justin leads custom tech for H1S.` and `specializing in custom solutions` | T238 |
+| Team portraits | 41 responsive variants for 14 people, larger originals where available, face-centered framing, and Justin's conservative AI restoration. Original files retained. | T239 |
+| Chris Burnett | Existing boat photograph and framing retained, using the matching 900 × 1200 original. Generated close-up excluded. | T240 |
+| Nick's biography | `executive and frontline government and business clients` | T242 |
+
+### Resolved clarification
+
+- **Team — remove “level”:** The user clarified `frontline level government` → `frontline government`. Applied to Nick's biography in T242. Tom's approved `Secretary level appointment` remains unchanged.
 
 ### Current choices and where to find their history
 
@@ -2705,6 +2727,88 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **GoDaddy / pending action:** Safari requires user sign-in. No DNS records have been changed. Existing authoritative web records are apex A `75.2.70.75` and `99.83.190.102`, and www CNAME `proxy-ssl.webflow.com` (TTL 600). The intended replacement is one apex A `75.2.60.5` and www CNAME `hope1source-org.netlify.app`, following Netlify's external-DNS instructions. Keep GoDaddy nameservers and all unrelated/subdomain/mail records. Complete certificate issuance, HTTPS enforcement, and public-domain verification after DNS access is available.
 - **Other services:** Verified `https://h1s.me/eielsonafb/` and `https://hopeonesource.me/` still return their existing HTTP-200 applications. Their site/domain mappings were not modified.
 - **Documentation:** Added current Netlify deployment instructions to README and updated search-readiness guidance. No approved page content, layout, or design changed during launch preparation.
+
+### T233 — Homepage — sharper hero and readable story artwork
+
+- **Request:** Improve all homepage images and resolution for a more impressive presentation.
+- **Hero:** Refined the existing cherry-blossom / Jefferson Memorial scene with built-in image generation and created a separate portrait composition for phones. Desktop output is 1734 × 907; mobile output is 1024 × 1536. Responsive JPEG variants avoid downloading the largest file on every screen. Original assets are retained.
+- **Presentation:** Reduced the homepage's decorative wash opacity to `0.08` so more photo detail is visible, and centered the mobile portrait composition within its frame.
+- **Partner Success:** Added homepage-only vector artwork with larger labels and metrics. VA retains all four comparisons with proportional bars; DC keeps the complete historic photo, the approved message context, crisp hypothermia-message text, and the 78% supported-period result; Dreamers retains Dorothy's small portrait and exact before/after figures with clear numeric comparisons.
+- **Preserved:** Approved homepage wording, story facts, overall layout, existing logo, and full figures within the case studies. Shared story cards use the new artwork only when explicitly requested by Home.
+- **Provenance:** See `docs/HOMEPAGE_IMAGE_REFRESH.md` for asset paths, generation prompts, dimensions, and the distinction between refined scenic hero imagery and unchanged documentary photos.
+- **Validation / review:** Preview build and prerender checks pass: 46 pages, 30 aliases, and 784 internal links. Browser checks at 320, 390, 768, 1440, and 1920px confirm no horizontal overflow or clipped graphic text. All embedded photos load, and a high-density phone selects the 1024px portrait hero. Desktop and phone screenshots were visually reviewed. A new review PR and deploy preview follow the existing review workflow; this entry does not authorize or record a new DNS cutover.
+
+### T234 — Dreamers & Achievers — shorter homepage summary
+
+- **Request:** Shorten the homepage story text by 15–20%.
+- **Old text:** `Dreamers & Achievers used H1S to stay in touch and gather feedback. The partner reported follow-ups growing from 60 to 1,400 people and funding growing 5x during the supported period.`
+- **New text:** `Dreamers & Achievers used H1S to gather feedback. It reported follow-ups growing from 60 to 1,400 people and 5x funding growth during the supported period.`
+- **Length:** Reduced from 30 to 25 words (16.7%) and from 183 to 155 characters (15.3%).
+- **Scope:** Shared story-card summary, including the homepage. Headline, artwork, figures, partner attribution, supported-period qualifier, and full case study are preserved. Included in review PR #16.
+
+### T235 — Homepage — access-point invitation
+
+- **Request / new text:** `A QR scan, NFC tap, or kiosk entry lets visitors privately share their experience, and more easily connect with approved services. Your team follows up. No app.`
+- **Old text:** `A QR code or kiosk lets visitors ask for help privately. Your team follows up. No app.`
+- **Scope:** Access-point role summary shown in the homepage's "If people come to you" card and any shared role rendering. Applied the user's exact wording. Layout and other content are unchanged. Included in review PR #16.
+- **Validation:** v4 build, prerender checks, and whitespace check pass.
+
+### T236 — Homepage — shorter QR/NFC invitation
+
+- **Request:** The user clarified that the QR/NFC homepage paragraph should be shorter, rather than the Dreamers & Achievers summary.
+- **Old text:** `A QR scan, NFC tap, or kiosk entry lets visitors privately share their experience, and more easily connect with approved services. Your team follows up. No app.`
+- **New text:** `Scan, tap, or use a kiosk to privately share feedback and connect with approved services. Your team follows up. No app.`
+- **Scope:** Supersedes T235 in the shared access-point role summary. Retains scan/tap/kiosk options, private feedback, approved services, team follow-up, and no app. Other wording and layout are unchanged. Included in PR #16.
+- **Validation:** Shortened from 27 to 21 words (22.2%) and 160 to 119 characters (25.6%). v4 build, prerender checks, and whitespace check pass.
+
+### T237 — About — founder wording
+
+- **Old phrase:** `founded H1S`
+- **New phrase:** `founded H1S Check-ins`
+- **Scope:** Tim Underwood's founder sentence on the About page only. Included in PR #16.
+
+### T238 — Team — Justin's custom-tech focus
+
+- **Old opening:** `Justin is the Tech Lead for H1S.`
+- **New opening:** `Justin leads custom tech for H1S.`
+- **Old phrase:** `specializing in custom technology solutions`
+- **New phrase:** `specializing in custom solutions`
+- **Scope:** Justin Robinson's biography only. Remaining wording and layout are unchanged. Included in PR #16.
+
+### T239 — Team — portrait clarity and responsive resolution
+
+- **Request:** Greatly improve all team photos for optimal resolution.
+- **Changes:** Added 41 responsive image variants for all 14 portraits, recovered larger exact originals for seven people, and improved face-centered framing without changing the circular portrait layout. Browser source selection accounts for crop enlargement and high-density screens.
+- **Restoration:** Justin's approved portrait received a conservative built-in image-generation restoration. His original is retained. Tamecia's generated candidate was rejected; her larger real photograph is used with a tighter crop. Veronica retains her existing approved portrait.
+- **Preserved:** Roster, ordering, roles, biography text, and original source files. See `docs/TEAM_PHOTO_REFRESH.md` and `docs/TEAM_PHOTO_ASSETS.json` for image provenance, paths, dimensions, and the selected restoration prompt.
+- **Validation:** All 14 photos load at 320, 390, 768, and 1440px with 3× pixel density, no horizontal overflow, and no page errors. Verified unchanged biography text and valid crop bounds. Included in PR #16.
+
+### T240 — Team — keep Chris Burnett's original photo
+
+- **Correction:** Keep Chris Burnett's existing photograph and improve resolution only.
+- **Applied:** Retained the boat photograph and its existing framing. Replaced the 600 × 800 source with the matching 900 × 1200 original and responsive delivery variants. The generated close-up was discarded and is not shipped.
+
+### T241 — Edit log synchronized with the latest review preview
+
+- **Request:** Update `edit.md`; continued using the canonical `EDITS.md` rather than creating a second log.
+- **Reconciled:** Current source and branch history through `d8d4654`, with all applied changes in T233–T240. Updated the review links, current PR status, and latest-change summary at the top of this file.
+- **Verification recorded:** Netlify review deploy `6ad16d1670a56c55efa35019` is ready at `d8d4654`; all 41 Team image variants returned HTTP 200, and the deployed phone view loaded all 14 portraits without horizontal overflow. PR #16 remains open.
+- **Outstanding:** Recorded the unresolved “remove level” request separately without marking it applied. Chris Burnett's original photo correction remains explicit.
+- **Scope:** Documentation only; no website wording, images, or layout changed in this log update.
+
+### T242 — Team — simplify Nick's government-client wording
+
+- **Request:** Change `frontline level government` to `frontline government`.
+- **Applied:** Nick's biography now reads: `He brings extensive experience supporting executive and frontline government and business clients.`
+- **Clarification resolved:** This identifies the occurrence intended by the earlier “remove level” request; Tom's biography is unchanged.
+- **Scope:** One wording replacement in `preview-v4/src/content/team.js`, with this log updated for PR #16 and its review preview.
+
+### T243 — Complete the reviewed release PR
+
+- **Request / authorization:** Complete PR #16 after pushing all latest changes and verifying the Netlify review preview.
+- **Reviewed source:** Commit `7362c3db4e1c26492be19779deff7318bbcfc53f`; Netlify review deploy `6ad16e8b3f26c58513e75a44` is ready at this exact commit. All six checked key routes and all 41 Team image variants returned HTTP 200. Nick's final wording is present.
+- **Release scope:** Merge PR #16 into `main`, publish the resulting production build on the dedicated `hope1source-org` Netlify project, and verify it. This entry changes documentation only; it does not alter the reviewed website content.
+- **Domain:** GoDaddy DNS and custom-domain HTTPS remain separate launch steps after production verification. No DNS change is recorded by this release entry.
 
 ## Resolved placement
 
