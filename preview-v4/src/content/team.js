@@ -11,7 +11,7 @@ export const team = [
     photoSrcSet: [{"src":"photos/team/tim-underwood-256.jpg","width":256},{"src":"photos/team/tim-underwood-512.jpg","width":512},{"src":"photos/team/tim-underwood-1024.jpg","width":1024}],
     photoFrame: {"left":0.175,"top":0.0125,"width":0.5},
     imagePosition: '40% center',
-    bio: 'Tim founded H1S to help service providers build trust, solve problems, and measure what matters for impact. An Air Force Reserve officer, Eagle Scout, Honor Medal recipient, and former Presidential Management Fellow supporting thousands of service providers nationally, he brings experience across diverse sectors, from the White House to service providers helping people without a house.',
+    bio: 'Tim founded H1S to help service providers build trust, solve problems, and measure what matters to connect people and resources. A decorated leader—Air Force Reserve officer, Lance Sijan Leader Awardee, Honor Medal recipient, Eagle Scout, 3-year top global IEEE grantee, and Presidential Management Fellow alum—his work spans from scaling national policy at the White House to humanizing care on the streets.',
   },
   {
     name: 'Frank Adames',
