@@ -71,7 +71,7 @@ export const stories = [
     slug: 'dreamers-and-achievers',
     title: 'Dreamers & Achievers',
     outcome: 'Keep listening',
-    cardTitle: 'Stay connect with bulk texting.',
+    cardTitle: 'Stayed connected with bulk texting.',
     card: 'Dreamers & Achievers used H1S to gather feedback. It reported follow-ups growing from 60 to 1,400 people and 5x funding growth during the supported period.',
     org: 'Dreamers & Achievers',
     industry: 'Local Nonprofit - Access',

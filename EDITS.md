@@ -7,7 +7,7 @@
 - Repository: https://github.com/hopeonesource/hope1source.org
 - Latest release pull request: https://github.com/hopeonesource/hope1source.org/pull/16
 - Previous release pull request: https://github.com/hopeonesource/hope1source.org/pull/15 (merged)
-- Current wording review: https://github.com/hopeonesource/hope1source.org/pull/17 — `codex/dreamers-bulk-texting` (T244–T245)
+- Current wording review: https://github.com/hopeonesource/hope1source.org/pull/17 — `codex/dreamers-bulk-texting` (T244–T246)
 - Latest wording preview: https://codex-dreamers-bulk-texting--hope1source-org.netlify.app/
 - Previous image review preview: https://codex-homepage-image-polish--hope1source-org.netlify.app/
 - Latest Team preview: https://codex-homepage-image-polish--hope1source-org.netlify.app/team
@@ -38,7 +38,7 @@ Earlier reconciliation through `71cd1a1`: all T01–T177 entries and T24A were a
 | Team portraits | 41 responsive variants for 14 people, larger originals where available, face-centered framing, and Justin's conservative AI restoration. Original files retained. | T239 |
 | Chris Burnett | Existing boat photograph and framing retained, using the matching 900 × 1200 original. Generated close-up excluded. | T240 |
 | Nick's biography | `executive and frontline government and business clients` | T242 |
-| Dreamers & Achievers headline | `Stay connect with bulk texting.` (exact requested wording) | T244 |
+| Dreamers & Achievers headline | `Stayed connected with bulk texting.` | T244, T246 |
 
 ### Resolved clarification
 
@@ -2827,6 +2827,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Second replacement:** `Can you remain connected to those you aim to serve?` → `Are you connected?`
 - **Scope:** The homepage readiness callout in `preview-v4/src/pages/Home.jsx`. Both changes use the exact requested wording and punctuation. The button, layout, and separate Readiness page are unchanged.
 - **Review:** Included with T244 in PR #17 and its Netlify branch preview.
+
+### T246 — Dreamers & Achievers — past-tense headline correction
+
+- **Request:** `Stayed connected with bulk..`
+- **Old text:** `Stay connect with bulk texting.`
+- **New text:** `Stayed connected with bulk texting.`
+- **Scope:** Supersedes T244's headline on the shared Dreamers & Achievers story card. Other wording, imagery, and layout are unchanged. Included in PR #17 and its Netlify review preview.
 
 ## Resolved placement
 
