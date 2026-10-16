@@ -91,7 +91,7 @@ export default function Home() {
       <section className="cause-band" aria-labelledby="ready-title">
         <div className="wrap cause-inner">
           <div>
-            <h2 id="ready-title">Winter is coming?</h2>
+            <h2 id="ready-title">Winter is coming.</h2>
             <p>Are you connected?</p>
           </div>
           <Link className="btn btn-primary" to="/readiness">

@@ -8,6 +8,7 @@
 - Latest release pull request: https://github.com/hopeonesource/hope1source.org/pull/17
 - Previous release pull request: https://github.com/hopeonesource/hope1source.org/pull/16 (merged)
 - Approved wording release: `codex/dreamers-bulk-texting` (T244–T247)
+- Current punctuation review branch: `codex/winter-heading-period` (T248)
 - Latest wording preview: https://codex-dreamers-bulk-texting--hope1source-org.netlify.app/
 - Previous image review preview: https://codex-homepage-image-polish--hope1source-org.netlify.app/
 - Latest Team preview: https://codex-homepage-image-polish--hope1source-org.netlify.app/team
@@ -2842,6 +2843,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Approved wording:** `Stayed connected with bulk texting.`, `Winter is coming?`, and `Are you connected?`
 - **Release scope:** Merge PR #17 into `main`, publish and verify its production build on the dedicated `hope1source-org` Netlify project, and report when GoDaddy can be updated. This log entry changes no website content.
 - **Domain:** DNS changes and custom-domain HTTPS remain separate from this PR release. Existing domain/mail settings are not changed by this entry.
+
+### T248 — Homepage — winter heading punctuation
+
+- **Request / new text:** `Winter is coming.`
+- **Old text:** `Winter is coming?`
+- **Scope:** Replaced the question mark with a period in the homepage readiness heading. `Are you connected?`, the button, and all other content and layout remain unchanged.
+- **Review:** Prepared on `codex/winter-heading-period` after PR #17 merged and was published on Netlify.
 
 ## Resolved placement
 
