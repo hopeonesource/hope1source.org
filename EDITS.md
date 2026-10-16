@@ -16,13 +16,13 @@
 
 This is the running record for all v4 edits, including wording, images, ordering, formatting, navigation, responsive behavior, search preparation, and new stories. The existing file remains `EDITS.md`; no separate `edit.md` is needed.
 
-Latest reconciliation: reviewed the source and branch history through `d8d4654`. Entries T233–T240 record the homepage image refresh, shorter Dreamers summary, final shortened QR/NFC invitation, About founder wording, Justin's biography edits, all 14 team portraits, and the correction retaining Chris Burnett's original boat photo. T241 records this log update.
+Latest reconciliation: reviewed the source and branch history through `d8d4654`. Entries T233–T240 record the homepage image refresh, shorter Dreamers summary, final shortened QR/NFC invitation, About founder wording, Justin's biography edits, all 14 team portraits, and the correction retaining Chris Burnett's original boat photo. T241 records this log update. T242 records the clarified removal of “level” from Nick's biography.
 
 Earlier reconciliation through `71cd1a1`: all T01–T177 entries and T24A were already present exactly once, along with V01–V04 and resolved placement C01. T178 records that documentation checkpoint. Every one of the 140 branch commits ahead of `origin/main` at that checkpoint included an edit-log update.
 
 **How to read the history:** Entries record what was applied at that point in the conversation. Later instructions supersede earlier versions only within their stated page and field. An older entry marked “Applied” is not a direction to restore superseded text. Per-entry requests and provenance distinguish user wording from assistant drafts. Historical build counts and validation results describe the version tested at the time.
 
-**Review status:** PR #15 is merged and its release is on `hope1source-org.netlify.app`. PR #16 is open on branch `codex/homepage-image-polish` and contains the later image and copy changes; these are visible in the separate review preview and have not been merged into the release. Netlify review deploy `6ad16d1670a56c55efa35019` serves commit `d8d4654`. The custom-domain cutover remains pending as recorded in T232. Earlier entries saying publication is pending describe their historical status.
+**Review status:** PR #15 is merged and its release is on `hope1source-org.netlify.app`. PR #16 is open on branch `codex/homepage-image-polish` and contains the later image and copy changes; these are reviewed in the separate preview and have not been merged into the release. The image-review checkpoint was Netlify deploy `6ad16d1670a56c55efa35019` at commit `d8d4654`; subsequent wording changes are recorded below. The custom-domain cutover remains pending as recorded in T232. Earlier entries saying publication is pending describe their historical status.
 
 ### Latest review changes
 
@@ -35,10 +35,11 @@ Earlier reconciliation through `71cd1a1`: all T01–T177 entries and T24A were a
 | Justin's biography | `Justin leads custom tech for H1S.` and `specializing in custom solutions` | T238 |
 | Team portraits | 41 responsive variants for 14 people, larger originals where available, face-centered framing, and Justin's conservative AI restoration. Original files retained. | T239 |
 | Chris Burnett | Existing boat photograph and framing retained, using the matching 900 × 1200 original. Generated close-up excluded. | T240 |
+| Nick's biography | `executive and frontline government and business clients` | T242 |
 
-### Pending clarification
+### Resolved clarification
 
-- **Team — remove “level”:** Not applied. The word appears in Nick's `executive and frontline level government and business clients` and Tom's `Secretary level appointment`. The clarification asking whether to change Nick, Tom, or both has not been answered; the later Justin edits did not identify either occurrence.
+- **Team — remove “level”:** The user clarified `frontline level government` → `frontline government`. Applied to Nick's biography in T242. Tom's approved `Secretary level appointment` remains unchanged.
 
 ### Current choices and where to find their history
 
@@ -2794,6 +2795,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Verification recorded:** Netlify review deploy `6ad16d1670a56c55efa35019` is ready at `d8d4654`; all 41 Team image variants returned HTTP 200, and the deployed phone view loaded all 14 portraits without horizontal overflow. PR #16 remains open.
 - **Outstanding:** Recorded the unresolved “remove level” request separately without marking it applied. Chris Burnett's original photo correction remains explicit.
 - **Scope:** Documentation only; no website wording, images, or layout changed in this log update.
+
+### T242 — Team — simplify Nick's government-client wording
+
+- **Request:** Change `frontline level government` to `frontline government`.
+- **Applied:** Nick's biography now reads: `He brings extensive experience supporting executive and frontline government and business clients.`
+- **Clarification resolved:** This identifies the occurrence intended by the earlier “remove level” request; Tom's biography is unchanged.
+- **Scope:** One wording replacement in `preview-v4/src/content/team.js`, with this log updated for PR #16 and its review preview.
 
 ## Resolved placement
 
