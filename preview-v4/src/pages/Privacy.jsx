@@ -1,4 +1,4 @@
-import PageHero, { Confirm, DraftBanner } from '../components/PageHero.jsx'
+import PageHero, { Confirm } from '../components/PageHero.jsx'
 import Seo from '../components/Seo.jsx'
 import { org } from '../content/org.js'
 
@@ -6,19 +6,19 @@ export default function Privacy() {
   return (
     <>
       <Seo
-        title="Privacy policy (draft)"
-        description="Draft privacy policy for Hope1Source Check-ins. Hope with Love is the 501(c)(3)."
+        title="Privacy policy"
+        description="Privacy policy for Hope1Source Check-ins, including consent, information sharing, access, retention, and security."
       />
       <PageHero
-        kicker="Privacy · draft"
+        kicker="Privacy"
         title="Privacy policy."
-        lede="Draft privacy policy for Hope1Source Check-ins. Not legal advice."
+        lede="Privacy policy for Hope1Source Check-ins."
       />
       <article className="section prose-section">
         <div className="wrap narrow prose legal">
-          <DraftBanner />
+          <p>Last updated: October 16, 2026.</p>
           <p>
-            This draft applies to the websites, apps, and related services operated by {org.legalName} (“we,” “us”)
+            This policy applies to the websites, apps, and related services operated by {org.legalName} (“we,” “us”)
             under the names {org.program}, {org.programLegacy}, and {org.product}. The hosts in view are{' '}
             <strong>https://{org.siteHost}</strong> (this mission site), <strong>{org.hubUrl}</strong> (the Check-ins
             hub), and <strong>{org.portalUrl}</strong> (the partner portal), together the “Service.”
@@ -46,6 +46,12 @@ export default function Privacy() {
 
           <h2>Disclosure of information</h2>
           <p>
+            With your consent, we share information with authorized service providers for care coordination and
+            quality reporting. Sharing is governed by this policy and applicable privacy laws, including the{' '}
+            <a href="https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/disclosures-treatment-payment-health-care-operations/index.html">HIPAA Privacy Rule</a>{' '}
+            where it applies. Information may also be disclosed when required by law.
+          </p>
+          <p>
             {org.programLegacy} is administered by {org.legalName}. The organization uses industry-standard encryption
             practices to protect core elements of personally identifiable information stored in the system.
           </p>
@@ -70,7 +76,7 @@ export default function Privacy() {
 
           <h2>How to access your information</h2>
           <p>
-            If you have an account, the draft proposes that you review or change what you provided in account settings.
+            If you have an account, you may review or change what you provided in account settings.
             The working address for partner access is <a href={org.portalUrl}>{org.portalUrl}</a>.
           </p>
           <Confirm>
@@ -142,8 +148,8 @@ export default function Privacy() {
           <h2>Access and retention</h2>
           <p>
             If your information changes, or you no longer want the Service, you may correct it, delete inaccuracies, or
-            ask us to stop contacting you by updating the account or by contacting {org.legalName}. The draft response
-            window is 15 days. Information is retained while the account is active or as needed to provide the service.
+            ask us to stop contacting you by updating the account or by contacting {org.legalName}. Our target response
+            time is 15 days. Information is retained while the account is active or as needed to provide the service.
             To cancel an account or ask that information no longer be used to provide services, use the email below. We
             may retain and use information as needed to meet legal obligations, resolve disputes, and enforce
             agreements.
@@ -165,7 +171,7 @@ export default function Privacy() {
             platform.
           </p>
 
-          <h2>Contact for this draft</h2>
+          <h2>Contact</h2>
           <ul>
             <li>Organization: {org.legalName}, the 501(c)(3) operating {org.brand}</li>
             <li>Mission site: https://{org.siteHost}</li>

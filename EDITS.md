@@ -2915,6 +2915,15 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** Tim's biography on the published Team page, sourced from `preview-v4/src/content/team.js`. His title and photograph, other biographies, the About page, and the site's layout are unchanged.
 - **Validation / release:** Production build and prerender checks passed for all 46 pages, 30 aliases, and 886 internal links, including metadata, JSON-LD, sitemap, and 404 checks. Verified the exact requested bio in the production HTML and confirmed all other team content and portrait settings match `main`. Release is authorized through a dedicated PR and the existing `hope1source-org` Netlify project.
 
+### T256 — Terms and Privacy — concise information sharing and removal of draft labels
+
+- **Request / authorization:** Adopt the agreed concise sharing paragraph and remove the public draft labels.
+- **Approved Terms paragraph:** With your consent, we share information with authorized service providers for care coordination and quality reporting. Sharing is governed by our Privacy Policy and applicable privacy laws, including the HIPAA Privacy Rule where it applies. Information may also be disclosed when required by law.
+- **Placement / citations:** Replaced the Terms page's registration-only privacy sentence with the approved paragraph, linking to `/privacy` and the HHS guidance on the HIPAA Privacy Rule. Added matching wording under Privacy's Disclosure of information, using “this policy” for its self-reference.
+- **Draft cleanup:** Removed draft titles, hero labels, banners, and visible draft phrasing from both pages and their metadata. Added October 16, 2026 as the last-updated date; retained the existing 15-day response timeframe as a target. Internal, non-rendered review notes remain in source.
+- **Scope:** No detailed screening provisions, instrument lists, new platform capabilities, or claim of HIPAA certification were added. Other policy provisions, sensitive-message restrictions, layouts, and website content are unchanged.
+- **Validation / release:** Production build and prerender checks passed for all 46 pages, 30 aliases, and 886 internal links, including metadata, JSON-LD, sitemap, and 404 behavior. Both built legal pages contain the agreed sharing wording, HHS policy citation, and last-updated date, with no draft labels or screening-tool details in the rendered HTML. Release follows the existing GitHub PR and dedicated Netlify project workflow.
+
 ## Resolved placement
 
 ### C01 — Partner Success
