@@ -5,7 +5,7 @@
 - Current: https://hopeonesource.github.io/hope1source.org/
 - Preview: https://hopeonesource.github.io/hope1source.org/v3/
 - Repository: https://github.com/hopeonesource/hope1source.org
-- Current review pull request: https://github.com/hopeonesource/hope1source.org/pull/16 (open)
+- Latest release pull request: https://github.com/hopeonesource/hope1source.org/pull/16
 - Previous release pull request: https://github.com/hopeonesource/hope1source.org/pull/15 (merged)
 - Latest review preview: https://codex-homepage-image-polish--hope1source-org.netlify.app/
 - Latest Team preview: https://codex-homepage-image-polish--hope1source-org.netlify.app/team
@@ -22,7 +22,7 @@ Earlier reconciliation through `71cd1a1`: all T01–T177 entries and T24A were a
 
 **How to read the history:** Entries record what was applied at that point in the conversation. Later instructions supersede earlier versions only within their stated page and field. An older entry marked “Applied” is not a direction to restore superseded text. Per-entry requests and provenance distinguish user wording from assistant drafts. Historical build counts and validation results describe the version tested at the time.
 
-**Review status:** PR #15 is merged and its release is on `hope1source-org.netlify.app`. PR #16 is open on branch `codex/homepage-image-polish` and contains the later image and copy changes; these are reviewed in the separate preview and have not been merged into the release. The image-review checkpoint was Netlify deploy `6ad16d1670a56c55efa35019` at commit `d8d4654`; subsequent wording changes are recorded below. The custom-domain cutover remains pending as recorded in T232. Earlier entries saying publication is pending describe their historical status.
+**Release status:** The user authorized completing PR #16 in T243. It contains the homepage and Team image refresh, approved copy changes, and the final Nick biography correction. The verified review preview is Netlify deploy `6ad16e8b3f26c58513e75a44` at commit `7362c3d`. PR #15 was the preceding production release. The live status of the latest release is available in the linked PR and Netlify project; the custom-domain cutover remains pending as recorded in T232. Earlier entries saying publication or review is pending describe their historical status.
 
 ### Latest review changes
 
@@ -2802,6 +2802,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Applied:** Nick's biography now reads: `He brings extensive experience supporting executive and frontline government and business clients.`
 - **Clarification resolved:** This identifies the occurrence intended by the earlier “remove level” request; Tom's biography is unchanged.
 - **Scope:** One wording replacement in `preview-v4/src/content/team.js`, with this log updated for PR #16 and its review preview.
+
+### T243 — Complete the reviewed release PR
+
+- **Request / authorization:** Complete PR #16 after pushing all latest changes and verifying the Netlify review preview.
+- **Reviewed source:** Commit `7362c3db4e1c26492be19779deff7318bbcfc53f`; Netlify review deploy `6ad16e8b3f26c58513e75a44` is ready at this exact commit. All six checked key routes and all 41 Team image variants returned HTTP 200. Nick's final wording is present.
+- **Release scope:** Merge PR #16 into `main`, publish the resulting production build on the dedicated `hope1source-org` Netlify project, and verify it. This entry changes documentation only; it does not alter the reviewed website content.
+- **Domain:** GoDaddy DNS and custom-domain HTTPS remain separate launch steps after production verification. No DNS change is recorded by this release entry.
 
 ## Resolved placement
 
