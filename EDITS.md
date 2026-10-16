@@ -7,7 +7,8 @@
 - Repository: https://github.com/hopeonesource/hope1source.org
 - Latest release pull request: https://github.com/hopeonesource/hope1source.org/pull/16
 - Previous release pull request: https://github.com/hopeonesource/hope1source.org/pull/15 (merged)
-- Latest review preview: https://codex-homepage-image-polish--hope1source-org.netlify.app/
+- Current wording review branch: `codex/dreamers-bulk-texting` (T244)
+- Previous image review preview: https://codex-homepage-image-polish--hope1source-org.netlify.app/
 - Latest Team preview: https://codex-homepage-image-polish--hope1source-org.netlify.app/team
 - v4 source: `preview-v4/`, running locally at http://127.0.0.1:5175/v4/ and published as a noindex GitHub preview at https://hopeonesource.github.io/hope1source.org/v4/.
 - Netlify release: https://hope1source-org.netlify.app — primary-domain cutover to https://hope1source.org is pending GoDaddy sign-in/DNS access (T232).
@@ -22,7 +23,7 @@ Earlier reconciliation through `71cd1a1`: all T01–T177 entries and T24A were a
 
 **How to read the history:** Entries record what was applied at that point in the conversation. Later instructions supersede earlier versions only within their stated page and field. An older entry marked “Applied” is not a direction to restore superseded text. Per-entry requests and provenance distinguish user wording from assistant drafts. Historical build counts and validation results describe the version tested at the time.
 
-**Release status:** The user authorized completing PR #16 in T243. It contains the homepage and Team image refresh, approved copy changes, and the final Nick biography correction. The verified review preview is Netlify deploy `6ad16e8b3f26c58513e75a44` at commit `7362c3d`. PR #15 was the preceding production release. The live status of the latest release is available in the linked PR and Netlify project; the custom-domain cutover remains pending as recorded in T232. Earlier entries saying publication or review is pending describe their historical status.
+**Release status:** PR #16 merged as `a722b10da77faf35e80d3b7eb615243f9d7177e5` and is published on Netlify as production deploy `6ad16fdcbdc2100f84247ad5`. It includes the homepage and Team image refresh, approved copy changes, and the final Nick biography correction. T244 is the subsequent headline edit on branch `codex/dreamers-bulk-texting`, prepared for a separate review. The custom-domain cutover remains pending as recorded in T232. Earlier entries saying publication or review is pending describe their historical status.
 
 ### Latest review changes
 
@@ -36,6 +37,7 @@ Earlier reconciliation through `71cd1a1`: all T01–T177 entries and T24A were a
 | Team portraits | 41 responsive variants for 14 people, larger originals where available, face-centered framing, and Justin's conservative AI restoration. Original files retained. | T239 |
 | Chris Burnett | Existing boat photograph and framing retained, using the matching 900 × 1200 original. Generated close-up excluded. | T240 |
 | Nick's biography | `executive and frontline government and business clients` | T242 |
+| Dreamers & Achievers headline | `Stay connect with bulk texting.` (exact requested wording) | T244 |
 
 ### Resolved clarification
 
@@ -2809,6 +2811,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Reviewed source:** Commit `7362c3db4e1c26492be19779deff7318bbcfc53f`; Netlify review deploy `6ad16e8b3f26c58513e75a44` is ready at this exact commit. All six checked key routes and all 41 Team image variants returned HTTP 200. Nick's final wording is present.
 - **Release scope:** Merge PR #16 into `main`, publish the resulting production build on the dedicated `hope1source-org` Netlify project, and verify it. This entry changes documentation only; it does not alter the reviewed website content.
 - **Domain:** GoDaddy DNS and custom-domain HTTPS remain separate launch steps after production verification. No DNS change is recorded by this release entry.
+
+### T244 — Dreamers & Achievers — bulk-texting headline
+
+- **Request:** Replace the headline beginning `Stay connected through...` with `Stay connect with bulk texting.`
+- **Old text:** `Stay connected through follow-up.`
+- **New text:** `Stay connect with bulk texting.`
+- **Scope:** The shared Dreamers & Achievers story-card headline in `preview-v4/src/content/stories.js`, displayed on Home, Learn More, and the Case Studies listing. Preserved the exact requested wording, summary, outcome figures, images, and layout.
+- **Review:** Prepared on `codex/dreamers-bulk-texting` following the completed PR #16 release.
 
 ## Resolved placement
 
