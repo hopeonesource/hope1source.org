@@ -5,11 +5,11 @@
 - Current: https://hopeonesource.github.io/hope1source.org/
 - Preview: https://hopeonesource.github.io/hope1source.org/v3/
 - Repository: https://github.com/hopeonesource/hope1source.org
-- Latest release pull request: https://github.com/hopeonesource/hope1source.org/pull/17
+- Latest release pull request: https://github.com/hopeonesource/hope1source.org/pull/17 (merged and published on Netlify)
 - Previous release pull request: https://github.com/hopeonesource/hope1source.org/pull/16 (merged)
 - Approved wording release: `codex/dreamers-bulk-texting` (T244–T247)
-- Current wording review: https://github.com/hopeonesource/hope1source.org/pull/18 — `codex/winter-heading-period` (T248–T249)
-- Current wording preview: https://codex-winter-heading-period--hope1source-org.netlify.app/
+- Current wording and metadata review: https://github.com/hopeonesource/hope1source.org/pull/18 — `codex/winter-heading-period` (T248–T250)
+- Current review preview: https://codex-winter-heading-period--hope1source-org.netlify.app/
 - Latest wording preview: https://codex-dreamers-bulk-texting--hope1source-org.netlify.app/
 - Previous image review preview: https://codex-homepage-image-polish--hope1source-org.netlify.app/
 - Latest Team preview: https://codex-homepage-image-polish--hope1source-org.netlify.app/team
@@ -26,7 +26,7 @@ Earlier reconciliation through `71cd1a1`: all T01–T177 entries and T24A were a
 
 **How to read the history:** Entries record what was applied at that point in the conversation. Later instructions supersede earlier versions only within their stated page and field. An older entry marked “Applied” is not a direction to restore superseded text. Per-entry requests and provenance distinguish user wording from assistant drafts. Historical build counts and validation results describe the version tested at the time.
 
-**Release record:** The user authorized merging and publishing PR #17 in T247. It contains the final Dreamers headline and the shorter homepage winter invitation. Its reviewed source is `f55bc805a577dbd16ab4bf17ce5a435e3c3def59`, verified in Netlify review deploy `6ad17274fedb28ed07e55d6d`. The preceding PR #16 release merged as `a722b10da77faf35e80d3b7eb615243f9d7177e5` and was published as production deploy `6ad16fdcbdc2100f84247ad5`. The linked PR and Netlify project show the live release status. The custom-domain cutover remains pending as recorded in T232. Earlier entries saying publication or review is pending describe their historical status.
+**Release record:** The user authorized merging and publishing PR #17 in T247. It contains the final Dreamers headline and the shorter homepage winter invitation. Its reviewed source is `f55bc805a577dbd16ab4bf17ce5a435e3c3def59`, verified in Netlify review deploy `6ad17274fedb28ed07e55d6d`. PR #17 merged as `3e162886e9f8f2703a7eb77206278f6f046fcf32` and was published as production deploy `6ad17304f668a0153ee55d3c`. The preceding PR #16 release merged as `a722b10da77faf35e80d3b7eb615243f9d7177e5` and was published as production deploy `6ad16fdcbdc2100f84247ad5`. PR #18 contains the next wording and metadata review. The custom-domain cutover remains pending as recorded in T232. Earlier entries saying publication or review is pending describe their historical status.
 
 ### Latest review changes
 
@@ -2858,6 +2858,17 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Old text:** `Alert. Check in. Connect.`
 - **Scope:** The process section heading on the Readiness page in `preview-v4/src/pages/Readiness.jsx`. Other wording, links, and layout are unchanged.
 - **Review:** Included with the homepage punctuation correction in PR #18 and its Netlify review preview.
+
+### T250 — Search metadata and social link previews
+
+- **Request:** Improve site metadata to help people and organizations discover H1S's offerings.
+- **Search copy:** Added separate, unique search titles and descriptions for 30 core, service, audience, and case-study routes. The homepage search title is now `SMS Check-ins & Community Outreach · Hope1Source`. The copy explains SMS check-ins, opt-in alerts, feedback, QR/NFC/kiosk access points, partnerships, and H1S's support for service providers. Existing article headlines, summaries, and visible page copy are preserved.
+- **Structured data:** Added the published partnership email/contact link to the organization identity; four Service entries matching the visible Outreach Tools offerings; and breadcrumb paths for article and case-study pages. Article metadata now includes existing bylines and available images, while retaining the existing rule against inventing precise dates from partial or uncertain dates. No ratings, new outcome claims, coverage areas, or direct-care services were added.
+- **Link previews:** Added matching Open Graph and Twitter titles, descriptions, image dimensions, image descriptions, and locale. Articles with existing photographs use those photographs for sharing. Optional article publication metadata is removed when navigating away from an article.
+- **Implementation:** A shared metadata model supplies initial HTML and client navigation. Outreach offering text is shared between the visible cards and structured data. The build checker now verifies metadata parity, schema identities, service scope, breadcrumbs, article attribution/dates, image assets, and existing crawler/redirect behavior.
+- **Validation:** Default preview and production-context builds pass for all 46 pages and 30 aliases (784 and 886 internal links respectively). SHA-256 comparison of all 46 rendered page bodies against the pre-metadata build found no visible-content changes. Review includes only T248–T249's already requested heading edits plus this metadata work; layout and design are unchanged.
+- **Browser verification:** Navigating from an article to Contact without reloading correctly updates the title, page type, image dimensions, and canonical and removes the article publication date. Navigating to an unknown route removes canonical/JSON-LD and sets `noindex, follow`.
+- **Review:** Included in PR #18. This entry does not authorize a production merge or change GoDaddy DNS.
 
 ## Resolved placement
 
