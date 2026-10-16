@@ -8,7 +8,7 @@
 - Latest release pull request: https://github.com/hopeonesource/hope1source.org/pull/17 (merged and published on Netlify)
 - Previous release pull request: https://github.com/hopeonesource/hope1source.org/pull/16 (merged)
 - Approved wording release: `codex/dreamers-bulk-texting` (T244–T247)
-- Current wording, metadata, and sharing review: https://github.com/hopeonesource/hope1source.org/pull/18 — `codex/winter-heading-period` (T248–T251)
+- Approved wording, metadata, and sharing release: https://github.com/hopeonesource/hope1source.org/pull/18 — `codex/winter-heading-period` (T248–T252)
 - Current review preview: https://codex-winter-heading-period--hope1source-org.netlify.app/
 - Latest wording preview: https://codex-dreamers-bulk-texting--hope1source-org.netlify.app/
 - Previous image review preview: https://codex-homepage-image-polish--hope1source-org.netlify.app/
@@ -2878,6 +2878,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Sharing artwork:** Added `public/social/hope1source-share-v2.png` (1733 × 907). The new cream/dark-green card features the recognizable red/gold HopeOneSource brand, `Earn Trust.`, and `We train and equip those who serve others for lasting change.` This replaces the older default social image for v4 without replacing its visible page content. Articles with their own photographs retain those photographs. Artwork provenance and prompt are in `docs/BRAND_SHARING.md`.
 - **Image loading fix:** Live inspection found the old `og:image`, Twitter image, and structured-data logo URLs pointed at missing files on the still-old `hope1source.org` site. Metadata now uses a separately validated image host: the exact Netlify review deployment, or the stable production Netlify host configured in `netlify.toml`. Canonical URLs and GoDaddy DNS are unchanged. The article schema image uses the same active image host.
 - **Validation:** Default preview and production-context builds pass all 46 pages, 30 aliases, and metadata checks. New checks verify PNG signatures/dimensions, favicon declarations, ICO structure, and separate canonical/image hosts. Review remains PR #18; production publication follows PR review.
+
+### T252 — Approve PR #18 and release to Netlify
+
+- **Request / authorization:** Merge the PR and report what is needed to complete the GoDaddy domain addition/cutover.
+- **Reviewed source:** PR #18 at `66d840428b422dd9d8bc8dd61f4f68f23064029f`, verified in ready Netlify review deploy `6ad178b88a4feee38feb8107`. The branch is mergeable with a clean working tree. Its metadata, original heart favicons, generated sharing card, and active image URLs passed the recorded build, browser, and live asset checks.
+- **Approved release:** T248–T251's homepage/readiness heading edits, clearer search metadata, structured data, favicon declarations, sharing artwork, and image-host correction. This new entry changes documentation only; the reviewed website files are unchanged.
+- **Release action:** Merge PR #18 to `main`, build the resulting commit on the dedicated `hope1source-org` Netlify project, and verify the published production release. The PR and Netlify deployment provide the final merge/deploy identifiers.
+- **GoDaddy scope:** Confirm the exact apex/www DNS replacements and required account access. The intended primary domain remains `hope1source.org`; DNS access and custom-domain certificate verification are separate steps. This entry does not record a DNS change.
 
 ## Resolved placement
 
