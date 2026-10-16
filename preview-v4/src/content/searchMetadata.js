@@ -1,7 +1,7 @@
 /** Search and sharing copy, kept separate from the visible page headings. */
 export const searchMetadata = {
   '/': {
-    title: 'SMS Check-ins & Community Outreach',
+    title: 'SMS Check-ins and Community Outreach',
     description: 'We train and equip service providers with SMS check-ins, opt-in alerts, and feedback tools to stay connected with the people they serve.',
   },
   '/about': {
