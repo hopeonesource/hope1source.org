@@ -5,7 +5,10 @@
 - Current: https://hopeonesource.github.io/hope1source.org/
 - Preview: https://hopeonesource.github.io/hope1source.org/v3/
 - Repository: https://github.com/hopeonesource/hope1source.org
-- Review pull request: https://github.com/hopeonesource/hope1source.org/pull/15
+- Current review pull request: https://github.com/hopeonesource/hope1source.org/pull/16 (open)
+- Previous release pull request: https://github.com/hopeonesource/hope1source.org/pull/15 (merged)
+- Latest review preview: https://codex-homepage-image-polish--hope1source-org.netlify.app/
+- Latest Team preview: https://codex-homepage-image-polish--hope1source-org.netlify.app/team
 - v4 source: `preview-v4/`, running locally at http://127.0.0.1:5175/v4/ and published as a noindex GitHub preview at https://hopeonesource.github.io/hope1source.org/v4/.
 - Netlify release: https://hope1source-org.netlify.app — primary-domain cutover to https://hope1source.org is pending GoDaddy sign-in/DNS access (T232).
 
@@ -13,11 +16,29 @@
 
 This is the running record for all v4 edits, including wording, images, ordering, formatting, navigation, responsive behavior, search preparation, and new stories. The existing file remains `EDITS.md`; no separate `edit.md` is needed.
 
-Reconciled the conversation, current v4 source, and branch history through `71cd1a1`. All T01–T177 entries and T24A were already present exactly once, along with V01–V04 and resolved placement C01. T178 records this documentation reconciliation. Every one of the 140 branch commits ahead of `origin/main` at that checkpoint included an edit-log update.
+Latest reconciliation: reviewed the source and branch history through `d8d4654`. Entries T233–T240 record the homepage image refresh, shorter Dreamers summary, final shortened QR/NFC invitation, About founder wording, Justin's biography edits, all 14 team portraits, and the correction retaining Chris Burnett's original boat photo. T241 records this log update.
+
+Earlier reconciliation through `71cd1a1`: all T01–T177 entries and T24A were already present exactly once, along with V01–V04 and resolved placement C01. T178 records that documentation checkpoint. Every one of the 140 branch commits ahead of `origin/main` at that checkpoint included an edit-log update.
 
 **How to read the history:** Entries record what was applied at that point in the conversation. Later instructions supersede earlier versions only within their stated page and field. An older entry marked “Applied” is not a direction to restore superseded text. Per-entry requests and provenance distinguish user wording from assistant drafts. Historical build counts and validation results describe the version tested at the time.
 
-**Review status:** On October 15, 2026, the user authorized merging PR #15 and replacing hope1source.org with v4 using Netlify and GoDaddy. Production preparation and verification are recorded from T231 onward. Earlier entries saying publication is pending describe their historical status.
+**Review status:** PR #15 is merged and its release is on `hope1source-org.netlify.app`. PR #16 is open on branch `codex/homepage-image-polish` and contains the later image and copy changes; these are visible in the separate review preview and have not been merged into the release. Netlify review deploy `6ad16d1670a56c55efa35019` serves commit `d8d4654`. The custom-domain cutover remains pending as recorded in T232. Earlier entries saying publication is pending describe their historical status.
+
+### Latest review changes
+
+| Area | Latest applied change | Log references |
+| --- | --- | --- |
+| Homepage imagery | Sharper desktop hero, a separate mobile composition, and clearer vector artwork for three Partner Success cards. | T233 |
+| Dreamers & Achievers | Story-card summary reduced from 30 to 25 words; reported outcomes and supported-period qualifier retained. | T234 |
+| Homepage access-point card | `Scan, tap, or use a kiosk to privately share feedback and connect with approved services. Your team follows up. No app.` Supersedes the longer wording in T235. | T235–T236 |
+| About | `Tim Underwood founded H1S Check-ins…` | T237 |
+| Justin's biography | `Justin leads custom tech for H1S.` and `specializing in custom solutions` | T238 |
+| Team portraits | 41 responsive variants for 14 people, larger originals where available, face-centered framing, and Justin's conservative AI restoration. Original files retained. | T239 |
+| Chris Burnett | Existing boat photograph and framing retained, using the matching 900 × 1200 original. Generated close-up excluded. | T240 |
+
+### Pending clarification
+
+- **Team — remove “level”:** Not applied. The word appears in Nick's `executive and frontline level government and business clients` and Tom's `Secretary level appointment`. The clarification asking whether to change Nick, Tom, or both has not been answered; the later Justin edits did not identify either occurrence.
 
 ### Current choices and where to find their history
 
@@ -2710,6 +2731,7 @@ The headline, roster, roles, biographies, and photos are unchanged.
 
 - **Request:** Improve all homepage images and resolution for a more impressive presentation.
 - **Hero:** Refined the existing cherry-blossom / Jefferson Memorial scene with built-in image generation and created a separate portrait composition for phones. Desktop output is 1734 × 907; mobile output is 1024 × 1536. Responsive JPEG variants avoid downloading the largest file on every screen. Original assets are retained.
+- **Presentation:** Reduced the homepage's decorative wash opacity to `0.08` so more photo detail is visible, and centered the mobile portrait composition within its frame.
 - **Partner Success:** Added homepage-only vector artwork with larger labels and metrics. VA retains all four comparisons with proportional bars; DC keeps the complete historic photo, the approved message context, crisp hypothermia-message text, and the 78% supported-period result; Dreamers retains Dorothy's small portrait and exact before/after figures with clear numeric comparisons.
 - **Preserved:** Approved homepage wording, story facts, overall layout, existing logo, and full figures within the case studies. Shared story cards use the new artwork only when explicitly requested by Home.
 - **Provenance:** See `docs/HOMEPAGE_IMAGE_REFRESH.md` for asset paths, generation prompts, dimensions, and the distinction between refined scenic hero imagery and unchanged documentary photos.
@@ -2764,6 +2786,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 
 - **Correction:** Keep Chris Burnett's existing photograph and improve resolution only.
 - **Applied:** Retained the boat photograph and its existing framing. Replaced the 600 × 800 source with the matching 900 × 1200 original and responsive delivery variants. The generated close-up was discarded and is not shipped.
+
+### T241 — Edit log synchronized with the latest review preview
+
+- **Request:** Update `edit.md`; continued using the canonical `EDITS.md` rather than creating a second log.
+- **Reconciled:** Current source and branch history through `d8d4654`, with all applied changes in T233–T240. Updated the review links, current PR status, and latest-change summary at the top of this file.
+- **Verification recorded:** Netlify review deploy `6ad16d1670a56c55efa35019` is ready at `d8d4654`; all 41 Team image variants returned HTTP 200, and the deployed phone view loaded all 14 portraits without horizontal overflow. PR #16 remains open.
+- **Outstanding:** Recorded the unresolved “remove level” request separately without marking it applied. Chris Burnett's original photo correction remains explicit.
+- **Scope:** Documentation only; no website wording, images, or layout changed in this log update.
 
 ## Resolved placement
 
