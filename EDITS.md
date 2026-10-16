@@ -2738,6 +2738,12 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** Supersedes T235 in the shared access-point role summary. Retains scan/tap/kiosk options, private feedback, approved services, team follow-up, and no app. Other wording and layout are unchanged. Included in PR #16.
 - **Validation:** Shortened from 27 to 21 words (22.2%) and 160 to 119 characters (25.6%). v4 build, prerender checks, and whitespace check pass.
 
+### T237 — About — founder wording
+
+- **Old phrase:** `founded H1S`
+- **New phrase:** `founded H1S Check-ins`
+- **Scope:** Tim Underwood's founder sentence on the About page only. Included in PR #16.
+
 ## Resolved placement
 
 ### C01 — Partner Success
