@@ -2924,6 +2924,12 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Scope:** No detailed screening provisions, instrument lists, new platform capabilities, or claim of HIPAA certification were added. Other policy provisions, sensitive-message restrictions, layouts, and website content are unchanged.
 - **Validation / release:** Production build and prerender checks passed for all 46 pages, 30 aliases, and 886 internal links, including metadata, JSON-LD, sitemap, and 404 behavior. Both built legal pages contain the agreed sharing wording, HHS policy citation, and last-updated date, with no draft labels or screening-tool details in the rendered HTML. Release follows the existing GitHub PR and dedicated Netlify project workflow.
 
+### T257 — Privacy — corporate partner link label
+
+- **Request:** Change `https://hopeonesource.me (the Check-ins hub)` to `https://hopeonesource.me (Corporate Partner ROI)`.
+- **Applied:** Replaced only the parenthetical label in the Privacy page's opening paragraph, preserving the URL and existing formatting.
+- **Validation / release:** Production build and prerender checks passed for all 46 pages, 30 aliases, and 886 internal links. Confirmed the exact requested label, unchanged URL and formatting in built Privacy HTML. Release follows the existing GitHub PR and Netlify workflow.
+
 ## Resolved placement
 
 ### C01 — Partner Success
