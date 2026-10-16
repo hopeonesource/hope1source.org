@@ -2,7 +2,7 @@ import { createContext, useContext, useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import { pageMetadata, jsonForScript, metadataTags } from '../lib/seo.js'
 
-export { absoluteUrl } from '../lib/seo.js'
+export { absoluteUrl, absoluteAssetUrl } from '../lib/seo.js'
 export const SeoContext = createContext(null)
 
 function upsertMeta(attr, key, content) {

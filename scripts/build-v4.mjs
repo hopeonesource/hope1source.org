@@ -14,9 +14,16 @@ const origin = new URL(process.env.VITE_SITE_ORIGIN || 'https://hopeonesource.gi
 if (!['http:', 'https:'].includes(origin.protocol) || origin.pathname !== '/' || origin.search || origin.hash) {
   throw new Error('VITE_SITE_ORIGIN must be an HTTP(S) origin without a path')
 }
+// Netlify review images must exist on the reviewed deploy, not the old domain.
+// Production explicitly uses the stable Netlify host until the domain cutover.
+const assetOrigin = new URL(process.env.VITE_ASSET_ORIGIN || process.env.DEPLOY_URL || origin.origin)
+if (!['http:', 'https:'].includes(assetOrigin.protocol) || assetOrigin.pathname !== '/' || assetOrigin.search || assetOrigin.hash || assetOrigin.username || assetOrigin.password) {
+  throw new Error('VITE_ASSET_ORIGIN must be an HTTP(S) origin without credentials or a path')
+}
 // Client and SSR builds must receive identical deployment settings.
 process.env.VITE_BASE = base
 process.env.VITE_SITE_ORIGIN = origin.origin
+process.env.VITE_ASSET_ORIGIN = assetOrigin.origin
 process.env.VITE_SITE_INDEXABLE = process.env.VITE_SITE_INDEXABLE === 'true' ? 'true' : 'false'
 
 const configFile = path.join(root, 'preview-v4/vite.config.js')
@@ -105,7 +112,7 @@ ${xmlBody}
 User-agent: *
 Allow: /
 ${siteIndexable ? `\nSitemap: ${absoluteUrl('/sitemap.xml')}\n` : ''}`)
-  writeFileSync(path.join(dist, 'prerender-manifest.json'), `${JSON.stringify({ base, origin: origin.origin, indexable: siteIndexable, pages: manifest, aliases }, null, 2)}\n`)
+  writeFileSync(path.join(dist, 'prerender-manifest.json'), `${JSON.stringify({ base, origin: origin.origin, assetOrigin: assetOrigin.origin, indexable: siteIndexable, pages: manifest, aliases }, null, 2)}\n`)
   console.log(`v4: prerendered ${pages.length} pages, ${aliases.length} aliases and a noindex 404 (${siteIndexable ? 'indexable release' : 'noindex preview'})`)
 } finally {
   rmSync(serverBuild, { recursive: true, force: true })

@@ -8,7 +8,7 @@
 - Latest release pull request: https://github.com/hopeonesource/hope1source.org/pull/17 (merged and published on Netlify)
 - Previous release pull request: https://github.com/hopeonesource/hope1source.org/pull/16 (merged)
 - Approved wording release: `codex/dreamers-bulk-texting` (T244–T247)
-- Current wording and metadata review: https://github.com/hopeonesource/hope1source.org/pull/18 — `codex/winter-heading-period` (T248–T250)
+- Current wording, metadata, and sharing review: https://github.com/hopeonesource/hope1source.org/pull/18 — `codex/winter-heading-period` (T248–T251)
 - Current review preview: https://codex-winter-heading-period--hope1source-org.netlify.app/
 - Latest wording preview: https://codex-dreamers-bulk-texting--hope1source-org.netlify.app/
 - Previous image review preview: https://codex-homepage-image-polish--hope1source-org.netlify.app/
@@ -2869,6 +2869,15 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Validation:** Default preview and production-context builds pass for all 46 pages and 30 aliases (784 and 886 internal links respectively). SHA-256 comparison of all 46 rendered page bodies against the pre-metadata build found no visible-content changes. Review includes only T248–T249's already requested heading edits plus this metadata work; layout and design are unchanged.
 - **Browser verification:** Navigating from an article to Contact without reloading correctly updates the title, page type, image dimensions, and canonical and removes the article publication date. Navigating to an unknown route removes canonical/JSON-LD and sets `noindex, follow`.
 - **Review:** Included in PR #18. This entry does not authorize a production merge or change GoDaddy DNS.
+
+### T251 — Heart favicon and branded link-sharing image
+
+- **Request:** Ensure the HopeOneSource heart favicon is present and shared links look good.
+- **Favicon:** Confirmed the existing 16px/32px PNG, ICO, and 180px Apple icon already use the original red heart and gold rays. Added the existing 512px `logo-mark.png` as a larger favicon option on every v4 page, declared Apple-icon dimensions, and corrected the ICO size declaration. Original logo and icon pixels are unchanged.
+- **Regression prevention:** Removed the obsolete “H” touch-icon output from the legacy artwork generator so it cannot overwrite the heart icon later.
+- **Sharing artwork:** Added `public/social/hope1source-share-v2.png` (1733 × 907). The new cream/dark-green card features the recognizable red/gold HopeOneSource brand, `Earn Trust.`, and `We train and equip those who serve others for lasting change.` This replaces the older default social image for v4 without replacing its visible page content. Articles with their own photographs retain those photographs. Artwork provenance and prompt are in `docs/BRAND_SHARING.md`.
+- **Image loading fix:** Live inspection found the old `og:image`, Twitter image, and structured-data logo URLs pointed at missing files on the still-old `hope1source.org` site. Metadata now uses a separately validated image host: the exact Netlify review deployment, or the stable production Netlify host configured in `netlify.toml`. Canonical URLs and GoDaddy DNS are unchanged. The article schema image uses the same active image host.
+- **Validation:** Default preview and production-context builds pass all 46 pages, 30 aliases, and metadata checks. New checks verify PNG signatures/dimensions, favicon declarations, ICO structure, and separate canonical/image hosts. Review remains PR #18; production publication follows PR review.
 
 ## Resolved placement
 

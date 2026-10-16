@@ -1,6 +1,6 @@
 import { Fragment } from 'react'
 import { Link } from 'react-router-dom'
-import Seo, { absoluteUrl } from '../components/Seo.jsx'
+import Seo, { absoluteUrl, absoluteAssetUrl } from '../components/Seo.jsx'
 import { pressArticleById } from '../content/pressArticles.js'
 import { articleLinkDestination } from '../lib/articleLinks.js'
 import { publicUrl } from '../lib/links.js'
@@ -64,7 +64,7 @@ export default function PressArticle({ id }) {
     publisher: { '@id': `${absoluteUrl('/')}#organization` },
     inLanguage: 'en-US',
     ...(article.author ? { author: { '@type': /^[A-Z]\.\s/.test(article.author) ? 'Person' : 'Organization', name: article.author } } : {}),
-    ...(article.image ? { image: absoluteUrl(article.image.src) } : {}),
+    ...(article.image ? { image: absoluteAssetUrl(article.image.src) } : {}),
     ...(/^\d{4}-\d{2}-\d{2}$/.test(article.dateTime) && !article.note ? { datePublished: article.dateTime } : {}),
   }
 

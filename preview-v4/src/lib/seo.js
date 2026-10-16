@@ -2,9 +2,11 @@ import { org } from '../content/org.js'
 import { aliases, pages } from '../content/routes.js'
 import { searchMetadata } from '../content/searchMetadata.js'
 import { outreachOfferings } from '../content/outreachOfferings.js'
+import { defaultSocialImage } from '../content/brandAssets.js'
 
 // Match the actual GitHub preview host; a production release sets both values.
 export const siteOrigin = (import.meta.env.VITE_SITE_ORIGIN || 'https://hopeonesource.github.io').replace(/\/$/, '')
+export const assetOrigin = (import.meta.env.VITE_ASSET_ORIGIN || siteOrigin).replace(/\/$/, '')
 export const siteBase = import.meta.env.BASE_URL || '/'
 export const siteIndexable = import.meta.env.VITE_SITE_INDEXABLE === 'true'
 
@@ -17,6 +19,11 @@ export function absoluteUrl(pathname = '/') {
   const prefix = siteBase === '/' ? '' : siteBase.replace(/\/$/, '')
   if (!pathname || pathname === '/') return `${siteOrigin}${prefix}/`
   return `${siteOrigin}${prefix}/${pathname.replace(/^\/+/, '')}`
+}
+
+/** Image assets can use the active deploy while the canonical domain moves. */
+export function absoluteAssetUrl(pathname) {
+  return `${assetOrigin}${new URL(absoluteUrl(pathname)).pathname}`
 }
 
 export function pageMetadata({ title, description, jsonLd, image, pathname }) {
@@ -39,7 +46,7 @@ export function pageMetadata({ title, description, jsonLd, image, pathname }) {
     alternateName: [org.program, org.product, org.programLegacy],
     url: home,
     email: org.email,
-    logo: absoluteUrl('/logo-hope-one-source.png'),
+    logo: absoluteAssetUrl('/logo-hope-one-source.png'),
     description: 'H1S trains and equips service providers with opt-in SMS check-ins, emergency alerts, service feedback, and outreach tools.',
     contactPoint: {
       '@type': 'ContactPoint',
@@ -109,14 +116,14 @@ export function pageMetadata({ title, description, jsonLd, image, pathname }) {
     graph.push(facts)
   }
 
-  const socialImage = image || { src: '/og.png', width: 1200, height: 630, alt: 'Earn trust. Hope With Love and Hope1Source.' }
+  const socialImage = image || defaultSocialImage
 
   return {
     title: name,
     description: searchDescription,
     url,
     canonical: knownPage ? url : null,
-    image: absoluteUrl(socialImage.src),
+    image: absoluteAssetUrl(socialImage.src),
     imageWidth: socialImage.width,
     imageHeight: socialImage.height,
     imageAlt: socialImage.alt,
