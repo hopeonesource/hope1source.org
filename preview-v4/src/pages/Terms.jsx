@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import PageHero, { Confirm, DraftBanner } from '../components/PageHero.jsx'
+import PageHero, { Confirm } from '../components/PageHero.jsx'
 import Seo from '../components/Seo.jsx'
 import { org } from '../content/org.js'
 
@@ -65,17 +65,17 @@ export default function Terms() {
   return (
     <>
       <Seo
-        title="Terms of service (draft)"
-        description="Draft terms for the Hope1Source mission site and related HopeOneSource services. Needs legal review. Prior effective date was December 6, 2016."
+        title="Terms of service"
+        description="Terms of service for Hope1Source Check-ins, including information sharing, privacy, accounts, and use of the services."
       />
       <PageHero
-        kicker="Terms · draft"
+        kicker="Terms"
         title="Terms of service."
-        lede="Draft terms for Hope1Source Check-ins. Not legal advice."
+        lede="Terms of service for Hope1Source Check-ins."
       />
       <article className="section prose-section">
         <div className="wrap narrow prose legal">
-          <DraftBanner />
+          <p>Last updated: October 16, 2026.</p>
           <Confirm>
             Set a new effective date on republish. Do not leave December 6, 2016 in place unless counsel explicitly
             keeps it.
@@ -89,7 +89,7 @@ export default function Terms() {
             messages based on settings they choose and can change.
           </p>
           <p>
-            In this draft, “Site” means the mission website at <strong>https://{org.siteHost}</strong> together with
+            In these terms, “Site” means the mission website at <strong>https://{org.siteHost}</strong> together with
             the Check-ins hub at <strong>{org.hubUrl}</strong> and the partner portal at{' '}
             <strong>{org.portalUrl}</strong>.
           </p>
@@ -162,7 +162,11 @@ export default function Terms() {
 
           <h2>Privacy</h2>
           <p>
-            Registration information is governed by the <Link to="/privacy">privacy policy</Link>.
+            With your consent, we share information with authorized service providers for care coordination and
+            quality reporting. Sharing is governed by our <Link to="/privacy">Privacy Policy</Link> and applicable
+            privacy laws, including the{' '}
+            <a href="https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/disclosures-treatment-payment-health-care-operations/index.html">HIPAA Privacy Rule</a>{' '}
+            where it applies. Information may also be disclosed when required by law.
           </p>
           <Confirm>Confirm the final privacy path: /privacy on this site, a page on the hub, or both.</Confirm>
 
