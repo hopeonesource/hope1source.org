@@ -1,6 +1,8 @@
-"""Regenerate public/og.png and public/apple-touch-icon.png.
+"""Regenerate the legacy site's public/og.png only.
 
 Requires Pillow and Liberation fonts (present on the build VM). Not part of npm.
+v4 uses public/social/hope1source-share-v2.png. Heart icons are original brand
+assets and must not be replaced by this older abstract artwork generator.
 """
 
 from PIL import Image, ImageDraw, ImageFont
@@ -58,17 +60,6 @@ def og():
     image.save("public/og.png", optimize=True)
 
 
-def icon():
-    image = Image.new("RGB", (180, 180), "#17382c")
-    draw = ImageDraw.Draw(image)
-    draw.rounded_rectangle((18, 18, 162, 162), radius=36, fill="#17382c")
-    draw.rectangle((48, 40, 70, 140), fill=CREAM)
-    draw.rectangle((110, 40, 132, 140), fill=CREAM)
-    draw.rectangle((48, 82, 132, 102), fill=CORAL)
-    image.save("public/apple-touch-icon.png", optimize=True)
-
-
 if __name__ == "__main__":
     og()
-    icon()
-    print("wrote public/og.png and public/apple-touch-icon.png")
+    print("wrote legacy public/og.png; current v4 sharing artwork and heart icons are unchanged")

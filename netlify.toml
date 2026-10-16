@@ -10,3 +10,4 @@
 
 [context.production.environment]
   VITE_SITE_INDEXABLE = "true"
+  VITE_ASSET_ORIGIN = "https://hope1source-org.netlify.app"

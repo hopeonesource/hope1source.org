@@ -5,9 +5,11 @@
 - Current: https://hopeonesource.github.io/hope1source.org/
 - Preview: https://hopeonesource.github.io/hope1source.org/v3/
 - Repository: https://github.com/hopeonesource/hope1source.org
-- Latest release pull request: https://github.com/hopeonesource/hope1source.org/pull/17
+- Latest release pull request: https://github.com/hopeonesource/hope1source.org/pull/17 (merged and published on Netlify)
 - Previous release pull request: https://github.com/hopeonesource/hope1source.org/pull/16 (merged)
 - Approved wording release: `codex/dreamers-bulk-texting` (T244–T247)
+- Approved wording, metadata, and sharing release: https://github.com/hopeonesource/hope1source.org/pull/18 — `codex/winter-heading-period` (T248–T252)
+- Current review preview: https://codex-winter-heading-period--hope1source-org.netlify.app/
 - Latest wording preview: https://codex-dreamers-bulk-texting--hope1source-org.netlify.app/
 - Previous image review preview: https://codex-homepage-image-polish--hope1source-org.netlify.app/
 - Latest Team preview: https://codex-homepage-image-polish--hope1source-org.netlify.app/team
@@ -24,7 +26,7 @@ Earlier reconciliation through `71cd1a1`: all T01–T177 entries and T24A were a
 
 **How to read the history:** Entries record what was applied at that point in the conversation. Later instructions supersede earlier versions only within their stated page and field. An older entry marked “Applied” is not a direction to restore superseded text. Per-entry requests and provenance distinguish user wording from assistant drafts. Historical build counts and validation results describe the version tested at the time.
 
-**Release record:** The user authorized merging and publishing PR #17 in T247. It contains the final Dreamers headline and the shorter homepage winter invitation. Its reviewed source is `f55bc805a577dbd16ab4bf17ce5a435e3c3def59`, verified in Netlify review deploy `6ad17274fedb28ed07e55d6d`. The preceding PR #16 release merged as `a722b10da77faf35e80d3b7eb615243f9d7177e5` and was published as production deploy `6ad16fdcbdc2100f84247ad5`. The linked PR and Netlify project show the live release status. The custom-domain cutover remains pending as recorded in T232. Earlier entries saying publication or review is pending describe their historical status.
+**Release record:** The user authorized merging and publishing PR #17 in T247. It contains the final Dreamers headline and the shorter homepage winter invitation. Its reviewed source is `f55bc805a577dbd16ab4bf17ce5a435e3c3def59`, verified in Netlify review deploy `6ad17274fedb28ed07e55d6d`. PR #17 merged as `3e162886e9f8f2703a7eb77206278f6f046fcf32` and was published as production deploy `6ad17304f668a0153ee55d3c`. The preceding PR #16 release merged as `a722b10da77faf35e80d3b7eb615243f9d7177e5` and was published as production deploy `6ad16fdcbdc2100f84247ad5`. PR #18 contains the next wording and metadata review. The custom-domain cutover remains pending as recorded in T232. Earlier entries saying publication or review is pending describe their historical status.
 
 ### Latest review changes
 
@@ -2842,6 +2844,48 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Approved wording:** `Stayed connected with bulk texting.`, `Winter is coming?`, and `Are you connected?`
 - **Release scope:** Merge PR #17 into `main`, publish and verify its production build on the dedicated `hope1source-org` Netlify project, and report when GoDaddy can be updated. This log entry changes no website content.
 - **Domain:** DNS changes and custom-domain HTTPS remain separate from this PR release. Existing domain/mail settings are not changed by this entry.
+
+### T248 — Homepage — winter heading punctuation
+
+- **Request / new text:** `Winter is coming.`
+- **Old text:** `Winter is coming?`
+- **Scope:** Replaced the question mark with a period in the homepage readiness heading. `Are you connected?`, the button, and all other content and layout remain unchanged.
+- **Review:** Prepared on `codex/winter-heading-period` after PR #17 merged and was published on Netlify.
+
+### T249 — Readiness — connect, listen, and follow up
+
+- **Request / new text:** `Connect. Listen. Follow up.`
+- **Old text:** `Alert. Check in. Connect.`
+- **Scope:** The process section heading on the Readiness page in `preview-v4/src/pages/Readiness.jsx`. Other wording, links, and layout are unchanged.
+- **Review:** Included with the homepage punctuation correction in PR #18 and its Netlify review preview.
+
+### T250 — Search metadata and social link previews
+
+- **Request:** Improve site metadata to help people and organizations discover H1S's offerings.
+- **Search copy:** Added separate, unique search titles and descriptions for 30 core, service, audience, and case-study routes. The homepage search title is now `SMS Check-ins & Community Outreach · Hope1Source`. The copy explains SMS check-ins, opt-in alerts, feedback, QR/NFC/kiosk access points, partnerships, and H1S's support for service providers. Existing article headlines, summaries, and visible page copy are preserved.
+- **Structured data:** Added the published partnership email/contact link to the organization identity; four Service entries matching the visible Outreach Tools offerings; and breadcrumb paths for article and case-study pages. Article metadata now includes existing bylines and available images, while retaining the existing rule against inventing precise dates from partial or uncertain dates. No ratings, new outcome claims, coverage areas, or direct-care services were added.
+- **Link previews:** Added matching Open Graph and Twitter titles, descriptions, image dimensions, image descriptions, and locale. Articles with existing photographs use those photographs for sharing. Optional article publication metadata is removed when navigating away from an article.
+- **Implementation:** A shared metadata model supplies initial HTML and client navigation. Outreach offering text is shared between the visible cards and structured data. The build checker now verifies metadata parity, schema identities, service scope, breadcrumbs, article attribution/dates, image assets, and existing crawler/redirect behavior.
+- **Validation:** Default preview and production-context builds pass for all 46 pages and 30 aliases (784 and 886 internal links respectively). SHA-256 comparison of all 46 rendered page bodies against the pre-metadata build found no visible-content changes. Review includes only T248–T249's already requested heading edits plus this metadata work; layout and design are unchanged.
+- **Browser verification:** Navigating from an article to Contact without reloading correctly updates the title, page type, image dimensions, and canonical and removes the article publication date. Navigating to an unknown route removes canonical/JSON-LD and sets `noindex, follow`.
+- **Review:** Included in PR #18. This entry does not authorize a production merge or change GoDaddy DNS.
+
+### T251 — Heart favicon and branded link-sharing image
+
+- **Request:** Ensure the HopeOneSource heart favicon is present and shared links look good.
+- **Favicon:** Confirmed the existing 16px/32px PNG, ICO, and 180px Apple icon already use the original red heart and gold rays. Added the existing 512px `logo-mark.png` as a larger favicon option on every v4 page, declared Apple-icon dimensions, and corrected the ICO size declaration. Original logo and icon pixels are unchanged.
+- **Regression prevention:** Removed the obsolete “H” touch-icon output from the legacy artwork generator so it cannot overwrite the heart icon later.
+- **Sharing artwork:** Added `public/social/hope1source-share-v2.png` (1733 × 907). The new cream/dark-green card features the recognizable red/gold HopeOneSource brand, `Earn Trust.`, and `We train and equip those who serve others for lasting change.` This replaces the older default social image for v4 without replacing its visible page content. Articles with their own photographs retain those photographs. Artwork provenance and prompt are in `docs/BRAND_SHARING.md`.
+- **Image loading fix:** Live inspection found the old `og:image`, Twitter image, and structured-data logo URLs pointed at missing files on the still-old `hope1source.org` site. Metadata now uses a separately validated image host: the exact Netlify review deployment, or the stable production Netlify host configured in `netlify.toml`. Canonical URLs and GoDaddy DNS are unchanged. The article schema image uses the same active image host.
+- **Validation:** Default preview and production-context builds pass all 46 pages, 30 aliases, and metadata checks. New checks verify PNG signatures/dimensions, favicon declarations, ICO structure, and separate canonical/image hosts. Review remains PR #18; production publication follows PR review.
+
+### T252 — Approve PR #18 and release to Netlify
+
+- **Request / authorization:** Merge the PR and report what is needed to complete the GoDaddy domain addition/cutover.
+- **Reviewed source:** PR #18 at `66d840428b422dd9d8bc8dd61f4f68f23064029f`, verified in ready Netlify review deploy `6ad178b88a4feee38feb8107`. The branch is mergeable with a clean working tree. Its metadata, original heart favicons, generated sharing card, and active image URLs passed the recorded build, browser, and live asset checks.
+- **Approved release:** T248–T251's homepage/readiness heading edits, clearer search metadata, structured data, favicon declarations, sharing artwork, and image-host correction. This new entry changes documentation only; the reviewed website files are unchanged.
+- **Release action:** Merge PR #18 to `main`, build the resulting commit on the dedicated `hope1source-org` Netlify project, and verify the published production release. The PR and Netlify deployment provide the final merge/deploy identifiers.
+- **GoDaddy scope:** Confirm the exact apex/www DNS replacements and required account access. The intended primary domain remains `hope1source.org`; DNS access and custom-domain certificate verification are separate steps. This entry does not record a DNS change.
 
 ## Resolved placement
 

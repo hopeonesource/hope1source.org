@@ -5,37 +5,11 @@ import { howSteps } from '../components/HowItWorks.jsx'
 import { StoryCard } from '../components/StoryCards.jsx'
 import { org } from '../content/org.js'
 import { stories } from '../content/stories.js'
+import { outreachOfferings as offerings } from '../content/outreachOfferings.js'
 import { mailto, publicUrl } from '../lib/links.js'
 
 const proof = stories.filter((story) => story.slug !== 'dreamers-and-achievers')
 const dreamers = stories.find((story) => story.slug === 'dreamers-and-achievers')
-
-const offerings = [
-  {
-    title: 'SMS check-ins',
-    text: 'Invite people to opt in to text messages, share what they need, and stay connected with your team.',
-    to: '/for-providers',
-    linkLabel: 'Check-ins for service providers',
-  },
-  {
-    title: 'Emergency alerts',
-    text: 'Share shelter, transportation, and service updates during cold, heat, storms, and closures.',
-    to: '/readiness',
-    linkLabel: 'Plan your service',
-  },
-  {
-    title: 'Service feedback',
-    text: 'Hear what worked, understand unmet needs, and use what you learn to improve services.',
-    to: '/learn-more',
-    linkLabel: 'See partner support and results',
-  },
-  {
-    title: 'Outreach tools',
-    text: 'Use a QR code, NFC tap, or kiosk at places people already visit to help them opt in and ask for support.',
-    to: '/access-points',
-    linkLabel: 'Explore access points',
-  },
-]
 
 export default function OutreachTools() {
   return (

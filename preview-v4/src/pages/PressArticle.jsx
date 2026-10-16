@@ -1,6 +1,6 @@
 import { Fragment } from 'react'
 import { Link } from 'react-router-dom'
-import Seo, { absoluteUrl } from '../components/Seo.jsx'
+import Seo, { absoluteUrl, absoluteAssetUrl } from '../components/Seo.jsx'
 import { pressArticleById } from '../content/pressArticles.js'
 import { articleLinkDestination } from '../lib/articleLinks.js'
 import { publicUrl } from '../lib/links.js'
@@ -56,17 +56,21 @@ export default function PressArticle({ id }) {
   const url = absoluteUrl(`/press/${article.id}`)
   const jsonLd = {
     '@type': 'NewsArticle',
+    '@id': `${url}#article`,
     headline: article.title,
     description: article.description,
     url,
     mainEntityOfPage: { '@id': `${url}#webpage` },
     publisher: { '@id': `${absoluteUrl('/')}#organization` },
+    inLanguage: 'en-US',
+    ...(article.author ? { author: { '@type': /^[A-Z]\.\s/.test(article.author) ? 'Person' : 'Organization', name: article.author } } : {}),
+    ...(article.image ? { image: absoluteAssetUrl(article.image.src) } : {}),
     ...(/^\d{4}-\d{2}-\d{2}$/.test(article.dateTime) && !article.note ? { datePublished: article.dateTime } : {}),
   }
 
   return (
     <>
-      <Seo title={article.title} description={article.description} jsonLd={jsonLd} />
+      <Seo title={article.title} description={article.description} jsonLd={jsonLd} image={article.image} />
       <article className="press-article">
         <header className="wrap narrow press-article-header">
           <Link className="text-link" to="/press">← All press and coverage</Link>

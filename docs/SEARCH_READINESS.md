@@ -1,12 +1,17 @@
 # Search readiness for v4
 
-Updated October 15, 2026. The intended audience is service providers, the conversion is a partnership conversation, and the production domain is `https://hope1source.org`. The user authorized publication and PR #15 has merged. Netlify now builds the indexable root release from `main`, using `netlify.toml` and publishing `dist/v4`. GoDaddy DNS cutover status is tracked in `EDITS.md`.
+Updated October 15, 2026. The intended audience is service providers, the conversion is a partnership conversation, and the production domain is `https://hope1source.org`. The user authorized publication. The current production source includes merged PR #17 at `3e162886e9f8f2703a7eb77206278f6f046fcf32`; the metadata changes in PR #18 are pending review. Netlify builds the indexable root release from `main`, using `netlify.toml` and publishing `dist/v4`. The GoDaddy domain cutover remains pending; its status is tracked in `EDITS.md`.
 
 ## What this build supplies
 
 - Every v4 route has its actual page content and ordinary HTML links in the initial response. JavaScript enhances navigation and interactions; reading and following links do not depend on it.
-- Each page has its own title, description, canonical URL, social metadata, and JSON-LD before JavaScript runs. The metadata is kept consistent when visitors navigate in the application.
-- Structured data describes the organization, website, and current page using existing public facts. It does not invent service areas, certifications, ratings, reviews, or aggregate outcomes.
+- Each page has its own title, description, canonical URL, social metadata, and JSON-LD before JavaScript runs. Static rendering and client navigation share one metadata model and tag definition.
+- Thirty routes have descriptive search titles and descriptions in `preview-v4/src/content/searchMetadata.js`, separate from the visible page copy. These cover the main pages, eight resource guides, and five case studies. Press articles retain their existing titles and descriptions; privacy, terms, and 404 labels are preserved.
+- Structured data describes the organization, website, and current page using existing public facts. The `NGO` includes a partnership `ContactPoint`. The outreach-tools page includes four `Service` nodes for SMS check-ins, emergency alerts, service feedback, and outreach tools, using the same descriptions displayed on the page. These describe tools for providers, not direct medical, housing, or food services.
+- Nested case-study and press-article pages include a `BreadcrumbList` linking the home page, their collection, and the current page. Article schema uses existing authors and images; publication dates are included only where the content supplies a full date without an uncertainty note. No dates or times are inferred from partial dates.
+- Open Graph image metadata includes dimensions, type, and alternative text. Twitter cards share the image and alternative text. Press pages use article cards and their existing article image when available; other pages use the default social image.
+- The default sharing image now features the HopeOneSource heart/wordmark and current approved homepage wording. Every v4 page declares the existing 16px, 32px, and 512px heart favicons plus the 180px Apple icon. See `docs/BRAND_SHARING.md` for assets and provenance.
+- Metadata does not invent service areas, certifications, ratings, reviews, or aggregate outcomes.
 - Legacy aliases have a destination canonical, an immediate static redirect, and a working fallback link. The real 404 page has useful content and `noindex`.
 - Unknown article/post/category paths use that same 404 rather than silently redirecting only after JavaScript runs. All 30 explicitly mapped legacy aliases remain available as forced HTTP 301 redirects on Netlify.
 - The default v4 build remains a `noindex, follow` review preview. Its sitemap contains no URLs. The current site's root sitemap and robots files are unchanged.
@@ -33,15 +38,23 @@ Default canonicals match `https://hopeonesource.github.io/hope1source.org/v4/`; 
 The approved root-domain release can be reproduced with:
 
 ```sh
-VITE_SITE_ORIGIN=https://hope1source.org VITE_V4_BASE=/ VITE_SITE_INDEXABLE=true node scripts/build-v4.mjs
+VITE_SITE_ORIGIN=https://hope1source.org VITE_ASSET_ORIGIN=https://hope1source-org.netlify.app VITE_V4_BASE=/ VITE_SITE_INDEXABLE=true node scripts/build-v4.mjs
 node scripts/check-v4-prerender.mjs
 ```
 
 The output is **`dist/v4`**, which must be deployed as the production site's document root. Running this command only builds files. Do not upload the encompassing `dist` directory as the v4 production release, because it contains the current site and other previews. A deployment workflow must intentionally select this output and use these environment settings. Rebuild with defaults afterward to restore the local review build.
 
-The automated checker verifies all routes, unique titles/descriptions, matching canonical and Open Graph URLs, valid JSON-LD, readable HTML, internal link targets, aliases, sitemap policy, and noindex 404. Browser QA must also check hydration, responsive layouts, keyboard navigation, navigation scrolling, and actual HTTP status codes after deployment.
+The automated checker verifies all routes, unique titles/descriptions, matching canonical and Open Graph URLs, valid JSON-LD, readable HTML, internal link targets, aliases, sitemap policy, and noindex 404. It also checks title and description parity across search tags, social tags, and page schema; social image files and dimensions; the shared visible service descriptions; breadcrumbs; and article authors, images, and date precision.
+
+For PR #18, both builds passed automated validation: the noindex preview has 46 pages, 30 aliases, and 784 checked internal links; the indexable production build has 46 pages, 30 aliases, and 886 checked internal links. SHA-256 snapshots of all 46 rendered page bodies match the pre-metadata baseline, confirming that this metadata work preserved visible content. A browser check of article-to-Contact navigation without reloading confirmed updated titles, page types, canonical URLs, image dimensions, and removal of the article publication date. An unknown route removed canonical/JSON-LD and applied `noindex, follow`. This metadata change does not alter layout; future visual changes should also check responsive layouts, keyboard navigation, and navigation scrolling. Verify actual HTTP status codes after deployment.
 
 During the GitHub subdirectory preview, unknown `/v4/*` URLs may use the existing project-root 404 document because GitHub Pages selects a site-level fallback. This build deliberately does not replace the current site's fallback. Deploying `dist/v4` as the approved production root makes its own noindex `404.html` available to the host; verify that the hosting configuration returns it with HTTP 404.
+
+### Images during the domain transition
+
+Canonical URLs continue to identify `hope1source.org`. Social images and the structured-data logo use a separate `VITE_ASSET_ORIGIN`, validated as an HTTP(S) origin without credentials or a path. Netlify production explicitly uses the stable `https://hope1source-org.netlify.app` host, while review builds fall back to Netlify's unique `DEPLOY_URL`. Local and GitHub builds without either setting use their normal site origin. Both server rendering and browser navigation receive the same image origin; the manifest records it for validation.
+
+This avoids missing image URLs while the official domain still serves the old site. Sharing platforms may follow `og:url` to that official domain and may cache previous previews; domain cutover and a fresh platform fetch are still needed to verify the final public sharing experience. Do not change DNS as part of an asset-only review. Netlify documents the [build-provided deploy URLs](https://docs.netlify.com/build/configure-builds/environment-variables/#deploy-urls-and-metadata).
 
 ## Crawler access and launch verification
 
