@@ -103,7 +103,7 @@ export default function Readiness() {
               <li key={item}>{item}</li>
             ))}
           </ol>
-          <h2>Alert. Check in. Connect.</h2>
+          <h2>Connect. Listen. Follow up.</h2>
           <ol>
             {howSteps.map((step) => (
               <li key={step.title}>

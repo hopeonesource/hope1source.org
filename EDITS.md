@@ -8,7 +8,8 @@
 - Latest release pull request: https://github.com/hopeonesource/hope1source.org/pull/17
 - Previous release pull request: https://github.com/hopeonesource/hope1source.org/pull/16 (merged)
 - Approved wording release: `codex/dreamers-bulk-texting` (T244–T247)
-- Current punctuation review branch: `codex/winter-heading-period` (T248)
+- Current wording review: https://github.com/hopeonesource/hope1source.org/pull/18 — `codex/winter-heading-period` (T248–T249)
+- Current wording preview: https://codex-winter-heading-period--hope1source-org.netlify.app/
 - Latest wording preview: https://codex-dreamers-bulk-texting--hope1source-org.netlify.app/
 - Previous image review preview: https://codex-homepage-image-polish--hope1source-org.netlify.app/
 - Latest Team preview: https://codex-homepage-image-polish--hope1source-org.netlify.app/team
@@ -2850,6 +2851,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Old text:** `Winter is coming?`
 - **Scope:** Replaced the question mark with a period in the homepage readiness heading. `Are you connected?`, the button, and all other content and layout remain unchanged.
 - **Review:** Prepared on `codex/winter-heading-period` after PR #17 merged and was published on Netlify.
+
+### T249 — Readiness — connect, listen, and follow up
+
+- **Request / new text:** `Connect. Listen. Follow up.`
+- **Old text:** `Alert. Check in. Connect.`
+- **Scope:** The process section heading on the Readiness page in `preview-v4/src/pages/Readiness.jsx`. Other wording, links, and layout are unchanged.
+- **Review:** Included with the homepage punctuation correction in PR #18 and its Netlify review preview.
 
 ## Resolved placement
 
