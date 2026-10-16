@@ -7,7 +7,8 @@
 - Repository: https://github.com/hopeonesource/hope1source.org
 - Latest release pull request: https://github.com/hopeonesource/hope1source.org/pull/16
 - Previous release pull request: https://github.com/hopeonesource/hope1source.org/pull/15 (merged)
-- Current wording review branch: `codex/dreamers-bulk-texting` (T244)
+- Current wording review: https://github.com/hopeonesource/hope1source.org/pull/17 — `codex/dreamers-bulk-texting` (T244–T245)
+- Latest wording preview: https://codex-dreamers-bulk-texting--hope1source-org.netlify.app/
 - Previous image review preview: https://codex-homepage-image-polish--hope1source-org.netlify.app/
 - Latest Team preview: https://codex-homepage-image-polish--hope1source-org.netlify.app/team
 - v4 source: `preview-v4/`, running locally at http://127.0.0.1:5175/v4/ and published as a noindex GitHub preview at https://hopeonesource.github.io/hope1source.org/v4/.
@@ -2819,6 +2820,13 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **New text:** `Stay connect with bulk texting.`
 - **Scope:** The shared Dreamers & Achievers story-card headline in `preview-v4/src/content/stories.js`, displayed on Home, Learn More, and the Case Studies listing. Preserved the exact requested wording, summary, outcome figures, images, and layout.
 - **Review:** Prepared on `codex/dreamers-bulk-texting` following the completed PR #16 release.
+
+### T245 — Homepage — shorter winter outreach invitation
+
+- **Request / first replacement:** `Cold nights are coming.` → `Winter is coming?`
+- **Second replacement:** `Can you remain connected to those you aim to serve?` → `Are you connected?`
+- **Scope:** The homepage readiness callout in `preview-v4/src/pages/Home.jsx`. Both changes use the exact requested wording and punctuation. The button, layout, and separate Readiness page are unchanged.
+- **Review:** Included with T244 in PR #17 and its Netlify branch preview.
 
 ## Resolved placement
 
