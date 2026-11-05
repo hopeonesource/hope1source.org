@@ -2930,6 +2930,14 @@ The headline, roster, roles, biographies, and photos are unchanged.
 - **Applied:** Replaced only the parenthetical label in the Privacy page's opening paragraph, preserving the URL and existing formatting.
 - **Validation / release:** Production build and prerender checks passed for all 46 pages, 30 aliases, and 886 internal links. Confirmed the exact requested label, unchanged URL and formatting in built Privacy HTML. Release follows the existing GitHub PR and Netlify workflow.
 
+### T258 — Washington Post heat-wave coverage
+
+- **Request:** Update the website with the linked Washington Post article.
+- **Changes:** Added the June 21, 2025 article to News & Stories as independent coverage, with Paul Kiefer's byline, the publisher link, and a short summary. Added a related link on Readiness with a clear historical-coverage notice and direction to official channels for current alerts.
+- **Scope:** No article body or photographs reproduced. Existing current-service claims, homepage, design, legal pages, and donation settings are unchanged.
+- **Validation:** Production-context build and prerender checks passed for all 46 pages, 30 aliases, and 886 internal links. The full aggregate build also passed, including the noindex preview. Added regression checks for the entry, original date, attribution, chronological order, safe external links, and historical-alert distinction.
+- **Release:** Uses the existing GitHub PR and automatic Netlify publishing workflow.
+
 ## Resolved placement
 
 ### C01 — Partner Success

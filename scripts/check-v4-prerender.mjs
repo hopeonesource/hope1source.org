@@ -4,6 +4,7 @@ import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { pages, aliases } from '../preview-v4/src/content/routes.js'
 import { pressArticles } from '../preview-v4/src/content/pressArticles.js'
+import { newsItems, washingtonPostHeatCoverage } from '../preview-v4/src/content/press.js'
 import { searchMetadata } from '../preview-v4/src/content/searchMetadata.js'
 import { outreachOfferings } from '../preview-v4/src/content/outreachOfferings.js'
 import { org } from '../preview-v4/src/content/org.js'
@@ -152,6 +153,25 @@ for (const page of pages) {
     assert(routePaths.has(`/${relativePath}`) || existsSync(path.join(dist, relativePath)), `${page.path}: broken static link ${href}`)
   }
 }
+
+// Independent coverage stays with its publisher, correctly dated and discoverable
+// from the relevant readiness page without becoming a live alert.
+const heatCoverage = newsItems.filter((item) => item.href === washingtonPostHeatCoverage.href)
+assert.equal(heatCoverage.length, 1, 'Heat-wave coverage must appear once in the news index')
+assert.equal(heatCoverage[0].kind, 'Coverage', 'Publisher reporting must be labeled as coverage')
+assert.equal(heatCoverage[0].dateTime, '2025-06-21', 'Coverage must retain the original publication date')
+for (let index = 1; index < newsItems.length; index += 1) {
+  assert(newsItems[index - 1].dateTime >= newsItems[index].dateTime, 'News index must remain newest first')
+}
+const pressHtml = readFileSync(path.join(dist, 'press/index.html'), 'utf8')
+assert(pressHtml.includes(washingtonPostHeatCoverage.title), 'Press HTML must include the coverage headline')
+assert(pressHtml.includes(washingtonPostHeatCoverage.detail), 'Press HTML must include publisher attribution and summary')
+for (const route of ['press', 'readiness']) {
+  const html = readFileSync(path.join(dist, route, 'index.html'), 'utf8')
+  assert(html.includes(`href="${washingtonPostHeatCoverage.href}" target="_blank" rel="noopener noreferrer"`), `${route}: missing safe publisher link`)
+}
+const readinessHtml = readFileSync(path.join(dist, 'readiness/index.html'), 'utf8')
+assert(readinessHtml.includes('historical coverage, not a current heat alert'), 'Readiness must distinguish historical coverage from current alerts')
 
 // A recreated release must ship its complete prose and local images in HTML,
 // not just an article shell that depends on the old website or JavaScript.
