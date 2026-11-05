@@ -21,6 +21,13 @@ The legacy H1S article template repeats November 24, 2020 on unrelated articles,
 
 ## Coverage
 
+### Washington Post addition, November 5, 2026
+
+- Source: https://www.washingtonpost.com/dc-md-va/2025/06/21/dc-heat-wave-safety/
+- Publication date: June 21, 2025. Byline: Paul Kiefer.
+- Added to the chronological News & Stories index as independent coverage, with the publisher link and a brief paraphrase. The article headline was supplied in the user's request. No article body or photographs are reproduced.
+- The Readiness page links to the same source and explicitly distinguishes this historical coverage from current alerts. Existing current-service statements are unchanged.
+
 | Item | Displayed date | Linked source and evidence |
 | --- | --- | --- |
 | Charleston VA free produce | December 6, 2020 | [VA News](https://news.va.gov/81753/free-produce-veterans-charleston-va/), displayed publication date, by Erin Curran. The H1S post links the older `blogs.va.gov/VAntage/81753/` URL for this same article. August 10, 2020 belongs to a separate Charleston VA version; the footer's last-updated date is also not the publication date. |

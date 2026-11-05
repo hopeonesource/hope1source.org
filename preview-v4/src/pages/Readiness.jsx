@@ -3,6 +3,7 @@ import PageHero from '../components/PageHero.jsx'
 import Seo from '../components/Seo.jsx'
 import { howSteps } from '../components/HowItWorks.jsx'
 import { org } from '../content/org.js'
+import { washingtonPostHeatCoverage } from '../content/press.js'
 import { mailto } from '../lib/links.js'
 
 const winterGift = `${org.donateUrl}?utm_campaign=winter`
@@ -74,6 +75,13 @@ export default function Readiness() {
           </p>
           <p>
             <Link to="/case-studies/emergency-shelter-alerts">Read the shelter alerts story</Link>
+          </p>
+          <p>
+            <a href={washingtonPostHeatCoverage.href} target="_blank" rel="noopener noreferrer">
+              Read the 2025 Washington Post coverage
+            </a>
+            . This is historical coverage, not a current heat alert. Check official
+            agency channels for current alerts and service information.
           </p>
           <h2>Public health outreach through a trusted church</h2>
           <p>

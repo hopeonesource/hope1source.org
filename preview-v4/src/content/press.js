@@ -54,7 +54,16 @@ export const releases = [
   }
 })
 
+export const washingtonPostHeatCoverage = {
+  date: 'June 21, 2025',
+  dateTime: '2025-06-21',
+  title: 'How D.C. plans to help residents stay cool during the heat wave',
+  detail: 'Paul Kiefer · The Washington Post. Mentions HopeOneSource’s weather and shelter updates for residents experiencing homelessness.',
+  href: 'https://www.washingtonpost.com/dc-md-va/2025/06/21/dc-heat-wave-safety/',
+}
+
 export const coverage = [
+  washingtonPostHeatCoverage,
   {
     date: 'March 6, 2025',
     dateTime: '2025-03-06',
