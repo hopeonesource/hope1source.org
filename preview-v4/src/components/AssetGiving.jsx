@@ -19,7 +19,10 @@ export default function AssetGiving() {
                 <h3>{title}</h3>
                 <p>{description}</p>
                 <span className="asset-giving-action">
-                  {action}<span aria-hidden="true">↗</span>
+                  {action}
+                  <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                    <path d="M6 18 18 6M6 6h12v12" />
+                  </svg>
                   <span className="sr-only"> on Every.org</span>
                 </span>
               </a>

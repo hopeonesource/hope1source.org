@@ -1,6 +1,6 @@
 # Donation integration review
 
-Status: draft, not production-approved. No gift has been made.
+Status: draft. Production is held because live testing found accessibility failures in the vendor popup. No gift has been made.
 
 ## Scope
 
@@ -20,12 +20,26 @@ Status: draft, not production-approved. No gift has been made.
 
 The focused checks validate our integration logic, not Every.org payment processing.
 
+## Live browser checks
+
+The actual built site was opened through the supported local preview service.
+
+- Home and For Backers: no horizontal overflow at 320, 375, 390, 430, 768, and 1180 CSS-pixel widths. All giving cards exceeded the 44px target minimum. Minimum measured card size was 265 x 150px. Visible coral keyboard focus was verified.
+- Desktop and 320px popup: correct Hope With Love identity, Monthly selected, coral styling, and the configured +50/+100/+250 controls.
+- Switching to Once worked. Clicking +50 then +100 produced 150. The amount was cleared afterward, without clicking Continue or submitting a gift.
+- Stocks, DAF, IRA, and Crypto method tabs showed their corresponding starting forms. No account, personal, or payment information was entered.
+- Click-to-close restored body scrolling. Reopening is possible.
+- The live widget disclosed that Hope With Love has not added bank-deposit information and that Network for Good currently applies a 2.25% disbursement fee. This is an observed vendor disclosure, not an independent account audit. No account settings were changed.
+- A missing external-arrow glyph in the bundled font was replaced with an inline SVG.
+
+These were desktop Chromium and fixed-width iframe layout checks, not real iPhone Safari / Android Chrome or completed checkout tests.
+
 ## Release blockers
 
-- Actual rendered mobile layouts and keyboard paths still need verification.
+- Confirmed vendor accessibility failures: no dialog role, unnamed Close button, Escape did not dismiss, and clicking Close returned focus to the page body instead of the Donate trigger. The Once radio also had no accessible name in the browser accessibility tree.
 - Every.org returned a Vercel Security Checkpoint with “Failed to verify your browser,” Code 11, in the test browser. No bypass or gift was attempted.
-- The vendor source raises concerns about dialog semantics, named Close controls, Escape handling, focus containment, and focus restoration. Verify the live popup before approving it for production. Do not patch vendor internals without a tested, stable contract.
-- Verify stock, DAF, IRA, and crypto start in the intended method on the live service.
+- Fix the vendor modal accessibility through a supported integration or vendor release and retest. Avoid fragile patches to vendor internals.
+- Full-page stock, DAF, IRA, and crypto links remain source-verified but their destination pages cannot be click-certified in this browser; the embedded method starts were tested separately.
 - Production release is held pending these checks or an explicit decision to release the direct-link version instead.
 
 ## Primary references

@@ -863,6 +863,10 @@ a:hover {
   font-size: 1rem;
 }
 
+.asset-giving-action svg {
+  flex: 0 0 auto;
+}
+
 .asset-giving-note {
   max-width: 85ch;
   color: var(--cream-soft);
