@@ -1,6 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot, hydrateRoot } from 'react-dom/client'
 import App from './App.jsx'
+import { installEveryDonate } from './lib/everyDonate.js'
 import '@fontsource/fraunces/latin-600.css'
 import '@fontsource/fraunces/latin-600-italic.css'
 import '@fontsource/fraunces/latin-ext-600.css'
@@ -24,3 +25,5 @@ const app = (
 // Development still starts from an empty root and uses the normal client render.
 if (root.hasChildNodes()) hydrateRoot(root, app)
 else createRoot(root).render(app)
+
+installEveryDonate(window, document)

@@ -1,6 +1,8 @@
 import { useMemo } from 'react'
 import { Link } from 'react-router-dom'
 import MissionWash from '../components/MissionWash.jsx'
+import AssetGiving from '../components/AssetGiving.jsx'
+import DonateHelp from '../components/DonateHelp.jsx'
 import Seo, { absoluteUrl } from '../components/Seo.jsx'
 import StoryCards from '../components/StoryCards.jsx'
 import HomeStoryArt from '../components/HomeStoryArt.jsx'
@@ -143,7 +145,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="cause-band" aria-labelledby="cause-title">
+      <section className="cause-band giving-band" aria-labelledby="cause-title">
         <div className="wrap cause-inner">
           <div>
             <h2 id="cause-title">Give</h2>
@@ -158,7 +160,9 @@ export default function Home() {
             </Link>
           </div>
         </div>
+        <div className="wrap"><DonateHelp /></div>
       </section>
+      <AssetGiving />
     </>
   )
 }
