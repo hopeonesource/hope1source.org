@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero.jsx'
+import AssetGiving from '../components/AssetGiving.jsx'
+import DonateHelp from '../components/DonateHelp.jsx'
 import Seo from '../components/Seo.jsx'
 import { org } from '../content/org.js'
 import { stories } from '../content/stories.js'
@@ -27,7 +29,9 @@ export default function ForBackers() {
             Talk about funding a city
           </a>
         </div>
+        <DonateHelp />
       </PageHero>
+      <AssetGiving />
       <section className="section">
         <div className="wrap narrow prose">
           <h2>Proof</h2>

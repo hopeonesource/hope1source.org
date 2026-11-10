@@ -1,5 +1,5 @@
 [build]
-  command = "node scripts/build-v4.mjs && node scripts/check-v4-prerender.mjs"
+  command = "node scripts/build-v4.mjs && node scripts/check-v4-prerender.mjs && node scripts/check-every-donate.mjs"
   publish = "dist/v4"
 
 [build.environment]
