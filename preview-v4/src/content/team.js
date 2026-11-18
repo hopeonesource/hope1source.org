@@ -84,6 +84,14 @@ export const team = [
     bio: "Tom is a retired senior fellow and professor at Duke University's highly selective leadership school, with a focus in human-centered design. He previously held a Secretary level appointment, where he spearheaded the Veterans Experience Officer at the Department of Veterans Affairs to understand, design and measure Veteran experience. It continues to result in unprecedented quality improvements for the second largest U.S. government agency. Prior, he served in Asia and Europe for over 20 years, where he launched McDonald's in France and led it to be the highest grossing market outside of the USA. You can find him enjoying his newly built dream home with his wife in Durham, NC, along with his visiting children and grandkids. Tom is a senior advisor to the H1S team as it relates to strategic direction.",
   },
   {
+    name: 'Will Mapp, III',
+    role: 'Advisor',
+    photo: 'photos/team/will-mapp.jpg',
+    imagePosition: '52% 30%',
+    linkedin: 'https://www.linkedin.com/in/willmapp',
+    bio: "Will serves as an advisor to H1S Check-ins and is Chief Technology Officer at Qlarant. He brings experience in software product development, emerging technologies, and applications of artificial intelligence and machine learning. His work emphasizes combining human expertise with technology to deliver practical value. His professional development includes deep learning, business strategy, and gamification.",
+  },
+  {
     name: 'Chris Teitzel',
     role: 'Advisory Board',
     photo: 'photos/team/chris-teitzel-512.jpg',

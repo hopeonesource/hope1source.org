@@ -35,6 +35,7 @@ function People({ people }) {
               <h3>{person.name}</h3>
               <p className="person-role">{person.role}</p>
               <p>{person.bio}</p>
+              {person.linkedin && <a href={person.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn profile</a>}
             </div>
           </article>
         </li>
